@@ -1,0 +1,34 @@
+#### Instructions
+# Recommended Python: 3.10+ (3.11 preferred)
+#
+# Option A (venv):
+#   python -m venv .venv
+#   source .venv/bin/activate        # macOS/Linux
+#   # .venv\\Scripts\\activate       # Windows PowerShell
+#   python -m pip install --upgrade pip
+#   pip install -r requirements.txt
+#
+# Option B (conda):
+#   conda create -n dimple python=3.11 -y
+#   conda activate dimple
+#   pip install -r requirements.txt
+
+# Core scientific stack
+numpy>=1.23
+pandas>=1.5
+scikit-learn>=1.2
+scipy>=1.9
+joblib>=1.2
+
+# Dimension reduction / clustering
+umap-learn>=0.5.5
+hdbscan>=0.8.33
+
+# File IO / parsing
+pyarrow>=12.0
+
+# Plotting / outputs
+plotly>=5.15
+
+# Optional: progress bars / UX
+tqdm>=4.66
