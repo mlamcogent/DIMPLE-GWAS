@@ -864,56 +864,52 @@ def main():
         logger.info("generating screeplots....")
         if no_plots:
             logger.info("--no_plots set; skipping scree plot exports.")
-            # Clean early exit for this stage
-            raise SystemExit(0)
-        try:
-            dfsc = pd.read_csv(paths["screeinput"], engine="pyarrow")
-        except Exception as e_read:
-            logger.warning("Falling back to pandas CSV reader for screeinput (pyarrow failed: %s)", e_read)
-            dfsc = pd.read_csv(paths["screeinput"])
-
-        # Sort by Clusters desc then Silhouette_avg desc for inspection parity
-        sorted_dfsc = dfsc.sort_values(by=["Clusters", "Silhouette_avg"], ascending=[False, False])
-        logger.info("Scree input (sorted) head:\n%s", sorted_dfsc.head(10).to_string(index=False))
-
-        # 1) Silhouette Average vs Clusters
-        fig1 = px.scatter(
-            sorted_dfsc, x="Silhouette_avg", y="Clusters",
-            title="Silhouette Average vs. Clusters",
-            labels={"Silhouette_avg": "Silhouette Average", "Clusters": "Number of Clusters"},
-            hover_data=sorted_dfsc.columns
-        )
-        ensure_parent_dir(paths["screeplot1"])
-        pio.write_html(fig1, file=paths["screeplot1"], auto_open=False)
-        logger.info("Saved scree plot 1 to %s", paths["screeplot1"])
-
-        # 2) Noise Points vs Clusters
-        fig2 = px.scatter(
-            sorted_dfsc, x="Noise_points", y="Clusters",
-            title="Noise Points vs. Clusters",
-            labels={"Noise_points": "Number of Noise Points", "Clusters": "Number of Clusters"},
-            hover_data=sorted_dfsc.columns
-        )
-        ensure_parent_dir(paths["screeplot2"])
-        pio.write_html(fig2, file=paths["screeplot2"], auto_open=False)
-        logger.info("Saved scree plot 2 to %s", paths["screeplot2"])
-
-        # 3) Silhouette Averages vs Noise Points
-        fig3 = px.scatter(
-            sorted_dfsc, x="Silhouette_avg", y="Noise_points",
-            title="Silhouette Averages vs. Noise Points",
-            labels={"Silhouette_avg": "Silhouette Average", "Noise_points": "Number of Noise Points"},
-            hover_data=sorted_dfsc.columns
-        )
-        ensure_parent_dir(paths["screeplot3"])
-        pio.write_html(fig3, file=paths["screeplot3"], auto_open=False)
-        logger.info("Saved scree plot 3 to %s", paths["screeplot3"])
-    except SystemExit as e:
-        # Used for clean early-exit when --no_plots is set
-        if int(getattr(e, "code", 0) or 0) == 0:
-            logger.info("Scree plots skipped.")
         else:
-            raise
+            try:
+                dfsc = pd.read_csv(paths["screeinput"], engine="pyarrow")
+            except Exception as e_read:
+                logger.warning("Falling back to pandas CSV reader for screeinput (pyarrow failed: %s)", e_read)
+                dfsc = pd.read_csv(paths["screeinput"])
+
+            if dfsc is None or dfsc.empty:
+                logger.warning("Scree plots not generated: screeinput is empty (%s).", paths["screeinput"])
+            else:
+                # Sort by Clusters desc then Silhouette_avg desc for inspection parity
+                sorted_dfsc = dfsc.sort_values(by=["Clusters", "Silhouette_avg"], ascending=[False, False])
+                logger.info("Scree input (sorted) head:\n%s", sorted_dfsc.head(10).to_string(index=False))
+
+                # 1) Silhouette Average vs Clusters
+                fig1 = px.scatter(
+                    sorted_dfsc, x="Silhouette_avg", y="Clusters",
+                    title="Silhouette Average vs. Clusters",
+                    labels={"Silhouette_avg": "Silhouette Average", "Clusters": "Number of Clusters"},
+                    hover_data=sorted_dfsc.columns
+                )
+                ensure_parent_dir(paths["screeplot1"])
+                pio.write_html(fig1, file=paths["screeplot1"], auto_open=False)
+                logger.info("Saved scree plot 1 to %s", paths["screeplot1"])
+
+                # 2) Noise Points vs Clusters
+                fig2 = px.scatter(
+                    sorted_dfsc, x="Noise_points", y="Clusters",
+                    title="Noise Points vs. Clusters",
+                    labels={"Noise_points": "Number of Noise Points", "Clusters": "Number of Clusters"},
+                    hover_data=sorted_dfsc.columns
+                )
+                ensure_parent_dir(paths["screeplot2"])
+                pio.write_html(fig2, file=paths["screeplot2"], auto_open=False)
+                logger.info("Saved scree plot 2 to %s", paths["screeplot2"])
+
+                # 3) Silhouette Averages vs Noise Points
+                fig3 = px.scatter(
+                    sorted_dfsc, x="Silhouette_avg", y="Noise_points",
+                    title="Silhouette Averages vs. Noise Points",
+                    labels={"Silhouette_avg": "Silhouette Average", "Noise_points": "Number of Noise Points"},
+                    hover_data=sorted_dfsc.columns
+                )
+                ensure_parent_dir(paths["screeplot3"])
+                pio.write_html(fig3, file=paths["screeplot3"], auto_open=False)
+                logger.info("Saved scree plot 3 to %s", paths["screeplot3"])
     except Exception as e:
         _handle_stage_exception("Cell 6 scree plots", e)
 
@@ -1399,7 +1395,6 @@ def main():
         # Require at least 3D to plot 3D; fallback to 2D if n_components < 3
         if clusterable_embedding_viz.shape[1] < 3:
             logger.warning("Visualization embedding has <3 dimensions; falling back to 2D scatter.")
-            import plotly.express as px
             df_tmp = pd.DataFrame(clusterable_embedding_viz, columns=[f"UMAP_{i+1}" for i in range(clusterable_embedding_viz.shape[1])])
             df_tmp["label"] = labels
             fig = px.scatter(
@@ -1416,7 +1411,6 @@ def main():
                 logger.info("Saved 2D cluster solution plot to %s", paths["clusterplot1"])
         else:
             # Build 3D cluster plot
-            import plotly.express as px
             clustered = (labels >= 0)
             unique_labels = np.unique(labels[clustered]) if np.any(clustered) else np.array([], dtype=int)
 
