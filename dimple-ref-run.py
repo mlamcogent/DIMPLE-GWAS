@@ -56,7 +56,7 @@ print("General Dependencies for IDP Neuroimaging Clustering Pipeline Loaded")
 print("Defining input and output objectives for pipeline")
 
 ## read in data
-datainput = "All_IDPs_z_score_1_3935_hapmapSNPs_R2_0.1_3159_samples_ICA25_164IDPs.csv"
+datainput = "test_dat.csv"
 ## Initial umap plot
 prelim_umap = outpath("Stage_00_preliminary_umap_scatterplot.html")
 ## hdbscan input
