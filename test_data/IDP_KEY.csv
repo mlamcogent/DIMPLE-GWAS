@@ -1,0 +1,3936 @@
+index,original_IDP,original_Category name
+IDP_0643,aparc-a2009s_rh_volume_S-suborbital,regional and tissue volume
+IDP_0569,aparc-a2009s_lh_volume_S-suborbital,regional and tissue volume
+IDP_1015,aparc-a2009s_rh_area_S-suborbital,cortical area
+IDP_0941,aparc-a2009s_lh_area_S-suborbital,cortical area
+IDP_0903,aparc-a2009s_lh_area_G-subcallosal,cortical area
+IDP_0977,aparc-a2009s_rh_area_G-subcallosal,cortical area
+IDP_0145,IDP_T1_FAST_ROIs_V_cerebellum_crus_I,regional and tissue volume
+IDP_0469,aparc-DKTatlas_rh_volume_caudalanteriorcingulate,regional and tissue volume
+IDP_0378,aparc-Desikan_rh_volume_caudalanteriorcingulate,regional and tissue volume
+IDP_0075,IDP_T1_FAST_ROIs_R_front_med_cortex,regional and tissue volume
+IDP_0345,aparc-Desikan_lh_volume_caudalanteriorcingulate,regional and tissue volume
+IDP_0980,aparc-a2009s_rh_area_G-temp-sup-Plan-polar,cortical area
+IDP_0530,aparc-a2009s_lh_volume_G-rectus,regional and tissue volume
+IDP_0774,aparc-pial_rh_area_rostralanteriorcingulate,cortical area
+IDP_0718,aparc-pial_lh_area_caudalanteriorcingulate,cortical area
+IDP_0729,aparc-pial_lh_area_medialorbitofrontal,cortical area
+IDP_0074,IDP_T1_FAST_ROIs_L_front_med_cortex,regional and tissue volume
+IDP_0902,aparc-a2009s_lh_area_G-rectus,cortical area
+IDP_0751,aparc-pial_rh_area_caudalanteriorcingulate,cortical area
+IDP_0188,aseg_global_volume-ratio_MaskVol-to-eTIV,regional and tissue volume
+IDP_0401,aparc-Desikan_rh_volume_rostralanteriorcingulate,regional and tissue volume
+IDP_0069,IDP_T1_FAST_ROIs_R_latocc_cortex_sup,regional and tissue volume
+IDP_0639,aparc-a2009s_rh_volume_S-pericallosal,regional and tissue volume
+IDP_0608,aparc-a2009s_rh_volume_G-temp-sup-Plan-polar,regional and tissue volume
+IDP_0506,aparc-a2009s_lh_volume_G+S-cingul-Mid-Ant,regional and tissue volume
+IDP_0650,aparc-Desikan_lh_area_caudalanteriorcingulate,cortical area
+IDP_0841,aparc-DKTatlas_rh_area_caudalanteriorcingulate,cortical area
+IDP_0661,aparc-Desikan_lh_area_medialorbitofrontal,cortical area
+IDP_0636,aparc-a2009s_rh_volume_S-orbital-med-olfact,regional and tissue volume
+IDP_0492,aparc-DKTatlas_rh_volume_rostralanteriorcingulate,regional and tissue volume
+IDP_0604,aparc-a2009s_rh_volume_G-rectus,regional and tissue volume
+IDP_0684,aparc-Desikan_rh_area_caudalanteriorcingulate,cortical area
+IDP_0707,aparc-Desikan_rh_area_rostralanteriorcingulate,cortical area
+IDP_0365,aparc-Desikan_lh_volume_posteriorcingulate,regional and tissue volume
+IDP_0565,aparc-a2009s_lh_volume_S-pericallosal,regional and tissue volume
+IDP_0531,aparc-a2009s_lh_volume_G-subcallosal,regional and tissue volume
+IDP_0356,aparc-Desikan_lh_volume_medialorbitofrontal,regional and tissue volume
+IDP_0398,aparc-Desikan_rh_volume_posteriorcingulate,regional and tissue volume
+IDP_0605,aparc-a2009s_rh_volume_G-subcallosal,regional and tissue volume
+IDP_0906,aparc-a2009s_lh_area_G-temp-sup-Plan-polar,cortical area
+IDP_0976,aparc-a2009s_rh_area_G-rectus,cortical area
+IDP_0489,aparc-DKTatlas_rh_volume_posteriorcingulate,regional and tissue volume
+IDP_0507,aparc-a2009s_lh_volume_G+S-cingul-Mid-Post,regional and tissue volume
+IDP_0458,aparc-DKTatlas_lh_volume_posteriorcingulate,regional and tissue volume
+IDP_0864,aparc-DKTatlas_rh_area_rostralanteriorcingulate,cortical area
+IDP_1011,aparc-a2009s_rh_area_S-pericallosal,cortical area
+IDP_0562,aparc-a2009s_lh_volume_S-orbital-med-olfact,regional and tissue volume
+IDP_0879,aparc-a2009s_lh_area_G+S-cingul-Mid-Post,cortical area
+IDP_0534,aparc-a2009s_lh_volume_G-temp-sup-Plan-polar,regional and tissue volume
+IDP_0083,IDP_T1_FAST_ROIs_R_cing_gyrus_ant,regional and tissue volume
+IDP_0738,aparc-pial_lh_area_posteriorcingulate,cortical area
+IDP_0480,aparc-DKTatlas_rh_volume_medialorbitofrontal,regional and tissue volume
+IDP_0081,IDP_T1_FAST_ROIs_R_paracing_gyrus,regional and tissue volume
+IDP_0581,aparc-a2009s_rh_volume_G+S-cingul-Mid-Post,regional and tissue volume
+IDP_0082,IDP_T1_FAST_ROIs_L_cing_gyrus_ant,regional and tissue volume
+IDP_0878,aparc-a2009s_lh_area_G+S-cingul-Mid-Ant,cortical area
+IDP_0026,IDP_T1_FAST_ROIs_L_frontal_pole,regional and tissue volume
+IDP_0505,aparc-a2009s_lh_volume_G+S-cingul-Ant,regional and tissue volume
+IDP_0580,aparc-a2009s_rh_volume_G+S-cingul-Mid-Ant,regional and tissue volume
+IDP_0821,aparc-DKTatlas_lh_area_medialorbitofrontal,cortical area
+IDP_0771,aparc-pial_rh_area_posteriorcingulate,cortical area
+IDP_0389,aparc-Desikan_rh_volume_medialorbitofrontal,regional and tissue volume
+IDP_0449,aparc-DKTatlas_lh_volume_medialorbitofrontal,regional and tissue volume
+IDP_0762,aparc-pial_rh_area_medialorbitofrontal,cortical area
+IDP_0670,aparc-Desikan_lh_area_posteriorcingulate,cortical area
+IDP_0080,IDP_T1_FAST_ROIs_L_paracing_gyrus,regional and tissue volume
+IDP_0461,aparc-DKTatlas_lh_volume_rostralanteriorcingulate,regional and tissue volume
+IDP_0852,aparc-DKTatlas_rh_area_medialorbitofrontal,cortical area
+IDP_0877,aparc-a2009s_lh_area_G+S-cingul-Ant,cortical area
+IDP_0937,aparc-a2009s_lh_area_S-pericallosal,cortical area
+IDP_0830,aparc-DKTatlas_lh_area_posteriorcingulate,cortical area
+IDP_0368,aparc-Desikan_lh_volume_rostralanteriorcingulate,regional and tissue volume
+IDP_1008,aparc-a2009s_rh_area_S-orbital-med-olfact,cortical area
+IDP_0172,aseg_global_volume_EstimatedTotalIntraCranial,regional and tissue volume
+IDP_0741,aparc-pial_lh_area_rostralanteriorcingulate,cortical area
+IDP_0953,aparc-a2009s_rh_area_G+S-cingul-Mid-Post,cortical area
+IDP_0438,aparc-DKTatlas_lh_volume_caudalanteriorcingulate,regional and tissue volume
+IDP_0673,aparc-Desikan_lh_area_rostralanteriorcingulate,cortical area
+IDP_0704,aparc-Desikan_rh_area_posteriorcingulate,cortical area
+IDP_0579,aparc-a2009s_rh_volume_G+S-cingul-Ant,regional and tissue volume
+IDP_0695,aparc-Desikan_rh_area_medialorbitofrontal,cortical area
+IDP_0861,aparc-DKTatlas_rh_area_posteriorcingulate,cortical area
+IDP_0951,aparc-a2009s_rh_area_G+S-cingul-Ant,cortical area
+IDP_3927,QC_SWI-to-T1_linear_alignment_discrepancy,QC
+IDP_0206,aseg_rh_volume_Cortex,regional and tissue volume
+IDP_0833,aparc-DKTatlas_lh_area_rostralanteriorcingulate,cortical area
+IDP_0952,aparc-a2009s_rh_area_G+S-cingul-Mid-Ant,cortical area
+IDP_0189,aseg_lh_volume_Cortex,regional and tissue volume
+IDP_0027,IDP_T1_FAST_ROIs_R_frontal_pole,regional and tissue volume
+IDP_0934,aparc-a2009s_lh_area_S-orbital-med-olfact,cortical area
+IDP_3926,QC_dMRI-to-T1_linear_alignment_discrepancy,QC
+IDP_0169,aseg_global_volume_TotalGray,regional and tissue volume
+IDP_0810,aparc-DKTatlas_lh_area_caudalanteriorcingulate,cortical area
+IDP_3928,QC_rfMRI-to-T1_linear_alignment_discrepancy,QC
+IDP_0006,IDP_T1_SIENAX_grey_unnormalised_volume,regional and tissue volume
+IDP_0005,IDP_T1_SIENAX_grey_normalised_volume,regional and tissue volume
+IDP_0187,aseg_global_volume-ratio_BrainSegVol-to-eTIV,regional and tissue volume
+IDP_3929,QC_tfMRI-to-T1_linear_alignment_discrepancy,QC
+IDP_3925,QC_T2_FLAIR-to-T1_linear_alignment_discrepancy,QC
+IDP_0166,aseg_global_volume_BrainSegNotVent,regional and tissue volume
+IDP_0010,IDP_T1_SIENAX_brain-unnormalised_volume,regional and tissue volume
+IDP_0009,IDP_T1_SIENAX_brain-normalised_volume,regional and tissue volume
+IDP_3921,QC_T1-to-standard_nonlinear_alignment_discrepancy,QC
+IDP_0165,aseg_global_volume_BrainSeg,regional and tissue volume
+IDP_0002,IDP_T1_SIENAX_peripheral_grey_unnormalised_volume,regional and tissue volume
+IDP_0167,aseg_global_volume_BrainSegNotVentSurf,regional and tissue volume
+IDP_0001,IDP_T1_SIENAX_peripheral_grey_normalised_volume,regional and tissue volume
+IDP_0171,aseg_global_volume_SupraTentorialNotVent,regional and tissue volume
+IDP_0079,IDP_T1_FAST_ROIs_R_subcallosal_cortex,regional and tissue volume
+IDP_0170,aseg_global_volume_SupraTentorial,regional and tissue volume
+IDP_0078,IDP_T1_FAST_ROIs_L_subcallosal_cortex,regional and tissue volume
+IDP_0749,aparc-pial_rh_area_TotalSurface,cortical area
+IDP_0008,IDP_T1_SIENAX_white_unnormalised_volume,regional and tissue volume
+IDP_0007,IDP_T1_SIENAX_white_normalised_volume,regional and tissue volume
+IDP_0716,aparc-pial_lh_area_TotalSurface,cortical area
+IDP_0648,aparc-Desikan_lh_area_TotalSurface,cortical area
+IDP_0682,aparc-Desikan_rh_area_TotalSurface,cortical area
+IDP_0190,aseg_lh_volume_CerebralWhiteMatter,regional and tissue volume
+IDP_0207,aseg_rh_volume_CerebralWhiteMatter,regional and tissue volume
+IDP_1351,aseg_lh_intensity_vessel,regional and tissue intensity
+IDP_2067,,
+IDP_1365,aseg_rh_intensity_vessel,regional and tissue intensity
+IDP_2088,,
+IDP_2066,,
+IDP_2062,,
+IDP_2097,,
+IDP_2063,,
+IDP_1449,IDP_SWI_T2star_right_amygdala,regional T2*
+IDP_2117,,
+IDP_2070,,
+IDP_2091,,
+IDP_2096,,
+IDP_2071,,
+IDP_2118,,
+IDP_1448,IDP_SWI_T2star_left_amygdala,regional T2*
+IDP_2089,,
+IDP_1534,,
+IDP_1864,,
+IDP_1827,,
+IDP_2090,,
+IDP_2056,,
+IDP_1438,IDP_SWI_T2star_left_thalamus,regional T2*
+IDP_2060,,
+IDP_2106,,
+IDP_1811,,
+IDP_1576,,
+IDP_1447,IDP_SWI_T2star_right_hippocampus,regional T2*
+IDP_1892,,
+IDP_1865,,
+IDP_2095,,
+IDP_1891,,
+IDP_1340,aseg_lh_intensity_Inf-Lat-Vent,regional and tissue intensity
+IDP_1812,,
+IDP_2061,,
+IDP_0220,aseg_rh_volume_vessel,regional and tissue volume
+IDP_1893,,
+IDP_1331,aseg_global_intensity_WM-hypointensities,regional and tissue intensity
+IDP_1354,aseg_rh_intensity_Inf-Lat-Vent,regional and tissue intensity
+IDP_2108,,
+IDP_0203,aseg_lh_volume_vessel,regional and tissue volume
+IDP_1451,IDP_SWI_T2star_right_accumbens,regional T2*
+IDP_2094,,
+IDP_1575,,
+IDP_2116,,
+IDP_1355,aseg_rh_intensity_Cerebellum-White-Matter,regional and tissue intensity
+IDP_2029,,
+IDP_1866,,
+IDP_1581,,
+IDP_1516,IDP_dMRI_ProbtrackX_FA_mcp,WM tract FA
+IDP_1569,,
+IDP_1533,,
+IDP_1828,,
+IDP_2032,,
+IDP_2041,,
+IDP_1800,,
+IDP_1446,IDP_SWI_T2star_left_hippocampus,regional T2*
+IDP_1810,,
+IDP_1570,,
+IDP_1582,,
+IDP_1341,aseg_lh_intensity_Cerebellum-White-Matter,regional and tissue intensity
+IDP_2031,,
+IDP_1657,,
+IDP_2073,,
+IDP_1600,,
+IDP_1337,aseg_global_intensity_CC-Mid-Anterior,regional and tissue intensity
+IDP_2109,,
+IDP_2100,,
+IDP_1983,,
+IDP_1881,,
+IDP_0209,aseg_rh_volume_Inf-Lat-Vent,regional and tissue volume
+IDP_2026,,
+IDP_1984,,
+IDP_1529,,
+IDP_2107,,
+IDP_1611,,
+IDP_1854,,
+IDP_1532,,
+IDP_0222,aseg_rh_number_HolesBeforeFixing,regional and tissue volume
+IDP_2450,,
+IDP_1450,IDP_SWI_T2star_left_accumbens,regional T2*
+IDP_1601,,
+IDP_1348,aseg_lh_intensity_Amygdala,regional and tissue intensity
+IDP_2045,,
+IDP_1573,,
+IDP_1350,aseg_lh_intensity_VentralDC,regional and tissue intensity
+IDP_1755,,
+IDP_1801,,
+IDP_1821,,
+IDP_1707,,
+IDP_2120,,
+IDP_2059,,
+IDP_2023,,
+IDP_2119,,
+IDP_1364,aseg_rh_intensity_VentralDC,regional and tissue intensity
+IDP_0192,aseg_lh_volume_Inf-Lat-Vent,regional and tissue volume
+IDP_1754,,
+IDP_1589,,
+IDP_2044,,
+IDP_1837,,
+IDP_2025,,
+IDP_1439,IDP_SWI_T2star_right_thalamus,regional T2*
+IDP_2101,,
+IDP_1647,,
+IDP_1882,,
+IDP_1610,,
+IDP_1908,,
+IDP_1517,IDP_dMRI_ProbtrackX_FA_ml_l,WM tract FA
+IDP_3922,QC_T1-to-standard_nonlinear_alignment_warping,QC
+IDP_1585,,
+IDP_1696,,
+IDP_1656,,
+IDP_1706,,
+IDP_2052,,
+IDP_1641,,
+IDP_1336,aseg_global_intensity_CC-Central,regional and tissue intensity
+IDP_1855,,
+IDP_1506,IDP_dMRI_ProbtrackX_FA_cgh_l,WM tract FA
+IDP_1613,,
+IDP_1362,aseg_rh_intensity_Amygdala,regional and tissue intensity
+IDP_1802,,
+IDP_1617,,
+IDP_2099,,
+IDP_1883,,
+IDP_2030,,
+IDP_1982,,
+IDP_2024,,
+IDP_1848,,
+IDP_0205,aseg_lh_number_HolesBeforeFixing,regional and tissue volume
+IDP_1587,,
+IDP_1518,IDP_dMRI_ProbtrackX_FA_ml_r,WM tract FA
+IDP_1646,,
+IDP_1794,,
+IDP_1591,,
+IDP_1838,,
+IDP_1849,,
+IDP_2083,,
+IDP_1556,,
+IDP_1535,,
+IDP_1564,,
+IDP_0183,aseg_global_volume_CC-Mid-Posterior,regional and tissue volume
+IDP_1539,,
+IDP_2058,,
+IDP_2081,,
+IDP_1609,,
+IDP_1595,,
+IDP_1822,,
+IDP_1612,,
+IDP_2098,,
+IDP_1538,,
+IDP_1616,,
+IDP_2102,,
+IDP_1688,,
+IDP_1347,aseg_lh_intensity_Hippocampus,regional and tissue intensity
+IDP_1909,,
+IDP_1689,,
+IDP_1907,,
+IDP_1839,,
+IDP_2050,,
+IDP_2076,,
+IDP_2035,,
+IDP_2072,,
+IDP_1536,,
+IDP_1841,,
+IDP_1640,,
+IDP_1693,,
+IDP_1459,IDP_dMRI_TBSS_FA_Corticospinal_tract_L,WM tract FA
+IDP_1334,aseg_global_intensity_CC-Posterior,regional and tissue intensity
+IDP_1579,,
+IDP_1795,,
+IDP_2039,,
+IDP_1741,,
+IDP_2037,,
+IDP_1985,,
+IDP_1692,,
+IDP_1507,IDP_dMRI_ProbtrackX_FA_cgh_r,WM tract FA
+IDP_1753,,
+IDP_1352,aseg_lh_intensity_choroid-plexus,regional and tissue intensity
+IDP_1709,,
+IDP_1453,IDP_dMRI_TBSS_FA_Pontine_crossing_tract,WM tract FA
+IDP_1563,,
+IDP_2069,,
+IDP_1594,,
+IDP_1645,,
+IDP_1555,,
+IDP_1659,,
+IDP_2126,,
+IDP_1761,,
+IDP_1458,IDP_dMRI_TBSS_FA_Corticospinal_tract_R,WM tract FA
+IDP_1366,aseg_rh_intensity_choroid-plexus,regional and tissue intensity
+IDP_1875,,
+IDP_2051,,
+IDP_2125,,
+IDP_1986,,
+IDP_1326,aseg_global_intensity_3rd-Ventricle,regional and tissue intensity
+IDP_1867,,
+IDP_2103,,
+IDP_1876,,
+IDP_2068,,
+IDP_1903,,
+IDP_2065,,
+IDP_1644,,
+IDP_2104,,
+IDP_1540,,
+IDP_1584,,
+IDP_1825,,
+IDP_1785,,
+IDP_1840,,
+IDP_1580,,
+IDP_2105,,
+IDP_2111,,
+IDP_1813,,
+IDP_1803,,
+IDP_1590,,
+IDP_2053,,
+IDP_1661,,
+IDP_1583,,
+IDP_1814,,
+IDP_1335,aseg_global_intensity_CC-Mid-Posterior,regional and tissue intensity
+IDP_1558,,
+IDP_1784,,
+IDP_1330,aseg_global_intensity_CSF,regional and tissue intensity
+IDP_1346,aseg_lh_intensity_Pallidum,regional and tissue intensity
+IDP_1608,,
+IDP_2082,,
+IDP_1571,,
+IDP_1578,,
+IDP_1752,,
+IDP_1504,IDP_dMRI_ProbtrackX_FA_cgc_l,WM tract FA
+IDP_1740,,
+IDP_3920,QC_T1-to-standard_linear_alignment_discrepancy,QC
+IDP_1757,,
+IDP_1737,,
+IDP_1339,aseg_lh_intensity_Lateral-Ventricle,regional and tissue intensity
+IDP_1537,,
+IDP_1697,,
+IDP_1747,,
+IDP_1884,,
+IDP_1508,IDP_dMRI_ProbtrackX_FA_cst_l,WM tract FA
+IDP_2077,,
+IDP_1361,aseg_rh_intensity_Hippocampus,regional and tissue intensity
+IDP_1574,,
+IDP_2007,,
+IDP_1829,,
+IDP_1660,,
+IDP_1705,,
+IDP_2087,,
+IDP_1857,,
+IDP_1856,,
+IDP_1353,aseg_rh_intensity_Lateral-Ventricle,regional and tissue intensity
+IDP_1650,,
+IDP_1868,,
+IDP_1602,,
+IDP_1572,,
+IDP_2008,,
+IDP_2038,,
+IDP_1830,,
+IDP_1440,IDP_SWI_T2star_left_caudate,regional T2*
+IDP_1509,IDP_dMRI_ProbtrackX_FA_cst_r,WM tract FA
+IDP_1597,,
+IDP_1618,,
+IDP_2005,,
+IDP_1651,,
+IDP_1826,,
+IDP_2078,,
+IDP_1557,,
+IDP_1658,,
+IDP_2086,,
+IDP_1895,,
+IDP_1338,aseg_global_intensity_CC-Anterior,regional and tissue intensity
+IDP_1678,,
+IDP_1588,,
+IDP_1648,,
+IDP_1603,,
+IDP_1686,,
+IDP_1457,IDP_dMRI_TBSS_FA_Fornix,WM tract FA
+IDP_2080,,
+IDP_1619,,
+IDP_1998,,
+IDP_1554,,
+IDP_1894,,
+IDP_1461,IDP_dMRI_TBSS_FA_Medial_lemniscus_L,WM tract FA
+IDP_2014,,
+IDP_1501,IDP_dMRI_ProbtrackX_FA_ar_r,WM tract FA
+IDP_1596,,
+IDP_1704,,
+IDP_2013,,
+IDP_1708,,
+IDP_1441,IDP_SWI_T2star_right_caudate,regional T2*
+IDP_2085,,
+IDP_2124,,
+IDP_1988,,
+IDP_2040,,
+IDP_1666,,
+IDP_1621,,
+IDP_1712,,
+IDP_1823,,
+IDP_2015,,
+IDP_1793,,
+IDP_1681,,
+IDP_1760,,
+IDP_1978,,
+IDP_1792,,
+IDP_1687,,
+IDP_1460,IDP_dMRI_TBSS_FA_Medial_lemniscus_R,WM tract FA
+IDP_2110,,
+IDP_1649,,
+IDP_1746,,
+IDP_1638,,
+IDP_1329,aseg_global_intensity_Brain-Stem,regional and tissue intensity
+IDP_1593,,
+IDP_1727,,
+IDP_1736,,
+IDP_1500,IDP_dMRI_ProbtrackX_FA_ar_l,WM tract FA
+IDP_1360,aseg_rh_intensity_Pallidum,regional and tissue intensity
+IDP_1639,,
+IDP_2079,,
+IDP_1505,IDP_dMRI_ProbtrackX_FA_cgc_r,WM tract FA
+IDP_2084,,
+IDP_1831,,
+IDP_1790,,
+IDP_1667,,
+IDP_1729,,
+IDP_1911,,
+IDP_1977,,
+IDP_2123,,
+IDP_0221,aseg_rh_volume_choroid-plexus,regional and tissue volume
+IDP_1699,,
+IDP_1695,,
+IDP_2114,,
+IDP_1520,IDP_dMRI_ProbtrackX_FA_ptr_r,WM tract FA
+IDP_1989,,
+IDP_0184,aseg_global_volume_CC-Central,regional and tissue volume
+IDP_1872,,
+IDP_1824,,
+IDP_2064,,
+IDP_1702,,
+IDP_1783,,
+IDP_2075,,
+IDP_1900,,
+IDP_1734,,
+IDP_1782,,
+IDP_1788,,
+IDP_1713,,
+IDP_1789,,
+IDP_0185,aseg_global_volume_CC-Mid-Anterior,regional and tissue volume
+IDP_2004,,
+IDP_1565,,
+IDP_1949,,
+IDP_1358,aseg_rh_intensity_Caudate,regional and tissue intensity
+IDP_1519,IDP_dMRI_ProbtrackX_FA_ptr_l,WM tract FA
+IDP_2112,,
+IDP_1756,,
+IDP_1662,,
+IDP_1577,,
+IDP_1510,IDP_dMRI_ProbtrackX_FA_fma,WM tract FA
+IDP_1858,,
+IDP_1987,,
+IDP_1633,,
+IDP_2074,,
+IDP_1735,,
+IDP_1885,,
+IDP_1751,,
+IDP_2020,,
+IDP_1910,,
+IDP_1671,,
+IDP_1356,aseg_rh_intensity_Cerebellum-Cortex,regional and tissue intensity
+IDP_1527,,
+IDP_2034,,
+IDP_1817,,
+IDP_1979,,
+IDP_1715,,
+IDP_1898,,
+IDP_1879,,
+IDP_1592,,
+IDP_1635,,
+IDP_2016,,
+IDP_1745,,
+IDP_1703,,
+IDP_1694,,
+IDP_1561,,
+IDP_2113,,
+IDP_1665,,
+IDP_1744,,
+IDP_1620,,
+IDP_1726,,
+IDP_1680,,
+IDP_2042,,
+IDP_1804,,
+IDP_1623,,
+IDP_1873,,
+IDP_1566,,
+IDP_1899,,
+IDP_2093,,
+IDP_1791,,
+IDP_1342,aseg_lh_intensity_Cerebellum-Cortex,regional and tissue intensity
+IDP_1767,,
+IDP_1562,,
+IDP_1344,aseg_lh_intensity_Caudate,regional and tissue intensity
+IDP_1463,IDP_dMRI_TBSS_FA_Inferior_cerebellar_peduncle_L,WM tract FA
+IDP_0179,aseg_global_volume_WM-hypointensities,regional and tissue volume
+IDP_1664,,
+IDP_1548,,
+IDP_1743,,
+IDP_1719,,
+IDP_1819,,
+IDP_1607,,
+IDP_1525,IDP_dMRI_ProbtrackX_FA_unc_l,WM tract FA
+IDP_2092,,
+IDP_1499,IDP_dMRI_TBSS_FA_Tapetum_L,WM tract FA
+IDP_1488,IDP_dMRI_TBSS_FA_Cingulum_hippocampus_R,WM tract FA
+IDP_1630,,
+IDP_1818,,
+IDP_1844,,
+IDP_1765,,
+IDP_1541,,
+IDP_1698,,
+IDP_1498,IDP_dMRI_TBSS_FA_Tapetum_R,WM tract FA
+IDP_1655,,
+IDP_1731,,
+IDP_1473,IDP_dMRI_TBSS_FA_Retrolenticular_part_of_internal_capsule_L,WM tract FA
+IDP_2043,,
+IDP_1663,,
+IDP_1796,,
+IDP_1489,IDP_dMRI_TBSS_FA_Cingulum_hippocampus_L,WM tract FA
+IDP_0204,aseg_lh_volume_choroid-plexus,regional and tissue volume
+IDP_1679,,
+IDP_1480,IDP_dMRI_TBSS_FA_Posterior_thalamic_radiation_R,WM tract FA
+IDP_1728,,
+IDP_1846,,
+IDP_1779,,
+IDP_2006,,
+IDP_1524,IDP_dMRI_ProbtrackX_FA_str_r,WM tract FA
+IDP_1634,,
+IDP_1880,,
+IDP_1456,IDP_dMRI_TBSS_FA_Splenium_of_corpus_callosum,WM tract FA
+IDP_1349,aseg_lh_intensity_Accumbens-area,regional and tissue intensity
+IDP_1948,,
+IDP_1327,aseg_global_intensity_4th-Ventricle,regional and tissue intensity
+IDP_1774,,
+IDP_2019,,
+IDP_1714,,
+IDP_2057,,
+IDP_1530,,
+IDP_1957,,
+IDP_1956,,
+IDP_1452,IDP_dMRI_TBSS_FA_Middle_cerebellar_peduncle,WM tract FA
+IDP_1871,,
+IDP_1483,IDP_dMRI_TBSS_FA_Sagittal_stratum_L,WM tract FA
+IDP_1777,,
+IDP_1481,IDP_dMRI_TBSS_FA_Posterior_thalamic_radiation_L,WM tract FA
+IDP_1797,,
+IDP_1834,,
+IDP_1568,,
+IDP_2011,,
+IDP_1990,,
+IDP_2054,,
+IDP_2115,,
+IDP_1980,,
+IDP_1718,,
+IDP_1553,,
+IDP_1778,,
+IDP_1528,,
+IDP_1345,aseg_lh_intensity_Putamen,regional and tissue intensity
+IDP_1764,,
+IDP_1467,IDP_dMRI_TBSS_FA_Cerebral_peduncle_L,WM tract FA
+IDP_1742,,
+IDP_1763,,
+IDP_1993,,
+IDP_1999,,
+IDP_1491,IDP_dMRI_TBSS_FA_Fornix_cres+Stria_terminalis_L,WM tract FA
+IDP_1833,,
+IDP_1631,,
+IDP_1877,,
+IDP_1523,IDP_dMRI_ProbtrackX_FA_str_l,WM tract FA
+IDP_1730,,
+IDP_1835,,
+IDP_1550,,
+IDP_1677,,
+IDP_2033,,
+IDP_1526,IDP_dMRI_ProbtrackX_FA_unc_r,WM tract FA
+IDP_1482,IDP_dMRI_TBSS_FA_Sagittal_stratum_R,WM tract FA
+IDP_2028,,
+IDP_1798,,
+IDP_1622,,
+IDP_1672,,
+IDP_1724,,
+IDP_0186,aseg_global_volume_CC-Anterior,regional and tissue volume
+IDP_1722,,
+IDP_1637,,
+IDP_1847,,
+IDP_1836,,
+IDP_1363,aseg_rh_intensity_Accumbens-area,regional and tissue intensity
+IDP_1615,,
+IDP_1549,,
+IDP_2002,,
+IDP_2000,,
+IDP_1805,,
+IDP_1850,,
+IDP_1632,,
+IDP_1495,IDP_dMRI_TBSS_FA_Superior_fronto-occipital_fasciculus_L,WM tract FA
+IDP_1437,IDP_T2_FLAIR_BIANCA_WMH_volume,white matter hyperintensity volume
+IDP_1490,IDP_dMRI_TBSS_FA_Fornix_cres+Stria_terminalis_R,WM tract FA
+IDP_1762,,
+IDP_1684,,
+IDP_1878,,
+IDP_1775,,
+IDP_1766,,
+IDP_1472,IDP_dMRI_TBSS_FA_Retrolenticular_part_of_internal_capsule_R,WM tract FA
+IDP_1799,,
+IDP_1675,,
+IDP_1852,,
+IDP_1832,,
+IDP_1542,,
+IDP_1851,,
+IDP_1725,,
+IDP_1547,,
+IDP_1599,,
+IDP_1901,,
+IDP_1343,aseg_lh_intensity_Thalamus-Proper,regional and tissue intensity
+IDP_1359,aseg_rh_intensity_Putamen,regional and tissue intensity
+IDP_1874,,
+IDP_1994,,
+IDP_1670,,
+IDP_0208,aseg_rh_volume_Lateral-Ventricle,regional and tissue volume
+IDP_1750,,
+IDP_1997,,
+IDP_2122,,
+IDP_1723,,
+IDP_1466,IDP_dMRI_TBSS_FA_Cerebral_peduncle_R,WM tract FA
+IDP_1462,IDP_dMRI_TBSS_FA_Inferior_cerebellar_peduncle_R,WM tract FA
+IDP_1674,,
+IDP_1512,IDP_dMRI_ProbtrackX_FA_ifo_l,WM tract FA
+IDP_2012,,
+IDP_2048,,
+IDP_2055,,
+IDP_2027,,
+IDP_1586,,
+IDP_1716,,
+IDP_1559,,
+IDP_1673,,
+IDP_1469,IDP_dMRI_TBSS_FA_Anterior_limb_of_internal_capsule_L,WM tract FA
+IDP_1683,,
+IDP_1676,,
+IDP_1685,,
+IDP_1445,IDP_SWI_T2star_right_pallidum,regional T2*
+IDP_1560,,
+IDP_1653,,
+IDP_1859,,
+IDP_1845,,
+IDP_1853,,
+IDP_1514,IDP_dMRI_ProbtrackX_FA_ilf_l,WM tract FA
+IDP_1886,,
+IDP_1682,,
+IDP_1966,,
+IDP_1862,,
+IDP_1776,,
+IDP_1860,,
+IDP_0178,aseg_global_volume_CSF,regional and tissue volume
+IDP_1614,,
+IDP_1494,IDP_dMRI_TBSS_FA_Superior_fronto-occipital_fasciculus_R,WM tract FA
+IDP_2022,,
+IDP_1444,IDP_SWI_T2star_left_pallidum,regional T2*
+IDP_0191,aseg_lh_volume_Lateral-Ventricle,regional and tissue volume
+IDP_1820,,
+IDP_1477,IDP_dMRI_TBSS_FA_Superior_corona_radiata_L,WM tract FA
+IDP_1479,IDP_dMRI_TBSS_FA_Posterior_corona_radiata_L,WM tract FA
+IDP_1598,,
+IDP_1636,,
+IDP_2003,,
+IDP_2036,,
+IDP_2121,,
+IDP_1567,,
+IDP_2049,,
+IDP_1357,aseg_rh_intensity_Thalamus-Proper,regional and tissue intensity
+IDP_1531,,
+IDP_1606,,
+IDP_2001,,
+IDP_1717,,
+IDP_1476,IDP_dMRI_TBSS_FA_Superior_corona_radiata_R,WM tract FA
+IDP_1628,,
+IDP_1809,,
+IDP_1626,,
+IDP_1629,,
+IDP_0174,aseg_global_volume_3rd-Ventricle,regional and tissue volume
+IDP_1863,,
+IDP_0173,aseg_global_volume_VentricleChoroid,regional and tissue volume
+IDP_1808,,
+IDP_1781,,
+IDP_1944,,
+IDP_1807,,
+IDP_1478,IDP_dMRI_TBSS_FA_Posterior_corona_radiata_R,WM tract FA
+IDP_1916,,
+IDP_1889,,
+IDP_1502,IDP_dMRI_ProbtrackX_FA_atr_l,WM tract FA
+IDP_1544,,
+IDP_1470,IDP_dMRI_TBSS_FA_Posterior_limb_of_internal_capsule_R,WM tract FA
+IDP_1967,,
+IDP_1806,,
+IDP_1991,,
+IDP_1890,,
+IDP_1485,IDP_dMRI_TBSS_FA_External_capsule_L,WM tract FA
+IDP_1773,,
+IDP_1468,IDP_dMRI_TBSS_FA_Anterior_limb_of_internal_capsule_R,WM tract FA
+IDP_1627,,
+IDP_1484,IDP_dMRI_TBSS_FA_External_capsule_R,WM tract FA
+IDP_2021,,
+IDP_1887,,
+IDP_0003,IDP_T1_SIENAX_CSF_normalised_volume,regional and tissue volume
+IDP_0004,IDP_T1_SIENAX_CSF_unnormalised_volume,regional and tissue volume
+IDP_1780,,
+IDP_1945,,
+IDP_2046,,
+IDP_1515,IDP_dMRI_ProbtrackX_FA_ilf_r,WM tract FA
+IDP_1861,,
+IDP_1912,,
+IDP_1701,,
+IDP_1772,,
+IDP_1552,,
+IDP_1968,,
+IDP_1503,IDP_dMRI_ProbtrackX_FA_atr_r,WM tract FA
+IDP_1940,,
+IDP_1471,IDP_dMRI_TBSS_FA_Posterior_limb_of_internal_capsule_L,WM tract FA
+IDP_1733,,
+IDP_1992,,
+IDP_1915,,
+IDP_1732,,
+IDP_1551,,
+IDP_1888,,
+IDP_1913,,
+IDP_2018,,
+IDP_1923,,
+IDP_1493,IDP_dMRI_TBSS_FA_Superior_longitudinal_fasciculus_L,WM tract FA
+IDP_1486,IDP_dMRI_TBSS_FA_Cingulum_cingulate_gyrus_R,WM tract FA
+IDP_1739,,
+IDP_1914,,
+IDP_1981,,
+IDP_1941,,
+IDP_1465,IDP_dMRI_TBSS_FA_Superior_cerebellar_peduncle_L,WM tract FA
+IDP_1917,,
+IDP_1690,,
+IDP_1759,,
+IDP_1455,IDP_dMRI_TBSS_FA_Body_of_corpus_callosum,WM tract FA
+IDP_1700,,
+IDP_1442,IDP_SWI_T2star_left_putamen,regional T2*
+IDP_1496,IDP_dMRI_TBSS_FA_Uncinate_fasciculus_R,WM tract FA
+IDP_1513,IDP_dMRI_ProbtrackX_FA_ifo_r,WM tract FA
+IDP_1930,,
+IDP_1652,,
+IDP_2009,,
+IDP_1443,IDP_SWI_T2star_right_putamen,regional T2*
+IDP_1487,IDP_dMRI_TBSS_FA_Cingulum_cingulate_gyrus_L,WM tract FA
+IDP_1939,,
+IDP_1938,,
+IDP_1947,,
+IDP_1931,,
+IDP_1492,IDP_dMRI_TBSS_FA_Superior_longitudinal_fasciculus_R,WM tract FA
+IDP_1711,,
+IDP_1786,,
+IDP_1787,,
+IDP_1933,,
+IDP_1464,IDP_dMRI_TBSS_FA_Superior_cerebellar_peduncle_R,WM tract FA
+IDP_1543,,
+IDP_1771,,
+IDP_1960,,
+IDP_1902,,
+IDP_1934,,
+IDP_1958,,
+IDP_1954,,
+IDP_2017,,
+IDP_1969,,
+IDP_1955,,
+IDP_1738,,
+IDP_1758,,
+IDP_1625,,
+IDP_1922,,
+IDP_1970,,
+IDP_1721,,
+IDP_1770,,
+IDP_1932,,
+IDP_1710,,
+IDP_1497,IDP_dMRI_TBSS_FA_Uncinate_fasciculus_L,WM tract FA
+IDP_1454,IDP_dMRI_TBSS_FA_Genu_of_corpus_callosum,WM tract FA
+IDP_1935,,
+IDP_1946,,
+IDP_1475,IDP_dMRI_TBSS_FA_Anterior_corona_radiata_L,WM tract FA
+IDP_1896,,
+IDP_1691,,
+IDP_1605,,
+IDP_2010,,
+IDP_1951,,
+IDP_1624,,
+IDP_1749,,
+IDP_1959,,
+IDP_2047,,
+IDP_1654,,
+IDP_1669,,
+IDP_1720,,
+IDP_1973,,
+IDP_1897,,
+IDP_1642,,
+IDP_1950,,
+IDP_1511,IDP_dMRI_ProbtrackX_FA_fmi,WM tract FA
+IDP_1521,IDP_dMRI_ProbtrackX_FA_slf_l,WM tract FA
+IDP_1929,,
+IDP_1928,,
+IDP_1927,,
+IDP_1522,IDP_dMRI_ProbtrackX_FA_slf_r,WM tract FA
+IDP_1643,,
+IDP_1921,,
+IDP_1769,,
+IDP_1843,,
+IDP_1474,IDP_dMRI_TBSS_FA_Anterior_corona_radiata_R,WM tract FA
+IDP_1842,,
+IDP_1975,,
+IDP_0182,aseg_global_volume_CC-Posterior,regional and tissue volume
+IDP_1870,,
+IDP_1668,,
+IDP_0175,aseg_global_volume_4th-Ventricle,regional and tissue volume
+IDP_1965,,
+IDP_1816,,
+IDP_1815,,
+IDP_1974,,
+IDP_1926,,
+IDP_1748,,
+IDP_1869,,
+IDP_1962,,
+IDP_1604,,
+IDP_1919,,
+IDP_1996,,
+IDP_1953,,
+IDP_1964,,
+IDP_1546,,
+IDP_1768,,
+IDP_1952,,
+IDP_1920,,
+IDP_1963,,
+IDP_1995,,
+IDP_1906,,
+IDP_1936,,
+IDP_1918,,
+IDP_1943,,
+IDP_1976,,
+IDP_1937,,
+IDP_1925,,
+IDP_1545,,
+IDP_1924,,
+IDP_1942,,
+IDP_1905,,
+IDP_1971,,
+IDP_1972,,
+IDP_1961,,
+IDP_1904,,
+IDP_0023,IDP_T1_FIRST_left_accumbens_volume,regional and tissue volume
+IDP_1333,aseg_global_intensity_Optic-Chiasm,regional and tissue intensity
+IDP_0315,ThalamNuclei_rh_volume_L-Sg,regional and tissue volume
+IDP_0288,ThalamNuclei_lh_volume_LGN,regional and tissue volume
+IDP_0129,IDP_T1_FAST_ROIs_R_pallidum,regional and tissue volume
+IDP_0181,aseg_global_volume_Optic-Chiasm,regional and tissue volume
+IDP_0128,IDP_T1_FAST_ROIs_L_pallidum,regional and tissue volume
+IDP_0287,ThalamNuclei_lh_volume_MGN,regional and tissue volume
+IDP_0024,IDP_T1_FIRST_right_accumbens_volume,regional and tissue volume
+IDP_0311,ThalamNuclei_rh_volume_LGN,regional and tissue volume
+IDP_0333,ThalamNuclei_rh_volume_AV,regional and tissue volume
+IDP_0325,ThalamNuclei_rh_volume_MV(Re),regional and tissue volume
+IDP_0312,ThalamNuclei_rh_volume_MGN,regional and tissue volume
+IDP_0306,ThalamNuclei_lh_volume_Pt,regional and tissue volume
+IDP_0291,ThalamNuclei_lh_volume_L-Sg,regional and tissue volume
+IDP_0295,ThalamNuclei_lh_volume_PuA,regional and tissue volume
+IDP_0329,ThalamNuclei_rh_volume_CL,regional and tissue volume
+IDP_0296,ThalamNuclei_lh_volume_MDm,regional and tissue volume
+IDP_0323,ThalamNuclei_rh_volume_MDl,regional and tissue volume
+IDP_0307,ThalamNuclei_lh_volume_AV,regional and tissue volume
+IDP_0331,ThalamNuclei_rh_volume_Pc,regional and tissue volume
+IDP_0299,ThalamNuclei_lh_volume_MDl,regional and tissue volume
+IDP_0017,IDP_T1_FIRST_left_pallidum_volume,regional and tissue volume
+IDP_0320,ThalamNuclei_rh_volume_MDm,regional and tissue volume
+IDP_0332,ThalamNuclei_rh_volume_Pt,regional and tissue volume
+IDP_0302,ThalamNuclei_lh_volume_MV(Re),regional and tissue volume
+IDP_0289,ThalamNuclei_lh_volume_PuI,regional and tissue volume
+IDP_0308,ThalamNuclei_lh_volume_Pc,regional and tissue volume
+IDP_0304,ThalamNuclei_lh_volume_CL,regional and tissue volume
+IDP_0319,ThalamNuclei_rh_volume_PuA,regional and tissue volume
+IDP_0305,ThalamNuclei_lh_volume_PuL,regional and tissue volume
+IDP_0321,ThalamNuclei_rh_volume_Pf,regional and tissue volume
+IDP_0303,ThalamNuclei_lh_volume_VM,regional and tissue volume
+IDP_0290,ThalamNuclei_lh_volume_PuM,regional and tissue volume
+IDP_0297,ThalamNuclei_lh_volume_Pf,regional and tissue volume
+IDP_0328,ThalamNuclei_rh_volume_PuL,regional and tissue volume
+IDP_0018,IDP_T1_FIRST_right_pallidum_volume,regional and tissue volume
+IDP_0148,IDP_T1_FAST_ROIs_V_cerebellum_crus_II,regional and tissue volume
+IDP_0201,aseg_lh_volume_Accumbens-area,regional and tissue volume
+IDP_0326,ThalamNuclei_rh_volume_CeM,regional and tissue volume
+IDP_0292,ThalamNuclei_lh_volume_VPL,regional and tissue volume
+IDP_0164,IDP_T1_FAST_ROIs_R_cerebellum_X,regional and tissue volume
+IDP_0335,ThalamNuclei_lh_volume_LD,regional and tissue volume
+IDP_0341,Brainstem_global_volume_SCP,regional and tissue volume
+IDP_0313,ThalamNuclei_rh_volume_PuI,regional and tissue volume
+IDP_0336,ThalamNuclei_rh_volume_LD,regional and tissue volume
+IDP_0298,ThalamNuclei_lh_volume_VAmc,regional and tissue volume
+IDP_0136,IDP_T1_FAST_ROIs_brain_stem,regional and tissue volume
+IDP_0300,ThalamNuclei_lh_volume_CeM,regional and tissue volume
+IDP_0015,IDP_T1_FIRST_left_putamen_volume,regional and tissue volume
+IDP_0163,IDP_T1_FAST_ROIs_V_cerebellum_X,regional and tissue volume
+IDP_0151,IDP_T1_FAST_ROIs_V_cerebellum_VIIb,regional and tissue volume
+IDP_0158,IDP_T1_FAST_ROIs_R_cerebellum_VIIIb,regional and tissue volume
+IDP_0162,IDP_T1_FAST_ROIs_L_cerebellum_X,regional and tissue volume
+IDP_0218,aseg_rh_volume_Accumbens-area,regional and tissue volume
+IDP_0011,IDP_T1_FIRST_left_thalamus_volume,regional and tissue volume
+IDP_0142,IDP_T1_FAST_ROIs_V_cerebellum_VI,regional and tissue volume
+IDP_0012,IDP_T1_FIRST_right_thalamus_volume,regional and tissue volume
+IDP_0322,ThalamNuclei_rh_volume_VAmc,regional and tissue volume
+IDP_0316,ThalamNuclei_rh_volume_VPL,regional and tissue volume
+IDP_0143,IDP_T1_FAST_ROIs_R_cerebellum_VI,regional and tissue volume
+IDP_0327,ThalamNuclei_rh_volume_VM,regional and tissue volume
+IDP_0314,ThalamNuclei_rh_volume_PuM,regional and tissue volume
+IDP_0122,IDP_T1_FAST_ROIs_L_thalamus,regional and tissue volume
+IDP_0124,IDP_T1_FAST_ROIs_L_caudate,regional and tissue volume
+IDP_0310,ThalamNuclei_lh_volume_LP,regional and tissue volume
+IDP_0155,IDP_T1_FAST_ROIs_R_cerebellum_VIIIa,regional and tissue volume
+IDP_0140,IDP_T1_FAST_ROIs_R_cerebellum_V,regional and tissue volume
+IDP_0141,IDP_T1_FAST_ROIs_L_cerebellum_VI,regional and tissue volume
+IDP_0317,ThalamNuclei_rh_volume_CM,regional and tissue volume
+IDP_0135,IDP_T1_FAST_ROIs_R_ventral_striatum,regional and tissue volume
+IDP_0125,IDP_T1_FAST_ROIs_R_caudate,regional and tissue volume
+IDP_0025,IDP_T1_FIRST_brain_stem+4th_ventricle_volume,regional and tissue volume
+IDP_0293,ThalamNuclei_lh_volume_CM,regional and tissue volume
+IDP_0195,aseg_lh_volume_Thalamus-Proper,regional and tissue volume
+IDP_0153,IDP_T1_FAST_ROIs_L_cerebellum_VIIIa,regional and tissue volume
+IDP_0134,IDP_T1_FAST_ROIs_L_ventral_striatum,regional and tissue volume
+IDP_0139,IDP_T1_FAST_ROIs_L_cerebellum_V,regional and tissue volume
+IDP_0334,ThalamNuclei_rh_volume_LP,regional and tissue volume
+IDP_0137,IDP_T1_FAST_ROIs_L_cerebellum_I-IV,regional and tissue volume
+IDP_0138,IDP_T1_FAST_ROIs_R_cerebellum_I-IV,regional and tissue volume
+IDP_0156,IDP_T1_FAST_ROIs_L_cerebellum_VIIIb,regional and tissue volume
+IDP_0127,IDP_T1_FAST_ROIs_R_putamen,regional and tissue volume
+IDP_0150,IDP_T1_FAST_ROIs_L_cerebellum_VIIb,regional and tissue volume
+IDP_0126,IDP_T1_FAST_ROIs_L_putamen,regional and tissue volume
+IDP_0016,IDP_T1_FIRST_right_putamen_volume,regional and tissue volume
+IDP_0301,ThalamNuclei_lh_volume_VA,regional and tissue volume
+IDP_0123,IDP_T1_FAST_ROIs_R_thalamus,regional and tissue volume
+IDP_0337,ThalamNuclei_lh_volume_Whole-thalamus,regional and tissue volume
+IDP_0210,aseg_rh_volume_Cerebellum-White-Matter,regional and tissue volume
+IDP_0324,ThalamNuclei_rh_volume_VA,regional and tissue volume
+IDP_0147,IDP_T1_FAST_ROIs_L_cerebellum_crus_II,regional and tissue volume
+IDP_0198,aseg_lh_volume_Pallidum,regional and tissue volume
+IDP_0212,aseg_rh_volume_Thalamus-Proper,regional and tissue volume
+IDP_0160,IDP_T1_FAST_ROIs_V_cerebellum_IX,regional and tissue volume
+IDP_0202,aseg_lh_volume_VentralDC,regional and tissue volume
+IDP_0152,IDP_T1_FAST_ROIs_R_cerebellum_VIIb,regional and tissue volume
+IDP_0154,IDP_T1_FAST_ROIs_V_cerebellum_VIIIa,regional and tissue volume
+IDP_0215,aseg_rh_volume_Pallidum,regional and tissue volume
+IDP_0144,IDP_T1_FAST_ROIs_L_cerebellum_crus_I,regional and tissue volume
+IDP_0146,IDP_T1_FAST_ROIs_R_cerebellum_crus_I,regional and tissue volume
+IDP_0197,aseg_lh_volume_Putamen,regional and tissue volume
+IDP_0193,aseg_lh_volume_Cerebellum-White-Matter,regional and tissue volume
+IDP_0338,ThalamNuclei_rh_volume_Whole-thalamus,regional and tissue volume
+IDP_0149,IDP_T1_FAST_ROIs_R_cerebellum_crus_II,regional and tissue volume
+IDP_0309,ThalamNuclei_lh_volume_VLp,regional and tissue volume
+IDP_0219,aseg_rh_volume_VentralDC,regional and tissue volume
+IDP_0168,aseg_global_volume_SubCortGray,regional and tissue volume
+IDP_0157,IDP_T1_FAST_ROIs_V_cerebellum_VIIIb,regional and tissue volume
+IDP_0294,ThalamNuclei_lh_volume_VLa,regional and tissue volume
+IDP_0330,ThalamNuclei_rh_volume_VLp,regional and tissue volume
+IDP_0161,IDP_T1_FAST_ROIs_R_cerebellum_IX,regional and tissue volume
+IDP_0213,aseg_rh_volume_Caudate,regional and tissue volume
+IDP_0159,IDP_T1_FAST_ROIs_L_cerebellum_IX,regional and tissue volume
+IDP_0214,aseg_rh_volume_Putamen,regional and tissue volume
+IDP_0013,IDP_T1_FIRST_left_caudate_volume,regional and tissue volume
+IDP_0318,ThalamNuclei_rh_volume_VLa,regional and tissue volume
+IDP_0014,IDP_T1_FIRST_right_caudate_volume,regional and tissue volume
+IDP_0196,aseg_lh_volume_Caudate,regional and tissue volume
+IDP_0211,aseg_rh_volume_Cerebellum-Cortex,regional and tissue volume
+IDP_0194,aseg_lh_volume_Cerebellum-Cortex,regional and tissue volume
+IDP_0342,Brainstem_global_volume_Midbrain,regional and tissue volume
+IDP_0177,aseg_global_volume_Brain-Stem,regional and tissue volume
+IDP_0339,Brainstem_global_volume_Medulla,regional and tissue volume
+IDP_0340,Brainstem_global_volume_Pons,regional and tissue volume
+IDP_0343,Brainstem_global_volume_Whole-brainstem,regional and tissue volume
+IDP_0022,IDP_T1_FIRST_right_amygdala_volume,regional and tissue volume
+IDP_0021,IDP_T1_FIRST_left_amygdala_volume,regional and tissue volume
+IDP_0273,HippSubfield_rh_volume_parasubiculum,regional and tissue volume
+IDP_0251,HippSubfield_lh_volume_parasubiculum,regional and tissue volume
+IDP_0261,HippSubfield_lh_volume_HATA,regional and tissue volume
+IDP_0228,AmygNuclei_lh_volume_Medial-nucleus,regional and tissue volume
+IDP_0227,AmygNuclei_lh_volume_Central-nucleus,regional and tissue volume
+IDP_0248,HippSubfield_lh_volume_presubiculum-head,regional and tissue volume
+IDP_0229,AmygNuclei_lh_volume_Cortical-nucleus,regional and tissue volume
+IDP_0247,HippSubfield_lh_volume_hippocampal-fissure,regional and tissue volume
+IDP_0283,HippSubfield_rh_volume_HATA,regional and tissue volume
+IDP_0281,HippSubfield_rh_volume_fimbria,regional and tissue volume
+IDP_0238,AmygNuclei_rh_volume_Medial-nucleus,regional and tissue volume
+IDP_0253,HippSubfield_lh_volume_molecular-layer-HP-body,regional and tissue volume
+IDP_0230,AmygNuclei_lh_volume_Corticoamygdaloid-transitio,regional and tissue volume
+IDP_0259,HippSubfield_lh_volume_fimbria,regional and tissue volume
+IDP_0237,AmygNuclei_rh_volume_Central-nucleus,regional and tissue volume
+IDP_0240,AmygNuclei_rh_volume_Corticoamygdaloid-transitio,regional and tissue volume
+IDP_0133,IDP_T1_FAST_ROIs_R_amygdala,regional and tissue volume
+IDP_0020,IDP_T1_FIRST_right_hippocampus_volume,regional and tissue volume
+IDP_0019,IDP_T1_FIRST_left_hippocampus_volume,regional and tissue volume
+IDP_0239,AmygNuclei_rh_volume_Cortical-nucleus,regional and tissue volume
+IDP_0225,AmygNuclei_lh_volume_Accessory-Basal-nucleus,regional and tissue volume
+IDP_0231,AmygNuclei_lh_volume_Paralaminar-nucleus,regional and tissue volume
+IDP_0269,HippSubfield_rh_volume_hippocampal-fissure,regional and tissue volume
+IDP_0275,HippSubfield_rh_volume_molecular-layer-HP-body,regional and tissue volume
+IDP_0226,AmygNuclei_lh_volume_Anterior-amygdaloid-area-AAA,regional and tissue volume
+IDP_0132,IDP_T1_FAST_ROIs_L_amygdala,regional and tissue volume
+IDP_0270,HippSubfield_rh_volume_presubiculum-head,regional and tissue volume
+IDP_0241,AmygNuclei_rh_volume_Paralaminar-nucleus,regional and tissue volume
+IDP_0252,HippSubfield_lh_volume_molecular-layer-HP-head,regional and tissue volume
+IDP_0224,AmygNuclei_lh_volume_Basal-nucleus,regional and tissue volume
+IDP_0235,AmygNuclei_rh_volume_Accessory-Basal-nucleus,regional and tissue volume
+IDP_0236,AmygNuclei_rh_volume_Anterior-amygdaloid-area-AAA,regional and tissue volume
+IDP_0244,HippSubfield_lh_volume_subiculum-body,regional and tissue volume
+IDP_0274,HippSubfield_rh_volume_molecular-layer-HP-head,regional and tissue volume
+IDP_0094,IDP_T1_FAST_ROIs_L_parahipp_gyrus_post,regional and tissue volume
+IDP_0267,HippSubfield_rh_volume_CA1-body,regional and tissue volume
+IDP_0277,HippSubfield_rh_volume_CA3-body,regional and tissue volume
+IDP_0257,HippSubfield_lh_volume_CA4-head,regional and tissue volume
+IDP_0256,HippSubfield_lh_volume_GC-ML-DG-body,regional and tissue volume
+IDP_0278,HippSubfield_rh_volume_GC-ML-DG-body,regional and tissue volume
+IDP_0255,HippSubfield_lh_volume_CA3-body,regional and tissue volume
+IDP_0243,HippSubfield_lh_volume_Hippocampal-tail,regional and tissue volume
+IDP_0254,HippSubfield_lh_volume_GC-ML-DG-head,regional and tissue volume
+IDP_0246,HippSubfield_lh_volume_subiculum-head,regional and tissue volume
+IDP_0095,IDP_T1_FAST_ROIs_R_parahipp_gyrus_post,regional and tissue volume
+IDP_0232,AmygNuclei_lh_volume_Whole-amygdala,regional and tissue volume
+IDP_0272,HippSubfield_rh_volume_presubiculum-body,regional and tissue volume
+IDP_0250,HippSubfield_lh_volume_presubiculum-body,regional and tissue volume
+IDP_0279,HippSubfield_rh_volume_CA4-head,regional and tissue volume
+IDP_0200,aseg_lh_volume_Amygdala,regional and tissue volume
+IDP_0258,HippSubfield_lh_volume_CA4-body,regional and tissue volume
+IDP_0280,HippSubfield_rh_volume_CA4-body,regional and tissue volume
+IDP_0282,HippSubfield_rh_volume_CA3-head,regional and tissue volume
+IDP_0234,AmygNuclei_rh_volume_Basal-nucleus,regional and tissue volume
+IDP_0245,HippSubfield_lh_volume_CA1-body,regional and tissue volume
+IDP_0223,AmygNuclei_lh_volume_Lateral-nucleus,regional and tissue volume
+IDP_0217,aseg_rh_volume_Amygdala,regional and tissue volume
+IDP_0249,HippSubfield_lh_volume_CA1-head,regional and tissue volume
+IDP_0266,HippSubfield_rh_volume_subiculum-body,regional and tissue volume
+IDP_0260,HippSubfield_lh_volume_CA3-head,regional and tissue volume
+IDP_0276,HippSubfield_rh_volume_GC-ML-DG-head,regional and tissue volume
+IDP_0242,AmygNuclei_rh_volume_Whole-amygdala,regional and tissue volume
+IDP_0262,HippSubfield_lh_volume_Whole-hippocampal-body,regional and tissue volume
+IDP_0265,HippSubfield_rh_volume_Hippocampal-tail,regional and tissue volume
+IDP_0268,HippSubfield_rh_volume_subiculum-head,regional and tissue volume
+IDP_0271,HippSubfield_rh_volume_CA1-head,regional and tissue volume
+IDP_0263,HippSubfield_lh_volume_Whole-hippocampal-head,regional and tissue volume
+IDP_0233,AmygNuclei_rh_volume_Lateral-nucleus,regional and tissue volume
+IDP_0199,aseg_lh_volume_Hippocampus,regional and tissue volume
+IDP_0130,IDP_T1_FAST_ROIs_L_hippocampus,regional and tissue volume
+IDP_0284,HippSubfield_rh_volume_Whole-hippocampal-body,regional and tissue volume
+IDP_0131,IDP_T1_FAST_ROIs_R_hippocampus,regional and tissue volume
+IDP_0264,HippSubfield_lh_volume_Whole-hippocampus,regional and tissue volume
+IDP_0285,HippSubfield_rh_volume_Whole-hippocampal-head,regional and tissue volume
+IDP_0216,aseg_rh_volume_Hippocampus,regional and tissue volume
+IDP_0286,HippSubfield_rh_volume_Whole-hippocampus,regional and tissue volume
+IDP_0613,aparc-a2009s_rh_volume_Lat-Fis-ant-Vertical,regional and tissue volume
+IDP_0612,aparc-a2009s_rh_volume_Lat-Fis-ant-Horizont,regional and tissue volume
+IDP_0586,aparc-a2009s_rh_volume_G-front-inf-Orbital,regional and tissue volume
+IDP_0512,aparc-a2009s_lh_volume_G-front-inf-Orbital,regional and tissue volume
+IDP_0035,IDP_T1_FAST_ROIs_R_inf_front_gyrus_parstri,regional and tissue volume
+IDP_0985,aparc-a2009s_rh_area_Lat-Fis-ant-Vertical,cortical area
+IDP_0635,aparc-a2009s_rh_volume_S-orbital-lateral,regional and tissue volume
+IDP_0037,IDP_T1_FAST_ROIs_R_inf_front_gyrus_parsop,regional and tissue volume
+IDP_0958,aparc-a2009s_rh_area_G-front-inf-Orbital,cortical area
+IDP_0884,aparc-a2009s_lh_area_G-front-inf-Orbital,cortical area
+IDP_0984,aparc-a2009s_rh_area_Lat-Fis-ant-Horizont,cortical area
+IDP_0587,aparc-a2009s_rh_volume_G-front-inf-Triangul,regional and tissue volume
+IDP_0959,aparc-a2009s_rh_area_G-front-inf-Triangul,cortical area
+IDP_1007,aparc-a2009s_rh_area_S-orbital-lateral,cortical area
+IDP_0486,aparc-DKTatlas_rh_volume_parstriangularis,regional and tissue volume
+IDP_0625,aparc-a2009s_rh_volume_S-front-inf,regional and tissue volume
+IDP_0107,IDP_T1_FAST_ROIs_R_front_operc_cortex,regional and tissue volume
+IDP_0766,aparc-pial_rh_area_parsopercularis,cortical area
+IDP_0957,aparc-a2009s_rh_area_G-front-inf-Opercular,cortical area
+IDP_0963,aparc-a2009s_rh_area_G-insular-short,cortical area
+IDP_0997,aparc-a2009s_rh_area_S-front-inf,cortical area
+IDP_0395,aparc-Desikan_rh_volume_parstriangularis,regional and tissue volume
+IDP_0585,aparc-a2009s_rh_volume_G-front-inf-Opercular,regional and tissue volume
+IDP_0620,aparc-a2009s_rh_volume_S-circular-insula-ant,regional and tissue volume
+IDP_0393,aparc-Desikan_rh_volume_parsopercularis,regional and tissue volume
+IDP_0516,aparc-a2009s_lh_volume_G-Ins-lg+S-cent-ins,regional and tissue volume
+IDP_0546,aparc-a2009s_lh_volume_S-circular-insula-ant,regional and tissue volume
+IDP_0857,aparc-DKTatlas_rh_area_parsorbitalis,cortical area
+IDP_0432,BA-exvivo_rh_volume_BA45,regional and tissue volume
+IDP_0858,aparc-DKTatlas_rh_area_parstriangularis,cortical area
+IDP_0768,aparc-pial_rh_area_parstriangularis,cortical area
+IDP_0992,aparc-a2009s_rh_area_S-circular-insula-ant,cortical area
+IDP_0484,aparc-DKTatlas_rh_volume_parsopercularis,regional and tissue volume
+IDP_0962,aparc-a2009s_rh_area_G-Ins-lg+S-cent-ins,cortical area
+IDP_0918,aparc-a2009s_lh_area_S-circular-insula-ant,cortical area
+IDP_0734,aparc-pial_lh_area_parsorbitalis,cortical area
+IDP_0699,aparc-Desikan_rh_area_parsopercularis,cortical area
+IDP_0888,aparc-a2009s_lh_area_G-Ins-lg+S-cent-ins,cortical area
+IDP_0804,BA-exvivo_rh_area_BA45,cortical area
+IDP_0485,aparc-DKTatlas_rh_volume_parsorbitalis,regional and tissue volume
+IDP_0767,aparc-pial_rh_area_parsorbitalis,cortical area
+IDP_0856,aparc-DKTatlas_rh_area_parsopercularis,cortical area
+IDP_0361,aparc-Desikan_lh_volume_parsorbitalis,regional and tissue volume
+IDP_0701,aparc-Desikan_rh_area_parstriangularis,cortical area
+IDP_0889,aparc-a2009s_lh_area_G-insular-short,cortical area
+IDP_0590,aparc-a2009s_rh_volume_G-Ins-lg+S-cent-ins,regional and tissue volume
+IDP_0454,aparc-DKTatlas_lh_volume_parsorbitalis,regional and tissue volume
+IDP_0622,aparc-a2009s_rh_volume_S-circular-insula-sup,regional and tissue volume
+IDP_0394,aparc-Desikan_rh_volume_parsorbitalis,regional and tissue volume
+IDP_0591,aparc-a2009s_rh_volume_G-insular-short,regional and tissue volume
+IDP_0666,aparc-Desikan_lh_area_parsorbitalis,cortical area
+IDP_0803,BA-exvivo_rh_area_BA44,cortical area
+IDP_0548,aparc-a2009s_lh_volume_S-circular-insula-sup,regional and tissue volume
+IDP_0693,aparc-Desikan_rh_area_lateralorbitofrontal,cortical area
+IDP_0431,BA-exvivo_rh_volume_BA44,regional and tissue volume
+IDP_0700,aparc-Desikan_rh_area_parsorbitalis,cortical area
+IDP_0760,aparc-pial_rh_area_lateralorbitofrontal,cortical area
+IDP_0597,aparc-a2009s_rh_volume_G-orbital,regional and tissue volume
+IDP_0826,aparc-DKTatlas_lh_area_parsorbitalis,cortical area
+IDP_0091,IDP_T1_FAST_ROIs_R_front_orb_cortex,regional and tissue volume
+IDP_0563,aparc-a2009s_lh_volume_S-orbital-H-Shaped,regional and tissue volume
+IDP_0969,aparc-a2009s_rh_area_G-orbital,cortical area
+IDP_0090,IDP_T1_FAST_ROIs_L_front_orb_cortex,regional and tissue volume
+IDP_0994,aparc-a2009s_rh_area_S-circular-insula-sup,cortical area
+IDP_0517,aparc-a2009s_lh_volume_G-insular-short,regional and tissue volume
+IDP_0387,aparc-Desikan_rh_volume_lateralorbitofrontal,regional and tissue volume
+IDP_0681,aparc-Desikan_lh_area_insula,cortical area
+IDP_0523,aparc-a2009s_lh_volume_G-orbital,regional and tissue volume
+IDP_0715,aparc-Desikan_rh_area_insula,cortical area
+IDP_0920,aparc-a2009s_lh_area_S-circular-insula-sup,cortical area
+IDP_0637,aparc-a2009s_rh_volume_S-orbital-H-Shaped,regional and tissue volume
+IDP_0895,aparc-a2009s_lh_area_G-orbital,cortical area
+IDP_0478,aparc-DKTatlas_rh_volume_lateralorbitofrontal,regional and tissue volume
+IDP_0850,aparc-DKTatlas_rh_area_lateralorbitofrontal,cortical area
+IDP_0376,aparc-Desikan_lh_volume_insula,regional and tissue volume
+IDP_0409,aparc-Desikan_rh_volume_insula,regional and tissue volume
+IDP_0447,aparc-DKTatlas_lh_volume_lateralorbitofrontal,regional and tissue volume
+IDP_0935,aparc-a2009s_lh_area_S-orbital-H-Shaped,cortical area
+IDP_0819,aparc-DKTatlas_lh_area_lateralorbitofrontal,cortical area
+IDP_0727,aparc-pial_lh_area_lateralorbitofrontal,cortical area
+IDP_0354,aparc-Desikan_lh_volume_lateralorbitofrontal,regional and tissue volume
+IDP_1009,aparc-a2009s_rh_area_S-orbital-H-Shaped,cortical area
+IDP_0659,aparc-Desikan_lh_area_lateralorbitofrontal,cortical area
+IDP_0029,IDP_T1_FAST_ROIs_R_insular_cortex,regional and tissue volume
+IDP_0499,aparc-DKTatlas_rh_volume_insula,regional and tissue volume
+IDP_0468,aparc-DKTatlas_lh_volume_insula,regional and tissue volume
+IDP_0028,IDP_T1_FAST_ROIs_L_insular_cortex,regional and tissue volume
+IDP_0840,aparc-DKTatlas_lh_area_insula,cortical area
+IDP_0871,aparc-DKTatlas_rh_area_insula,cortical area
+IDP_0554,aparc-a2009s_lh_volume_S-interm-prim-Jensen,regional and tissue volume
+IDP_0628,aparc-a2009s_rh_volume_S-interm-prim-Jensen,regional and tissue volume
+IDP_0926,aparc-a2009s_lh_area_S-interm-prim-Jensen,cortical area
+IDP_1000,aparc-a2009s_rh_area_S-interm-prim-Jensen,cortical area
+IDP_0780,aparc-pial_rh_area_frontalpole,cortical area
+IDP_0573,aparc-a2009s_lh_volume_S-temporal-transverse,regional and tissue volume
+IDP_0679,aparc-Desikan_lh_area_frontalpole,cortical area
+IDP_0747,aparc-pial_lh_area_frontalpole,cortical area
+IDP_0626,aparc-a2009s_rh_volume_S-front-middle,regional and tissue volume
+IDP_0077,IDP_T1_FAST_ROIs_R_juxtapos_lobule_cortex,regional and tissue volume
+IDP_0407,aparc-Desikan_rh_volume_frontalpole,regional and tissue volume
+IDP_0374,aparc-Desikan_lh_volume_frontalpole,regional and tissue volume
+IDP_0713,aparc-Desikan_rh_area_frontalpole,cortical area
+IDP_0076,IDP_T1_FAST_ROIs_L_juxtapos_lobule_cortex,regional and tissue volume
+IDP_0504,aparc-a2009s_lh_volume_G+S-transv-frontopol,regional and tissue volume
+IDP_0552,aparc-a2009s_lh_volume_S-front-middle,regional and tissue volume
+IDP_0062,IDP_T1_FAST_ROIs_L_supramarg_gyrus_ant,regional and tissue volume
+IDP_0574,aparc-a2009s_rh_volume_G+S-frontomargin,regional and tissue volume
+IDP_0064,IDP_T1_FAST_ROIs_L_supramarg_gyrus_post,regional and tissue volume
+IDP_0063,IDP_T1_FAST_ROIs_R_supramarg_gyrus_ant,regional and tissue volume
+IDP_0567,aparc-a2009s_lh_volume_S-precentral-inf-part,regional and tissue volume
+IDP_0627,aparc-a2009s_rh_volume_S-front-sup,regional and tissue volume
+IDP_0535,aparc-a2009s_lh_volume_G-temp-sup-Plan-tempo,regional and tissue volume
+IDP_0946,aparc-a2009s_rh_area_G+S-frontomargin,cortical area
+IDP_0642,aparc-a2009s_rh_volume_S-precentral-sup-part,regional and tissue volume
+IDP_0578,aparc-a2009s_rh_volume_G+S-transv-frontopol,regional and tissue volume
+IDP_0907,aparc-a2009s_lh_area_G-temp-sup-Plan-tempo,cortical area
+IDP_0566,aparc-a2009s_lh_volume_S-postcentral,regional and tissue volume
+IDP_0945,aparc-a2009s_lh_area_S-temporal-transverse,cortical area
+IDP_0939,aparc-a2009s_lh_area_S-precentral-inf-part,cortical area
+IDP_1014,aparc-a2009s_rh_area_S-precentral-sup-part,cortical area
+IDP_0876,aparc-a2009s_lh_area_G+S-transv-frontopol,cortical area
+IDP_0619,aparc-a2009s_rh_volume_S-cingul-Marginalis,regional and tissue volume
+IDP_0641,aparc-a2009s_rh_volume_S-precentral-inf-part,regional and tissue volume
+IDP_1013,aparc-a2009s_rh_area_S-precentral-inf-part,cortical area
+IDP_0568,aparc-a2009s_lh_volume_S-precentral-sup-part,regional and tissue volume
+IDP_0044,IDP_T1_FAST_ROIs_L_sup_temp_gyrus_post,regional and tissue volume
+IDP_0576,aparc-a2009s_rh_volume_G+S-paracentral,regional and tissue volume
+IDP_0640,aparc-a2009s_rh_volume_S-postcentral,regional and tissue volume
+IDP_0647,aparc-a2009s_rh_volume_S-temporal-transverse,regional and tissue volume
+IDP_0553,aparc-a2009s_lh_volume_S-front-sup,regional and tissue volume
+IDP_0425,BA-exvivo_rh_volume_BA2,regional and tissue volume
+IDP_0998,aparc-a2009s_rh_area_S-front-middle,cortical area
+IDP_0043,IDP_T1_FAST_ROIs_R_sup_temp_gyrus_ant,regional and tissue volume
+IDP_0940,aparc-a2009s_lh_area_S-precentral-sup-part,cortical area
+IDP_0950,aparc-a2009s_rh_area_G+S-transv-frontopol,cortical area
+IDP_0606,aparc-a2009s_rh_volume_G-temp-sup-G-T-transv,regional and tissue volume
+IDP_0411,BA-exvivo_lh_volume_BA2,regional and tissue volume
+IDP_0999,aparc-a2009s_rh_area_S-front-sup,cortical area
+IDP_0031,IDP_T1_FAST_ROIs_R_sup_front_gyrus,regional and tissue volume
+IDP_0415,BA-exvivo_lh_volume_BA4p,regional and tissue volume
+IDP_0924,aparc-a2009s_lh_area_S-front-middle,cortical area
+IDP_0392,aparc-Desikan_rh_volume_paracentral,regional and tissue volume
+IDP_0500,aparc-a2009s_lh_volume_G+S-frontomargin,regional and tissue volume
+IDP_0058,IDP_T1_FAST_ROIs_L_postcent_gyrus,regional and tissue volume
+IDP_0483,aparc-DKTatlas_rh_volume_paracentral,regional and tissue volume
+IDP_0412,BA-exvivo_lh_volume_BA3a,regional and tissue volume
+IDP_0059,IDP_T1_FAST_ROIs_R_postcent_gyrus,regional and tissue volume
+IDP_0532,aparc-a2009s_lh_volume_G-temp-sup-G-T-transv,regional and tissue volume
+IDP_0502,aparc-a2009s_lh_volume_G+S-paracentral,regional and tissue volume
+IDP_0872,aparc-a2009s_lh_area_G+S-frontomargin,cortical area
+IDP_0042,IDP_T1_FAST_ROIs_L_sup_temp_gyrus_ant,regional and tissue volume
+IDP_0110,IDP_T1_FAST_ROIs_L_parietal_operc_cortex,regional and tissue volume
+IDP_0030,IDP_T1_FAST_ROIs_L_sup_front_gyrus,regional and tissue volume
+IDP_0899,aparc-a2009s_lh_area_G-postcentral,cortical area
+IDP_0938,aparc-a2009s_lh_area_S-postcentral,cortical area
+IDP_0547,aparc-a2009s_lh_volume_S-circular-insula-inf,regional and tissue volume
+IDP_0797,BA-exvivo_rh_area_BA2,cortical area
+IDP_0545,aparc-a2009s_lh_volume_S-cingul-Marginalis,regional and tissue volume
+IDP_0981,aparc-a2009s_rh_area_G-temp-sup-Plan-tempo,cortical area
+IDP_1012,aparc-a2009s_rh_area_S-postcentral,cortical area
+IDP_0346,aparc-Desikan_lh_volume_caudalmiddlefrontal,regional and tissue volume
+IDP_0038,IDP_T1_FAST_ROIs_L_precentral_gyrus,regional and tissue volume
+IDP_0408,aparc-Desikan_rh_volume_transversetemporal,regional and tissue volume
+IDP_0621,aparc-a2009s_rh_volume_S-circular-insula-inf,regional and tissue volume
+IDP_0108,IDP_T1_FAST_ROIs_L_cent_operc_cortex,regional and tissue volume
+IDP_0439,aparc-DKTatlas_lh_volume_caudalmiddlefrontal,regional and tissue volume
+IDP_0765,aparc-pial_rh_area_paracentral,cortical area
+IDP_0973,aparc-a2009s_rh_area_G-postcentral,cortical area
+IDP_0609,aparc-a2009s_rh_volume_G-temp-sup-Plan-tempo,regional and tissue volume
+IDP_0428,BA-exvivo_rh_volume_BA4a,regional and tissue volume
+IDP_0719,aparc-pial_lh_area_caudalmiddlefrontal,cortical area
+IDP_0527,aparc-a2009s_lh_volume_G-postcentral,regional and tissue volume
+IDP_0599,aparc-a2009s_rh_volume_G-pariet-inf-Supramar,regional and tissue volume
+IDP_0577,aparc-a2009s_rh_volume_G+S-subcentral,regional and tissue volume
+IDP_0498,aparc-DKTatlas_rh_volume_transversetemporal,regional and tissue volume
+IDP_0783,BA-exvivo_lh_area_BA2,cortical area
+IDP_0457,aparc-DKTatlas_lh_volume_postcentral,regional and tissue volume
+IDP_0782,BA-exvivo_lh_area_BA1,cortical area
+IDP_0406,aparc-Desikan_rh_volume_supramarginal,regional and tissue volume
+IDP_0588,aparc-a2009s_rh_volume_G-front-middle,regional and tissue volume
+IDP_1019,aparc-a2009s_rh_area_S-temporal-transverse,cortical area
+IDP_0364,aparc-Desikan_lh_volume_postcentral,regional and tissue volume
+IDP_0503,aparc-a2009s_lh_volume_G+S-subcentral,regional and tissue volume
+IDP_0497,aparc-DKTatlas_rh_volume_supramarginal,regional and tissue volume
+IDP_0991,aparc-a2009s_rh_area_S-cingul-Marginalis,cortical area
+IDP_0032,IDP_T1_FAST_ROIs_L_mid_front_gyrus,regional and tissue volume
+IDP_0925,aparc-a2009s_lh_area_S-front-sup,cortical area
+IDP_0410,BA-exvivo_lh_volume_BA1,regional and tissue volume
+IDP_0978,aparc-a2009s_rh_area_G-temp-sup-G-T-transv,cortical area
+IDP_0971,aparc-a2009s_rh_area_G-pariet-inf-Supramar,cortical area
+IDP_0779,aparc-pial_rh_area_supramarginal,cortical area
+IDP_0875,aparc-a2009s_lh_area_G+S-subcentral,cortical area
+IDP_0359,aparc-Desikan_lh_volume_paracentral,regional and tissue volume
+IDP_0039,IDP_T1_FAST_ROIs_R_precentral_gyrus,regional and tissue volume
+IDP_0904,aparc-a2009s_lh_area_G-temp-sup-G-T-transv,cortical area
+IDP_0737,aparc-pial_lh_area_postcentral,cortical area
+IDP_0424,BA-exvivo_rh_volume_BA1,regional and tissue volume
+IDP_0949,aparc-a2009s_rh_area_G+S-subcentral,cortical area
+IDP_0589,aparc-a2009s_rh_volume_G-front-sup,regional and tissue volume
+IDP_0917,aparc-a2009s_lh_area_S-cingul-Marginalis,cortical area
+IDP_0712,aparc-Desikan_rh_area_supramarginal,cortical area
+IDP_0033,IDP_T1_FAST_ROIs_R_mid_front_gyrus,regional and tissue volume
+IDP_0375,aparc-Desikan_lh_volume_transversetemporal,regional and tissue volume
+IDP_0429,BA-exvivo_rh_volume_BA4p,regional and tissue volume
+IDP_0869,aparc-DKTatlas_rh_area_supramarginal,cortical area
+IDP_0045,IDP_T1_FAST_ROIs_R_sup_temp_gyrus_post,regional and tissue volume
+IDP_0467,aparc-DKTatlas_lh_volume_transversetemporal,regional and tissue volume
+IDP_0874,aparc-a2009s_lh_area_G+S-paracentral,cortical area
+IDP_0452,aparc-DKTatlas_lh_volume_paracentral,regional and tissue volume
+IDP_0544,aparc-a2009s_lh_volume_S-central,regional and tissue volume
+IDP_0426,BA-exvivo_rh_volume_BA3a,regional and tissue volume
+IDP_0614,aparc-a2009s_rh_volume_Lat-Fis-post,regional and tissue volume
+IDP_0373,aparc-Desikan_lh_volume_supramarginal,regional and tissue volume
+IDP_0796,BA-exvivo_rh_area_BA1,cortical area
+IDP_0414,BA-exvivo_lh_volume_BA4a,regional and tissue volume
+IDP_0746,aparc-pial_lh_area_supramarginal,cortical area
+IDP_0111,IDP_T1_FAST_ROIs_R_parietal_operc_cortex,regional and tissue volume
+IDP_0770,aparc-pial_rh_area_postcentral,cortical area
+IDP_0732,aparc-pial_lh_area_paracentral,cortical area
+IDP_0413,BA-exvivo_lh_volume_BA3b,regional and tissue volume
+IDP_0466,aparc-DKTatlas_lh_volume_supramarginal,regional and tissue volume
+IDP_0112,IDP_T1_FAST_ROIs_L_planum_polare,regional and tissue volume
+IDP_0860,aparc-DKTatlas_rh_area_postcentral,cortical area
+IDP_0488,aparc-DKTatlas_rh_volume_postcentral,regional and tissue volume
+IDP_0116,IDP_T1_FAST_ROIs_L_planum_temporale,regional and tissue volume
+IDP_0993,aparc-a2009s_rh_area_S-circular-insula-inf,cortical area
+IDP_0829,aparc-DKTatlas_lh_area_postcentral,cortical area
+IDP_0528,aparc-a2009s_lh_volume_G-precentral,regional and tissue volume
+IDP_0514,aparc-a2009s_lh_volume_G-front-middle,regional and tissue volume
+IDP_0781,aparc-pial_rh_area_transversetemporal,cortical area
+IDP_0669,aparc-Desikan_lh_area_postcentral,cortical area
+IDP_0109,IDP_T1_FAST_ROIs_R_cent_operc_cortex,regional and tissue volume
+IDP_0748,aparc-pial_lh_area_transversetemporal,cortical area
+IDP_0703,aparc-Desikan_rh_area_postcentral,cortical area
+IDP_0397,aparc-Desikan_rh_volume_postcentral,regional and tissue volume
+IDP_0601,aparc-a2009s_rh_volume_G-postcentral,regional and tissue volume
+IDP_0651,aparc-Desikan_lh_area_caudalmiddlefrontal,cortical area
+IDP_0678,aparc-Desikan_lh_area_supramarginal,cortical area
+IDP_0525,aparc-a2009s_lh_volume_G-pariet-inf-Supramar,regional and tissue volume
+IDP_0493,aparc-DKTatlas_rh_volume_rostralmiddlefrontal,regional and tissue volume
+IDP_0113,IDP_T1_FAST_ROIs_R_planum_polare,regional and tissue volume
+IDP_0948,aparc-a2009s_rh_area_G+S-paracentral,cortical area
+IDP_0494,aparc-DKTatlas_rh_volume_superiorfrontal,regional and tissue volume
+IDP_0838,aparc-DKTatlas_lh_area_supramarginal,cortical area
+IDP_0961,aparc-a2009s_rh_area_G-front-sup,cortical area
+IDP_0427,BA-exvivo_rh_volume_BA3b,regional and tissue volume
+IDP_0811,aparc-DKTatlas_lh_area_caudalmiddlefrontal,cortical area
+IDP_0462,aparc-DKTatlas_lh_volume_rostralmiddlefrontal,regional and tissue volume
+IDP_0366,aparc-Desikan_lh_volume_precentral,regional and tissue volume
+IDP_0459,aparc-DKTatlas_lh_volume_precentral,regional and tissue volume
+IDP_0379,aparc-Desikan_rh_volume_caudalmiddlefrontal,regional and tissue volume
+IDP_0403,aparc-Desikan_rh_volume_superiorfrontal,regional and tissue volume
+IDP_0607,aparc-a2009s_rh_volume_G-temp-sup-Lateral,regional and tissue volume
+IDP_0897,aparc-a2009s_lh_area_G-pariet-inf-Supramar,cortical area
+IDP_0402,aparc-Desikan_rh_volume_rostralmiddlefrontal,regional and tissue volume
+IDP_0515,aparc-a2009s_lh_volume_G-front-sup,regional and tissue volume
+IDP_0752,aparc-pial_rh_area_caudalmiddlefrontal,cortical area
+IDP_0463,aparc-DKTatlas_lh_volume_superiorfrontal,regional and tissue volume
+IDP_0117,IDP_T1_FAST_ROIs_R_planum_temporale,regional and tissue volume
+IDP_0776,aparc-pial_rh_area_superiorfrontal,cortical area
+IDP_0470,aparc-DKTatlas_rh_volume_caudalmiddlefrontal,regional and tissue volume
+IDP_0919,aparc-a2009s_lh_area_S-circular-insula-inf,cortical area
+IDP_0618,aparc-a2009s_rh_volume_S-central,regional and tissue volume
+IDP_0533,aparc-a2009s_lh_volume_G-temp-sup-Lateral,regional and tissue volume
+IDP_0680,aparc-Desikan_lh_area_transversetemporal,cortical area
+IDP_0979,aparc-a2009s_rh_area_G-temp-sup-Lateral,cortical area
+IDP_0540,aparc-a2009s_lh_volume_Lat-Fis-post,regional and tissue volume
+IDP_0602,aparc-a2009s_rh_volume_G-precentral,regional and tissue volume
+IDP_0114,IDP_T1_FAST_ROIs_L_heschl_gyrus,regional and tissue volume
+IDP_0986,aparc-a2009s_rh_area_Lat-Fis-post,cortical area
+IDP_0960,aparc-a2009s_rh_area_G-front-middle,cortical area
+IDP_0369,aparc-Desikan_lh_volume_rostralmiddlefrontal,regional and tissue volume
+IDP_0839,aparc-DKTatlas_lh_area_transversetemporal,cortical area
+IDP_0685,aparc-Desikan_rh_area_caudalmiddlefrontal,cortical area
+IDP_0698,aparc-Desikan_rh_area_paracentral,cortical area
+IDP_0900,aparc-a2009s_lh_area_G-precentral,cortical area
+IDP_0416,BA-exvivo_lh_volume_BA6,regional and tissue volume
+IDP_0784,BA-exvivo_lh_area_BA3a,cortical area
+IDP_0785,BA-exvivo_lh_area_BA3b,cortical area
+IDP_0465,aparc-DKTatlas_lh_volume_superiortemporal,regional and tissue volume
+IDP_0974,aparc-a2009s_rh_area_G-precentral,cortical area
+IDP_0855,aparc-DKTatlas_rh_area_paracentral,cortical area
+IDP_0905,aparc-a2009s_lh_area_G-temp-sup-Lateral,cortical area
+IDP_0115,IDP_T1_FAST_ROIs_R_heschl_gyrus,regional and tissue volume
+IDP_0370,aparc-Desikan_lh_volume_superiorfrontal,regional and tissue volume
+IDP_0714,aparc-Desikan_rh_area_transversetemporal,cortical area
+IDP_0496,aparc-DKTatlas_rh_volume_superiortemporal,regional and tissue volume
+IDP_0842,aparc-DKTatlas_rh_area_caudalmiddlefrontal,cortical area
+IDP_0664,aparc-Desikan_lh_area_paracentral,cortical area
+IDP_0709,aparc-Desikan_rh_area_superiorfrontal,cortical area
+IDP_0866,aparc-DKTatlas_rh_area_superiorfrontal,cortical area
+IDP_0430,BA-exvivo_rh_volume_BA6,regional and tissue volume
+IDP_0865,aparc-DKTatlas_rh_area_rostralmiddlefrontal,cortical area
+IDP_0800,BA-exvivo_rh_area_BA4a,cortical area
+IDP_0787,BA-exvivo_lh_area_BA4p,cortical area
+IDP_0870,aparc-DKTatlas_rh_area_transversetemporal,cortical area
+IDP_0490,aparc-DKTatlas_rh_volume_precentral,regional and tissue volume
+IDP_0786,BA-exvivo_lh_area_BA4a,cortical area
+IDP_0824,aparc-DKTatlas_lh_area_paracentral,cortical area
+IDP_0886,aparc-a2009s_lh_area_G-front-middle,cortical area
+IDP_0372,aparc-Desikan_lh_volume_superiortemporal,regional and tissue volume
+IDP_0399,aparc-Desikan_rh_volume_precentral,regional and tissue volume
+IDP_0778,aparc-pial_rh_area_superiortemporal,cortical area
+IDP_0743,aparc-pial_lh_area_superiorfrontal,cortical area
+IDP_0405,aparc-Desikan_rh_volume_superiortemporal,regional and tissue volume
+IDP_0912,aparc-a2009s_lh_area_Lat-Fis-post,cortical area
+IDP_0802,BA-exvivo_rh_area_BA6,cortical area
+IDP_0887,aparc-a2009s_lh_area_G-front-sup,cortical area
+IDP_0739,aparc-pial_lh_area_precentral,cortical area
+IDP_0834,aparc-DKTatlas_lh_area_rostralmiddlefrontal,cortical area
+IDP_0799,BA-exvivo_rh_area_BA3b,cortical area
+IDP_0775,aparc-pial_rh_area_rostralmiddlefrontal,cortical area
+IDP_0708,aparc-Desikan_rh_area_rostralmiddlefrontal,cortical area
+IDP_0798,BA-exvivo_rh_area_BA3a,cortical area
+IDP_0862,aparc-DKTatlas_rh_area_precentral,cortical area
+IDP_0916,aparc-a2009s_lh_area_S-central,cortical area
+IDP_0671,aparc-Desikan_lh_area_precentral,cortical area
+IDP_0831,aparc-DKTatlas_lh_area_precentral,cortical area
+IDP_0801,BA-exvivo_rh_area_BA4p,cortical area
+IDP_0705,aparc-Desikan_rh_area_precentral,cortical area
+IDP_0742,aparc-pial_lh_area_rostralmiddlefrontal,cortical area
+IDP_0675,aparc-Desikan_lh_area_superiorfrontal,cortical area
+IDP_0990,aparc-a2009s_rh_area_S-central,cortical area
+IDP_0745,aparc-pial_lh_area_superiortemporal,cortical area
+IDP_0788,BA-exvivo_lh_area_BA6,cortical area
+IDP_0835,aparc-DKTatlas_lh_area_superiorfrontal,cortical area
+IDP_0674,aparc-Desikan_lh_area_rostralmiddlefrontal,cortical area
+IDP_0711,aparc-Desikan_rh_area_superiortemporal,cortical area
+IDP_0772,aparc-pial_rh_area_precentral,cortical area
+IDP_0868,aparc-DKTatlas_rh_area_superiortemporal,cortical area
+IDP_0837,aparc-DKTatlas_lh_area_superiortemporal,cortical area
+IDP_0677,aparc-Desikan_lh_area_superiortemporal,cortical area
+IDP_0538,aparc-a2009s_lh_volume_Lat-Fis-ant-Horizont,regional and tissue volume
+IDP_0539,aparc-a2009s_lh_volume_Lat-Fis-ant-Vertical,regional and tissue volume
+IDP_0561,aparc-a2009s_lh_volume_S-orbital-lateral,regional and tissue volume
+IDP_0911,aparc-a2009s_lh_area_Lat-Fis-ant-Vertical,cortical area
+IDP_0933,aparc-a2009s_lh_area_S-orbital-lateral,cortical area
+IDP_0036,IDP_T1_FAST_ROIs_L_inf_front_gyrus_parsop,regional and tissue volume
+IDP_0910,aparc-a2009s_lh_area_Lat-Fis-ant-Horizont,cortical area
+IDP_0883,aparc-a2009s_lh_area_G-front-inf-Opercular,cortical area
+IDP_0511,aparc-a2009s_lh_volume_G-front-inf-Opercular,regional and tissue volume
+IDP_0034,IDP_T1_FAST_ROIs_L_inf_front_gyrus_parstri,regional and tissue volume
+IDP_0551,aparc-a2009s_lh_volume_S-front-inf,regional and tissue volume
+IDP_0733,aparc-pial_lh_area_parsopercularis,cortical area
+IDP_0513,aparc-a2009s_lh_volume_G-front-inf-Triangul,regional and tissue volume
+IDP_0453,aparc-DKTatlas_lh_volume_parsopercularis,regional and tissue volume
+IDP_0360,aparc-Desikan_lh_volume_parsopercularis,regional and tissue volume
+IDP_0362,aparc-Desikan_lh_volume_parstriangularis,regional and tissue volume
+IDP_0735,aparc-pial_lh_area_parstriangularis,cortical area
+IDP_0417,BA-exvivo_lh_volume_BA44,regional and tissue volume
+IDP_0789,BA-exvivo_lh_area_BA44,cortical area
+IDP_0455,aparc-DKTatlas_lh_volume_parstriangularis,regional and tissue volume
+IDP_0885,aparc-a2009s_lh_area_G-front-inf-Triangul,cortical area
+IDP_0825,aparc-DKTatlas_lh_area_parsopercularis,cortical area
+IDP_0106,IDP_T1_FAST_ROIs_L_front_operc_cortex,regional and tissue volume
+IDP_0923,aparc-a2009s_lh_area_S-front-inf,cortical area
+IDP_0665,aparc-Desikan_lh_area_parsopercularis,cortical area
+IDP_0418,BA-exvivo_lh_volume_BA45,regional and tissue volume
+IDP_0827,aparc-DKTatlas_lh_area_parstriangularis,cortical area
+IDP_0790,BA-exvivo_lh_area_BA45,cortical area
+IDP_0667,aparc-Desikan_lh_area_parstriangularis,cortical area
+IDP_0558,aparc-a2009s_lh_volume_S-occipital-ant,regional and tissue volume
+IDP_0930,aparc-a2009s_lh_area_S-occipital-ant,cortical area
+IDP_0065,IDP_T1_FAST_ROIs_R_supramarg_gyrus_post,regional and tissue volume
+IDP_1059,aparc-Desikan_rh_thickness_entorhinal,cortical thickness
+IDP_1114,BA-exvivo_rh_thickness_perirhinal,cortical thickness
+IDP_1150,aparc-DKTatlas_rh_thickness_entorhinal,cortical thickness
+IDP_1100,BA-exvivo_lh_thickness_perirhinal,cortical thickness
+IDP_0631,aparc-a2009s_rh_volume_S-oc-sup+transversal,regional and tissue volume
+IDP_0050,IDP_T1_FAST_ROIs_L_mid_temp_gyrus_tempocc,regional and tissue volume
+IDP_0633,aparc-a2009s_rh_volume_S-oc-temp-lat,regional and tissue volume
+IDP_0632,aparc-a2009s_rh_volume_S-occipital-ant,regional and tissue volume
+IDP_0750,aparc-pial_rh_area_bankssts,cortical area
+IDP_0559,aparc-a2009s_lh_volume_S-oc-temp-lat,regional and tissue volume
+IDP_0873,aparc-a2009s_lh_area_G+S-occipital-inf,cortical area
+IDP_0550,aparc-a2009s_lh_volume_S-collat-transv-post,regional and tissue volume
+IDP_1003,aparc-a2009s_rh_area_S-oc-sup+transversal,cortical area
+IDP_0436,BA-exvivo_rh_volume_perirhinal,regional and tissue volume
+IDP_1274,aparc-a2009s_rh_thickness_G-oc-temp-med-Parahip,cortical thickness
+IDP_1025,aparc-Desikan_lh_thickness_entorhinal,cortical thickness
+IDP_0996,aparc-a2009s_rh_area_S-collat-transv-post,cortical area
+IDP_0717,aparc-pial_lh_area_bankssts,cortical area
+IDP_0922,aparc-a2009s_lh_area_S-collat-transv-post,cortical area
+IDP_1119,aparc-DKTatlas_lh_thickness_entorhinal,cortical thickness
+IDP_0624,aparc-a2009s_rh_volume_S-collat-transv-post,regional and tissue volume
+IDP_0557,aparc-a2009s_lh_volume_S-oc-sup+transversal,regional and tissue volume
+IDP_0071,IDP_T1_FAST_ROIs_R_latocc_cortex_inf,regional and tissue volume
+IDP_1004,aparc-a2009s_rh_area_S-occipital-ant,cortical area
+IDP_0592,aparc-a2009s_rh_volume_G-occipital-middle,regional and tissue volume
+IDP_0067,IDP_T1_FAST_ROIs_R_angular_gyrus,regional and tissue volume
+IDP_1005,aparc-a2009s_rh_area_S-oc-temp-lat,cortical area
+IDP_0931,aparc-a2009s_lh_area_S-oc-temp-lat,cortical area
+IDP_0501,aparc-a2009s_lh_volume_G+S-occipital-inf,regional and tissue volume
+IDP_0051,IDP_T1_FAST_ROIs_R_mid_temp_gyrus_tempocc,regional and tissue volume
+IDP_0571,aparc-a2009s_lh_volume_S-temporal-inf,regional and tissue volume
+IDP_1115,BA-exvivo_rh_thickness_entorhinal,cortical thickness
+IDP_0560,aparc-a2009s_lh_volume_S-oc-temp-med+Lingual,regional and tissue volume
+IDP_0645,aparc-a2009s_rh_volume_S-temporal-inf,regional and tissue volume
+IDP_0542,aparc-a2009s_lh_volume_Pole-temporal,regional and tissue volume
+IDP_0947,aparc-a2009s_rh_area_G+S-occipital-inf,cortical area
+IDP_0472,aparc-DKTatlas_rh_volume_entorhinal,regional and tissue volume
+IDP_0575,aparc-a2009s_rh_volume_G+S-occipital-inf,regional and tissue volume
+IDP_0105,IDP_T1_FAST_ROIs_R_occ_fusif_gyrus,regional and tissue volume
+IDP_0630,aparc-a2009s_rh_volume_S-oc-middle+Lunatus,regional and tissue volume
+IDP_0046,IDP_T1_FAST_ROIs_L_mid_temp_gyrus_ant,regional and tissue volume
+IDP_0348,aparc-Desikan_lh_volume_entorhinal,regional and tissue volume
+IDP_0964,aparc-a2009s_rh_area_G-occipital-middle,cortical area
+IDP_1101,BA-exvivo_lh_thickness_entorhinal,cortical thickness
+IDP_0068,IDP_T1_FAST_ROIs_L_latocc_cortex_sup,regional and tissue volume
+IDP_0421,BA-exvivo_lh_volume_MT,regional and tissue volume
+IDP_0381,aparc-Desikan_rh_volume_entorhinal,regional and tissue volume
+IDP_0721,aparc-pial_lh_area_entorhinal,cortical area
+IDP_0598,aparc-a2009s_rh_volume_G-pariet-inf-Angular,regional and tissue volume
+IDP_0754,aparc-pial_rh_area_entorhinal,cortical area
+IDP_0929,aparc-a2009s_lh_area_S-oc-sup+transversal,cortical area
+IDP_0441,aparc-DKTatlas_lh_volume_entorhinal,regional and tissue volume
+IDP_0422,BA-exvivo_lh_volume_perirhinal,regional and tissue volume
+IDP_0066,IDP_T1_FAST_ROIs_L_angular_gyrus,regional and tissue volume
+IDP_0932,aparc-a2009s_lh_area_S-oc-temp-med+Lingual,cortical area
+IDP_0556,aparc-a2009s_lh_volume_S-oc-middle+Lunatus,regional and tissue volume
+IDP_0943,aparc-a2009s_lh_area_S-temporal-inf,cortical area
+IDP_0541,aparc-a2009s_lh_volume_Pole-occipital,regional and tissue volume
+IDP_0104,IDP_T1_FAST_ROIs_L_occ_fusif_gyrus,regional and tissue volume
+IDP_0435,BA-exvivo_rh_volume_MT,regional and tissue volume
+IDP_0098,IDP_T1_FAST_ROIs_L_temp_fusif_cortex_ant,regional and tissue volume
+IDP_0070,IDP_T1_FAST_ROIs_L_latocc_cortex_inf,regional and tissue volume
+IDP_0054,IDP_T1_FAST_ROIs_L_inf_temp_gyrus_post,regional and tissue volume
+IDP_1200,aparc-a2009s_lh_thickness_G-oc-temp-med-Parahip,cortical thickness
+IDP_1017,aparc-a2009s_rh_area_S-temporal-inf,cortical area
+IDP_0970,aparc-a2009s_rh_area_G-pariet-inf-Angular,cortical area
+IDP_0518,aparc-a2009s_lh_volume_G-occipital-middle,regional and tissue volume
+IDP_0549,aparc-a2009s_lh_volume_S-collat-transv-ant,regional and tissue volume
+IDP_0593,aparc-a2009s_rh_volume_G-occipital-sup,regional and tissue volume
+IDP_0793,BA-exvivo_lh_area_MT,cortical area
+IDP_0377,aparc-Desikan_rh_volume_bankssts,regional and tissue volume
+IDP_0966,aparc-a2009s_rh_area_G-oc-temp-lat-fusifor,cortical area
+IDP_0047,IDP_T1_FAST_ROIs_R_mid_temp_gyrus_ant,regional and tissue volume
+IDP_0616,aparc-a2009s_rh_volume_Pole-temporal,regional and tissue volume
+IDP_0344,aparc-Desikan_lh_volume_bankssts,regional and tissue volume
+IDP_0892,aparc-a2009s_lh_area_G-oc-temp-lat-fusifor,cortical area
+IDP_0052,IDP_T1_FAST_ROIs_L_inf_temp_gyrus_ant,regional and tissue volume
+IDP_0053,IDP_T1_FAST_ROIs_R_inf_temp_gyrus_ant,regional and tissue volume
+IDP_1002,aparc-a2009s_rh_area_S-oc-middle+Lunatus,cortical area
+IDP_0089,IDP_T1_FAST_ROIs_R_cuneal_cortex,regional and tissue volume
+IDP_0634,aparc-a2009s_rh_volume_S-oc-temp-med+Lingual,regional and tissue volume
+IDP_0102,IDP_T1_FAST_ROIs_L_temp_occ_fusif_cortex,regional and tissue volume
+IDP_0965,aparc-a2009s_rh_area_G-occipital-sup,cortical area
+IDP_0890,aparc-a2009s_lh_area_G-occipital-middle,cortical area
+IDP_0928,aparc-a2009s_lh_area_S-oc-middle+Lunatus,cortical area
+IDP_0049,IDP_T1_FAST_ROIs_R_mid_temp_gyrus_post,regional and tissue volume
+IDP_0594,aparc-a2009s_rh_volume_G-oc-temp-lat-fusifor,regional and tissue volume
+IDP_0088,IDP_T1_FAST_ROIs_L_cuneal_cortex,regional and tissue volume
+IDP_0057,IDP_T1_FAST_ROIs_R_inf_temp_gyrus_tempocc,regional and tissue volume
+IDP_0610,aparc-a2009s_rh_volume_G-temporal-inf,regional and tissue volume
+IDP_0524,aparc-a2009s_lh_volume_G-pariet-inf-Angular,regional and tissue volume
+IDP_0383,aparc-Desikan_rh_volume_inferiorparietal,regional and tissue volume
+IDP_0056,IDP_T1_FAST_ROIs_L_inf_temp_gyrus_tempocc,regional and tissue volume
+IDP_0536,aparc-a2009s_lh_volume_G-temporal-inf,regional and tissue volume
+IDP_0854,aparc-DKTatlas_rh_area_parahippocampal,cortical area
+IDP_1006,aparc-a2009s_rh_area_S-oc-temp-med+Lingual,cortical area
+IDP_0807,BA-exvivo_rh_area_MT,cortical area
+IDP_0096,IDP_T1_FAST_ROIs_L_lingual_gyrus,regional and tissue volume
+IDP_0048,IDP_T1_FAST_ROIs_L_mid_temp_gyrus_post,regional and tissue volume
+IDP_0474,aparc-DKTatlas_rh_volume_inferiorparietal,regional and tissue volume
+IDP_1069,aparc-Desikan_rh_thickness_parahippocampal,cortical thickness
+IDP_1160,aparc-DKTatlas_rh_thickness_parahippocampal,cortical thickness
+IDP_0055,IDP_T1_FAST_ROIs_R_inf_temp_gyrus_post,regional and tissue volume
+IDP_0649,aparc-Desikan_lh_area_bankssts,cortical area
+IDP_0914,aparc-a2009s_lh_area_Pole-temporal,cortical area
+IDP_0120,IDP_T1_FAST_ROIs_L_occ_pole,regional and tissue volume
+IDP_0913,aparc-a2009s_lh_area_Pole-occipital,cortical area
+IDP_0663,aparc-Desikan_lh_area_parahippocampal,cortical area
+IDP_0520,aparc-a2009s_lh_volume_G-oc-temp-lat-fusifor,regional and tissue volume
+IDP_0683,aparc-Desikan_rh_area_bankssts,cortical area
+IDP_0349,aparc-Desikan_lh_volume_fusiform,regional and tissue volume
+IDP_0722,aparc-pial_lh_area_fusiform,cortical area
+IDP_0844,aparc-DKTatlas_rh_area_entorhinal,cortical area
+IDP_0908,aparc-a2009s_lh_area_G-temporal-inf,cortical area
+IDP_0444,aparc-DKTatlas_lh_volume_inferiortemporal,regional and tissue volume
+IDP_0697,aparc-Desikan_rh_area_parahippocampal,cortical area
+IDP_0896,aparc-a2009s_lh_area_G-pariet-inf-Angular,cortical area
+IDP_0099,IDP_T1_FAST_ROIs_R_temp_fusif_cortex_ant,regional and tissue volume
+IDP_0731,aparc-pial_lh_area_parahippocampal,cortical area
+IDP_0442,aparc-DKTatlas_lh_volume_fusiform,regional and tissue volume
+IDP_0687,aparc-Desikan_rh_area_entorhinal,cortical area
+IDP_0968,aparc-a2009s_rh_area_G-oc-temp-med-Parahip,cortical area
+IDP_0623,aparc-a2009s_rh_volume_S-collat-transv-ant,regional and tissue volume
+IDP_0611,aparc-a2009s_rh_volume_G-temporal-middle,regional and tissue volume
+IDP_0724,aparc-pial_lh_area_inferiortemporal,cortical area
+IDP_0351,aparc-Desikan_lh_volume_inferiortemporal,regional and tissue volume
+IDP_0756,aparc-pial_rh_area_inferiorparietal,cortical area
+IDP_0653,aparc-Desikan_lh_area_entorhinal,cortical area
+IDP_0596,aparc-a2009s_rh_volume_G-oc-temp-med-Parahip,regional and tissue volume
+IDP_0794,BA-exvivo_lh_area_perirhinal,cortical area
+IDP_0764,aparc-pial_rh_area_parahippocampal,cortical area
+IDP_0755,aparc-pial_rh_area_fusiform,cortical area
+IDP_0823,aparc-DKTatlas_lh_area_parahippocampal,cortical area
+IDP_0519,aparc-a2009s_lh_volume_G-occipital-sup,regional and tissue volume
+IDP_0813,aparc-DKTatlas_lh_area_entorhinal,cortical area
+IDP_0646,aparc-a2009s_rh_volume_S-temporal-sup,regional and tissue volume
+IDP_0537,aparc-a2009s_lh_volume_G-temporal-middle,regional and tissue volume
+IDP_0814,aparc-DKTatlas_lh_area_fusiform,cortical area
+IDP_1035,aparc-Desikan_lh_thickness_parahippocampal,cortical thickness
+IDP_1129,aparc-DKTatlas_lh_thickness_parahippocampal,cortical thickness
+IDP_0118,IDP_T1_FAST_ROIs_L_supracalc_cortex,regional and tissue volume
+IDP_0982,aparc-a2009s_rh_area_G-temporal-inf,cortical area
+IDP_0572,aparc-a2009s_lh_volume_S-temporal-sup,regional and tissue volume
+IDP_0103,IDP_T1_FAST_ROIs_R_temp_occ_fusif_cortex,regional and tissue volume
+IDP_0808,BA-exvivo_rh_area_perirhinal,cortical area
+IDP_1018,aparc-a2009s_rh_area_S-temporal-sup,cortical area
+IDP_0654,aparc-Desikan_lh_area_fusiform,cortical area
+IDP_0119,IDP_T1_FAST_ROIs_R_supracalc_cortex,regional and tissue volume
+IDP_0475,aparc-DKTatlas_rh_volume_inferiortemporal,regional and tissue volume
+IDP_0384,aparc-Desikan_rh_volume_inferiortemporal,regional and tissue volume
+IDP_0473,aparc-DKTatlas_rh_volume_fusiform,regional and tissue volume
+IDP_0845,aparc-DKTatlas_rh_area_fusiform,cortical area
+IDP_0092,IDP_T1_FAST_ROIs_L_parahipp_gyrus_ant,regional and tissue volume
+IDP_0757,aparc-pial_rh_area_inferiortemporal,cortical area
+IDP_0522,aparc-a2009s_lh_volume_G-oc-temp-med-Parahip,regional and tissue volume
+IDP_0809,BA-exvivo_rh_area_entorhinal,cortical area
+IDP_0723,aparc-pial_lh_area_inferiorparietal,cortical area
+IDP_0353,aparc-Desikan_lh_volume_lateraloccipital,regional and tissue volume
+IDP_0689,aparc-Desikan_rh_area_inferiorparietal,cortical area
+IDP_1312,aparc-a2009s_rh_thickness_S-oc-temp-med+Lingual,cortical thickness
+IDP_0350,aparc-Desikan_lh_volume_inferiorparietal,regional and tissue volume
+IDP_0891,aparc-a2009s_lh_area_G-occipital-sup,cortical area
+IDP_0382,aparc-Desikan_rh_volume_fusiform,regional and tissue volume
+IDP_0688,aparc-Desikan_rh_area_fusiform,cortical area
+IDP_0391,aparc-Desikan_rh_volume_parahippocampal,regional and tissue volume
+IDP_0446,aparc-DKTatlas_lh_volume_lateraloccipital,regional and tissue volume
+IDP_0726,aparc-pial_lh_area_lateraloccipital,cortical area
+IDP_0846,aparc-DKTatlas_rh_area_inferiorparietal,cortical area
+IDP_0423,BA-exvivo_lh_volume_entorhinal,regional and tissue volume
+IDP_0894,aparc-a2009s_lh_area_G-oc-temp-med-Parahip,cortical area
+IDP_0041,IDP_T1_FAST_ROIs_R_temporal_pole,regional and tissue volume
+IDP_0443,aparc-DKTatlas_lh_volume_inferiorparietal,regional and tissue volume
+IDP_0093,IDP_T1_FAST_ROIs_R_parahipp_gyrus_ant,regional and tissue volume
+IDP_0482,aparc-DKTatlas_rh_volume_parahippocampal,regional and tissue volume
+IDP_0357,aparc-Desikan_lh_volume_middletemporal,regional and tissue volume
+IDP_0909,aparc-a2009s_lh_area_G-temporal-middle,cortical area
+IDP_0040,IDP_T1_FAST_ROIs_L_temporal_pole,regional and tissue volume
+IDP_0615,aparc-a2009s_rh_volume_Pole-occipital,regional and tissue volume
+IDP_0656,aparc-Desikan_lh_area_inferiortemporal,cortical area
+IDP_0988,aparc-a2009s_rh_area_Pole-temporal,cortical area
+IDP_0983,aparc-a2009s_rh_area_G-temporal-middle,cortical area
+IDP_0437,BA-exvivo_rh_volume_entorhinal,regional and tissue volume
+IDP_0816,aparc-DKTatlas_lh_area_inferiortemporal,cortical area
+IDP_0390,aparc-Desikan_rh_volume_middletemporal,regional and tissue volume
+IDP_0386,aparc-Desikan_rh_volume_lateraloccipital,regional and tissue volume
+IDP_0121,IDP_T1_FAST_ROIs_R_occ_pole,regional and tissue volume
+IDP_0921,aparc-a2009s_lh_area_S-collat-transv-ant,cortical area
+IDP_0655,aparc-Desikan_lh_area_inferiorparietal,cortical area
+IDP_0097,IDP_T1_FAST_ROIs_R_lingual_gyrus,regional and tissue volume
+IDP_0763,aparc-pial_rh_area_middletemporal,cortical area
+IDP_0995,aparc-a2009s_rh_area_S-collat-transv-ant,cortical area
+IDP_0358,aparc-Desikan_lh_volume_parahippocampal,regional and tissue volume
+IDP_0521,aparc-a2009s_lh_volume_G-oc-temp-med-Lingual,regional and tissue volume
+IDP_0451,aparc-DKTatlas_lh_volume_parahippocampal,regional and tissue volume
+IDP_0477,aparc-DKTatlas_rh_volume_lateraloccipital,regional and tissue volume
+IDP_0595,aparc-a2009s_rh_volume_G-oc-temp-med-Lingual,regional and tissue volume
+IDP_0815,aparc-DKTatlas_lh_area_inferiorparietal,cortical area
+IDP_0658,aparc-Desikan_lh_area_lateraloccipital,cortical area
+IDP_0100,IDP_T1_FAST_ROIs_L_temp_fusif_cortex_post,regional and tissue volume
+IDP_0101,IDP_T1_FAST_ROIs_R_temp_fusif_cortex_post,regional and tissue volume
+IDP_0481,aparc-DKTatlas_rh_volume_middletemporal,regional and tissue volume
+IDP_0759,aparc-pial_rh_area_lateraloccipital,cortical area
+IDP_0795,BA-exvivo_lh_area_entorhinal,cortical area
+IDP_0936,aparc-a2009s_lh_area_S-parieto-occipital,cortical area
+IDP_0730,aparc-pial_lh_area_middletemporal,cortical area
+IDP_0944,aparc-a2009s_lh_area_S-temporal-sup,cortical area
+IDP_0450,aparc-DKTatlas_lh_volume_middletemporal,regional and tissue volume
+IDP_0448,aparc-DKTatlas_lh_volume_lingual,regional and tissue volume
+IDP_0818,aparc-DKTatlas_lh_area_lateraloccipital,cortical area
+IDP_0355,aparc-Desikan_lh_volume_lingual,regional and tissue volume
+IDP_0388,aparc-Desikan_rh_volume_lingual,regional and tissue volume
+IDP_0479,aparc-DKTatlas_rh_volume_lingual,regional and tissue volume
+IDP_0564,aparc-a2009s_lh_volume_S-parieto-occipital,regional and tissue volume
+IDP_0662,aparc-Desikan_lh_area_middletemporal,cortical area
+IDP_1010,aparc-a2009s_rh_area_S-parieto-occipital,cortical area
+IDP_0690,aparc-Desikan_rh_area_inferiortemporal,cortical area
+IDP_0847,aparc-DKTatlas_rh_area_inferiortemporal,cortical area
+IDP_0692,aparc-Desikan_rh_area_lateraloccipital,cortical area
+IDP_0638,aparc-a2009s_rh_volume_S-parieto-occipital,regional and tissue volume
+IDP_0967,aparc-a2009s_rh_area_G-oc-temp-med-Lingual,cortical area
+IDP_0893,aparc-a2009s_lh_area_G-oc-temp-med-Lingual,cortical area
+IDP_0420,BA-exvivo_lh_volume_V2,regional and tissue volume
+IDP_0849,aparc-DKTatlas_rh_area_lateraloccipital,cortical area
+IDP_0584,aparc-a2009s_rh_volume_G-cuneus,regional and tissue volume
+IDP_0761,aparc-pial_rh_area_lingual,cortical area
+IDP_0696,aparc-Desikan_rh_area_middletemporal,cortical area
+IDP_0728,aparc-pial_lh_area_lingual,cortical area
+IDP_0440,aparc-DKTatlas_lh_volume_cuneus,regional and tissue volume
+IDP_0822,aparc-DKTatlas_lh_area_middletemporal,cortical area
+IDP_0471,aparc-DKTatlas_rh_volume_cuneus,regional and tissue volume
+IDP_0853,aparc-DKTatlas_rh_area_middletemporal,cortical area
+IDP_0851,aparc-DKTatlas_rh_area_lingual,cortical area
+IDP_0660,aparc-Desikan_lh_area_lingual,cortical area
+IDP_0820,aparc-DKTatlas_lh_area_lingual,cortical area
+IDP_0694,aparc-Desikan_rh_area_lingual,cortical area
+IDP_0510,aparc-a2009s_lh_volume_G-cuneus,regional and tissue volume
+IDP_0812,aparc-DKTatlas_lh_area_cuneus,cortical area
+IDP_0347,aparc-Desikan_lh_volume_cuneus,regional and tissue volume
+IDP_0843,aparc-DKTatlas_rh_area_cuneus,cortical area
+IDP_0434,BA-exvivo_rh_volume_V2,regional and tissue volume
+IDP_0720,aparc-pial_lh_area_cuneus,cortical area
+IDP_0380,aparc-Desikan_rh_volume_cuneus,regional and tissue volume
+IDP_0753,aparc-pial_rh_area_cuneus,cortical area
+IDP_0652,aparc-Desikan_lh_area_cuneus,cortical area
+IDP_0686,aparc-Desikan_rh_area_cuneus,cortical area
+IDP_0956,aparc-a2009s_rh_area_G-cuneus,cortical area
+IDP_0419,BA-exvivo_lh_volume_V1,regional and tissue volume
+IDP_0987,aparc-a2009s_rh_area_Pole-occipital,cortical area
+IDP_0433,BA-exvivo_rh_volume_V1,regional and tissue volume
+IDP_0363,aparc-Desikan_lh_volume_pericalcarine,regional and tissue volume
+IDP_0882,aparc-a2009s_lh_area_G-cuneus,cortical area
+IDP_0456,aparc-DKTatlas_lh_volume_pericalcarine,regional and tissue volume
+IDP_0543,aparc-a2009s_lh_volume_S-calcarine,regional and tissue volume
+IDP_0736,aparc-pial_lh_area_pericalcarine,cortical area
+IDP_0792,BA-exvivo_lh_area_V2,cortical area
+IDP_0617,aparc-a2009s_rh_volume_S-calcarine,regional and tissue volume
+IDP_0072,IDP_T1_FAST_ROIs_L_intracalc_cortex,regional and tissue volume
+IDP_0806,BA-exvivo_rh_area_V2,cortical area
+IDP_0487,aparc-DKTatlas_rh_volume_pericalcarine,regional and tissue volume
+IDP_0396,aparc-Desikan_rh_volume_pericalcarine,regional and tissue volume
+IDP_0769,aparc-pial_rh_area_pericalcarine,cortical area
+IDP_0073,IDP_T1_FAST_ROIs_R_intracalc_cortex,regional and tissue volume
+IDP_0915,aparc-a2009s_lh_area_S-calcarine,cortical area
+IDP_0668,aparc-Desikan_lh_area_pericalcarine,cortical area
+IDP_0989,aparc-a2009s_rh_area_S-calcarine,cortical area
+IDP_0828,aparc-DKTatlas_lh_area_pericalcarine,cortical area
+IDP_0791,BA-exvivo_lh_area_V1,cortical area
+IDP_0859,aparc-DKTatlas_rh_area_pericalcarine,cortical area
+IDP_0702,aparc-Desikan_rh_area_pericalcarine,cortical area
+IDP_0805,BA-exvivo_rh_area_V1,cortical area
+IDP_0061,IDP_T1_FAST_ROIs_R_sup_parietal_lobule,regional and tissue volume
+IDP_0060,IDP_T1_FAST_ROIs_L_sup_parietal_lobule,regional and tissue volume
+IDP_0644,aparc-a2009s_rh_volume_S-subparietal,regional and tissue volume
+IDP_0555,aparc-a2009s_lh_volume_S-intrapariet+P-trans,regional and tissue volume
+IDP_0629,aparc-a2009s_rh_volume_S-intrapariet+P-trans,regional and tissue volume
+IDP_0927,aparc-a2009s_lh_area_S-intrapariet+P-trans,cortical area
+IDP_1001,aparc-a2009s_rh_area_S-intrapariet+P-trans,cortical area
+IDP_0600,aparc-a2009s_rh_volume_G-parietal-sup,regional and tissue volume
+IDP_1016,aparc-a2009s_rh_area_S-subparietal,cortical area
+IDP_0972,aparc-a2009s_rh_area_G-parietal-sup,cortical area
+IDP_0570,aparc-a2009s_lh_volume_S-subparietal,regional and tissue volume
+IDP_0942,aparc-a2009s_lh_area_S-subparietal,cortical area
+IDP_0495,aparc-DKTatlas_rh_volume_superiorparietal,regional and tissue volume
+IDP_0526,aparc-a2009s_lh_volume_G-parietal-sup,regional and tissue volume
+IDP_0404,aparc-Desikan_rh_volume_superiorparietal,regional and tissue volume
+IDP_0898,aparc-a2009s_lh_area_G-parietal-sup,cortical area
+IDP_0777,aparc-pial_rh_area_superiorparietal,cortical area
+IDP_0867,aparc-DKTatlas_rh_area_superiorparietal,cortical area
+IDP_0464,aparc-DKTatlas_lh_volume_superiorparietal,regional and tissue volume
+IDP_0710,aparc-Desikan_rh_area_superiorparietal,cortical area
+IDP_0371,aparc-Desikan_lh_volume_superiorparietal,regional and tissue volume
+IDP_0603,aparc-a2009s_rh_volume_G-precuneus,regional and tissue volume
+IDP_0975,aparc-a2009s_rh_area_G-precuneus,cortical area
+IDP_0529,aparc-a2009s_lh_volume_G-precuneus,regional and tissue volume
+IDP_0744,aparc-pial_lh_area_superiorparietal,cortical area
+IDP_0836,aparc-DKTatlas_lh_area_superiorparietal,cortical area
+IDP_0086,IDP_T1_FAST_ROIs_L_precun_cortex,regional and tissue volume
+IDP_0087,IDP_T1_FAST_ROIs_R_precun_cortex,regional and tissue volume
+IDP_0773,aparc-pial_rh_area_precuneus,cortical area
+IDP_0676,aparc-Desikan_lh_area_superiorparietal,cortical area
+IDP_0901,aparc-a2009s_lh_area_G-precuneus,cortical area
+IDP_0400,aparc-Desikan_rh_volume_precuneus,regional and tissue volume
+IDP_0491,aparc-DKTatlas_rh_volume_precuneus,regional and tissue volume
+IDP_0706,aparc-Desikan_rh_area_precuneus,cortical area
+IDP_0367,aparc-Desikan_lh_volume_precuneus,regional and tissue volume
+IDP_0863,aparc-DKTatlas_rh_area_precuneus,cortical area
+IDP_0460,aparc-DKTatlas_lh_volume_precuneus,regional and tissue volume
+IDP_0740,aparc-pial_lh_area_precuneus,cortical area
+IDP_0672,aparc-Desikan_lh_area_precuneus,cortical area
+IDP_0832,aparc-DKTatlas_lh_area_precuneus,cortical area
+IDP_0582,aparc-a2009s_rh_volume_G-cingul-Post-dorsal,regional and tissue volume
+IDP_0385,aparc-Desikan_rh_volume_isthmuscingulate,regional and tissue volume
+IDP_0476,aparc-DKTatlas_rh_volume_isthmuscingulate,regional and tissue volume
+IDP_0085,IDP_T1_FAST_ROIs_R_cing_gyrus_post,regional and tissue volume
+IDP_0954,aparc-a2009s_rh_area_G-cingul-Post-dorsal,cortical area
+IDP_0508,aparc-a2009s_lh_volume_G-cingul-Post-dorsal,regional and tissue volume
+IDP_0758,aparc-pial_rh_area_isthmuscingulate,cortical area
+IDP_0880,aparc-a2009s_lh_area_G-cingul-Post-dorsal,cortical area
+IDP_0509,aparc-a2009s_lh_volume_G-cingul-Post-ventral,regional and tissue volume
+IDP_0084,IDP_T1_FAST_ROIs_L_cing_gyrus_post,regional and tissue volume
+IDP_0352,aparc-Desikan_lh_volume_isthmuscingulate,regional and tissue volume
+IDP_0583,aparc-a2009s_rh_volume_G-cingul-Post-ventral,regional and tissue volume
+IDP_0445,aparc-DKTatlas_lh_volume_isthmuscingulate,regional and tissue volume
+IDP_0848,aparc-DKTatlas_rh_area_isthmuscingulate,cortical area
+IDP_0691,aparc-Desikan_rh_area_isthmuscingulate,cortical area
+IDP_0725,aparc-pial_lh_area_isthmuscingulate,cortical area
+IDP_0881,aparc-a2009s_lh_area_G-cingul-Post-ventral,cortical area
+IDP_0657,aparc-Desikan_lh_area_isthmuscingulate,cortical area
+IDP_0955,aparc-a2009s_rh_area_G-cingul-Post-ventral,cortical area
+IDP_0817,aparc-DKTatlas_lh_area_isthmuscingulate,cortical area
+IDP_3770,,
+IDP_3902,,
+IDP_3098,,
+IDP_3631,,
+IDP_3881,,
+IDP_3792,,
+IDP_2812,,
+IDP_3053,,
+IDP_3737,,
+IDP_3696,,
+IDP_3286,,
+IDP_3744,,
+IDP_3466,,
+IDP_3710,,
+IDP_3547,,
+IDP_3636,,
+IDP_3910,,
+IDP_3251,,
+IDP_3293,,
+IDP_3599,,
+IDP_3841,,
+IDP_3137,,
+IDP_2855,,
+IDP_3844,,
+IDP_2896,,
+IDP_2626,,
+IDP_3781,,
+IDP_3931,,
+IDP_3321,,
+IDP_3838,,
+IDP_3889,,
+IDP_2444,,
+IDP_2376,,
+IDP_3850,,
+IDP_2787,,
+IDP_3846,,
+IDP_3853,,
+IDP_3627,,
+IDP_3678,,
+IDP_3711,,
+IDP_3895,,
+IDP_3029,,
+IDP_3814,,
+IDP_3074,,
+IDP_3854,,
+IDP_3307,,
+IDP_3000,,
+IDP_3755,,
+IDP_3899,,
+IDP_2877,,
+IDP_3828,,
+IDP_3894,,
+IDP_3687,,
+IDP_2744,,
+IDP_2930,,
+IDP_2455,,
+IDP_3709,,
+IDP_2280,,
+IDP_3377,,
+IDP_2851,,
+IDP_2382,,
+IDP_3659,,
+IDP_2846,,
+IDP_2446,,
+IDP_2669,,
+IDP_3292,,
+IDP_3805,,
+IDP_3879,,
+IDP_3843,,
+IDP_2517,,
+IDP_0176,,
+IDP_3003,,
+IDP_3283,,
+IDP_3305,,
+IDP_3512,,
+IDP_3607,,
+IDP_3623,,
+IDP_1328,,
+IDP_2595,,
+IDP_2535,,
+IDP_2342,,
+IDP_3692,,
+IDP_3780,,
+IDP_3905,,
+IDP_2611,,
+IDP_2998,,
+IDP_3612,,
+IDP_3800,,
+IDP_2992,,
+IDP_3647,,
+IDP_3821,,
+IDP_2470,,
+IDP_2540,,
+IDP_2867,,
+IDP_2847,,
+IDP_2848,,
+IDP_2914,,
+IDP_2581,,
+IDP_3066,,
+IDP_3624,,
+IDP_3746,,
+IDP_2820,,
+IDP_3686,,
+IDP_3124,,
+IDP_3735,,
+IDP_3856,,
+IDP_2972,,
+IDP_3806,,
+IDP_3303,,
+IDP_3390,,
+IDP_3809,,
+IDP_3771,,
+IDP_2604,,
+IDP_2850,,
+IDP_2918,,
+IDP_2941,,
+IDP_3588,,
+IDP_3867,,
+IDP_3898,,
+IDP_2606,,
+IDP_2924,,
+IDP_3583,,
+IDP_3147,,
+IDP_3493,,
+IDP_3834,,
+IDP_3579,,
+IDP_2615,,
+IDP_3722,,
+IDP_2358,,
+IDP_3337,,
+IDP_3810,,
+IDP_2893,,
+IDP_3693,,
+IDP_3186,,
+IDP_3820,,
+IDP_3469,,
+IDP_3831,,
+IDP_2871,,
+IDP_3101,,
+IDP_3768,,
+IDP_3862,,
+IDP_3911,,
+IDP_3762,,
+IDP_2742,,
+IDP_2947,,
+IDP_2783,,
+IDP_3104,,
+IDP_3935,,
+IDP_2745,,
+IDP_3703,,
+IDP_2662,,
+IDP_3013,,
+IDP_3207,,
+IDP_3441,,
+IDP_2349,rfMRI connectivity (ICA25 edge 131),rfMRI connectivity
+IDP_3448,,
+IDP_2607,,
+IDP_3901,,
+IDP_3127,,
+IDP_3278,,
+IDP_3822,,
+IDP_3680,,
+IDP_2377,rfMRI connectivity (ICA25 edge 159),rfMRI connectivity
+IDP_3290,,
+IDP_2734,,
+IDP_3421,,
+IDP_3620,,
+IDP_2508,,
+IDP_3358,,
+IDP_3459,,
+IDP_3614,,
+IDP_3630,,
+IDP_2613,,
+IDP_3001,,
+IDP_3026,,
+IDP_3107,,
+IDP_2539,,
+IDP_2554,,
+IDP_2580,,
+IDP_2584,,
+IDP_2858,,
+IDP_3464,,
+IDP_3751,,
+IDP_2345,rfMRI connectivity (ICA25 edge 127),rfMRI connectivity
+IDP_3020,,
+IDP_3120,,
+IDP_3323,,
+IDP_3539,,
+IDP_2543,,
+IDP_3108,,
+IDP_3322,,
+IDP_3758,,
+IDP_3046,,
+IDP_3415,,
+IDP_3661,,
+IDP_0180,aseg_global_volume_non-WM-hypointensities,regional and tissue volume
+IDP_2862,,
+IDP_3382,,
+IDP_3685,,
+IDP_2767,,
+IDP_2908,,
+IDP_3166,,
+IDP_3130,,
+IDP_3736,,
+IDP_3058,,
+IDP_3691,,
+IDP_3827,,
+IDP_2374,rfMRI connectivity (ICA25 edge 156),rfMRI connectivity
+IDP_2454,,
+IDP_2551,,
+IDP_2710,,
+IDP_2900,,
+IDP_3105,,
+IDP_3875,,
+IDP_3138,,
+IDP_3525,,
+IDP_3714,,
+IDP_2476,,
+IDP_2441,,
+IDP_3219,,
+IDP_2442,,
+IDP_2632,,
+IDP_3684,,
+IDP_3807,,
+IDP_3747,,
+IDP_2608,,
+IDP_2999,,
+IDP_2270,rfMRI connectivity (ICA25 edge 52),rfMRI connectivity
+IDP_2961,,
+IDP_3913,,
+IDP_2932,,
+IDP_3017,,
+IDP_3892,,
+IDP_2977,,
+IDP_3005,,
+IDP_3639,,
+IDP_3163,,
+IDP_3742,,
+IDP_2883,,
+IDP_3813,,
+IDP_2731,,
+IDP_2389,rfMRI connectivity (ICA25 edge 171),rfMRI connectivity
+IDP_2439,,
+IDP_3663,,
+IDP_3930,QC_rfMRI_head_motion,QC
+IDP_3317,,
+IDP_3689,,
+IDP_3784,,
+IDP_2658,,
+IDP_2902,,
+IDP_2257,rfMRI connectivity (ICA25 edge 39),rfMRI connectivity
+IDP_2612,,
+IDP_2562,,
+IDP_3605,,
+IDP_2479,,
+IDP_2548,,
+IDP_3717,,
+IDP_2522,,
+IDP_3477,,
+IDP_3324,,
+IDP_2921,,
+IDP_2652,,
+IDP_3300,,
+IDP_3842,,
+IDP_2372,rfMRI connectivity (ICA25 edge 154),rfMRI connectivity
+IDP_3694,,
+IDP_2907,,
+IDP_2272,rfMRI connectivity (ICA25 edge 54),rfMRI connectivity
+IDP_3334,,
+IDP_2837,,
+IDP_3347,,
+IDP_3506,,
+IDP_3100,,
+IDP_3123,,
+IDP_3621,,
+IDP_2614,,
+IDP_2839,,
+IDP_3656,,
+IDP_3662,,
+IDP_3772,,
+IDP_3586,,
+IDP_3643,,
+IDP_3796,,
+IDP_2500,,
+IDP_2412,rfMRI connectivity (ICA25 edge 194),rfMRI connectivity
+IDP_2697,,
+IDP_3119,,
+IDP_2610,,
+IDP_3315,,
+IDP_3679,,
+IDP_2780,,
+IDP_3419,,
+IDP_3847,,
+IDP_2484,,
+IDP_3328,,
+IDP_3505,,
+IDP_3006,,
+IDP_3829,,
+IDP_2794,,
+IDP_1332,aseg_global_intensity_non-WM-hypointensities,regional and tissue intensity
+IDP_3675,,
+IDP_2641,,
+IDP_2886,,
+IDP_2317,rfMRI connectivity (ICA25 edge 99),rfMRI connectivity
+IDP_3707,,
+IDP_2639,,
+IDP_2736,,
+IDP_3354,,
+IDP_3776,,
+IDP_3241,,
+IDP_2654,,
+IDP_3688,,
+IDP_3816,,
+IDP_3731,,
+IDP_2782,,
+IDP_3562,,
+IDP_2437,,
+IDP_3031,,
+IDP_3148,,
+IDP_2822,,
+IDP_3672,,
+IDP_2447,,
+IDP_2474,,
+IDP_2976,,
+IDP_3045,,
+IDP_3453,,
+IDP_3673,,
+IDP_3795,,
+IDP_2426,rfMRI connectivity (ICA25 edge 208),rfMRI connectivity
+IDP_2687,,
+IDP_3113,,
+IDP_2673,,
+IDP_3331,,
+IDP_3704,,
+IDP_2457,,
+IDP_3330,,
+IDP_3388,,
+IDP_3426,,
+IDP_3450,,
+IDP_3909,,
+IDP_3422,,
+IDP_3708,,
+IDP_2650,,
+IDP_3495,,
+IDP_2268,rfMRI connectivity (ICA25 edge 50),rfMRI connectivity
+IDP_3836,,
+IDP_2264,rfMRI connectivity (ICA25 edge 46),rfMRI connectivity
+IDP_3161,,
+IDP_3374,,
+IDP_3837,,
+IDP_2927,,
+IDP_3635,,
+IDP_2288,rfMRI connectivity (ICA25 edge 70),rfMRI connectivity
+IDP_3192,,
+IDP_2619,,
+IDP_2624,,
+IDP_2705,,
+IDP_3110,,
+IDP_3312,,
+IDP_3043,,
+IDP_3634,,
+IDP_2520,,
+IDP_3235,,
+IDP_2583,,
+IDP_2843,,
+IDP_2915,,
+IDP_3062,,
+IDP_3090,,
+IDP_3873,,
+IDP_3713,,
+IDP_3719,,
+IDP_2237,rfMRI connectivity (ICA25 edge 19),rfMRI connectivity
+IDP_2905,,
+IDP_3774,,
+IDP_3243,,
+IDP_3345,,
+IDP_3865,,
+IDP_2569,,
+IDP_3739,,
+IDP_3745,,
+IDP_3483,,
+IDP_3857,,
+IDP_2362,rfMRI connectivity (ICA25 edge 144),rfMRI connectivity
+IDP_2864,,
+IDP_3893,,
+IDP_2587,,
+IDP_3254,,
+IDP_3309,,
+IDP_3740,,
+IDP_3823,,
+IDP_3432,,
+IDP_3826,,
+IDP_3848,,
+IDP_2940,,
+IDP_3222,,
+IDP_3594,,
+IDP_3741,,
+IDP_2967,,
+IDP_3095,,
+IDP_3695,,
+IDP_3702,,
+IDP_3852,,
+IDP_3170,,
+IDP_3723,,
+IDP_2427,rfMRI connectivity (ICA25 edge 209),rfMRI connectivity
+IDP_3220,,
+IDP_3257,,
+IDP_3683,,
+IDP_3891,,
+IDP_2622,,
+IDP_2994,,
+IDP_3015,,
+IDP_3159,,
+IDP_2313,rfMRI connectivity (ICA25 edge 95),rfMRI connectivity
+IDP_2325,rfMRI connectivity (ICA25 edge 107),rfMRI connectivity
+IDP_2391,rfMRI connectivity (ICA25 edge 173),rfMRI connectivity
+IDP_2462,,
+IDP_3760,,
+IDP_2228,rfMRI connectivity (ICA25 edge 10),rfMRI connectivity
+IDP_3199,,
+IDP_3366,,
+IDP_2597,,
+IDP_2909,,
+IDP_3228,,
+IDP_2879,,
+IDP_2938,,
+IDP_3392,,
+IDP_3641,,
+IDP_2397,rfMRI connectivity (ICA25 edge 179),rfMRI connectivity
+IDP_2481,,
+IDP_2589,,
+IDP_3839,,
+IDP_2585,,
+IDP_2609,,
+IDP_3817,,
+IDP_3726,,
+IDP_3812,,
+IDP_2968,,
+IDP_2675,,
+IDP_2769,,
+IDP_2906,,
+IDP_3616,,
+IDP_3677,,
+IDP_3797,,
+IDP_2704,,
+IDP_2743,,
+IDP_2973,,
+IDP_2243,rfMRI connectivity (ICA25 edge 25),rfMRI connectivity
+IDP_2754,,
+IDP_2959,,
+IDP_3557,,
+IDP_3845,,
+IDP_3489,,
+IDP_2300,rfMRI connectivity (ICA25 edge 82),rfMRI connectivity
+IDP_2486,,
+IDP_2898,,
+IDP_2970,,
+IDP_2460,,
+IDP_2703,,
+IDP_3860,,
+IDP_2602,,
+IDP_3002,,
+IDP_3125,,
+IDP_3819,,
+IDP_2410,rfMRI connectivity (ICA25 edge 192),rfMRI connectivity
+IDP_3318,,
+IDP_3622,,
+IDP_2978,,
+IDP_3097,,
+IDP_3725,,
+IDP_2419,rfMRI connectivity (ICA25 edge 201),rfMRI connectivity
+IDP_3396,,
+IDP_3118,,
+IDP_2384,rfMRI connectivity (ICA25 edge 166),rfMRI connectivity
+IDP_2919,,
+IDP_3471,,
+IDP_3858,,
+IDP_2677,,
+IDP_3310,,
+IDP_3730,,
+IDP_2544,,
+IDP_3743,,
+IDP_3246,,
+IDP_3698,,
+IDP_3808,,
+IDP_2274,rfMRI connectivity (ICA25 edge 56),rfMRI connectivity
+IDP_2378,rfMRI connectivity (ICA25 edge 160),rfMRI connectivity
+IDP_3061,,
+IDP_3332,,
+IDP_3697,,
+IDP_2660,,
+IDP_3461,,
+IDP_3706,,
+IDP_2370,rfMRI connectivity (ICA25 edge 152),rfMRI connectivity
+IDP_2415,rfMRI connectivity (ICA25 edge 197),rfMRI connectivity
+IDP_3793,,
+IDP_2600,,
+IDP_2435,,
+IDP_2527,,
+IDP_3004,,
+IDP_3051,,
+IDP_2553,,
+IDP_2963,,
+IDP_3637,,
+IDP_3832,,
+IDP_3329,,
+IDP_3657,,
+IDP_2485,,
+IDP_2785,,
+IDP_2880,,
+IDP_3177,,
+IDP_3183,,
+IDP_3757,,
+IDP_3008,,
+IDP_3297,,
+IDP_3304,,
+IDP_3789,,
+IDP_2459,,
+IDP_2656,,
+IDP_3139,,
+IDP_3236,,
+IDP_3325,,
+IDP_3859,,
+IDP_3327,,
+IDP_3788,,
+IDP_2556,,
+IDP_3400,,
+IDP_3424,,
+IDP_2558,,
+IDP_2567,,
+IDP_2546,,
+IDP_2866,,
+IDP_3417,,
+IDP_2511,,
+IDP_2828,,
+IDP_3498,,
+IDP_3597,,
+IDP_3733,,
+IDP_2265,rfMRI connectivity (ICA25 edge 47),rfMRI connectivity
+IDP_2564,,
+IDP_2795,,
+IDP_2638,,
+IDP_2269,rfMRI connectivity (ICA25 edge 51),rfMRI connectivity
+IDP_2335,rfMRI connectivity (ICA25 edge 117),rfMRI connectivity
+IDP_2859,,
+IDP_2674,,
+IDP_2718,,
+IDP_3265,,
+IDP_3404,,
+IDP_3664,,
+IDP_3786,,
+IDP_3885,,
+IDP_3295,,
+IDP_2807,,
+IDP_2497,,
+IDP_2538,,
+IDP_2954,,
+IDP_3191,,
+IDP_3204,,
+IDP_2748,,
+IDP_3380,,
+IDP_3406,,
+IDP_3255,,
+IDP_2381,rfMRI connectivity (ICA25 edge 163),rfMRI connectivity
+IDP_2523,,
+IDP_2724,,
+IDP_3763,,
+IDP_3652,,
+IDP_3169,,
+IDP_3369,,
+IDP_3642,,
+IDP_3824,,
+IDP_2385,rfMRI connectivity (ICA25 edge 167),rfMRI connectivity
+IDP_2730,,
+IDP_3140,,
+IDP_3532,,
+IDP_3645,,
+IDP_3445,,
+IDP_3861,,
+IDP_3897,,
+IDP_2224,rfMRI connectivity (ICA25 edge 6),rfMRI connectivity
+IDP_2644,,
+IDP_3460,,
+IDP_3479,,
+IDP_2618,,
+IDP_2664,,
+IDP_2672,,
+IDP_3877,,
+IDP_2776,,
+IDP_3653,,
+IDP_2542,,
+IDP_2841,,
+IDP_3434,,
+IDP_2845,,
+IDP_2863,,
+IDP_3610,,
+IDP_3646,,
+IDP_3882,,
+IDP_2295,rfMRI connectivity (ICA25 edge 77),rfMRI connectivity
+IDP_2757,,
+IDP_3544,,
+IDP_2545,,
+IDP_2756,,
+IDP_3294,,
+IDP_2333,rfMRI connectivity (ICA25 edge 115),rfMRI connectivity
+IDP_2361,rfMRI connectivity (ICA25 edge 143),rfMRI connectivity
+IDP_2671,,
+IDP_2760,,
+IDP_3361,,
+IDP_3103,,
+IDP_3666,,
+IDP_2860,,
+IDP_3306,,
+IDP_3887,,
+IDP_2232,rfMRI connectivity (ICA25 edge 14),rfMRI connectivity
+IDP_3670,,
+IDP_2322,rfMRI connectivity (ICA25 edge 104),rfMRI connectivity
+IDP_2565,,
+IDP_2575,,
+IDP_2751,,
+IDP_2443,,
+IDP_3721,,
+IDP_3727,,
+IDP_3900,,
+IDP_3440,,
+IDP_3753,,
+IDP_3093,,
+IDP_3102,,
+IDP_3855,,
+IDP_3412,,
+IDP_3830,,
+IDP_2572,,
+IDP_2262,rfMRI connectivity (ICA25 edge 44),rfMRI connectivity
+IDP_2570,,
+IDP_2903,,
+IDP_3037,,
+IDP_3252,,
+IDP_3281,,
+IDP_3591,,
+IDP_3765,,
+IDP_2682,,
+IDP_2814,,
+IDP_3145,,
+IDP_3112,,
+IDP_3868,,
+IDP_2912,,
+IDP_3238,,
+IDP_3438,,
+IDP_3075,,
+IDP_2388,rfMRI connectivity (ICA25 edge 170),rfMRI connectivity
+IDP_3011,,
+IDP_3433,,
+IDP_3654,,
+IDP_2258,rfMRI connectivity (ICA25 edge 40),rfMRI connectivity
+IDP_3523,,
+IDP_3660,,
+IDP_2533,,
+IDP_2738,,
+IDP_3099,,
+IDP_3718,,
+IDP_2761,,
+IDP_2578,,
+IDP_2993,,
+IDP_3111,,
+IDP_3716,,
+IDP_3738,,
+IDP_2707,,
+IDP_2989,,
+IDP_3907,,
+IDP_2331,rfMRI connectivity (ICA25 edge 113),rfMRI connectivity
+IDP_3644,,
+IDP_2386,rfMRI connectivity (ICA25 edge 168),rfMRI connectivity
+IDP_3223,,
+IDP_3501,,
+IDP_2304,rfMRI connectivity (ICA25 edge 86),rfMRI connectivity
+IDP_3172,,
+IDP_3715,,
+IDP_2491,,
+IDP_2856,,
+IDP_3409,,
+IDP_3613,,
+IDP_2296,rfMRI connectivity (ICA25 edge 78),rfMRI connectivity
+IDP_3116,,
+IDP_3840,,
+IDP_3872,,
+IDP_2365,rfMRI connectivity (ICA25 edge 147),rfMRI connectivity
+IDP_2406,rfMRI connectivity (ICA25 edge 188),rfMRI connectivity
+IDP_2772,,
+IDP_3023,,
+IDP_3748,,
+IDP_2267,rfMRI connectivity (ICA25 edge 49),rfMRI connectivity
+IDP_2537,,
+IDP_2668,,
+IDP_3375,,
+IDP_2948,,
+IDP_3126,,
+IDP_3767,,
+IDP_3729,,
+IDP_2911,,
+IDP_2634,,
+IDP_3185,,
+IDP_2557,,
+IDP_2894,,
+IDP_2965,,
+IDP_3291,,
+IDP_3351,,
+IDP_3363,,
+IDP_2809,,
+IDP_3397,,
+IDP_2222,rfMRI connectivity (ICA25 edge 4),rfMRI connectivity
+IDP_3256,,
+IDP_3372,,
+IDP_3682,,
+IDP_3650,,
+IDP_2436,,
+IDP_2640,,
+IDP_3234,,
+IDP_3668,,
+IDP_2842,,
+IDP_2823,,
+IDP_3515,,
+IDP_2979,,
+IDP_2245,rfMRI connectivity (ICA25 edge 27),rfMRI connectivity
+IDP_2330,rfMRI connectivity (ICA25 edge 112),rfMRI connectivity
+IDP_2350,rfMRI connectivity (ICA25 edge 132),rfMRI connectivity
+IDP_2400,rfMRI connectivity (ICA25 edge 182),rfMRI connectivity
+IDP_3833,,
+IDP_2179,,
+IDP_2620,,
+IDP_2917,,
+IDP_3302,,
+IDP_3481,,
+IDP_2844,,
+IDP_3025,,
+IDP_3712,,
+IDP_3835,,
+IDP_2380,rfMRI connectivity (ICA25 edge 162),rfMRI connectivity
+IDP_2793,,
+IDP_3078,,
+IDP_3720,,
+IDP_2838,,
+IDP_3452,,
+IDP_2996,,
+IDP_3606,,
+IDP_3754,,
+IDP_2685,,
+IDP_3311,,
+IDP_3818,,
+IDP_2534,,
+IDP_2525,,
+IDP_2646,,
+IDP_2835,,
+IDP_3196,,
+IDP_3790,,
+IDP_3263,,
+IDP_2990,,
+IDP_2997,,
+IDP_3009,,
+IDP_2418,rfMRI connectivity (ICA25 edge 200),rfMRI connectivity
+IDP_2749,,
+IDP_3651,,
+IDP_3690,,
+IDP_3212,,
+IDP_2759,,
+IDP_2957,,
+IDP_3316,,
+IDP_3420,,
+IDP_2312,rfMRI connectivity (ICA25 edge 94),rfMRI connectivity
+IDP_3526,,
+IDP_3615,,
+IDP_2477,,
+IDP_2986,,
+IDP_3131,,
+IDP_2387,rfMRI connectivity (ICA25 edge 169),rfMRI connectivity
+IDP_3701,,
+IDP_3750,,
+IDP_2727,,
+IDP_3874,,
+IDP_1402,wg_rh_intensity-contrast_unknown,cortical grey-white contrast
+IDP_2982,,
+IDP_3734,,
+IDP_2263,rfMRI connectivity (ICA25 edge 45),rfMRI connectivity
+IDP_3162,,
+IDP_3227,,
+IDP_2603,,
+IDP_2797,,
+IDP_3777,,
+IDP_3022,,
+IDP_2518,,
+IDP_2765,,
+IDP_3529,,
+IDP_3552,,
+IDP_2651,,
+IDP_3010,,
+IDP_3224,,
+IDP_3851,,
+IDP_2925,,
+IDP_3280,,
+IDP_3611,,
+IDP_2291,rfMRI connectivity (ICA25 edge 73),rfMRI connectivity
+IDP_2294,rfMRI connectivity (ICA25 edge 76),rfMRI connectivity
+IDP_3906,,
+IDP_3201,,
+IDP_3275,,
+IDP_3649,,
+IDP_2260,rfMRI connectivity (ICA25 edge 42),rfMRI connectivity
+IDP_2885,,
+IDP_2974,,
+IDP_3217,,
+IDP_2778,,
+IDP_3230,,
+IDP_2752,,
+IDP_3024,,
+IDP_2964,,
+IDP_2282,rfMRI connectivity (ICA25 edge 64),rfMRI connectivity
+IDP_3648,,
+IDP_3667,,
+IDP_2582,,
+IDP_3319,,
+IDP_3804,,
+IDP_2240,rfMRI connectivity (ICA25 edge 22),rfMRI connectivity
+IDP_2616,,
+IDP_2643,,
+IDP_2750,,
+IDP_2451,,
+IDP_2502,,
+IDP_2550,,
+IDP_3912,,
+IDP_2399,rfMRI connectivity (ICA25 edge 181),rfMRI connectivity
+IDP_2686,,
+IDP_3504,,
+IDP_3669,,
+IDP_2420,rfMRI connectivity (ICA25 edge 202),rfMRI connectivity
+IDP_3626,,
+IDP_2248,rfMRI connectivity (ICA25 edge 30),rfMRI connectivity
+IDP_3728,,
+IDP_2493,,
+IDP_3213,,
+IDP_3339,,
+IDP_2593,,
+IDP_3055,,
+IDP_2403,rfMRI connectivity (ICA25 edge 185),rfMRI connectivity
+IDP_3326,,
+IDP_3559,,
+IDP_3890,,
+IDP_2579,,
+IDP_3115,,
+IDP_3457,,
+IDP_2456,,
+IDP_3059,,
+IDP_3178,,
+IDP_3189,,
+IDP_3896,,
+IDP_2429,,
+IDP_2549,,
+IDP_2680,,
+IDP_2956,,
+IDP_3197,,
+IDP_3451,,
+IDP_3876,,
+IDP_2464,,
+IDP_2642,,
+IDP_2975,,
+IDP_3072,,
+IDP_3572,,
+IDP_2340,rfMRI connectivity (ICA25 edge 122),rfMRI connectivity
+IDP_3076,,
+IDP_3128,,
+IDP_3348,,
+IDP_2301,rfMRI connectivity (ICA25 edge 83),rfMRI connectivity
+IDP_2524,,
+IDP_2498,,
+IDP_2695,,
+IDP_2805,,
+IDP_3249,,
+IDP_3503,,
+IDP_3700,,
+IDP_3815,,
+IDP_2298,rfMRI connectivity (ICA25 edge 80),rfMRI connectivity
+IDP_2375,rfMRI connectivity (ICA25 edge 157),rfMRI connectivity
+IDP_2829,,
+IDP_2495,,
+IDP_2601,,
+IDP_2944,,
+IDP_3154,,
+IDP_3233,,
+IDP_2334,rfMRI connectivity (ICA25 edge 116),rfMRI connectivity
+IDP_2951,,
+IDP_3699,,
+IDP_3756,,
+IDP_2396,rfMRI connectivity (ICA25 edge 178),rfMRI connectivity
+IDP_3012,,
+IDP_3787,,
+IDP_2239,rfMRI connectivity (ICA25 edge 21),rfMRI connectivity
+IDP_2281,rfMRI connectivity (ICA25 edge 63),rfMRI connectivity
+IDP_2489,,
+IDP_2670,,
+IDP_2720,,
+IDP_3203,,
+IDP_3260,,
+IDP_3497,,
+IDP_3134,,
+IDP_3175,,
+IDP_2733,,
+IDP_2737,,
+IDP_3215,,
+IDP_3335,,
+IDP_2254,rfMRI connectivity (ICA25 edge 36),rfMRI connectivity
+IDP_2513,,
+IDP_3106,,
+IDP_3811,,
+IDP_2422,rfMRI connectivity (ICA25 edge 204),rfMRI connectivity
+IDP_3618,,
+IDP_3724,,
+IDP_2774,,
+IDP_2259,rfMRI connectivity (ICA25 edge 41),rfMRI connectivity
+IDP_2346,rfMRI connectivity (ICA25 edge 128),rfMRI connectivity
+IDP_2383,rfMRI connectivity (ICA25 edge 165),rfMRI connectivity
+IDP_2768,,
+IDP_3517,,
+IDP_2799,,
+IDP_3229,,
+IDP_2306,rfMRI connectivity (ICA25 edge 88),rfMRI connectivity
+IDP_2327,rfMRI connectivity (ICA25 edge 109),rfMRI connectivity
+IDP_2869,,
+IDP_2741,,
+IDP_3096,,
+IDP_3151,,
+IDP_3179,,
+IDP_3825,,
+IDP_3202,,
+IDP_2853,,
+IDP_3144,,
+IDP_3564,,
+IDP_3886,,
+IDP_2698,,
+IDP_3041,,
+IDP_3671,,
+IDP_3761,,
+IDP_3114,,
+IDP_3109,,
+IDP_3320,,
+IDP_2701,,
+IDP_2922,,
+IDP_3638,,
+IDP_2292,rfMRI connectivity (ICA25 edge 74),rfMRI connectivity
+IDP_3195,,
+IDP_2657,,
+IDP_3785,,
+IDP_3018,,
+IDP_3629,,
+IDP_2230,rfMRI connectivity (ICA25 edge 12),rfMRI connectivity
+IDP_2431,,
+IDP_2512,,
+IDP_2577,,
+IDP_2881,,
+IDP_3632,,
+IDP_3211,,
+IDP_2238,rfMRI connectivity (ICA25 edge 20),rfMRI connectivity
+IDP_3298,,
+IDP_3602,,
+IDP_3904,,
+IDP_2440,,
+IDP_2367,rfMRI connectivity (ICA25 edge 149),rfMRI connectivity
+IDP_2849,,
+IDP_3752,,
+IDP_2667,,
+IDP_3476,,
+IDP_2226,rfMRI connectivity (ICA25 edge 8),rfMRI connectivity
+IDP_2678,,
+IDP_2775,,
+IDP_2983,,
+IDP_2352,rfMRI connectivity (ICA25 edge 134),rfMRI connectivity
+IDP_3313,,
+IDP_2338,rfMRI connectivity (ICA25 edge 120),rfMRI connectivity
+IDP_2653,,
+IDP_3314,,
+IDP_2417,rfMRI connectivity (ICA25 edge 199),rfMRI connectivity
+IDP_3299,,
+IDP_3081,,
+IDP_3437,,
+IDP_3871,,
+IDP_2250,rfMRI connectivity (ICA25 edge 32),rfMRI connectivity
+IDP_2910,,
+IDP_2939,,
+IDP_3365,,
+IDP_2393,rfMRI connectivity (ICA25 edge 175),rfMRI connectivity
+IDP_2712,,
+IDP_3308,,
+IDP_3490,,
+IDP_2318,rfMRI connectivity (ICA25 edge 100),rfMRI connectivity
+IDP_2469,,
+IDP_2547,,
+IDP_3267,,
+IDP_3271,,
+IDP_3674,,
+IDP_2802,,
+IDP_2995,,
+IDP_3214,,
+IDP_2146,rfMRI amplitudes (ICA25 node 4),rfMRI node amplitude
+IDP_2605,,
+IDP_2890,,
+IDP_3665,,
+IDP_2433,,
+IDP_2560,,
+IDP_2519,,
+IDP_2645,,
+IDP_3240,,
+IDP_2492,,
+IDP_2969,,
+IDP_2762,,
+IDP_3064,,
+IDP_3918,rfMRI connectivity ICA-features 5,rfMRI connectivity
+IDP_2425,rfMRI connectivity (ICA25 edge 207),rfMRI connectivity
+IDP_2576,,
+IDP_3394,,
+IDP_2315,rfMRI connectivity (ICA25 edge 97),rfMRI connectivity
+IDP_2438,,
+IDP_2897,,
+IDP_3791,,
+IDP_3554,,
+IDP_3658,,
+IDP_2261,rfMRI connectivity (ICA25 edge 43),rfMRI connectivity
+IDP_2430,,
+IDP_2655,,
+IDP_3080,,
+IDP_3749,,
+IDP_2806,,
+IDP_2323,rfMRI connectivity (ICA25 edge 105),rfMRI connectivity
+IDP_2465,,
+IDP_2826,,
+IDP_2235,rfMRI connectivity (ICA25 edge 17),rfMRI connectivity
+IDP_2416,rfMRI connectivity (ICA25 edge 198),rfMRI connectivity
+IDP_2688,,
+IDP_3117,,
+IDP_3436,,
+IDP_2596,,
+IDP_3165,,
+IDP_3276,,
+IDP_2904,,
+IDP_2515,,
+IDP_3870,,
+IDP_2279,rfMRI connectivity (ICA25 edge 61),rfMRI connectivity
+IDP_2354,rfMRI connectivity (ICA25 edge 136),rfMRI connectivity
+IDP_3132,,
+IDP_3908,,
+IDP_2953,,
+IDP_2428,rfMRI connectivity (ICA25 edge 210),rfMRI connectivity
+IDP_2681,,
+IDP_2876,,
+IDP_2665,,
+IDP_3560,,
+IDP_3794,,
+IDP_3880,,
+IDP_2348,rfMRI connectivity (ICA25 edge 130),rfMRI connectivity
+IDP_2821,,
+IDP_3248,,
+IDP_3705,,
+IDP_2308,rfMRI connectivity (ICA25 edge 90),rfMRI connectivity
+IDP_2514,,
+IDP_3456,,
+IDP_3524,,
+IDP_3849,,
+IDP_2475,,
+IDP_2753,,
+IDP_3619,,
+IDP_2984,,
+IDP_3301,,
+IDP_2659,,
+IDP_2966,,
+IDP_3486,,
+IDP_2696,,
+IDP_2779,,
+IDP_2394,rfMRI connectivity (ICA25 edge 176),rfMRI connectivity
+IDP_2307,rfMRI connectivity (ICA25 edge 89),rfMRI connectivity
+IDP_2531,,
+IDP_2895,,
+IDP_3681,,
+IDP_2311,rfMRI connectivity (ICA25 edge 93),rfMRI connectivity
+IDP_2452,,
+IDP_2934,,
+IDP_2683,,
+IDP_3288,,
+IDP_2466,,
+IDP_2405,rfMRI connectivity (ICA25 edge 187),rfMRI connectivity
+IDP_3863,,
+IDP_2598,,
+IDP_2661,,
+IDP_2891,,
+IDP_3088,,
+IDP_2271,rfMRI connectivity (ICA25 edge 53),rfMRI connectivity
+IDP_2766,,
+IDP_2796,,
+IDP_3446,,
+IDP_3608,,
+IDP_3766,,
+IDP_3801,,
+IDP_2316,rfMRI connectivity (ICA25 edge 98),rfMRI connectivity
+IDP_2359,rfMRI connectivity (ICA25 edge 141),rfMRI connectivity
+IDP_2803,,
+IDP_3239,,
+IDP_2339,rfMRI connectivity (ICA25 edge 121),rfMRI connectivity
+IDP_2241,rfMRI connectivity (ICA25 edge 23),rfMRI connectivity
+IDP_2666,,
+IDP_2789,,
+IDP_2899,,
+IDP_3259,,
+IDP_2490,,
+IDP_2943,,
+IDP_3209,,
+IDP_3060,,
+IDP_3122,,
+IDP_3575,,
+IDP_2167,,
+IDP_2355,rfMRI connectivity (ICA25 edge 137),rfMRI connectivity
+IDP_3232,,
+IDP_2574,,
+IDP_3121,,
+IDP_3176,,
+IDP_3205,,
+IDP_2873,,
+IDP_2496,,
+IDP_3617,,
+IDP_3782,,
+IDP_2706,,
+IDP_3410,,
+IDP_3084,,
+IDP_2144,rfMRI amplitudes (ICA25 node 2),rfMRI node amplitude
+IDP_2360,rfMRI connectivity (ICA25 edge 142),rfMRI connectivity
+IDP_2663,,
+IDP_3264,,
+IDP_2889,,
+IDP_3250,,
+IDP_2692,,
+IDP_2784,,
+IDP_3485,,
+IDP_3444,,
+IDP_2636,,
+IDP_2555,,
+IDP_3210,,
+IDP_3732,,
+IDP_2286,rfMRI connectivity (ICA25 edge 68),rfMRI connectivity
+IDP_2942,,
+IDP_2193,,
+IDP_2901,,
+IDP_2985,,
+IDP_3216,,
+IDP_3551,,
+IDP_2328,rfMRI connectivity (ICA25 edge 110),rfMRI connectivity
+IDP_3589,,
+IDP_3068,,
+IDP_3167,,
+IDP_3454,,
+IDP_2407,rfMRI connectivity (ICA25 edge 189),rfMRI connectivity
+IDP_3019,,
+IDP_3050,,
+IDP_2319,rfMRI connectivity (ICA25 edge 101),rfMRI connectivity
+IDP_2689,,
+IDP_2801,,
+IDP_3640,,
+IDP_2621,,
+IDP_2840,,
+IDP_2735,,
+IDP_2599,,
+IDP_3221,,
+IDP_3092,,
+IDP_2861,,
+IDP_3133,,
+IDP_1367,wg_lh_intensity-contrast_unknown,cortical grey-white contrast
+IDP_2717,,
+IDP_2770,,
+IDP_3570,,
+IDP_2487,,
+IDP_3383,,
+IDP_2314,rfMRI connectivity (ICA25 edge 96),rfMRI connectivity
+IDP_3467,,
+IDP_3142,,
+IDP_3536,,
+IDP_3802,,
+IDP_2283,rfMRI connectivity (ICA25 edge 65),rfMRI connectivity
+IDP_2256,rfMRI connectivity (ICA25 edge 38),rfMRI connectivity
+IDP_2563,,
+IDP_2709,,
+IDP_3225,,
+IDP_2916,,
+IDP_3218,,
+IDP_3296,,
+IDP_3510,,
+IDP_3014,,
+IDP_2501,,
+IDP_3048,,
+IDP_2810,,
+IDP_2920,,
+IDP_2223,rfMRI connectivity (ICA25 edge 5),rfMRI connectivity
+IDP_3864,,
+IDP_2309,rfMRI connectivity (ICA25 edge 91),rfMRI connectivity
+IDP_2729,,
+IDP_2566,,
+IDP_3458,,
+IDP_2368,rfMRI connectivity (ICA25 edge 150),rfMRI connectivity
+IDP_3427,,
+IDP_2150,rfMRI amplitudes (ICA25 node 8),rfMRI node amplitude
+IDP_2255,rfMRI connectivity (ICA25 edge 37),rfMRI connectivity
+IDP_3408,,
+IDP_3878,,
+IDP_2758,,
+IDP_3541,,
+IDP_2227,rfMRI connectivity (ICA25 edge 9),rfMRI connectivity
+IDP_3274,,
+IDP_2347,rfMRI connectivity (ICA25 edge 129),rfMRI connectivity
+IDP_2401,rfMRI connectivity (ICA25 edge 183),rfMRI connectivity
+IDP_3173,,
+IDP_2726,,
+IDP_2935,,
+IDP_3582,,
+IDP_2781,,
+IDP_2913,,
+IDP_2721,,
+IDP_3187,,
+IDP_2777,,
+IDP_2266,rfMRI connectivity (ICA25 edge 48),rfMRI connectivity
+IDP_2790,,
+IDP_2875,,
+IDP_3067,,
+IDP_3934,QC_tfMRI_inverse_tSNR,QC
+IDP_2320,rfMRI connectivity (ICA25 edge 102),rfMRI connectivity
+IDP_3152,,
+IDP_2246,rfMRI connectivity (ICA25 edge 28),rfMRI connectivity
+IDP_2865,,
+IDP_2423,rfMRI connectivity (ICA25 edge 205),rfMRI connectivity
+IDP_3269,,
+IDP_3282,,
+IDP_3884,,
+IDP_2244,rfMRI connectivity (ICA25 edge 26),rfMRI connectivity
+IDP_2763,,
+IDP_2852,,
+IDP_3284,,
+IDP_2379,rfMRI connectivity (ICA25 edge 161),rfMRI connectivity
+IDP_2363,rfMRI connectivity (ICA25 edge 145),rfMRI connectivity
+IDP_2679,,
+IDP_3603,,
+IDP_2987,,
+IDP_2928,,
+IDP_3573,,
+IDP_3039,,
+IDP_2559,,
+IDP_2854,,
+IDP_3049,,
+IDP_2332,rfMRI connectivity (ICA25 edge 114),rfMRI connectivity
+IDP_2336,rfMRI connectivity (ICA25 edge 118),rfMRI connectivity
+IDP_2981,,
+IDP_2369,rfMRI connectivity (ICA25 edge 151),rfMRI connectivity
+IDP_3528,,
+IDP_2161,rfMRI amplitudes (ICA25 node 19),rfMRI node amplitude
+IDP_3231,,
+IDP_2432,,
+IDP_2516,,
+IDP_3266,,
+IDP_3350,,
+IDP_2445,,
+IDP_2988,,
+IDP_2371,rfMRI connectivity (ICA25 edge 153),rfMRI connectivity
+IDP_2408,rfMRI connectivity (ICA25 edge 190),rfMRI connectivity
+IDP_2510,,
+IDP_2690,,
+IDP_2467,,
+IDP_2955,,
+IDP_3333,,
+IDP_3598,,
+IDP_2356,rfMRI connectivity (ICA25 edge 138),rfMRI connectivity
+IDP_2552,,
+IDP_2276,rfMRI connectivity (ICA25 edge 58),rfMRI connectivity
+IDP_2353,rfMRI connectivity (ICA25 edge 135),rfMRI connectivity
+IDP_3038,,
+IDP_3157,,
+IDP_3676,,
+IDP_2153,rfMRI amplitudes (ICA25 node 11),rfMRI node amplitude
+IDP_2284,rfMRI connectivity (ICA25 edge 66),rfMRI connectivity
+IDP_3346,,
+IDP_3580,,
+IDP_2449,,
+IDP_3129,,
+IDP_3609,,
+IDP_3628,,
+IDP_2635,,
+IDP_3513,,
+IDP_2594,,
+IDP_2536,,
+IDP_2962,,
+IDP_2217,,
+IDP_3153,,
+IDP_3480,,
+IDP_3146,,
+IDP_3262,,
+IDP_2617,,
+IDP_3538,,
+IDP_3226,,
+IDP_2648,,
+IDP_2746,,
+IDP_2366,rfMRI connectivity (ICA25 edge 148),rfMRI connectivity
+IDP_3655,,
+IDP_2220,rfMRI connectivity (ICA25 edge 2),rfMRI connectivity
+IDP_3261,,
+IDP_2205,,
+IDP_2395,rfMRI connectivity (ICA25 edge 177),rfMRI connectivity
+IDP_3482,,
+IDP_2791,,
+IDP_3376,,
+IDP_2341,rfMRI connectivity (ICA25 edge 123),rfMRI connectivity
+IDP_3378,,
+IDP_3799,,
+IDP_3171,,
+IDP_3773,,
+IDP_2588,,
+IDP_2786,,
+IDP_3242,,
+IDP_2708,,
+IDP_3077,,
+IDP_3156,,
+IDP_3883,,
+IDP_3869,,
+IDP_2343,rfMRI connectivity (ICA25 edge 125),rfMRI connectivity
+IDP_2571,,
+IDP_2275,rfMRI connectivity (ICA25 edge 57),rfMRI connectivity
+IDP_3578,,
+IDP_2483,,
+IDP_2504,,
+IDP_2836,,
+IDP_3258,,
+IDP_2214,,
+IDP_2798,,
+IDP_3040,,
+IDP_2277,rfMRI connectivity (ICA25 edge 59),rfMRI connectivity
+IDP_2505,,
+IDP_3141,,
+IDP_3289,,
+IDP_3888,,
+IDP_3576,,
+IDP_2824,,
+IDP_3866,,
+IDP_3279,,
+IDP_2326,rfMRI connectivity (ICA25 edge 108),rfMRI connectivity
+IDP_2402,rfMRI connectivity (ICA25 edge 184),rfMRI connectivity
+IDP_2872,,
+IDP_3903,,
+IDP_3759,,
+IDP_3070,,
+IDP_3604,,
+IDP_2290,rfMRI connectivity (ICA25 edge 72),rfMRI connectivity
+IDP_2950,,
+IDP_3548,,
+IDP_2526,,
+IDP_2221,rfMRI connectivity (ICA25 edge 3),rfMRI connectivity
+IDP_2303,rfMRI connectivity (ICA25 edge 85),rfMRI connectivity
+IDP_2424,rfMRI connectivity (ICA25 edge 206),rfMRI connectivity
+IDP_2509,,
+IDP_2528,,
+IDP_2870,,
+IDP_3181,,
+IDP_3069,,
+IDP_3370,,
+IDP_2154,rfMRI amplitudes (ICA25 node 12),rfMRI node amplitude
+IDP_2278,rfMRI connectivity (ICA25 edge 60),rfMRI connectivity
+IDP_3021,,
+IDP_2458,,
+IDP_2771,,
+IDP_3143,,
+IDP_3472,,
+IDP_2936,,
+IDP_3516,,
+IDP_3775,,
+IDP_3079,,
+IDP_3253,,
+IDP_3338,,
+IDP_2739,,
+IDP_2874,,
+IDP_3371,,
+IDP_2773,,
+IDP_3507,,
+IDP_2971,,
+IDP_2946,,
+IDP_3155,,
+IDP_2253,rfMRI connectivity (ICA25 edge 35),rfMRI connectivity
+IDP_2573,,
+IDP_2732,,
+IDP_3200,,
+IDP_3596,,
+IDP_2219,rfMRI connectivity (ICA25 edge 1),rfMRI connectivity
+IDP_2952,,
+IDP_2532,,
+IDP_3571,,
+IDP_3353,,
+IDP_3435,,
+IDP_2568,,
+IDP_2637,,
+IDP_2273,rfMRI connectivity (ICA25 edge 55),rfMRI connectivity
+IDP_3245,,
+IDP_3391,,
+IDP_2541,,
+IDP_2693,,
+IDP_3136,,
+IDP_3268,,
+IDP_2398,rfMRI connectivity (ICA25 edge 180),rfMRI connectivity
+IDP_2958,,
+IDP_2195,,
+IDP_3574,,
+IDP_2649,,
+IDP_3798,,
+IDP_2711,,
+IDP_2177,,
+IDP_2468,,
+IDP_2933,,
+IDP_2287,rfMRI connectivity (ICA25 edge 69),rfMRI connectivity
+IDP_2591,,
+IDP_2472,,
+IDP_2305,rfMRI connectivity (ICA25 edge 87),rfMRI connectivity
+IDP_2302,rfMRI connectivity (ICA25 edge 84),rfMRI connectivity
+IDP_3416,,
+IDP_2461,,
+IDP_3089,,
+IDP_2586,,
+IDP_3563,,
+IDP_3277,,
+IDP_2722,,
+IDP_3054,,
+IDP_3428,,
+IDP_3270,,
+IDP_2931,,
+IDP_2229,rfMRI connectivity (ICA25 edge 11),rfMRI connectivity
+IDP_3584,,
+IDP_2169,,
+IDP_2453,,
+IDP_2715,,
+IDP_3007,,
+IDP_3803,,
+IDP_2204,,
+IDP_2404,rfMRI connectivity (ICA25 edge 186),rfMRI connectivity
+IDP_2234,rfMRI connectivity (ICA25 edge 16),rfMRI connectivity
+IDP_3367,,
+IDP_2980,,
+IDP_2293,rfMRI connectivity (ICA25 edge 75),rfMRI connectivity
+IDP_2364,rfMRI connectivity (ICA25 edge 146),rfMRI connectivity
+IDP_3184,,
+IDP_3425,,
+IDP_3285,,
+IDP_3341,,
+IDP_3086,,
+IDP_3368,,
+IDP_2236,rfMRI connectivity (ICA25 edge 18),rfMRI connectivity
+IDP_3188,,
+IDP_3556,,
+IDP_2960,,
+IDP_3465,,
+IDP_2421,rfMRI connectivity (ICA25 edge 203),rfMRI connectivity
+IDP_2411,rfMRI connectivity (ICA25 edge 193),rfMRI connectivity
+IDP_2202,,
+IDP_2351,rfMRI connectivity (ICA25 edge 133),rfMRI connectivity
+IDP_3208,,
+IDP_3030,,
+IDP_3056,,
+IDP_2684,,
+IDP_2804,,
+IDP_3016,,
+IDP_3555,,
+IDP_2206,,
+IDP_3595,,
+IDP_3587,,
+IDP_2251,rfMRI connectivity (ICA25 edge 33),rfMRI connectivity
+IDP_3399,,
+IDP_2152,rfMRI amplitudes (ICA25 node 10),rfMRI node amplitude
+IDP_3601,,
+IDP_2691,,
+IDP_2357,rfMRI connectivity (ICA25 edge 139),rfMRI connectivity
+IDP_3543,,
+IDP_3549,,
+IDP_3164,,
+IDP_3149,,
+IDP_2231,rfMRI connectivity (ICA25 edge 13),rfMRI connectivity
+IDP_2373,rfMRI connectivity (ICA25 edge 155),rfMRI connectivity
+IDP_2166,,
+IDP_3247,,
+IDP_3168,,
+IDP_2857,,
+IDP_3484,,
+IDP_2499,,
+IDP_3568,,
+IDP_2882,,
+IDP_3198,,
+IDP_3585,,
+IDP_3590,,
+IDP_2747,,
+IDP_2625,,
+IDP_2923,,
+IDP_3244,,
+IDP_2321,rfMRI connectivity (ICA25 edge 103),rfMRI connectivity
+IDP_2699,,
+IDP_2168,,
+IDP_2473,,
+IDP_2242,rfMRI connectivity (ICA25 edge 24),rfMRI connectivity
+IDP_2171,,
+IDP_2252,rfMRI connectivity (ICA25 edge 34),rfMRI connectivity
+IDP_3387,,
+IDP_2329,rfMRI connectivity (ICA25 edge 111),rfMRI connectivity
+IDP_2590,,
+IDP_2719,,
+IDP_2149,rfMRI amplitudes (ICA25 node 7),rfMRI node amplitude
+IDP_3393,,
+IDP_2344,rfMRI connectivity (ICA25 edge 126),rfMRI connectivity
+IDP_3531,,
+IDP_2285,rfMRI connectivity (ICA25 edge 67),rfMRI connectivity
+IDP_2488,,
+IDP_3430,,
+IDP_2926,,
+IDP_2676,,
+IDP_3455,,
+IDP_2482,,
+IDP_2529,,
+IDP_3193,,
+IDP_2888,,
+IDP_3633,,
+IDP_3158,,
+IDP_2310,rfMRI connectivity (ICA25 edge 92),rfMRI connectivity
+IDP_3085,,
+IDP_3036,,
+IDP_2478,,
+IDP_2434,,
+IDP_3065,,
+IDP_3357,,
+IDP_2409,rfMRI connectivity (ICA25 edge 191),rfMRI connectivity
+IDP_3237,,
+IDP_2813,,
+IDP_3398,,
+IDP_3778,,
+IDP_3783,,
+IDP_2247,rfMRI connectivity (ICA25 edge 29),rfMRI connectivity
+IDP_2740,,
+IDP_3044,,
+IDP_2213,,
+IDP_2833,,
+IDP_3373,,
+IDP_3499,,
+IDP_2834,,
+IDP_2628,,
+IDP_3550,,
+IDP_3182,,
+IDP_2792,,
+IDP_2289,rfMRI connectivity (ICA25 edge 71),rfMRI connectivity
+IDP_3502,,
+IDP_2830,,
+IDP_2945,,
+IDP_3414,,
+IDP_3272,,
+IDP_3418,,
+IDP_3094,,
+IDP_2471,,
+IDP_2716,,
+IDP_3035,,
+IDP_2173,,
+IDP_3384,,
+IDP_2764,,
+IDP_2521,,
+IDP_2159,rfMRI amplitudes (ICA25 node 17),rfMRI node amplitude
+IDP_2233,rfMRI connectivity (ICA25 edge 15),rfMRI connectivity
+IDP_2215,,
+IDP_2929,,
+IDP_2702,,
+IDP_2868,,
+IDP_3401,,
+IDP_2324,rfMRI connectivity (ICA25 edge 106),rfMRI connectivity
+IDP_3508,,
+IDP_3032,,
+IDP_3592,,
+IDP_3509,,
+IDP_2192,,
+IDP_2507,,
+IDP_2723,,
+IDP_3342,,
+IDP_3473,,
+IDP_3174,,
+IDP_3566,,
+IDP_2592,,
+IDP_3336,,
+IDP_2392,rfMRI connectivity (ICA25 edge 174),rfMRI connectivity
+IDP_2878,,
+IDP_2463,,
+IDP_2190,,
+IDP_2630,,
+IDP_2633,,
+IDP_2174,,
+IDP_2816,,
+IDP_3287,,
+IDP_3470,,
+IDP_2530,,
+IDP_3449,,
+IDP_3447,,
+IDP_2208,,
+IDP_3519,,
+IDP_2337,rfMRI connectivity (ICA25 edge 119),rfMRI connectivity
+IDP_3402,,
+IDP_3537,,
+IDP_2832,,
+IDP_2991,,
+IDP_3567,,
+IDP_3027,,
+IDP_2561,,
+IDP_2788,,
+IDP_3443,,
+IDP_2156,rfMRI amplitudes (ICA25 node 14),rfMRI node amplitude
+IDP_2629,,
+IDP_3625,,
+IDP_2218,,
+IDP_2647,,
+IDP_3553,,
+IDP_3413,,
+IDP_2249,rfMRI connectivity (ICA25 edge 31),rfMRI connectivity
+IDP_3362,,
+IDP_3769,,
+IDP_3764,,
+IDP_3073,,
+IDP_3364,,
+IDP_3057,,
+IDP_2181,,
+IDP_3135,,
+IDP_3034,,
+IDP_2480,,
+IDP_2189,,
+IDP_2892,,
+IDP_3442,,
+IDP_2390,rfMRI connectivity (ICA25 edge 172),rfMRI connectivity
+IDP_2185,,
+IDP_2225,rfMRI connectivity (ICA25 edge 7),rfMRI connectivity
+IDP_3349,,
+IDP_3530,,
+IDP_2494,,
+IDP_2164,,
+IDP_3071,,
+IDP_3545,,
+IDP_2299,rfMRI connectivity (ICA25 edge 81),rfMRI connectivity
+IDP_2937,,
+IDP_3407,,
+IDP_2713,,
+IDP_2503,,
+IDP_2623,,
+IDP_2197,,
+IDP_3431,,
+IDP_3542,,
+IDP_2949,,
+IDP_3386,,
+IDP_3190,,
+IDP_2203,,
+IDP_3206,,
+IDP_3343,,
+IDP_3500,,
+IDP_2817,,
+IDP_3411,,
+IDP_3463,,
+IDP_2755,,
+IDP_3514,,
+IDP_3923,QC_T1_inverse_SNR,QC
+IDP_3423,,
+IDP_2818,,
+IDP_2631,,
+IDP_2887,,
+IDP_3273,,
+IDP_3150,,
+IDP_2160,rfMRI amplitudes (ICA25 node 18),rfMRI node amplitude
+IDP_2448,,
+IDP_2414,rfMRI connectivity (ICA25 edge 196),rfMRI connectivity
+IDP_2158,rfMRI amplitudes (ICA25 node 16),rfMRI node amplitude
+IDP_3091,,
+IDP_3534,,
+IDP_2210,,
+IDP_3475,,
+IDP_2183,,
+IDP_3522,,
+IDP_2145,rfMRI amplitudes (ICA25 node 3),rfMRI node amplitude
+IDP_2825,,
+IDP_3577,,
+IDP_3381,,
+IDP_2162,rfMRI amplitudes (ICA25 node 20),rfMRI node amplitude
+IDP_3779,,
+IDP_3395,,
+IDP_3496,,
+IDP_2216,,
+IDP_2151,rfMRI amplitudes (ICA25 node 9),rfMRI node amplitude
+IDP_3487,,
+IDP_2297,rfMRI connectivity (ICA25 edge 79),rfMRI connectivity
+IDP_3052,,
+IDP_3581,,
+IDP_2163,rfMRI amplitudes (ICA25 node 21),rfMRI node amplitude
+IDP_2413,rfMRI connectivity (ICA25 edge 195),rfMRI connectivity
+IDP_3429,,
+IDP_3047,,
+IDP_3535,,
+IDP_3546,,
+IDP_2187,,
+IDP_3356,,
+IDP_2198,,
+IDP_2157,rfMRI amplitudes (ICA25 node 15),rfMRI node amplitude
+IDP_2694,,
+IDP_2714,,
+IDP_3063,,
+IDP_3405,,
+IDP_2165,,
+IDP_2182,,
+IDP_3540,,
+IDP_3561,,
+IDP_3403,,
+IDP_3565,,
+IDP_2186,,
+IDP_3527,,
+IDP_3082,,
+IDP_3180,,
+IDP_2143,rfMRI amplitudes (ICA25 node 1),rfMRI node amplitude
+IDP_3914,rfMRI connectivity ICA-features 1,rfMRI connectivity
+IDP_2725,,
+IDP_3492,,
+IDP_2212,,
+IDP_3439,,
+IDP_2506,,
+IDP_2178,,
+IDP_3385,,
+IDP_2700,,
+IDP_2811,,
+IDP_2176,,
+IDP_3028,,
+IDP_3194,,
+IDP_3344,,
+IDP_3521,,
+IDP_2196,,
+IDP_3558,,
+IDP_2175,,
+IDP_3569,,
+IDP_2147,rfMRI amplitudes (ICA25 node 5),rfMRI node amplitude
+IDP_2200,,
+IDP_3533,,
+IDP_2800,,
+IDP_3518,,
+IDP_2819,,
+IDP_3083,,
+IDP_2808,,
+IDP_2884,,
+IDP_2201,,
+IDP_3359,,
+IDP_2180,,
+IDP_2627,,
+IDP_3488,,
+IDP_3924,QC_T1_inverse_CNR,QC
+IDP_2194,,
+IDP_3491,,
+IDP_3494,,
+IDP_2207,,
+IDP_2827,,
+IDP_2148,rfMRI amplitudes (ICA25 node 6),rfMRI node amplitude
+IDP_2831,,
+IDP_3360,,
+IDP_3389,,
+IDP_3520,,
+IDP_3593,,
+IDP_3600,,
+IDP_2184,,
+IDP_2211,,
+IDP_3462,,
+IDP_2170,,
+IDP_2199,,
+IDP_3511,,
+IDP_2191,,
+IDP_3033,,
+IDP_3932,QC_rfMRI_inverse_tSNR,QC
+IDP_3160,,
+IDP_2728,,
+IDP_3087,,
+IDP_2172,,
+IDP_2188,,
+IDP_2209,,
+IDP_3042,,
+IDP_3352,,
+IDP_2155,rfMRI amplitudes (ICA25 node 13),rfMRI node amplitude
+IDP_3340,,
+IDP_3468,,
+IDP_3379,,
+IDP_3478,,
+IDP_3474,,
+IDP_3355,,
+IDP_2815,,
+IDP_3933,QC_rfMRI_cleaned_inverse_tSNR,QC
+IDP_3917,rfMRI connectivity ICA-features 4,rfMRI connectivity
+IDP_3915,rfMRI connectivity ICA-features 2,rfMRI connectivity
+IDP_3916,rfMRI connectivity ICA-features 3,rfMRI connectivity
+IDP_3919,rfMRI connectivity ICA-features 6,rfMRI connectivity
+IDP_1283,aparc-a2009s_rh_thickness_G-subcallosal,cortical thickness
+IDP_1321,aparc-a2009s_rh_thickness_S-suborbital,cortical thickness
+IDP_1301,aparc-a2009s_rh_thickness_S-collat-transv-ant,cortical thickness
+IDP_1239,aparc-a2009s_lh_thickness_S-orbital-lateral,cortical thickness
+IDP_1232,aparc-a2009s_lh_thickness_S-interm-prim-Jensen,cortical thickness
+IDP_1306,aparc-a2009s_rh_thickness_S-interm-prim-Jensen,cortical thickness
+IDP_1224,aparc-a2009s_lh_thickness_S-circular-insula-ant,cortical thickness
+IDP_1291,aparc-a2009s_rh_thickness_Lat-Fis-ant-Vertical,cortical thickness
+IDP_1085,aparc-Desikan_rh_thickness_frontalpole,cortical thickness
+IDP_1227,aparc-a2009s_lh_thickness_S-collat-transv-ant,cortical thickness
+IDP_1184,aparc-a2009s_lh_thickness_G+S-cingul-Mid-Ant,cortical thickness
+IDP_1217,aparc-a2009s_lh_thickness_Lat-Fis-ant-Vertical,cortical thickness
+IDP_1313,aparc-a2009s_rh_thickness_S-orbital-lateral,cortical thickness
+IDP_1051,aparc-Desikan_lh_thickness_frontalpole,cortical thickness
+IDP_1079,aparc-Desikan_rh_thickness_rostralanteriorcingulate,cortical thickness
+IDP_1282,aparc-a2009s_rh_thickness_G-rectus,cortical thickness
+IDP_1236,aparc-a2009s_lh_thickness_S-occipital-ant,cortical thickness
+IDP_1247,aparc-a2009s_lh_thickness_S-suborbital,cortical thickness
+IDP_1323,aparc-a2009s_rh_thickness_S-temporal-inf,cortical thickness
+IDP_1158,aparc-DKTatlas_rh_thickness_medialorbitofrontal,cortical thickness
+IDP_1195,aparc-a2009s_lh_thickness_G-insular-short,cortical thickness
+IDP_1038,aparc-Desikan_lh_thickness_parsorbitalis,cortical thickness
+IDP_1212,aparc-a2009s_lh_thickness_G-temp-sup-Plan-polar,cortical thickness
+IDP_1170,aparc-DKTatlas_rh_thickness_rostralanteriorcingulate,cortical thickness
+IDP_1072,aparc-Desikan_rh_thickness_parsorbitalis,cortical thickness
+IDP_1022,aparc-Desikan_lh_thickness_caudalanteriorcingulate,cortical thickness
+IDP_1194,aparc-a2009s_lh_thickness_G-Ins-lg+S-cent-ins,cortical thickness
+IDP_1252,aparc-a2009s_rh_thickness_G+S-frontomargin,cortical thickness
+IDP_1208,aparc-a2009s_lh_thickness_G-rectus,cortical thickness
+IDP_1286,aparc-a2009s_rh_thickness_G-temp-sup-Plan-polar,cortical thickness
+IDP_1258,aparc-a2009s_rh_thickness_G+S-cingul-Mid-Ant,cortical thickness
+IDP_1220,aparc-a2009s_lh_thickness_Pole-temporal,cortical thickness
+IDP_1268,aparc-a2009s_rh_thickness_G-Ins-lg+S-cent-ins,cortical thickness
+IDP_1315,aparc-a2009s_rh_thickness_S-orbital-H-Shaped,cortical thickness
+IDP_1116,aparc-DKTatlas_lh_thickness_caudalanteriorcingulate,cortical thickness
+IDP_1298,aparc-a2009s_rh_thickness_S-circular-insula-ant,cortical thickness
+IDP_1216,aparc-a2009s_lh_thickness_Lat-Fis-ant-Horizont,cortical thickness
+IDP_1275,aparc-a2009s_rh_thickness_G-orbital,cortical thickness
+IDP_1249,aparc-a2009s_lh_thickness_S-temporal-inf,cortical thickness
+IDP_1190,aparc-a2009s_lh_thickness_G-front-inf-Orbital,cortical thickness
+IDP_1067,aparc-Desikan_rh_thickness_medialorbitofrontal,cortical thickness
+IDP_1234,aparc-a2009s_lh_thickness_S-oc-middle+Lunatus,cortical thickness
+IDP_1209,aparc-a2009s_lh_thickness_G-subcallosal,cortical thickness
+IDP_1056,aparc-Desikan_rh_thickness_caudalanteriorcingulate,cortical thickness
+IDP_1264,aparc-a2009s_rh_thickness_G-front-inf-Orbital,cortical thickness
+IDP_1269,aparc-a2009s_rh_thickness_G-insular-short,cortical thickness
+IDP_1290,aparc-a2009s_rh_thickness_Lat-Fis-ant-Horizont,cortical thickness
+IDP_1178,aparc-a2009s_lh_thickness_G+S-frontomargin,cortical thickness
+IDP_1147,aparc-DKTatlas_rh_thickness_caudalanteriorcingulate,cortical thickness
+IDP_1240,aparc-a2009s_lh_thickness_S-orbital-med-olfact,cortical thickness
+IDP_1127,aparc-DKTatlas_lh_thickness_medialorbitofrontal,cortical thickness
+IDP_1125,aparc-DKTatlas_lh_thickness_lateralorbitofrontal,cortical thickness
+IDP_1033,aparc-Desikan_lh_thickness_medialorbitofrontal,cortical thickness
+IDP_1256,aparc-a2009s_rh_thickness_G+S-transv-frontopol,cortical thickness
+IDP_1294,aparc-a2009s_rh_thickness_Pole-temporal,cortical thickness
+IDP_1308,aparc-a2009s_rh_thickness_S-oc-middle+Lunatus,cortical thickness
+IDP_1237,aparc-a2009s_lh_thickness_S-oc-temp-lat,cortical thickness
+IDP_1182,aparc-a2009s_lh_thickness_G+S-transv-frontopol,cortical thickness
+IDP_1311,aparc-a2009s_rh_thickness_S-oc-temp-lat,cortical thickness
+IDP_1132,aparc-DKTatlas_lh_thickness_parsorbitalis,cortical thickness
+IDP_1105,BA-exvivo_rh_thickness_BA3b,cortical thickness
+IDP_1122,aparc-DKTatlas_lh_thickness_inferiortemporal,cortical thickness
+IDP_1228,aparc-a2009s_lh_thickness_S-collat-transv-post,cortical thickness
+IDP_1214,aparc-a2009s_lh_thickness_G-temporal-inf,cortical thickness
+IDP_1156,aparc-DKTatlas_rh_thickness_lateralorbitofrontal,cortical thickness
+IDP_1241,aparc-a2009s_lh_thickness_S-orbital-H-Shaped,cortical thickness
+IDP_1065,aparc-Desikan_rh_thickness_lateralorbitofrontal,cortical thickness
+IDP_1310,aparc-a2009s_rh_thickness_S-occipital-ant,cortical thickness
+IDP_1021,aparc-Desikan_lh_thickness_bankssts,cortical thickness
+IDP_1230,aparc-a2009s_lh_thickness_S-front-middle,cortical thickness
+IDP_1187,aparc-a2009s_lh_thickness_G-cingul-Post-ventral,cortical thickness
+IDP_1031,aparc-Desikan_lh_thickness_lateralorbitofrontal,cortical thickness
+IDP_1219,aparc-a2009s_lh_thickness_Pole-occipital,cortical thickness
+IDP_1201,aparc-a2009s_lh_thickness_G-orbital,cortical thickness
+IDP_1261,aparc-a2009s_rh_thickness_G-cingul-Post-ventral,cortical thickness
+IDP_1111,BA-exvivo_rh_thickness_V1,cortical thickness
+IDP_1165,aparc-DKTatlas_rh_thickness_pericalcarine,cortical thickness
+IDP_1074,aparc-Desikan_rh_thickness_pericalcarine,cortical thickness
+IDP_1223,aparc-a2009s_lh_thickness_S-cingul-Marginalis,cortical thickness
+IDP_1040,aparc-Desikan_lh_thickness_pericalcarine,cortical thickness
+IDP_1045,aparc-Desikan_lh_thickness_rostralanteriorcingulate,cortical thickness
+IDP_1034,aparc-Desikan_lh_thickness_middletemporal,cortical thickness
+IDP_1134,aparc-DKTatlas_lh_thickness_pericalcarine,cortical thickness
+IDP_1028,aparc-Desikan_lh_thickness_inferiortemporal,cortical thickness
+IDP_1104,BA-exvivo_rh_thickness_BA3a,cortical thickness
+IDP_1260,aparc-a2009s_rh_thickness_G-cingul-Post-dorsal,cortical thickness
+IDP_1163,aparc-DKTatlas_rh_thickness_parsorbitalis,cortical thickness
+IDP_1257,aparc-a2009s_rh_thickness_G+S-cingul-Ant,cortical thickness
+IDP_1042,aparc-Desikan_lh_thickness_posteriorcingulate,cortical thickness
+IDP_1259,aparc-a2009s_rh_thickness_G+S-cingul-Mid-Post,cortical thickness
+IDP_1304,aparc-a2009s_rh_thickness_S-front-middle,cortical thickness
+IDP_1314,aparc-a2009s_rh_thickness_S-orbital-med-olfact,cortical thickness
+IDP_1297,aparc-a2009s_rh_thickness_S-cingul-Marginalis,cortical thickness
+IDP_1183,aparc-a2009s_lh_thickness_G+S-cingul-Ant,cortical thickness
+IDP_1271,aparc-a2009s_rh_thickness_G-occipital-sup,cortical thickness
+IDP_1097,BA-exvivo_lh_thickness_V1,cortical thickness
+IDP_1053,aparc-Desikan_lh_thickness_insula,cortical thickness
+IDP_1128,aparc-DKTatlas_lh_thickness_middletemporal,cortical thickness
+IDP_1248,aparc-a2009s_lh_thickness_S-subparietal,cortical thickness
+IDP_1225,aparc-a2009s_lh_thickness_S-circular-insula-inf,cortical thickness
+IDP_1055,aparc-Desikan_rh_thickness_bankssts,cortical thickness
+IDP_1296,aparc-a2009s_rh_thickness_S-central,cortical thickness
+IDP_1198,aparc-a2009s_lh_thickness_G-oc-temp-lat-fusifor,cortical thickness
+IDP_1186,aparc-a2009s_lh_thickness_G-cingul-Post-dorsal,cortical thickness
+IDP_1302,aparc-a2009s_rh_thickness_S-collat-transv-post,cortical thickness
+IDP_1091,BA-exvivo_lh_thickness_BA3b,cortical thickness
+IDP_1318,aparc-a2009s_rh_thickness_S-postcentral,cortical thickness
+IDP_1322,aparc-a2009s_rh_thickness_S-subparietal,cortical thickness
+IDP_1197,aparc-a2009s_lh_thickness_G-occipital-sup,cortical thickness
+IDP_1221,aparc-a2009s_lh_thickness_S-calcarine,cortical thickness
+IDP_1272,aparc-a2009s_rh_thickness_G-oc-temp-lat-fusifor,cortical thickness
+IDP_1185,aparc-a2009s_lh_thickness_G+S-cingul-Mid-Post,cortical thickness
+IDP_1071,aparc-Desikan_rh_thickness_parsopercularis,cortical thickness
+IDP_1139,aparc-DKTatlas_lh_thickness_rostralanteriorcingulate,cortical thickness
+IDP_1087,aparc-Desikan_rh_thickness_insula,cortical thickness
+IDP_1253,aparc-a2009s_rh_thickness_G+S-occipital-inf,cortical thickness
+IDP_1196,aparc-a2009s_lh_thickness_G-occipital-middle,cortical thickness
+IDP_1265,aparc-a2009s_rh_thickness_G-front-inf-Triangul,cortical thickness
+IDP_1278,aparc-a2009s_rh_thickness_G-parietal-sup,cortical thickness
+IDP_1288,aparc-a2009s_rh_thickness_G-temporal-inf,cortical thickness
+IDP_1136,aparc-DKTatlas_lh_thickness_posteriorcingulate,cortical thickness
+IDP_1263,aparc-a2009s_rh_thickness_G-front-inf-Opercular,cortical thickness
+IDP_1179,aparc-a2009s_lh_thickness_G+S-occipital-inf,cortical thickness
+IDP_1213,aparc-a2009s_lh_thickness_G-temp-sup-Plan-tempo,cortical thickness
+IDP_1251,aparc-a2009s_lh_thickness_S-temporal-transverse,cortical thickness
+IDP_1099,BA-exvivo_lh_thickness_MT,cortical thickness
+IDP_1303,aparc-a2009s_rh_thickness_S-front-inf,cortical thickness
+IDP_1270,aparc-a2009s_rh_thickness_G-occipital-middle,cortical thickness
+IDP_1244,aparc-a2009s_lh_thickness_S-postcentral,cortical thickness
+IDP_1320,aparc-a2009s_rh_thickness_S-precentral-sup-part,cortical thickness
+IDP_1146,aparc-DKTatlas_lh_thickness_insula,cortical thickness
+IDP_1250,aparc-a2009s_lh_thickness_S-temporal-sup,cortical thickness
+IDP_1215,aparc-a2009s_lh_thickness_G-temporal-middle,cortical thickness
+IDP_1189,aparc-a2009s_lh_thickness_G-front-inf-Opercular,cortical thickness
+IDP_1039,aparc-Desikan_lh_thickness_parstriangularis,cortical thickness
+IDP_1319,aparc-a2009s_rh_thickness_S-precentral-inf-part,cortical thickness
+IDP_1162,aparc-DKTatlas_rh_thickness_parsopercularis,cortical thickness
+IDP_1068,aparc-Desikan_rh_thickness_middletemporal,cortical thickness
+IDP_1176,aparc-DKTatlas_rh_thickness_transversetemporal,cortical thickness
+IDP_1295,aparc-a2009s_rh_thickness_S-calcarine,cortical thickness
+IDP_1093,BA-exvivo_lh_thickness_BA4p,cortical thickness
+IDP_1086,aparc-Desikan_rh_thickness_transversetemporal,cortical thickness
+IDP_1325,aparc-a2009s_rh_thickness_S-temporal-transverse,cortical thickness
+IDP_1246,aparc-a2009s_lh_thickness_S-precentral-sup-part,cortical thickness
+IDP_1102,BA-exvivo_rh_thickness_BA1,cortical thickness
+IDP_1026,aparc-Desikan_lh_thickness_fusiform,cortical thickness
+IDP_1222,aparc-a2009s_lh_thickness_S-central,cortical thickness
+IDP_1307,aparc-a2009s_rh_thickness_S-intrapariet+P-trans,cortical thickness
+IDP_1242,aparc-a2009s_lh_thickness_S-parieto-occipital,cortical thickness
+IDP_1245,aparc-a2009s_lh_thickness_S-precentral-inf-part,cortical thickness
+IDP_1293,aparc-a2009s_rh_thickness_Pole-occipital,cortical thickness
+IDP_1120,aparc-DKTatlas_lh_thickness_fusiform,cortical thickness
+IDP_1060,aparc-Desikan_rh_thickness_fusiform,cortical thickness
+IDP_1076,aparc-Desikan_rh_thickness_posteriorcingulate,cortical thickness
+IDP_1305,aparc-a2009s_rh_thickness_S-front-sup,cortical thickness
+IDP_1090,BA-exvivo_lh_thickness_BA3a,cortical thickness
+IDP_1062,aparc-Desikan_rh_thickness_inferiortemporal,cortical thickness
+IDP_1133,aparc-DKTatlas_lh_thickness_parstriangularis,cortical thickness
+IDP_1107,BA-exvivo_rh_thickness_BA4p,cortical thickness
+IDP_1226,aparc-a2009s_lh_thickness_S-circular-insula-sup,cortical thickness
+IDP_1151,aparc-DKTatlas_rh_thickness_fusiform,cortical thickness
+IDP_1153,aparc-DKTatlas_rh_thickness_inferiortemporal,cortical thickness
+IDP_1167,aparc-DKTatlas_rh_thickness_posteriorcingulate,cortical thickness
+IDP_1273,aparc-a2009s_rh_thickness_G-oc-temp-med-Lingual,cortical thickness
+IDP_1103,BA-exvivo_rh_thickness_BA2,cortical thickness
+IDP_1191,aparc-a2009s_lh_thickness_G-front-inf-Triangul,cortical thickness
+IDP_1235,aparc-a2009s_lh_thickness_S-oc-sup+transversal,cortical thickness
+IDP_1173,aparc-DKTatlas_rh_thickness_superiorparietal,cortical thickness
+IDP_1309,aparc-a2009s_rh_thickness_S-oc-sup+transversal,cortical thickness
+IDP_1262,aparc-a2009s_rh_thickness_G-cuneus,cortical thickness
+IDP_1284,aparc-a2009s_rh_thickness_G-temp-sup-G-T-transv,cortical thickness
+IDP_1202,aparc-a2009s_lh_thickness_G-pariet-inf-Angular,cortical thickness
+IDP_1164,aparc-DKTatlas_rh_thickness_parstriangularis,cortical thickness
+IDP_1131,aparc-DKTatlas_lh_thickness_parsopercularis,cortical thickness
+IDP_1243,aparc-a2009s_lh_thickness_S-pericallosal,cortical thickness
+IDP_1166,aparc-DKTatlas_rh_thickness_postcentral,cortical thickness
+IDP_1082,aparc-Desikan_rh_thickness_superiorparietal,cortical thickness
+IDP_1210,aparc-a2009s_lh_thickness_G-temp-sup-G-T-transv,cortical thickness
+IDP_1095,BA-exvivo_lh_thickness_BA44,cortical thickness
+IDP_1287,aparc-a2009s_rh_thickness_G-temp-sup-Plan-tempo,cortical thickness
+IDP_1075,aparc-Desikan_rh_thickness_postcentral,cortical thickness
+IDP_1254,aparc-a2009s_rh_thickness_G+S-paracentral,cortical thickness
+IDP_1113,BA-exvivo_rh_thickness_MT,cortical thickness
+IDP_1159,aparc-DKTatlas_rh_thickness_middletemporal,cortical thickness
+IDP_1037,aparc-Desikan_lh_thickness_parsopercularis,cortical thickness
+IDP_1199,aparc-a2009s_lh_thickness_G-oc-temp-med-Lingual,cortical thickness
+IDP_1316,aparc-a2009s_rh_thickness_S-parieto-occipital,cortical thickness
+IDP_1143,aparc-DKTatlas_lh_thickness_superiortemporal,cortical thickness
+IDP_1089,BA-exvivo_lh_thickness_BA2,cortical thickness
+IDP_1096,BA-exvivo_lh_thickness_BA45,cortical thickness
+IDP_1280,aparc-a2009s_rh_thickness_G-precentral,cortical thickness
+IDP_1229,aparc-a2009s_lh_thickness_S-front-inf,cortical thickness
+IDP_1279,aparc-a2009s_rh_thickness_G-postcentral,cortical thickness
+IDP_1300,aparc-a2009s_rh_thickness_S-circular-insula-sup,cortical thickness
+IDP_1276,aparc-a2009s_rh_thickness_G-pariet-inf-Angular,cortical thickness
+IDP_1204,aparc-a2009s_lh_thickness_G-parietal-sup,cortical thickness
+IDP_1052,aparc-Desikan_lh_thickness_transversetemporal,cortical thickness
+IDP_1171,aparc-DKTatlas_rh_thickness_rostralmiddlefrontal,cortical thickness
+IDP_1088,BA-exvivo_lh_thickness_BA1,cortical thickness
+IDP_1145,aparc-DKTatlas_lh_thickness_transversetemporal,cortical thickness
+IDP_1324,aparc-a2009s_rh_thickness_S-temporal-sup,cortical thickness
+IDP_1030,aparc-Desikan_lh_thickness_lateraloccipital,cortical thickness
+IDP_1058,aparc-Desikan_rh_thickness_cuneus,cortical thickness
+IDP_1266,aparc-a2009s_rh_thickness_G-front-middle,cortical thickness
+IDP_1073,aparc-Desikan_rh_thickness_parstriangularis,cortical thickness
+IDP_1233,aparc-a2009s_lh_thickness_S-intrapariet+P-trans,cortical thickness
+IDP_1124,aparc-DKTatlas_lh_thickness_lateraloccipital,cortical thickness
+IDP_1109,BA-exvivo_rh_thickness_BA44,cortical thickness
+IDP_1205,aparc-a2009s_lh_thickness_G-postcentral,cortical thickness
+IDP_1106,BA-exvivo_rh_thickness_BA4a,cortical thickness
+IDP_1180,aparc-a2009s_lh_thickness_G+S-paracentral,cortical thickness
+IDP_1149,aparc-DKTatlas_rh_thickness_cuneus,cortical thickness
+IDP_1080,aparc-Desikan_rh_thickness_rostralmiddlefrontal,cortical thickness
+IDP_1289,aparc-a2009s_rh_thickness_G-temporal-middle,cortical thickness
+IDP_1154,aparc-DKTatlas_rh_thickness_isthmuscingulate,cortical thickness
+IDP_1049,aparc-Desikan_lh_thickness_superiortemporal,cortical thickness
+IDP_1041,aparc-Desikan_lh_thickness_postcentral,cortical thickness
+IDP_1057,aparc-Desikan_rh_thickness_caudalmiddlefrontal,cortical thickness
+IDP_1206,aparc-a2009s_lh_thickness_G-precentral,cortical thickness
+IDP_1135,aparc-DKTatlas_lh_thickness_postcentral,cortical thickness
+IDP_1123,aparc-DKTatlas_lh_thickness_isthmuscingulate,cortical thickness
+IDP_1032,aparc-Desikan_lh_thickness_lingual,cortical thickness
+IDP_1029,aparc-Desikan_lh_thickness_isthmuscingulate,cortical thickness
+IDP_1126,aparc-DKTatlas_lh_thickness_lingual,cortical thickness
+IDP_1148,aparc-DKTatlas_rh_thickness_caudalmiddlefrontal,cortical thickness
+IDP_1231,aparc-a2009s_lh_thickness_S-front-sup,cortical thickness
+IDP_1063,aparc-Desikan_rh_thickness_isthmuscingulate,cortical thickness
+IDP_1277,aparc-a2009s_rh_thickness_G-pariet-inf-Supramar,cortical thickness
+IDP_1177,aparc-DKTatlas_rh_thickness_insula,cortical thickness
+IDP_1188,aparc-a2009s_lh_thickness_G-cuneus,cortical thickness
+IDP_1118,aparc-DKTatlas_lh_thickness_cuneus,cortical thickness
+IDP_1066,aparc-Desikan_rh_thickness_lingual,cortical thickness
+IDP_1157,aparc-DKTatlas_rh_thickness_lingual,cortical thickness
+IDP_1299,aparc-a2009s_rh_thickness_S-circular-insula-inf,cortical thickness
+IDP_1203,aparc-a2009s_lh_thickness_G-pariet-inf-Supramar,cortical thickness
+IDP_1207,aparc-a2009s_lh_thickness_G-precuneus,cortical thickness
+IDP_1024,aparc-Desikan_lh_thickness_cuneus,cortical thickness
+IDP_1281,aparc-a2009s_rh_thickness_G-precuneus,cortical thickness
+IDP_1292,aparc-a2009s_rh_thickness_Lat-Fis-post,cortical thickness
+IDP_1174,aparc-DKTatlas_rh_thickness_superiortemporal,cortical thickness
+IDP_1110,BA-exvivo_rh_thickness_BA45,cortical thickness
+IDP_1285,aparc-a2009s_rh_thickness_G-temp-sup-Lateral,cortical thickness
+IDP_1092,BA-exvivo_lh_thickness_BA4a,cortical thickness
+IDP_1255,aparc-a2009s_rh_thickness_G+S-subcentral,cortical thickness
+IDP_1027,aparc-Desikan_lh_thickness_inferiorparietal,cortical thickness
+IDP_1070,aparc-Desikan_rh_thickness_paracentral,cortical thickness
+IDP_1098,BA-exvivo_lh_thickness_V2,cortical thickness
+IDP_1137,aparc-DKTatlas_lh_thickness_precentral,cortical thickness
+IDP_1043,aparc-Desikan_lh_thickness_precentral,cortical thickness
+IDP_1140,aparc-DKTatlas_lh_thickness_rostralmiddlefrontal,cortical thickness
+IDP_1121,aparc-DKTatlas_lh_thickness_inferiorparietal,cortical thickness
+IDP_1168,aparc-DKTatlas_rh_thickness_precentral,cortical thickness
+IDP_1023,aparc-Desikan_lh_thickness_caudalmiddlefrontal,cortical thickness
+IDP_1077,aparc-Desikan_rh_thickness_precentral,cortical thickness
+IDP_1211,aparc-a2009s_lh_thickness_G-temp-sup-Lateral,cortical thickness
+IDP_1117,aparc-DKTatlas_lh_thickness_caudalmiddlefrontal,cortical thickness
+IDP_1161,aparc-DKTatlas_rh_thickness_paracentral,cortical thickness
+IDP_1083,aparc-Desikan_rh_thickness_superiortemporal,cortical thickness
+IDP_1175,aparc-DKTatlas_rh_thickness_supramarginal,cortical thickness
+IDP_1046,aparc-Desikan_lh_thickness_rostralmiddlefrontal,cortical thickness
+IDP_1238,aparc-a2009s_lh_thickness_S-oc-temp-med+Lingual,cortical thickness
+IDP_1084,aparc-Desikan_rh_thickness_supramarginal,cortical thickness
+IDP_1142,aparc-DKTatlas_lh_thickness_superiorparietal,cortical thickness
+IDP_1044,aparc-Desikan_lh_thickness_precuneus,cortical thickness
+IDP_1138,aparc-DKTatlas_lh_thickness_precuneus,cortical thickness
+IDP_1144,aparc-DKTatlas_lh_thickness_supramarginal,cortical thickness
+IDP_1048,aparc-Desikan_lh_thickness_superiorparietal,cortical thickness
+IDP_1218,aparc-a2009s_lh_thickness_Lat-Fis-post,cortical thickness
+IDP_1181,aparc-a2009s_lh_thickness_G+S-subcentral,cortical thickness
+IDP_1192,aparc-a2009s_lh_thickness_G-front-middle,cortical thickness
+IDP_1317,aparc-a2009s_rh_thickness_S-pericallosal,cortical thickness
+IDP_1020,aparc-Desikan_lh_thickness_GlobalMeanThickness,cortical thickness
+IDP_1078,aparc-Desikan_rh_thickness_precuneus,cortical thickness
+IDP_1169,aparc-DKTatlas_rh_thickness_precuneus,cortical thickness
+IDP_1152,aparc-DKTatlas_rh_thickness_inferiorparietal,cortical thickness
+IDP_1061,aparc-Desikan_rh_thickness_inferiorparietal,cortical thickness
+IDP_1050,aparc-Desikan_lh_thickness_supramarginal,cortical thickness
+IDP_1064,aparc-Desikan_rh_thickness_lateraloccipital,cortical thickness
+IDP_1141,aparc-DKTatlas_lh_thickness_superiorfrontal,cortical thickness
+IDP_1155,aparc-DKTatlas_rh_thickness_lateraloccipital,cortical thickness
+IDP_1047,aparc-Desikan_lh_thickness_superiorfrontal,cortical thickness
+IDP_1036,aparc-Desikan_lh_thickness_paracentral,cortical thickness
+IDP_1193,aparc-a2009s_lh_thickness_G-front-sup,cortical thickness
+IDP_1130,aparc-DKTatlas_lh_thickness_paracentral,cortical thickness
+IDP_1267,aparc-a2009s_rh_thickness_G-front-sup,cortical thickness
+IDP_1054,aparc-Desikan_rh_thickness_GlobalMeanThickness,cortical thickness
+IDP_1172,aparc-DKTatlas_rh_thickness_superiorfrontal,cortical thickness
+IDP_1112,BA-exvivo_rh_thickness_V2,cortical thickness
+IDP_1081,aparc-Desikan_rh_thickness_superiorfrontal,cortical thickness
+IDP_1094,BA-exvivo_lh_thickness_BA6,cortical thickness
+IDP_1108,BA-exvivo_rh_thickness_BA6,cortical thickness
+IDP_1369,wg_lh_intensity-contrast_caudalanteriorcingulate,cortical grey-white contrast
+IDP_1404,wg_rh_intensity-contrast_caudalanteriorcingulate,cortical grey-white contrast
+IDP_1399,wg_lh_intensity-contrast_temporalpole,cortical grey-white contrast
+IDP_1407,wg_rh_intensity-contrast_entorhinal,cortical grey-white contrast
+IDP_1372,wg_lh_intensity-contrast_entorhinal,cortical grey-white contrast
+IDP_1434,wg_rh_intensity-contrast_temporalpole,cortical grey-white contrast
+IDP_1398,wg_lh_intensity-contrast_frontalpole,cortical grey-white contrast
+IDP_1433,wg_rh_intensity-contrast_frontalpole,cortical grey-white contrast
+IDP_1392,wg_lh_intensity-contrast_rostralanteriorcingulate,cortical grey-white contrast
+IDP_1435,wg_rh_intensity-contrast_transversetemporal,cortical grey-white contrast
+IDP_1427,wg_rh_intensity-contrast_rostralanteriorcingulate,cortical grey-white contrast
+IDP_1417,wg_rh_intensity-contrast_parahippocampal,cortical grey-white contrast
+IDP_1387,wg_lh_intensity-contrast_pericalcarine,cortical grey-white contrast
+IDP_1413,wg_rh_intensity-contrast_lateralorbitofrontal,cortical grey-white contrast
+IDP_1382,wg_lh_intensity-contrast_parahippocampal,cortical grey-white contrast
+IDP_1415,wg_rh_intensity-contrast_medialorbitofrontal,cortical grey-white contrast
+IDP_1380,wg_lh_intensity-contrast_medialorbitofrontal,cortical grey-white contrast
+IDP_1422,wg_rh_intensity-contrast_pericalcarine,cortical grey-white contrast
+IDP_1436,wg_rh_intensity-contrast_insula,cortical grey-white contrast
+IDP_1389,wg_lh_intensity-contrast_posteriorcingulate,cortical grey-white contrast
+IDP_1411,wg_rh_intensity-contrast_isthmuscingulate,cortical grey-white contrast
+IDP_1420,wg_rh_intensity-contrast_parsorbitalis,cortical grey-white contrast
+IDP_1400,wg_lh_intensity-contrast_transversetemporal,cortical grey-white contrast
+IDP_1424,wg_rh_intensity-contrast_posteriorcingulate,cortical grey-white contrast
+IDP_1385,wg_lh_intensity-contrast_parsorbitalis,cortical grey-white contrast
+IDP_1368,wg_lh_intensity-contrast_bankssts,cortical grey-white contrast
+IDP_1376,wg_lh_intensity-contrast_isthmuscingulate,cortical grey-white contrast
+IDP_1418,wg_rh_intensity-contrast_paracentral,cortical grey-white contrast
+IDP_1386,wg_lh_intensity-contrast_parstriangularis,cortical grey-white contrast
+IDP_1405,wg_rh_intensity-contrast_caudalmiddlefrontal,cortical grey-white contrast
+IDP_1401,wg_lh_intensity-contrast_insula,cortical grey-white contrast
+IDP_1383,wg_lh_intensity-contrast_paracentral,cortical grey-white contrast
+IDP_1414,wg_rh_intensity-contrast_lingual,cortical grey-white contrast
+IDP_1406,wg_rh_intensity-contrast_cuneus,cortical grey-white contrast
+IDP_1403,wg_rh_intensity-contrast_bankssts,cortical grey-white contrast
+IDP_1419,wg_rh_intensity-contrast_parsopercularis,cortical grey-white contrast
+IDP_1370,wg_lh_intensity-contrast_caudalmiddlefrontal,cortical grey-white contrast
+IDP_1421,wg_rh_intensity-contrast_parstriangularis,cortical grey-white contrast
+IDP_1378,wg_lh_intensity-contrast_lateralorbitofrontal,cortical grey-white contrast
+IDP_1416,wg_rh_intensity-contrast_middletemporal,cortical grey-white contrast
+IDP_1423,wg_rh_intensity-contrast_postcentral,cortical grey-white contrast
+IDP_1371,wg_lh_intensity-contrast_cuneus,cortical grey-white contrast
+IDP_1410,wg_rh_intensity-contrast_inferiortemporal,cortical grey-white contrast
+IDP_1428,wg_rh_intensity-contrast_rostralmiddlefrontal,cortical grey-white contrast
+IDP_1381,wg_lh_intensity-contrast_middletemporal,cortical grey-white contrast
+IDP_1425,wg_rh_intensity-contrast_precentral,cortical grey-white contrast
+IDP_1375,wg_lh_intensity-contrast_inferiortemporal,cortical grey-white contrast
+IDP_1384,wg_lh_intensity-contrast_parsopercularis,cortical grey-white contrast
+IDP_1390,wg_lh_intensity-contrast_precentral,cortical grey-white contrast
+IDP_1431,wg_rh_intensity-contrast_superiortemporal,cortical grey-white contrast
+IDP_1379,wg_lh_intensity-contrast_lingual,cortical grey-white contrast
+IDP_1408,wg_rh_intensity-contrast_fusiform,cortical grey-white contrast
+IDP_1374,wg_lh_intensity-contrast_inferiorparietal,cortical grey-white contrast
+IDP_1393,wg_lh_intensity-contrast_rostralmiddlefrontal,cortical grey-white contrast
+IDP_1429,wg_rh_intensity-contrast_superiorfrontal,cortical grey-white contrast
+IDP_1388,wg_lh_intensity-contrast_postcentral,cortical grey-white contrast
+IDP_1409,wg_rh_intensity-contrast_inferiorparietal,cortical grey-white contrast
+IDP_1412,wg_rh_intensity-contrast_lateraloccipital,cortical grey-white contrast
+IDP_1397,wg_lh_intensity-contrast_supramarginal,cortical grey-white contrast
+IDP_1396,wg_lh_intensity-contrast_superiortemporal,cortical grey-white contrast
+IDP_1377,wg_lh_intensity-contrast_lateraloccipital,cortical grey-white contrast
+IDP_1432,wg_rh_intensity-contrast_supramarginal,cortical grey-white contrast
+IDP_1373,wg_lh_intensity-contrast_fusiform,cortical grey-white contrast
+IDP_1394,wg_lh_intensity-contrast_superiorfrontal,cortical grey-white contrast
+IDP_1426,wg_rh_intensity-contrast_precuneus,cortical grey-white contrast
+IDP_1430,wg_rh_intensity-contrast_superiorparietal,cortical grey-white contrast
+IDP_1395,wg_lh_intensity-contrast_superiorparietal,cortical grey-white contrast
+IDP_1391,wg_lh_intensity-contrast_precuneus,cortical grey-white contrast
+IDP_2134,IDP_tfMRI_90th-percentile_zstat_faces,tfMRI activation
+IDP_2133,IDP_tfMRI_median_zstat_faces,tfMRI activation
+IDP_2131,IDP_tfMRI_median_BOLD_faces,tfMRI activation
+IDP_2129,IDP_tfMRI_median_zstat_shapes,tfMRI activation
+IDP_2130,IDP_tfMRI_90th-percentile_zstat_shapes,tfMRI activation
+IDP_2127,IDP_tfMRI_median_BOLD_shapes,tfMRI activation
+IDP_2132,IDP_tfMRI_90th-percentile_BOLD_faces,tfMRI activation
+IDP_2128,IDP_tfMRI_90th-percentile_BOLD_shapes,tfMRI activation
+IDP_2137,IDP_tfMRI_median_zstat_faces-shapes,tfMRI activation
+IDP_2140,IDP_tfMRI_90th-percentile_BOLD_faces-shapes_amygdala,tfMRI activation
+IDP_2138,IDP_tfMRI_90th-percentile_zstat_faces-shapes,tfMRI activation
+IDP_2139,IDP_tfMRI_median_BOLD_faces-shapes_amygdala,tfMRI activation
+IDP_2142,IDP_tfMRI_90th-percentile_zstat_faces-shapes_amygdala,tfMRI activation
+IDP_2141,IDP_tfMRI_median_zstat_faces-shapes_amygdala,tfMRI activation
+IDP_2135,IDP_tfMRI_median_BOLD_faces-shapes,tfMRI activation
+IDP_2136,IDP_tfMRI_90th-percentile_BOLD_faces-shapes,tfMRI activation
