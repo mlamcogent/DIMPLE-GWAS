@@ -1,232 +1,177 @@
-# DIMPLE: Dimensionality Reduction and Integrated Multi-Phenotype Landscape Explorer
+# DIMPLE-GWAS: Dimensionality Reduction and Integrated Multi-Phenotype Landscape Explorer
 
-DIMPLE is a command-line pipeline for clustering high-dimensional neuroimaging phenotypes (e.g., imaging-derived phenotypes, IDPs). It generates UMAP embeddings (optionally as an ensemble across multiple random seeds), performs a parallelized HDBSCAN hyperparameter search, selects an operating point using quantitative diagnostics, and exports analysis-ready tables and figures.
+DIMPLE-GWAS is a command-line pipeline for clustering high-dimensional phenotypes (e.g., neuroimaging imaging-derived phenotypes/IDPs, or multi-omics feature vectors). It generates UMAP embeddings (optionally as an ensemble across multiple random seeds), performs a parallelized HDBSCAN hyperparameter search, selects an operating point using quantitative diagnostics, and exports analysis-ready tables and figures.
 
-## Instructions (quick start)
+## Quick start
 
-1. Create and activate a Python environment.
-2. Install dependencies from `requirements.txt`.
-3. Run a smoke test using `--dry-run`.
-4. Re-run without `--dry-run` to execute the workflow.
+### Option A: venv (pip)
 
 ```bash
 python -m venv .venv
-source .venv/bin/activate
+source .venv/bin/activate        # macOS/Linux
+# .venv\\Scripts\\activate       # Windows PowerShell
+
+python -m pip install --upgrade pip
 pip install -r requirements.txt
 
-python dimple.py --dry-run --datainput toy_data.tsv
-python dimple.py --datainput toy_data.tsv
+# Smoke test on bundled toy data
+python DIMPLEGWAS.py --dry-run --datainput test_data/test_dat.csv --idp_key test_data/IDP_KEY.csv
+python DIMPLEGWAS.py --datainput test_data/test_dat.csv --idp_key test_data/IDP_KEY.csv
+```
+
+### Option B: conda (recommended for compiled/binary deps)
+
+On some Linux/HPC images, wheels for compiled extensions can be unreliable. In that case, install **compiled dependencies** from **conda-forge** first, then install the remaining Python deps via pip.
+
+```bash
+conda create -n dimple python=3.11 -y
+conda activate dimple
+
+# Prefer conda-forge for compiled deps (avoid source builds)
+conda install -c conda-forge -y \
+  hdbscan umap-learn numba llvmlite pyarrow \
+  matplotlib plotly
+
+# Install the remaining Python dependencies from requirements.txt
+# (Use --no-deps so pip does not overwrite the conda-forge builds above.)
+pip install --no-deps -r requirements.txt
+
+python DIMPLEGWAS.py --dry-run --datainput test_data/test_dat.csv --idp_key test_data/IDP_KEY.csv
+python DIMPLEGWAS.py --datainput test_data/test_dat.csv --idp_key test_data/IDP_KEY.csv
 ```
 
 ---
 
-## 1) Overview and installation
+## Repository layout
 
-### What DIMPLE does
+```text
+.
+├── DIMPLEGWAS.py                 # Main pipeline script
+├── requirements.txt              # Python dependencies (default install target)
+├── README.md                     # Project documentation
+├── LICENSE
+├── test_data/
+│   ├── test_dat.csv              # Bundled toy dataset (input matrix)
+│   └── IDP_KEY.csv               # Feature key for toy dataset (required for feature re-identification)
+└── utility/
+    ├── dimple-ref-run.py         # Reference (hard-coded) run used for regression checks
+    ├── generate_idp_key.py       # Utility to generate IDP_KEY.csv for a new dataset
+    └── legacy_explicit.txt       # Conda @EXPLICIT spec for the manuscript environment
+```
 
-At a high level, DIMPLE:
+## What is `IDP_KEY.csv` and why it matters?
 
-- Generates UMAP embeddings (optionally as an ensemble across multiple seeds).
-- Concatenates embeddings (e.g., 3 dimensions × *N* seeds) to capture stable structure.
-- Searches HDBSCAN hyperparameters (e.g., min cluster size, min samples, epsilon) in parallel.
-- Scores candidate solutions using silhouette and additional diagnostics.
-- Selects a final clustering configuration and produces cluster assignments.
-- Exports standard outputs (tables, plots, logs) suitable for downstream analysis.
+`IDP_KEY.csv` is the feature dictionary that allows DIMPLE-GWAS to re-identify features later (e.g., for plots, tables, and cluster interpretation). For generality across datasets, the pipeline only requires **three columns**:
 
-### Inputs
+- `index` — stable feature identifier (often an integer index)
+- `feature_name` — human-readable feature name (e.g., “Left-Hippocampus volume”)
+- `feature_category_name` — a broad category/modality label (e.g., “subcortical”, “DTI”, “proteomics”, “metabolomics”)
 
-DIMPLE expects an input matrix (TSV/CSV).
+If you omit `--idp_key`, the pipeline can still cluster, but downstream interpretation outputs will be less informative.
 
-- Rows correspond to the entities being embedded and clustered (e.g., IDPs).
-- Columns correspond to high-dimensional measurements (e.g., SNP loadings, imaging-derived vectors).
+---
 
-If your first column is an identifier, ensure your script version is configured accordingly (or pre-process the file to standardize the format).
+## Running the pipeline
 
-### Installation
+Run `python DIMPLEGWAS.py --help` to see the definitive CLI options for your version.
 
-Recommended: Python 3.10+.
+### Example run (publication-style parameters)
+
+From the repo root, you can run the bundled toy dataset with a fully specified parameter set (this is also a good template for real data):
 
 ```bash
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-python dimple.py --help
+python3 DIMPLEGWAS.py \
+  --datainput "test_data/test_dat.csv" \
+  --outdir output \
+  --idp_key "test_data/IDP_KEY.csv" \
+  --n_neighbors 30 \
+  --min_dist 0.0 \
+  --n_components 3 \
+  --densmap \
+  --random_state 42 \
+  --n_random_states 1000 \
+  --n_jobs -1 \
+  --grid_eps 0:3 \
+  --grid_min_samples 2:20 \
+  --grid_min_cluster_size 5:50 \
+  --silhouette_include_noise \
+  --dry-run
+```
+
+Remove `--dry-run` to execute the full pipeline.
+
+---
+
+## Utility scripts
+
+### 1) Generate `IDP_KEY.csv` for a new dataset
+
+The script `utility/generate_idp_key.py` generates an `IDP_KEY.csv` containing the three required columns:
+
+- `index`
+- `feature_name`
+- `feature_category_name`
+
+Because datasets encode feature and category metadata differently, this utility is intentionally lightweight and may require you to provide the appropriate inputs/column mappings.
+
+Run:
+
+```bash
+python utility/generate_idp_key.py --help
+```
+
+Then sanity-check the output:
+
+```bash
+python - <<'PY'
+import pandas as pd
+p = "IDP_KEY.csv"  # replace with your output path
+k = pd.read_csv(p)
+req = {"index", "feature_name", "feature_category_name"}
+missing = req - set(k.columns)
+assert not missing, f"Missing required columns: {missing}"
+print(k.head())
+PY
+```
+
+### 2) Reference run (regression check)
+
+`utility/dimple-ref-run.py` is a “reference” implementation with fixed assumptions/hard-coded choices. It is useful as a regression check to ensure `DIMPLEGWAS.py` produces comparable outputs on the same input.
+
+```bash
+# Run the reference script as-is
+# (It is intentionally hard-coded and does not expose a CLI parser.)
+python utility/dimple-ref-run.py
+```
+
+See the header comments at the top of `utility/dimple-ref-run.py` for its assumptions (input paths, parameters, and output locations).
+
+---
+
+## Reproducing the manuscript environment (exact)
+
+For publication-grade *exact* reproduction, this repo includes a pinned conda **@EXPLICIT** environment spec.
+
+```bash
+conda create -n dimple_legacy_exact --file utility/legacy_explicit.txt
+conda activate dimple_legacy_exact
 ```
 
 Notes:
 
-- `pyarrow` is optional but can accelerate CSV/TSV reads.
-- Large ensemble runs can require substantial RAM; start with smaller settings for smoke tests.
-
-### Folder structure
-
-```text
-.
-├── dimple.py               # Main pipeline script
-├── plot_utils.py           # Visualization utilities (if present)
-├── requirements.txt        # Python dependencies
-└── README.md               # Project documentation
-```
+- The explicit spec captures the exact conda artifacts used for the manuscript run.
+- If you must add packages not present in the spec (e.g., `hdbscan`), do so minimally and record the exact versions installed (e.g., `pip freeze` and `conda list --explicit`).
 
 ---
 
-## 2) CLI options (argparse)
+## Reproducibility checklist (recommended for publications)
 
-Run `python dimple.py --help` to see the definitive options for your version.
+When you generate results for a manuscript, record:
 
-### Core I/O
-
-- `--datainput`  Path to the input matrix (`.tsv`/`.csv`).
-- `--idp_key`  Optional path to `IDP_KEY.csv` used to enrich visualization outputs.
-
-### Output artifacts
-
-Defaults are stage-based filenames; you may override any of these to redirect outputs.
-
-- `--prelim_umap`  Preliminary UMAP QC plot (HTML).
-- `--hdbscan_input`  Concatenated embeddings used as HDBSCAN input (CSV).
-- `--screeinput`  Grid-search results table used for diagnostics (CSV).
-- `--optimized_out`  Ranked/optimized grid-search table (CSV).
-- `--screeplot1`, `--screeplot2`, `--screeplot3`  Interactive diagnostic plots (HTML).
-- `--silplot`  Silhouette analysis plot (PNG).
-- `--logfile`  Run log / metrics summary (TXT).
-- `--umapdataframe`  UMAP visualization table with cluster labels (CSV).
-- `--clusterplot1`  3D cluster solution plot (HTML).
-- `--clusterplot2`  3D modality overlay plot (HTML), if modality mapping is enabled.
-- `--merged_umap`  Merged UMAP + IDP key table (CSV).
-
-### Execution controls
-
-- `--dry-run`  Validates inputs and prints the inferred configuration, then exits without running expensive steps.
-
-Common performance-related flags (if enabled in your version):
-
-- `--n_random_states`  Number of UMAP runs to ensemble. For testing, 10–50 is typical; for robust runs, 50–200 is common.
-- `--n_components`  UMAP dimensionality per run (commonly 2 or 3).
-- `--n_jobs`  Parallelism control; `-1` typically means “use all cores”.
-
----
-
-## 3) Cloud deployments (GCP and AWS)
-
-The ensemble UMAP and grid-search steps can be compute- and memory-intensive.
-
-### Practical sizing guidance
-
-- Laptop smoke tests: reduce `--n_random_states`, reduce grid size, and run `--dry-run` first.
-- Workstation: 16–64 vCPU and 64–256 GB RAM can be appropriate depending on dataset size and ensemble settings.
-- Cloud: select compute-optimized or high-memory instances based on the expected runtime and memory profile.
-
-### AWS (EC2)
-
-Lightweight test:
-
-1. Launch Ubuntu 22.04 (e.g., `t3.xlarge` or similar).
-2. Attach sufficient EBS (≥100 GB is a reasonable starting point).
-3. SSH in and install prerequisites.
-
-```bash
-sudo apt-get update
-sudo apt-get install -y git python3-venv build-essential
-
-git clone <your_repo>
-cd dimple_cluster_pipeline
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-
-python dimple.py --dry-run --datainput toy_data.tsv
-```
-
-High-powered runs:
-
-- Consider `m6i`/`r6i`/`c6i` families depending on CPU vs RAM needs.
-- Use `tmux`/`screen` for long jobs.
-- Treat Plotly HTML outputs as optional at very large `n` (files can be large).
-
-### GCP (Compute Engine)
-
-Lightweight test:
-
-- Ubuntu 22.04 on `e2-standard-*` or `n2-standard-*`.
-
-High-powered runs:
-
-- Use high-memory machines (e.g., `n2-highmem-*`) when ensemble size or input dimensionality is large.
-- Ensure persistent disk is sized appropriately; consider SSD-backed disks if I/O becomes limiting.
-
-Operational notes (both clouds):
-
-- Stage inputs locally on the VM to avoid repeated remote reads.
-- Prefer checkpointing intermediate outputs by keeping the default stage artifacts, so reruns can resume.
-
----
-
-## 4) Step-by-step feature walkthrough
-
-### Stage A — Input validation and QC
-
-- Parses the input matrix, validates dimensions and missingness assumptions, and checks that downstream parameters are coherent.
-- `--dry-run` executes only this stage and prints the resolved configuration.
-
-### Stage B — Preliminary UMAP (quick diagnostic)
-
-- Produces an early embedding for sanity checking.
-- Output: `--prelim_umap` (HTML).
-
-### Stage C — Ensemble UMAP (optional but recommended)
-
-- Runs UMAP across multiple seeds and concatenates embeddings to form the representation used for clustering.
-- Output: `--hdbscan_input` (CSV).
-
-### Stage D — Parallel HDBSCAN grid search
-
-- Evaluates a parameter grid to identify stable clustering regimes.
-- Output: `--screeinput` (CSV) containing silhouette, number of clusters, and noise points per configuration.
-
-### Stage E — Diagnostic scree plots
-
-- Visualizes trade-offs across solutions.
-- Outputs: `--screeplot1/2/3` (HTML).
-
-### Stage F — Optimization and selection
-
-- Computes a composite ranking of solutions and selects the final configuration.
-- Output: `--optimized_out` (CSV).
-
-### Stage G — Final clustering and metrics
-
-- Executes HDBSCAN using the selected configuration and computes clustering diagnostics.
-- Outputs: `--silplot` (PNG) and `--logfile` (TXT).
-
-### Stage H — Export results
-
-- Exports visualization-ready tables mapping entities to UMAP coordinates and cluster labels.
-- Outputs: `--umapdataframe` (CSV) and optionally `--merged_umap` (CSV).
-
-### Stage I — Interactive 3D visualization
-
-- Produces 3D plots colored by cluster (and optionally modality).
-- Outputs: `--clusterplot1` and `--clusterplot2` (HTML).
-
----
-
-## Reproducibility and performance notes
-
-- Prefer fixed seeds for reproducible runs.
-- Start with small `--n_random_states` and a coarse grid for smoke tests, then scale up.
-- Trustworthiness/continuity computations can be memory-intensive on larger datasets; use subsampling or approximations if supported by your script version.
-
-## Outputs (summary)
-
-Typical outputs include:
-
-- UMAP embeddings for clustering (`--hdbscan_input`)
-- Grid search table (`--screeinput`)
-- Optimization table (`--optimized_out`)
-- Cluster assignment tables (`--umapdataframe`, `--merged_umap`)
-- Diagnostic plots (HTML/PNG)
+- Input dataset checksum (e.g., `sha256sum`)
+- Full CLI invocation
+- Environment manifest (`conda list --explicit` and `pip freeze`)
 
 ## Citation / attribution
 
-If you use DIMPLE in a publication, please cite the accompanying manuscript and upstream methods (UMAP, HDBSCAN, and any additional statistical frameworks used in your analysis).
+If you use DIMPLE-GWAS in a publication, please cite the accompanying manuscript and upstream methods (UMAP, HDBSCAN, and any additional statistical frameworks used in your analysis).
