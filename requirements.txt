@@ -33,6 +33,7 @@ pyarrow>=12.0
 
 # Plotting / outputs
 plotly>=5.15
+matplotlib>=3.7
 
 # Optional: progress bars / UX
 tqdm>=4.66
