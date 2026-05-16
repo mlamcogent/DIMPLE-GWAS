@@ -4,19 +4,18 @@
 # - Includes CLI + plotting utilities + grid search + optimization
 # - Designed for distribution with toy/example data (generic output filenames)
 #
-# Core Python deps (pip): numpy, pandas, scikit-learn, umap-learn, hdbscan, joblib, plotly, matplotlib
+# Core Python deps (pip): numpy, pandas, scipy, scikit-learn, umap-learn, hdbscan, joblib, plotly, matplotlib
 # Optional speedups: pyarrow
 
 import argparse
 import sys
 import os
-import itertools
 import numpy as np
 import pandas as pd
 import logging
 import io
-import warnings
 import gc
+from itertools import product
 from typing import Optional, List
 
 # ---------- Plotting utilities (kept inline for single-file distribution) ----------
@@ -26,15 +25,11 @@ import plotly.io as pio
 import matplotlib.pyplot as plt
 
 from sklearn.metrics import silhouette_samples, silhouette_score, calinski_harabasz_score, davies_bouldin_score
-from sklearn.neighbors import NearestNeighbors
 from sklearn.metrics.pairwise import euclidean_distances
+from sklearn.manifold import trustworthiness as sklearn_trustworthiness
+from scipy.stats import norm
 
 import hdbscan
-# Additional dependencies from the original notebook
-from sklearn.datasets import fetch_openml, make_blobs
-from sklearn.decomposition import PCA
-import sklearn.cluster as cluster
-from mpl_toolkits.mplot3d import Axes3D  # for 3D plotting support
 
 # Prefer the optimized umap.umap_ API; fall back to plain `umap` if needed
 try:
@@ -69,13 +64,38 @@ def build_arg_parser():
     p.add_argument("--umapdataframe", default="stage09_umap_vizdata_with_clusters.csv")
     p.add_argument("--clusterplot1", default="stage10_cluster_solutions_3d.html")
     p.add_argument("--clusterplot2", default="stage11_modalities_3d.html")
-    p.add_argument("--idp_key", default="IDP_KEY.csv", help="Path to IDP key CSV used to enrich UMAP output")
-    p.add_argument("--merged_umap", default="stage09b_umap_vizdata_with_idpkey.csv",
-                   help="Path to save merged UMAP+IDP key table")
+    p.add_argument(
+        "--annotation_file",
+        "--idp_key",
+        dest="annotation_file",
+        default=None,
+        help=(
+            "Path to a feature annotation CSV used to enrich UMAP output. "
+            "The file may contain any annotation columns, but must include the join column "
+            "specified by --annotation_index_col. Historical alias: --idp_key."
+        )
+    )
+    p.add_argument(
+        "--annotation_index_col",
+        default="index",
+        help="Column in --annotation_file that matches the feature identifiers in the input matrix columns."
+    )
+    p.add_argument("--merged_umap", default="stage09b_umap_vizdata_with_annotations.csv",
+                   help="Path to save merged UMAP+feature annotation table")
 
     # General toggles / params (we'll wire these up as we add cells)
     p.add_argument("--drop_first_n_cols", type=int, default=4, help="Drop first N metadata columns before analysis")
     p.add_argument("--sep", default=None, help="CSV/TSV delimiter override; defaults: .tsv='\t', .csv=','")
+    p.add_argument(
+        "--zscore_transform",
+        choices=["none", "rint"],
+        default="none",
+        help=(
+            "Optional preprocessing transform applied independently to each analyzed Z-score vector "
+            "before transpose/UMAP. 'rint' applies rank-based inverse normal transformation. "
+            "Default: none."
+        )
+    )
     p.add_argument("--n_neighbors", type=int, default=30)
     p.add_argument("--min_dist", type=float, default=0.0)
     p.add_argument("--n_components", type=int, default=3)
@@ -156,12 +176,45 @@ def build_arg_parser():
         help="min_cluster_size values. CSV or range 'start:stop[:step]'. "
              "Example: '5:50' -> 5..49 (stop is exclusive)"
     )
+    p.add_argument(
+        "--grid_cluster_selection_method",
+        default="eom",
+        help="HDBSCAN cluster_selection_method values. CSV accepted. Valid values: 'eom', 'leaf'. Default keeps manuscript behavior: 'eom'."
+    )
+    p.add_argument(
+        "--grid_cluster_selection_persistence",
+        default="0.0",
+        help="HDBSCAN cluster_selection_persistence values. CSV or range 'start:stop[:step]'. Default: 0.0."
+    )
+    p.add_argument(
+        "--grid_alpha",
+        default="1.0",
+        help="HDBSCAN alpha values. CSV or range 'start:stop[:step]'. Advanced; default 1.0 is recommended for most runs."
+    )
+    p.add_argument(
+        "--grid_allow_single_cluster",
+        default="false",
+        help=(
+            "HDBSCAN allow_single_cluster values as CSV booleans, e.g. 'false' or 'false,true'. "
+            "Configurations with fewer than two non-noise clusters are still skipped by the current fit score."
+        )
+    )
 
     p.add_argument(
         "--override_rank",
         type=int,
         default=None,
         help="If provided, use df_sorted.iloc[override_rank] as the chosen configuration after optimization. If omitted, uses the top-ranked (best) row: df_sorted.iloc[0]."
+    )
+    p.add_argument(
+        "--fit_include_noise",
+        action="store_true",
+        help=(
+            "If set, include HDBSCAN noise points in the model-selection fit calculation. "
+            "This computes grid-search silhouette with label -1 included and retains the "
+            "Noise_points penalty in the composite fit score. Default: exclude noise points "
+            "from the fit calculation."
+        )
     )
     # Metrics controls
     p.add_argument(
@@ -178,7 +231,11 @@ def build_arg_parser():
     p.add_argument(
         "--silhouette_include_noise",
         action="store_true",
-        help="If set, include noise points (label = -1) when computing silhouette_score and when generating the silhouette analysis plot. Default: exclude noise (notebook used include-noise; this flag enables exact parity)."
+        help=(
+            "Backward-compatible alias for --metrics_include_noise. Includes noise points "
+            "in the post-hoc silhouette statistic, silhouette plot, and metrics suite. "
+            "Default: exclude noise."
+        )
     )
     p.add_argument(
         "--trust_k",
@@ -281,7 +338,7 @@ def paths_from_args(args):
         umapdataframe=apply_outdir(outdir, args.umapdataframe),
         clusterplot1=apply_outdir(outdir, args.clusterplot1),
         clusterplot2=apply_outdir(outdir, args.clusterplot2),
-        idp_key=args.idp_key,
+        annotation_file=args.annotation_file,
         merged_umap=apply_outdir(outdir, args.merged_umap),
     )
 
@@ -345,113 +402,148 @@ def _parse_seq_floats(spec: Optional[str]):
             out.extend([float(v) for v in vals])
         else:
             out.append(float(tok))
-    # Basic bounds checking for epsilon
+    # Basic bounds checking for non-negative float hyperparameters
     if any(v < 0 for v in out):
         raise ValueError(f"Invalid float sequence (values must be >= 0): {out}")
     return out
+
+
+def _parse_seq_strings(spec: Optional[str], allowed: Optional[set] = None, lower: bool = True):
+    """
+    Parse a comma-separated string sequence.
+    """
+    if not spec:
+        return None
+    out: List[str] = []
+    for tok in spec.split(","):
+        tok = tok.strip()
+        if not tok:
+            continue
+        value = tok.lower() if lower else tok
+        if allowed and value not in allowed:
+            raise ValueError(f"Invalid string sequence value '{tok}'. Valid values: {sorted(allowed)}")
+        out.append(value)
+    return out
+
+
+def _coerce_bool(value) -> bool:
+    """Coerce common CLI/CSV boolean spellings to bool."""
+    if isinstance(value, (bool, np.bool_)):
+        return bool(value)
+    if isinstance(value, (int, np.integer)):
+        return bool(value)
+    if isinstance(value, float):
+        if np.isnan(value):
+            return False
+        return bool(value)
+    text = str(value).strip().lower()
+    if text in {"true", "t", "yes", "y", "1"}:
+        return True
+    if text in {"false", "f", "no", "n", "0"}:
+        return False
+    raise ValueError(f"Invalid boolean value: {value}")
+
+
+def _parse_seq_bools(spec: Optional[str]):
+    """
+    Parse comma-separated booleans.
+    """
+    if not spec:
+        return None
+    return [_coerce_bool(tok) for tok in spec.split(",") if tok.strip()]
+
+
+def hdbscan_kwargs(min_samples, min_cluster_size, epsilon, cluster_selection_method="eom",
+                   alpha=1.0, cluster_selection_persistence=0.0, allow_single_cluster=False):
+    """Build HDBSCAN keyword arguments shared by grid search and final refits."""
+    return {
+        "min_samples": int(min_samples),
+        "min_cluster_size": int(min_cluster_size),
+        "cluster_selection_epsilon": float(epsilon),
+        "cluster_selection_method": str(cluster_selection_method),
+        "alpha": float(alpha),
+        "cluster_selection_persistence": float(cluster_selection_persistence),
+        "allow_single_cluster": bool(allow_single_cluster),
+    }
+
+
+def _series_get(row: pd.Series, column: str, default):
+    if column in row.index and pd.notna(row[column]):
+        return row[column]
+    return default
+
+
+def rank_inverse_normal_transform(df_numeric: pd.DataFrame) -> pd.DataFrame:
+    """
+    Apply rank-based inverse normal transformation column-wise.
+
+    Each column is treated as one feature's Z-score vector across variants.
+    Ties receive average ranks and are mapped with (rank - 0.5) / n to avoid
+    infinite normal quantiles at the endpoints.
+    """
+    if df_numeric.empty:
+        return df_numeric.copy()
+
+    counts = df_numeric.notna().sum(axis=0)
+    if (counts < 1).any():
+        empty_cols = counts[counts < 1].index.tolist()
+        raise ValueError(f"Cannot apply RINT to columns with no observed values: {empty_cols}")
+
+    ranks = df_numeric.rank(axis=0, method="average", na_option="keep")
+    quantiles = (ranks - 0.5).div(counts, axis=1)
+    transformed = norm.ppf(quantiles)
+    return pd.DataFrame(transformed, index=df_numeric.index, columns=df_numeric.columns)
+
 
 def dependency_banner(logger):
     """
     Notebook parity: prints the dependency banner. We log it instead.
     """
-    logger.info("General Dependencies for IDP Neuroimaging Clustering Pipeline Loaded")
+    logger.info("General dependencies for DIMPLE-GWAS pipeline loaded")
+
+
+def effective_neighbor_count(n_samples: int, n_neighbors: int) -> int:
+    """
+    Return a valid neighbor count for trustworthiness/continuity.
+
+    scikit-learn's trustworthiness requires n_neighbors < n_samples / 2.
+    """
+    if n_samples < 3:
+        return 0
+    max_neighbors = max(1, (n_samples - 1) // 2)
+    return min(int(n_neighbors), max_neighbors)
 
 
 def trustworthiness(X, X_embedded, n_neighbors: int):
     """
     Compute Trustworthiness of the embedding with respect to the original space.
-    Mirrors the notebook implementation:
-      - Builds NN in original and embedded spaces
-      - Ranks neighbors and penalizes intrusions
-    NOTE: This memory-inefficient implementation constructs n_samples x n_samples rank matrices,
-    matching the original notebook semantics. For very large n, consider a batched/approx version.
+
+    This uses scikit-learn's tested implementation. Higher is better.
     """
-    n_samples = X.shape[0]
-
-    # Guard: this implementation builds O(n^2) rank matrices.
-    # For larger n, return NaN and warn rather than hard-failing.
-    if n_samples > 5000:
-        warnings.warn(
-            f"trustworthiness/continuity O(n^2) implementation skipped for n_samples={n_samples} (>5000).",
-            RuntimeWarning,
-        )
+    k = effective_neighbor_count(X.shape[0], n_neighbors)
+    if k < 1:
         return float("nan")
-
-    # Nearest neighbors in original space
-    nn_orig = NearestNeighbors(n_neighbors=n_neighbors + 1).fit(X)
-    _, ind_orig = nn_orig.kneighbors(X)
-
-    # Nearest neighbors in embedded space
-    nn_embedded = NearestNeighbors(n_neighbors=n_neighbors + 1).fit(X_embedded)
-    _, ind_embedded = nn_embedded.kneighbors(X_embedded)
-
-    # Remove self neighbor
-    ind_orig = ind_orig[:, 1:]
-    ind_embedded = ind_embedded[:, 1:]
-
-    # Rank matrices
-    rank_orig = np.zeros((n_samples, n_samples))
-    rank_embedded = np.zeros((n_samples, n_samples))
-
-    for i in range(n_samples):
-        rank_orig[i, ind_orig[i]] = np.arange(1, n_neighbors + 1)
-        rank_embedded[i, ind_embedded[i]] = np.arange(1, n_neighbors + 1)
-
-    # Trustworthiness
-    U = np.zeros(n_samples)
-    for i in range(n_samples):
-        U[i] = np.sum((rank_orig[i, ind_embedded[i]] > n_neighbors) *
-                      (rank_orig[i, ind_embedded[i]] - n_neighbors))
-
-    trust = 1 - 2 / (n_samples * n_neighbors * (2 * n_samples - 3 * n_neighbors - 1)) * np.sum(U)
-    return float(trust)
+    return float(sklearn_trustworthiness(X, X_embedded, n_neighbors=k))
 
 
 def continuity(X, X_embedded, n_neighbors: int):
     """
     Compute Continuity of the embedding with respect to the original space.
-    Mirrors the notebook implementation:
-      - Builds NN in original and embedded spaces
-      - Ranks neighbors and penalizes extrusions
-    NOTE: This memory-inefficient implementation constructs n_samples x n_samples rank matrices,
-    matching the original notebook semantics. For very large n, consider a batched/approx version.
+
+    Continuity is computed as trustworthiness in the reverse direction:
+    whether original-space neighbors are preserved in the embedding.
+    Higher is better.
     """
-    n_samples = X.shape[0]
-
-    # Nearest neighbors in original space
-    nn_orig = NearestNeighbors(n_neighbors=n_neighbors + 1).fit(X)
-    _, ind_orig = nn_orig.kneighbors(X)
-
-    # Nearest neighbors in embedded space
-    nn_embedded = NearestNeighbors(n_neighbors=n_neighbors + 1).fit(X_embedded)
-    _, ind_embedded = nn_embedded.kneighbors(X_embedded)
-
-    # Remove self neighbor
-    ind_orig = ind_orig[:, 1:]
-    ind_embedded = ind_embedded[:, 1:]
-
-    # Rank matrices
-    rank_orig = np.zeros((n_samples, n_samples))
-    rank_embedded = np.zeros((n_samples, n_samples))
-
-    for i in range(n_samples):
-        rank_orig[i, ind_orig[i]] = np.arange(1, n_neighbors + 1)
-        rank_embedded[i, ind_embedded[i]] = np.arange(1, n_neighbors + 1)
-
-    # Continuity
-    V = np.zeros(n_samples)
-    for i in range(n_samples):
-        V[i] = np.sum((rank_embedded[i, ind_orig[i]] > n_neighbors) *
-                      (rank_embedded[i, ind_orig[i]] - n_neighbors))
-
-    cont = 1 - 2 / (n_samples * n_neighbors * (2 * n_samples - 3 * n_neighbors - 1)) * np.sum(V)
-    return float(cont)
+    k = effective_neighbor_count(X.shape[0], n_neighbors)
+    if k < 1:
+        return float("nan")
+    return float(sklearn_trustworthiness(X_embedded, X, n_neighbors=k))
 
 
 # =============================
 # Dunn Index implementation
 # =============================
-def dunn_index(features: np.ndarray, labels: np.ndarray) -> float:
+def dunn_index(features: np.ndarray, labels: np.ndarray, include_noise: bool = False) -> float:
     """
     Dunn Index:
       ratio of the smallest distance between observations in different clusters
@@ -459,7 +551,7 @@ def dunn_index(features: np.ndarray, labels: np.ndarray) -> float:
     Higher is better. Returns NaN if undefined (e.g., <2 clusters or zero intra-cluster spread).
     """
     labels = np.asarray(labels)
-    unique = [c for c in np.unique(labels) if c != -1]  # ignore noise by convention
+    unique = [c for c in np.unique(labels) if include_noise or c != -1]
     if len(unique) < 2:
         return float("nan")
 
@@ -495,15 +587,20 @@ def dunn_index(features: np.ndarray, labels: np.ndarray) -> float:
 
 def main():
     parser = build_arg_parser()
+    legacy_idp_arg_used = any(arg == "--idp_key" or arg.startswith("--idp_key=") for arg in sys.argv[1:])
     args = parser.parse_args()
     paths = paths_from_args(args)
+    posthoc_include_noise = bool(
+        getattr(args, "metrics_include_noise", False)
+        or getattr(args, "silhouette_include_noise", False)
+    )
 
     # Ensure output directory exists and all parent directories for known outputs are created
     # (skip filesystem writes in --dry-run mode)
     if not bool(getattr(args, "dry_run", False)):
         os.makedirs(getattr(args, "outdir", "outputs"), exist_ok=True)
         for k, v in paths.items():
-            if k in ("datainput", "idp_key"):
+            if k in ("datainput", "annotation_file"):
                 continue
             if isinstance(v, str) and v:
                 ensure_parent_dir(v)
@@ -518,21 +615,31 @@ def main():
     else:
         logger = setup_logger(paths["logfile"], args.log_level)
 
+    if legacy_idp_arg_used:
+        logger.warning("--idp_key is a deprecated alias; prefer --annotation_file for new workflows.")
+    if bool(getattr(args, "silhouette_include_noise", False)) and not bool(getattr(args, "metrics_include_noise", False)):
+        logger.warning(
+            "--silhouette_include_noise is retained for backward compatibility; "
+            "it now acts as an alias for --metrics_include_noise."
+        )
+
     dependency_banner(logger)
 
     if dry_run:
         logger.info("[DRY-RUN] DIMPLE-GWAS pipeline will not execute. Showing resolved configuration only.")
         logger.info("Resolved input:")
         logger.info("  datainput: %s", paths["datainput"])
+        logger.info("  annotation_file: %s", paths["annotation_file"])
         logger.info("Resolved outputs (under --outdir unless absolute):")
         for k, v in paths.items():
-            if k == "datainput":
+            if k in ("datainput", "annotation_file"):
                 continue
             logger.info("  %s: %s", k, v)
 
         logger.info("Key parameters:")
         logger.info("  drop_first_n_cols: %d", int(args.drop_first_n_cols))
         logger.info("  sep override: %s", str(args.sep))
+        logger.info("  zscore_transform: %s", str(args.zscore_transform))
         logger.info("  n_neighbors: %d", int(args.n_neighbors))
         logger.info("  min_dist: %s", str(args.min_dist))
         logger.info("  n_components: %d", int(args.n_components))
@@ -547,6 +654,15 @@ def main():
         logger.info("  grid_eps: %s", str(args.grid_eps))
         logger.info("  grid_min_samples: %s", str(args.grid_min_samples))
         logger.info("  grid_min_cluster_size: %s", str(args.grid_min_cluster_size))
+        logger.info("  grid_cluster_selection_method: %s", str(args.grid_cluster_selection_method))
+        logger.info("  grid_cluster_selection_persistence: %s", str(args.grid_cluster_selection_persistence))
+        logger.info("  grid_alpha: %s", str(args.grid_alpha))
+        logger.info("  grid_allow_single_cluster: %s", str(args.grid_allow_single_cluster))
+        logger.info("  fit_include_noise: %s", str(bool(args.fit_include_noise)))
+        logger.info("  metrics_include_noise: %s", str(bool(args.metrics_include_noise)))
+        logger.info("  silhouette_include_noise: %s", str(bool(args.silhouette_include_noise)))
+        logger.info("  posthoc_include_noise_effective: %s", str(posthoc_include_noise))
+        logger.info("  annotation_index_col: %s", str(args.annotation_index_col))
 
         # Light validation without writing anything
         if not os.path.isfile(paths["datainput"]):
@@ -564,7 +680,7 @@ def main():
         logger.info("  Stage 08: Metrics/logging")
         logger.info("  Stage 09: UMAP viz dataframe + labels CSV")
         logger.info("  Stage 10: Cluster solutions plot HTML")
-        logger.info("  Stage 09b: Merge IDP key with UMAP table CSV (if IDP key provided)")
+        logger.info("  Stage 09b: Merge feature annotations with UMAP table CSV (if annotation file is provided)")
         return 0
 
     strict = bool(getattr(args, "strict", False))
@@ -580,6 +696,12 @@ def main():
     logger.info("Defining input and output objectives for pipeline")
     for k, v in paths.items():
         logger.info("  %s: %s", k, v)
+    logger.info(
+        "Noise handling: model-selection fit score %s noise; post-hoc metrics %s noise.",
+        "includes" if bool(getattr(args, "fit_include_noise", False)) else "excludes",
+        "include" if posthoc_include_noise else "exclude",
+    )
+    logger.info("Z-score preprocessing transform: %s", args.zscore_transform)
 
     # =============================
     # Cell 2: Read in data
@@ -596,7 +718,6 @@ def main():
         logger.warning("Falling back to pandas CSV reader (pyarrow failed: %s)", e)
         df = pd.read_csv(paths["datainput"], sep=sep)
 
-    # Drop the first N metadata columns (default 4) then transpose for analysis matrix X
     # Drop the first N metadata columns (default 4), coerce to numeric, then transpose for analysis matrix X
     df2 = df.iloc[:, args.drop_first_n_cols:].copy()
     df2 = df2.apply(pd.to_numeric, errors="coerce")
@@ -606,6 +727,17 @@ def main():
             f"Non-numeric values or missingness detected after coercion (NA cells={na_cells}). "
             "Please ensure the analysis matrix is fully numeric and contains no missing values."
         )
+
+    if args.zscore_transform == "rint":
+        logger.info(
+            "Applying rank-based inverse normal transformation column-wise to %d Z-score vectors across %d variants.",
+            df2.shape[1],
+            df2.shape[0],
+        )
+        df2 = rank_inverse_normal_transform(df2)
+    else:
+        logger.info("No Z-score preprocessing transform applied.")
+
     X = df2.T
 
     # Basic diagnostics to mirror notebook checks
@@ -748,7 +880,7 @@ def main():
 
     # =============================
     # Cell 5: Parallelized grid search for best fitting cluster
-    # Reads Stage_01 HDBSCAN input, explores epsilon/min_samples/min_cluster_size space,
+    # Reads Stage_01 HDBSCAN input and explores HDBSCAN parameter space,
     # and writes the full set of suitable configurations to Stage_02 scree CSV.
     # =============================
     try:
@@ -760,19 +892,54 @@ def main():
             logger.warning("Falling back to pandas CSV reader for hdbscan_input (pyarrow failed: %s)", e_read)
             clusterable_embedding_df = pd.read_csv(paths["hdbscan_input"])
         clusterable_embedding = clusterable_embedding_df.values  # use numpy array for speed
+        fit_include_noise = bool(getattr(args, "fit_include_noise", False))
+        logger.info(
+            "Model-selection fit score noise handling: %s",
+            "including noise points" if fit_include_noise else "excluding noise points"
+        )
 
         # Grid space (use new parsers; defaults are specified in argparse)
         eps_list = _parse_seq_floats(args.grid_eps)
         min_samples_list = _parse_seq_ints(args.grid_min_samples)
         min_cluster_size_list = _parse_seq_ints(args.grid_min_cluster_size)
+        cluster_selection_method_list = _parse_seq_strings(
+            args.grid_cluster_selection_method,
+            allowed={"eom", "leaf"},
+        )
+        cluster_selection_persistence_list = _parse_seq_floats(args.grid_cluster_selection_persistence)
+        alpha_list = _parse_seq_floats(args.grid_alpha)
+        allow_single_cluster_list = _parse_seq_bools(args.grid_allow_single_cluster)
 
-        logger.info("Grid sizes — epsilon: %d, min_samples: %d, min_cluster_size: %d",
-                    len(eps_list), len(min_samples_list), len(min_cluster_size_list))
+        if any(alpha <= 0 for alpha in alpha_list):
+            raise ValueError(f"Invalid alpha sequence (values must be > 0): {alpha_list}")
 
-        l_eps = len(eps_list)
-        l_ms = len(min_samples_list)
-        l_mcs = len(min_cluster_size_list)
-        total_cfg = l_eps * l_ms * l_mcs
+        grid_values = [
+            eps_list,
+            min_samples_list,
+            min_cluster_size_list,
+            cluster_selection_method_list,
+            cluster_selection_persistence_list,
+            alpha_list,
+            allow_single_cluster_list,
+        ]
+        grid_lengths = [len(values) for values in grid_values]
+
+        logger.info(
+            "Grid sizes — epsilon: %d, min_samples: %d, min_cluster_size: %d, "
+            "cluster_selection_method: %d, cluster_selection_persistence: %d, "
+            "alpha: %d, allow_single_cluster: %d",
+            len(eps_list),
+            len(min_samples_list),
+            len(min_cluster_size_list),
+            len(cluster_selection_method_list),
+            len(cluster_selection_persistence_list),
+            len(alpha_list),
+            len(allow_single_cluster_list),
+        )
+
+        total_cfg = 1
+        for length in grid_lengths:
+            total_cfg *= length
         logger.info("Total grid configurations: %d", total_cfg)
 
         rng = np.random.default_rng(int(args.random_state))
@@ -791,21 +958,32 @@ def main():
             sel = None
 
         def _decode_linear(idx: int):
-            # Map linear index into (eps, ms, mcs) triple without materializing full product list
-            per_eps = l_ms * l_mcs
-            ieps = idx // per_eps
-            rem = idx % per_eps
-            ims = rem // l_mcs
-            imcs = rem % l_mcs
-            return eps_list[ieps], min_samples_list[ims], min_cluster_size_list[imcs]
+            # Map linear index into a grid tuple without materializing the full product.
+            positions = np.unravel_index(idx, tuple(grid_lengths))
+            return tuple(values[pos] for values, pos in zip(grid_values, positions))
 
         # Define evaluation of a single configuration
-        def evaluate_config(epsilon, min_samples, min_cluster_size, emb):
+        def evaluate_config(
+            epsilon,
+            min_samples,
+            min_cluster_size,
+            cluster_selection_method,
+            cluster_selection_persistence,
+            alpha,
+            allow_single_cluster,
+            emb,
+            include_noise_for_fit,
+        ):
             clusterer = hdbscan.HDBSCAN(
-                min_samples=min_samples,
-                min_cluster_size=min_cluster_size,
-                cluster_selection_epsilon=epsilon,
-                cluster_selection_method='eom'
+                **hdbscan_kwargs(
+                    min_samples=min_samples,
+                    min_cluster_size=min_cluster_size,
+                    epsilon=epsilon,
+                    cluster_selection_method=cluster_selection_method,
+                    alpha=alpha,
+                    cluster_selection_persistence=cluster_selection_persistence,
+                    allow_single_cluster=allow_single_cluster,
+                )
             ).fit(emb)
 
             labels = clusterer.labels_
@@ -814,30 +992,44 @@ def main():
 
             if num_clusters > 1:
                 non_noise_indices = labels != -1
-                filtered_labels = labels[non_noise_indices]
-                filtered_embedding = emb[non_noise_indices]
-
-                sil_values = silhouette_samples(filtered_embedding, filtered_labels)
-                sil_avg = float(np.mean(sil_values))
+                try:
+                    if include_noise_for_fit and len(set(labels)) > 1:
+                        sil_avg = float(silhouette_score(emb, labels))
+                        silhouette_scope = "including_noise"
+                    else:
+                        filtered_labels = labels[non_noise_indices]
+                        filtered_embedding = emb[non_noise_indices]
+                        if len(set(filtered_labels)) <= 1:
+                            return None
+                        sil_avg = float(silhouette_score(filtered_embedding, filtered_labels))
+                        silhouette_scope = "non_noise"
+                except Exception:
+                    return None
 
                 return {
                     "Silhouette_avg": sil_avg,
+                    "Fit_silhouette_scope": silhouette_scope,
+                    "Fit_include_noise": bool(include_noise_for_fit),
                     "Epsilon": float(epsilon),
                     "Min_samples": int(min_samples),
                     "Min_cluster_size": int(min_cluster_size),
+                    "Cluster_selection_method": str(cluster_selection_method),
+                    "Cluster_selection_persistence": float(cluster_selection_persistence),
+                    "Alpha": float(alpha),
+                    "Allow_single_cluster": bool(allow_single_cluster),
                     "Clusters": int(num_clusters),
                     "Noise_points": int(noise_count),
                 }
             return None
 
         if sel is None:
-            iter_triples = ((eps, ms, mcs) for eps in eps_list for ms in min_samples_list for mcs in min_cluster_size_list)
+            iter_configs = product(*grid_values)
         else:
-            iter_triples = (_decode_linear(int(i)) for i in sel)
+            iter_configs = (_decode_linear(int(i)) for i in sel)
 
         configs = Parallel(n_jobs=args.n_jobs)(
-            delayed(evaluate_config)(eps, ms, mcs, clusterable_embedding)
-            for (eps, ms, mcs) in iter_triples
+            delayed(evaluate_config)(*config, clusterable_embedding, fit_include_noise)
+            for config in iter_configs
         )
 
         # Filter out None and save to scree CSV
@@ -915,9 +1107,10 @@ def main():
 
     # =============================
     # Cell 7: Optimization code to select best cluster solution
-    # - Normalizes Silhouette_avg, Clusters, Noise_points to [0,1]
+    # - Normalizes Silhouette_avg, Clusters, and optionally Noise_points to [0,1]
     # - Computes weights by dynamic range
-    # - Builds weighted Score = +wS*Sil - wN*Noise + wC*Clusters
+    # - Builds weighted raw score = +wS*Sil + wC*Clusters, with optional -wN*Noise
+    # - Rescales the raw score to [0,1] where 1 is best and 0 is worst
     # - Picks top, median, and (optionally) a custom override rank from CLI
     # - Saves the sorted table to Stage_03 as per notebook
     # =============================
@@ -932,6 +1125,10 @@ def main():
         if df_opt.empty:
             logger.warning("Optimization skipped: screeinput is empty.")
         else:
+            fit_include_noise = bool(getattr(args, "fit_include_noise", False))
+            df_opt["Fit_include_noise"] = fit_include_noise
+            df_opt["Noise_points_for_score"] = df_opt["Noise_points"] if fit_include_noise else 0
+
             # Normalize to [0,1] with safe division
             def _safe_norm(series: pd.Series) -> pd.Series:
                 m = series.max()
@@ -941,17 +1138,21 @@ def main():
 
             df_opt["Silhouette_avg_normalized"] = _safe_norm(df_opt["Silhouette_avg"])
             df_opt["Clusters_normalized"] = _safe_norm(df_opt["Clusters"])
-            df_opt["Noise_points_normalized"] = _safe_norm(df_opt["Noise_points"])
+            df_opt["Noise_points_normalized"] = _safe_norm(df_opt["Noise_points_for_score"])
 
             # Compute ranges
             range_silhouette = float(df_opt["Silhouette_avg"].max() - df_opt["Silhouette_avg"].min())
             range_clusters = float(df_opt["Clusters"].max() - df_opt["Clusters"].min())
-            range_noise = float(df_opt["Noise_points"].max() - df_opt["Noise_points"].min())
+            range_noise = float(df_opt["Noise_points_for_score"].max() - df_opt["Noise_points_for_score"].min())
             total_range = range_silhouette + range_clusters + range_noise
 
             if total_range <= 0 or pd.isna(total_range):
-                # Fallback to equal weights
-                weight_silhouette = weight_clusters = weight_noise = 1.0 / 3.0
+                if fit_include_noise:
+                    # Fallback to equal weights
+                    weight_silhouette = weight_clusters = weight_noise = 1.0 / 3.0
+                else:
+                    weight_silhouette = weight_clusters = 0.5
+                    weight_noise = 0.0
             else:
                 weight_silhouette = range_silhouette / total_range
                 weight_clusters = range_clusters / total_range
@@ -961,13 +1162,24 @@ def main():
                 "Assigned Weights: Silhouette = %.6f, Clusters = %.6f, Noise = %.6f",
                 weight_silhouette, weight_clusters, weight_noise
             )
+            if not fit_include_noise:
+                logger.info("Noise_points retained as a diagnostic column but excluded from model-selection Score.")
 
-            # Weighted score (maximize Silhouette and Clusters, minimize Noise)
-            df_opt["Score"] = (
+            # Weighted raw score (maximize Silhouette and Clusters, minimize Noise)
+            df_opt["Score_raw"] = (
                 weight_silhouette * df_opt["Silhouette_avg_normalized"]
                 + weight_clusters * df_opt["Clusters_normalized"]
                 - weight_noise * df_opt["Noise_points_normalized"]
             )
+
+            # Fit score scaled for interpretation: 1 = best candidate, 0 = worst candidate.
+            score_min = float(df_opt["Score_raw"].min())
+            score_max = float(df_opt["Score_raw"].max())
+            score_range = score_max - score_min
+            if score_range <= 0 or pd.isna(score_range):
+                df_opt["Score"] = 1.0
+            else:
+                df_opt["Score"] = (df_opt["Score_raw"] - score_min) / score_range
 
             # Sort by score descending
             df_sorted = df_opt.sort_values(by="Score", ascending=False)
@@ -997,11 +1209,19 @@ def main():
             best_epsilon = float(top_config["Epsilon"])
             best_min_samples = int(top_config["Min_samples"])
             best_min_cluster_size = int(top_config["Min_cluster_size"])
+            best_cluster_selection_method = str(_series_get(top_config, "Cluster_selection_method", "eom"))
+            best_cluster_selection_persistence = float(_series_get(top_config, "Cluster_selection_persistence", 0.0))
+            best_alpha = float(_series_get(top_config, "Alpha", 1.0))
+            best_allow_single_cluster = _coerce_bool(_series_get(top_config, "Allow_single_cluster", False))
             best_avg_silhouette = float(top_config["Silhouette_avg"])
 
             logger.info("Best Epsilon: %s", best_epsilon)
             logger.info("Best Min Samples: %s", best_min_samples)
             logger.info("Best Min Cluster Size: %s", best_min_cluster_size)
+            logger.info("Best Cluster Selection Method: %s", best_cluster_selection_method)
+            logger.info("Best Cluster Selection Persistence: %s", best_cluster_selection_persistence)
+            logger.info("Best Alpha: %s", best_alpha)
+            logger.info("Best Allow Single Cluster: %s", best_allow_single_cluster)
             logger.info("Best Average Silhouette: %s", best_avg_silhouette)
 
             # Persist the sorted table
@@ -1057,6 +1277,10 @@ def main():
                 best_epsilon = float(top_config_fb["Epsilon"])
                 best_min_samples = int(top_config_fb["Min_samples"])
                 best_min_cluster_size = int(top_config_fb["Min_cluster_size"])
+                best_cluster_selection_method = str(_series_get(top_config_fb, "Cluster_selection_method", "eom"))
+                best_cluster_selection_persistence = float(_series_get(top_config_fb, "Cluster_selection_persistence", 0.0))
+                best_alpha = float(_series_get(top_config_fb, "Alpha", 1.0))
+                best_allow_single_cluster = _coerce_bool(_series_get(top_config_fb, "Allow_single_cluster", False))
                 best_avg_silhouette = float(top_config_fb.get("Silhouette_avg", np.nan))
                 logger.warning("Optimized params not found in memory; using top row from optimized_out.")
             except Exception as e_fb:
@@ -1066,14 +1290,23 @@ def main():
         epsilon = float(best_epsilon)
         min_samples = int(best_min_samples)
         min_cluster_size = int(best_min_cluster_size)
+        cluster_selection_method = str(best_cluster_selection_method) if 'best_cluster_selection_method' in locals() else "eom"
+        cluster_selection_persistence = float(best_cluster_selection_persistence) if 'best_cluster_selection_persistence' in locals() else 0.0
+        alpha = float(best_alpha) if 'best_alpha' in locals() else 1.0
+        allow_single_cluster = bool(best_allow_single_cluster) if 'best_allow_single_cluster' in locals() else False
         avgsil = float(best_avg_silhouette) if 'best_avg_silhouette' in locals() else np.nan
 
         # Fit HDBSCAN and obtain labels
         labels = hdbscan.HDBSCAN(
-            min_samples=min_samples,
-            min_cluster_size=min_cluster_size,
-            cluster_selection_epsilon=epsilon,
-            cluster_selection_method='eom'
+            **hdbscan_kwargs(
+                min_samples=min_samples,
+                min_cluster_size=min_cluster_size,
+                epsilon=epsilon,
+                cluster_selection_method=cluster_selection_method,
+                alpha=alpha,
+                cluster_selection_persistence=cluster_selection_persistence,
+                allow_single_cluster=allow_single_cluster,
+            )
         ).fit_predict(clusterable_embedding)
 
         # Count clusters excluding noise (-1)
@@ -1081,8 +1314,8 @@ def main():
         hdb_counter = Counter(labels)
         hdb_n_clusters = len([lab for lab in hdb_counter.keys() if lab != -1])
 
-        # Compute silhouette, optionally including noise points if flag set
-        include_noise_for_sil = bool(getattr(args, "silhouette_include_noise", False))
+        # Compute post-hoc silhouette with the same noise handling used by the metrics suite.
+        include_noise_for_sil = posthoc_include_noise
         if include_noise_for_sil:
             # Notebook parity: include noise label (-1) as a cluster label
             if len(set(labels)) > 1:
@@ -1103,14 +1336,16 @@ def main():
             else:
                 silhouette_avg = -1.0
 
+        silhouette_scope = "including_noise" if include_noise_for_sil else "non_noise"
+
         logger.info("n_components (requested): %d", args.n_components)
-        logger.info("silhouette_avg (non-noise): %.6f", silhouette_avg)
+        logger.info("silhouette_avg (%s): %.6f", silhouette_scope, silhouette_avg)
         logger.info("Clusters (excluding noise): %d", hdb_n_clusters)
 
         # Silhouette analysis plot (optionally include noise points)
         try:
-            if (bool(getattr(args, "silhouette_include_noise", False)) and len(set(labels)) > 1) or (('unique_non_noise' in locals()) and len(unique_non_noise) > 1):
-                if bool(getattr(args, "silhouette_include_noise", False)) and len(set(labels)) > 1:
+            if (include_noise_for_sil and len(set(labels)) > 1) or (('unique_non_noise' in locals()) and len(unique_non_noise) > 1):
+                if include_noise_for_sil and len(set(labels)) > 1:
                     sil_vals = silhouette_samples(clusterable_embedding, labels)
                     plot_labels = labels
                 else:
@@ -1188,23 +1423,29 @@ def main():
         if 'labels' not in locals():
             logger.warning("Labels not found in memory; refitting HDBSCAN with best parameters for metrics.")
             labels = hdbscan.HDBSCAN(
-                min_samples=int(best_min_samples),
-                min_cluster_size=int(best_min_cluster_size),
-                cluster_selection_epsilon=float(best_epsilon),
-                cluster_selection_method='eom'
+                **hdbscan_kwargs(
+                    min_samples=int(best_min_samples),
+                    min_cluster_size=int(best_min_cluster_size),
+                    epsilon=float(best_epsilon),
+                    cluster_selection_method=best_cluster_selection_method if 'best_cluster_selection_method' in locals() else "eom",
+                    alpha=best_alpha if 'best_alpha' in locals() else 1.0,
+                    cluster_selection_persistence=best_cluster_selection_persistence if 'best_cluster_selection_persistence' in locals() else 0.0,
+                    allow_single_cluster=best_allow_single_cluster if 'best_allow_single_cluster' in locals() else False,
+                )
             ).fit_predict(feats)
 
         labels_arr = np.asarray(labels)
-        if args.metrics_include_noise:
+        if posthoc_include_noise:
             mask = np.ones_like(labels_arr, dtype=bool)
         else:
             mask = labels_arr != -1
 
         # Sanity for metrics requiring >= 2 clusters
         unique_masked = np.unique(labels_arr[mask])
-        unique_masked = unique_masked[unique_masked != -1] if not args.metrics_include_noise else unique_masked
+        unique_masked = unique_masked[unique_masked != -1] if not posthoc_include_noise else unique_masked
         if mask.sum() < 2 or unique_masked.size < 2:
-            logger.warning("Insufficient non-noise clusters for CH/DB/Dunn; metrics will be NaN.")
+            logger.warning("Insufficient %s clusters for CH/DB/Dunn; metrics will be NaN.",
+                           "label groups" if posthoc_include_noise else "non-noise")
         
         # Trustworthiness & Continuity (on masked rows to align with cluster-space computation)
         try:
@@ -1220,12 +1461,27 @@ def main():
                 Fm = Fm[sel_idx]
                 logger.warning("Subsampling trust/continuity to %d samples (from %d).", max_n, mask.sum())
 
-            trust = trustworthiness(Xm, Fm, n_neighbors=int(args.trust_k))
-            cont = continuity(Xm, Fm, n_neighbors=int(args.trust_k))
+            requested_trust_k = int(args.trust_k)
+            effective_trust_k = effective_neighbor_count(Xm.shape[0], requested_trust_k)
+            if effective_trust_k < 1:
+                logger.warning("Trust/continuity skipped: need at least 3 points after masking/subsampling.")
+                trust = float("nan")
+                cont = float("nan")
+            else:
+                if effective_trust_k != requested_trust_k:
+                    logger.warning(
+                        "Adjusted trust/continuity k from %d to %d for %d points.",
+                        requested_trust_k,
+                        effective_trust_k,
+                        Xm.shape[0],
+                    )
+                trust = trustworthiness(Xm, Fm, n_neighbors=effective_trust_k)
+                cont = continuity(Xm, Fm, n_neighbors=effective_trust_k)
         except Exception as e_tc:
             logger.exception("Trust/Continuity computation failed: %s", e_tc)
             trust = float("nan")
             cont = float("nan")
+            effective_trust_k = int(args.trust_k)
 
         # CH / DB
         try:
@@ -1242,23 +1498,31 @@ def main():
 
         # Dunn
         try:
-            dunn = dunn_index(Fm, labels_arr[mask]) if unique_masked.size >= 2 else float("nan")
+            dunn = dunn_index(Fm, labels_arr[mask], include_noise=posthoc_include_noise) if unique_masked.size >= 2 else float("nan")
         except Exception as e_dn:
             logger.exception("Dunn index failed: %s", e_dn)
             dunn = float("nan")
 
         # Log summary
-        logger.info("Trustworthiness (k=%d): %s", args.trust_k, f"{trust:.4f}" if np.isfinite(trust) else "NaN")
-        logger.info("Continuity (k=%d): %s", args.trust_k, f"{cont:.4f}" if np.isfinite(cont) else "NaN")
+        logger.info("Trustworthiness (k=%d): %s", effective_trust_k, f"{trust:.4f}" if np.isfinite(trust) else "NaN")
+        logger.info("Continuity (k=%d): %s", effective_trust_k, f"{cont:.4f}" if np.isfinite(cont) else "NaN")
         logger.info("HDBSCAN epsilon (cluster_selection_epsilon): %s", best_epsilon if 'best_epsilon' in locals() else "NA")
         logger.info("HDBSCAN min_samples: %s", best_min_samples if 'best_min_samples' in locals() else "NA")
         logger.info("HDBSCAN min_cluster_size: %s", best_min_cluster_size if 'best_min_cluster_size' in locals() else "NA")
+        logger.info("HDBSCAN cluster_selection_method: %s", best_cluster_selection_method if 'best_cluster_selection_method' in locals() else "NA")
+        logger.info("HDBSCAN cluster_selection_persistence: %s", best_cluster_selection_persistence if 'best_cluster_selection_persistence' in locals() else "NA")
+        logger.info("HDBSCAN alpha: %s", best_alpha if 'best_alpha' in locals() else "NA")
+        logger.info("HDBSCAN allow_single_cluster: %s", best_allow_single_cluster if 'best_allow_single_cluster' in locals() else "NA")
         # Cluster counts (computed on the full label vector for clear interpretation)
         n_clusters_incl_noise = int(np.unique(labels_arr).size)
         n_clusters_excl_noise = int(len([c for c in np.unique(labels_arr) if c != -1]))
         logger.info("Clusters (including noise): %d", n_clusters_incl_noise)
         logger.info("Clusters (excluding noise): %d", n_clusters_excl_noise)
-        logger.info("Silhouette_avg (non-noise): %s", f"{silhouette_avg:.4f}" if 'silhouette_avg' in locals() else "NA")
+        logger.info(
+            "Silhouette_avg (%s): %s",
+            silhouette_scope if 'silhouette_scope' in locals() else "unknown_scope",
+            f"{silhouette_avg:.4f}" if 'silhouette_avg' in locals() else "NA",
+        )
         logger.info("Calinski-Harabasz Index: %s", f"{ch_score:.4f}" if np.isfinite(ch_score) else "NaN")
         logger.info("Davies-Bouldin Index: %s", f"{db_score:.4f}" if np.isfinite(db_score) else "NaN")
         logger.info("Dunn Index: %s", f"{dunn:.4f}" if np.isfinite(dunn) else "NaN")
@@ -1266,19 +1530,27 @@ def main():
         # Optional CSV append
         if args.metrics_csv:
             import csv
-            header = ["metrics_space", "include_noise", "trust_k", "trustworthiness", "continuity",
-                      "epsilon", "min_samples", "min_cluster_size", "silhouette_avg",
+            header = ["metrics_space", "include_noise", "trust_k", "trust_k_used", "trustworthiness", "continuity",
+                      "epsilon", "min_samples", "min_cluster_size", "cluster_selection_method",
+                      "cluster_selection_persistence", "alpha", "allow_single_cluster",
+                      "silhouette_scope", "silhouette_avg",
                       "calinski_harabasz", "davies_bouldin", "dunn_index",
                       "n_clusters_masked", "n_points_masked"]
             row = [
                 args.metrics_space,
-                bool(args.metrics_include_noise),
+                bool(posthoc_include_noise),
                 int(args.trust_k),
+                int(effective_trust_k),
                 float(trust) if np.isfinite(trust) else np.nan,
                 float(cont) if np.isfinite(cont) else np.nan,
                 float(best_epsilon) if 'best_epsilon' in locals() else np.nan,
                 int(best_min_samples) if 'best_min_samples' in locals() else np.nan,
                 int(best_min_cluster_size) if 'best_min_cluster_size' in locals() else np.nan,
+                best_cluster_selection_method if 'best_cluster_selection_method' in locals() else "",
+                float(best_cluster_selection_persistence) if 'best_cluster_selection_persistence' in locals() else np.nan,
+                float(best_alpha) if 'best_alpha' in locals() else np.nan,
+                bool(best_allow_single_cluster) if 'best_allow_single_cluster' in locals() else False,
+                silhouette_scope if 'silhouette_scope' in locals() else "unknown_scope",
                 float(silhouette_avg) if 'silhouette_avg' in locals() and np.isfinite(silhouette_avg) else np.nan,
                 float(ch_score) if np.isfinite(ch_score) else np.nan,
                 float(db_score) if np.isfinite(db_score) else np.nan,
@@ -1325,10 +1597,15 @@ def main():
         if 'labels' not in locals():
             logger.warning("Labels not found in memory; refitting HDBSCAN with best parameters for dataframe export.")
             labels = hdbscan.HDBSCAN(
-                min_samples=int(best_min_samples),
-                min_cluster_size=int(best_min_cluster_size),
-                cluster_selection_epsilon=float(best_epsilon),
-                cluster_selection_method='eom'
+                **hdbscan_kwargs(
+                    min_samples=int(best_min_samples),
+                    min_cluster_size=int(best_min_cluster_size),
+                    epsilon=float(best_epsilon),
+                    cluster_selection_method=best_cluster_selection_method if 'best_cluster_selection_method' in locals() else "eom",
+                    alpha=best_alpha if 'best_alpha' in locals() else 1.0,
+                    cluster_selection_persistence=best_cluster_selection_persistence if 'best_cluster_selection_persistence' in locals() else 0.0,
+                    allow_single_cluster=best_allow_single_cluster if 'best_allow_single_cluster' in locals() else False,
+                )
             ).fit_predict(clusterable_embedding if 'clusterable_embedding' in locals() else clusterable_embedding_viz)
 
         # Build UMAP dataframe
@@ -1342,9 +1619,9 @@ def main():
             cnt = int(np.sum(labels == cl))
             logger.info("Cluster %s: %d samples", cl, cnt)
 
-        # Attach an 'index' column derived from X.index (string)
-        idp_label = pd.DataFrame({"index": (X.index.astype(str) if hasattr(X.index, "astype") else pd.Index(X.index).astype(str))})
-        df_umap_with_label = pd.concat([idp_label.reset_index(drop=True), df_umap.reset_index(drop=True)], axis=1)
+        # Attach an 'index' column derived from feature identifiers in the input matrix.
+        feature_ids = pd.DataFrame({"index": (X.index.astype(str) if hasattr(X.index, "astype") else pd.Index(X.index).astype(str))})
+        df_umap_with_label = pd.concat([feature_ids.reset_index(drop=True), df_umap.reset_index(drop=True)], axis=1)
 
         # Save to CSV
         ensure_parent_dir(paths["umapdataframe"])
@@ -1386,10 +1663,15 @@ def main():
             # Prefer using the consolidated embedding if available; fallback to viz embedding
             feats_for_labels = clusterable_embedding if 'clusterable_embedding' in locals() else clusterable_embedding_viz
             labels = hdbscan.HDBSCAN(
-                min_samples=int(best_min_samples),
-                min_cluster_size=int(best_min_cluster_size),
-                cluster_selection_epsilon=float(best_epsilon),
-                cluster_selection_method='eom'
+                **hdbscan_kwargs(
+                    min_samples=int(best_min_samples),
+                    min_cluster_size=int(best_min_cluster_size),
+                    epsilon=float(best_epsilon),
+                    cluster_selection_method=best_cluster_selection_method if 'best_cluster_selection_method' in locals() else "eom",
+                    alpha=best_alpha if 'best_alpha' in locals() else 1.0,
+                    cluster_selection_persistence=best_cluster_selection_persistence if 'best_cluster_selection_persistence' in locals() else 0.0,
+                    allow_single_cluster=best_allow_single_cluster if 'best_allow_single_cluster' in locals() else False,
+                )
             ).fit_predict(feats_for_labels)
 
         # Require at least 3D to plot 3D; fallback to 2D if n_components < 3
@@ -1400,7 +1682,7 @@ def main():
             fig = px.scatter(
                 df_tmp, x="UMAP_1", y=("UMAP_2" if "UMAP_2" in df_tmp.columns else "UMAP_1"),
                 color=df_tmp["label"].astype(str),
-                title="Neuroimaging IDP Cluster Solution (2D fallback)",
+                title="DIMPLE-GWAS Cluster Solution (2D fallback)",
                 opacity=0.85
             )
             if no_plots:
@@ -1450,13 +1732,13 @@ def main():
                 ))
 
             fig.update_layout(
-                title="Neuroimaging IDP Cluster Solution",
+                title="DIMPLE-GWAS Cluster Solution",
                 scene=dict(
                     xaxis_title="UMAP1",
                     yaxis_title="UMAP2",
                     zaxis_title="UMAP3"
                 ),
-                legend_title="IDP Clusters",
+                legend_title="HDBSCAN Clusters",
                 legend=dict(
                     x=0.8,
                     y=0.5,
@@ -1476,28 +1758,47 @@ def main():
         _handle_stage_exception("Cell 11 cluster plots", e)
 
     # =============================
-    # Cell 12: Merge IDP_KEY.csv with UMAP dataframe
-    # - Reads the IDP key from --idp_key
-    # - Ensures 'index' is string on both sides
-    # - Merges on 'index' (left join from key to UMAP labels/coords)
-    # - Keeps result in memory as `merged_df` for downstream plots (e.g., modalities)
+    # Cell 12: Merge feature annotations with UMAP dataframe
+    # - Reads user-provided annotations from --annotation_file
+    # - Joins annotation rows to the analyzed features using --annotation_index_col
+    # - Keeps the UMAP/cluster output as the left side so only analyzed features are exported
+    # - Keeps result in memory as `merged_df` for downstream plots (e.g., categories/modalities)
     # =============================
     try:
-        logger.info("merging IDP key with UMAP data....")
-        if not os.path.isfile(paths["idp_key"]):
-            logger.warning("IDP key file not found at %s; skipping merge.", paths["idp_key"])
-        else:
-            try:
-                idp_key = pd.read_csv(paths["idp_key"], engine="pyarrow")
-            except Exception as e_read:
-                logger.warning("Falling back to pandas CSV reader for idp_key (pyarrow failed: %s)", e_read)
-                idp_key = pd.read_csv(paths["idp_key"])
+        logger.info("merging feature annotations with UMAP data....")
+        annotation_path = paths.get("annotation_file")
+        annotation_index_col = str(getattr(args, "annotation_index_col", "index"))
 
-            # Ensure 'index' is string in key
-            if "index" not in idp_key.columns:
-                logger.warning("IDP key does not contain an 'index' column; columns are: %s. Skipping merge.", list(idp_key.columns))
+        if not annotation_path:
+            logger.info("No annotation file provided; skipping annotation merge.")
+        elif not os.path.isfile(annotation_path):
+            logger.warning("Annotation file not found at %s; skipping merge.", annotation_path)
+        else:
+            annotation_sep = resolve_sep(annotation_path, None)
+            try:
+                annotation_df = pd.read_csv(annotation_path, engine="pyarrow", sep=annotation_sep)
+            except Exception as e_read:
+                logger.warning("Falling back to pandas CSV reader for annotation file (pyarrow failed: %s)", e_read)
+                annotation_df = pd.read_csv(annotation_path, sep=annotation_sep)
+
+            # Ensure the annotation join column exists and is string-typed.
+            if annotation_index_col not in annotation_df.columns:
+                logger.warning(
+                    "Annotation file does not contain join column '%s'; columns are: %s. Skipping merge.",
+                    annotation_index_col,
+                    list(annotation_df.columns),
+                )
             else:
-                idp_key["index"] = idp_key["index"].astype(str)
+                annotation_df[annotation_index_col] = annotation_df[annotation_index_col].astype(str)
+
+                dup_count = int(annotation_df[annotation_index_col].duplicated().sum())
+                if dup_count:
+                    logger.warning(
+                        "Annotation file has %d duplicate values in '%s'; keeping the first row for each feature.",
+                        dup_count,
+                        annotation_index_col,
+                    )
+                    annotation_df = annotation_df.drop_duplicates(subset=[annotation_index_col], keep="first")
 
                 # Ensure df_umap_with_label is available; load from disk if needed
                 if 'df_umap_with_label' not in locals():
@@ -1515,14 +1816,30 @@ def main():
                 else:
                     df_umap_with_label["index"] = df_umap_with_label["index"].astype(str)
 
-                # Merge
-                merged_df = pd.merge(idp_key, df_umap_with_label, on="index", how="left")
+                # Merge annotations onto analyzed features. The UMAP table is the left side
+                # to avoid exporting un-analyzed annotation rows.
+                merge_indicator_col = "__annotation_merge_status"
+                while merge_indicator_col in df_umap_with_label.columns or merge_indicator_col in annotation_df.columns:
+                    merge_indicator_col = f"_{merge_indicator_col}"
+                merged_df = pd.merge(
+                    df_umap_with_label,
+                    annotation_df,
+                    left_on="index",
+                    right_on=annotation_index_col,
+                    how="left",
+                    suffixes=("", "_annotation"),
+                    indicator=merge_indicator_col,
+                )
+                n_matched = int((merged_df[merge_indicator_col] == "both").sum())
+                n_features = int(len(df_umap_with_label))
+                merged_df = merged_df.drop(columns=[merge_indicator_col])
+                logger.info("Matched annotations for %d/%d analyzed features.", n_matched, n_features)
 
                 # Save merged table to disk
                 try:
                     ensure_parent_dir(paths["merged_umap"])
                     merged_df.to_csv(paths["merged_umap"], index=False)
-                    logger.info("Merged UMAP+IDP key saved to %s (shape=%s)", paths["merged_umap"], merged_df.shape)
+                    logger.info("Merged UMAP+feature annotations saved to %s (shape=%s)", paths["merged_umap"], merged_df.shape)
                 except Exception as e_save:
                     logger.exception("Failed to write merged UMAP table to %s: %s", paths["merged_umap"], e_save)
 
@@ -1532,7 +1849,7 @@ def main():
                 except Exception as _ehm:
                     logger.debug("Failed to render merged_df.head() to string: %s", _ehm)
     except Exception as e:
-        _handle_stage_exception("Cell 12 merge idp_key", e)
+        _handle_stage_exception("Cell 12 merge annotations", e)
 
     return 0
 
