@@ -1,0 +1,5 @@
+name=environment
+started_at_utc=2026-08-26T15:21:19Z
+ended_at_utc=2026-08-26T15:21:27Z
+exit_status=0
+command=../DIMPLE-GWAS-freeze2/.venv/bin/python -c import json, platform; import dimple_gwas, numpy, pandas, scipy, sklearn, umap, hdbscan, yaml, joblib, matplotlib, pyarrow, pytest; print(json.dumps({'python':platform.python_version(),'platform':platform.platform(),'dimple_gwas':dimple_gwas.__version__,'numpy':numpy.__version__,'pandas':pandas.__version__,'scipy':scipy.__version__,'scikit_learn':sklearn.__version__,'umap_learn':umap.__version__,'hdbscan':getattr(hdbscan,'__version__','not_exposed'),'pyyaml':yaml.__version__,'joblib':joblib.__version__,'matplotlib':matplotlib.__version__,'pyarrow':pyarrow.__version__,'pytest':pytest.__version__}, indent=2, sort_keys=True)) 

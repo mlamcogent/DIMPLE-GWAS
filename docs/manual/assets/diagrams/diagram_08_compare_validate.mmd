@@ -1,0 +1,6 @@
+flowchart LR
+  A["Artifact A"] --> I["Exact ID set check"]
+  B["Artifact B"] --> I
+  I --> C["ARI / NMI / VI / noise Jaccard"]
+  I --> P["Optional coordinate Procrustes"]
+  R["Run directory"] --> V["Schema / count / hash validation"]

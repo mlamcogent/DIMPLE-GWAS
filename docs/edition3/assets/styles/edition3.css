@@ -1,0 +1,28 @@
+:root {
+  --ink: #203447;
+  --blue: #235789;
+  --light-blue: #eef5fa;
+  --muted: #5b6570;
+  --rule: #c9d5df;
+  --caution: #8a5a00;
+}
+html { font-size: 17px; }
+body { max-width: 58rem; margin: 0 auto; padding: 3rem 2.2rem 6rem; color: var(--ink); font-family: Charter, Georgia, serif; line-height: 1.62; }
+h1, h2, h3, h4 { color: var(--blue); font-family: Inter, Arial, sans-serif; line-height: 1.22; }
+h1 { margin-top: 3.4rem; padding-top: 1.1rem; border-top: 2px solid var(--rule); }
+h2 { margin-top: 2.2rem; }
+h3 { margin-top: 1.7rem; }
+p { margin: 0.75rem 0; }
+a { color: #0b63a5; }
+blockquote { margin: 1.4rem 0; padding: 0.7rem 1.2rem; border-left: 4px solid var(--blue); background: var(--light-blue); }
+table { width: 100%; border-collapse: collapse; margin: 1.4rem 0 1.8rem; font-family: Inter, Arial, sans-serif; font-size: 0.88rem; }
+th, td { border: 1px solid var(--rule); padding: 0.55rem 0.65rem; vertical-align: top; }
+th { background: var(--light-blue); text-align: left; }
+code { color: var(--blue); font-family: "SFMono-Regular", Consolas, monospace; font-size: 0.88em; }
+pre { overflow-x: auto; padding: 1rem; background: #f5f7f8; border: 1px solid #dde3e8; }
+figure { margin: 2rem auto; text-align: center; }
+figure img { max-width: 100%; height: auto; }
+figcaption { color: var(--muted); font-family: Inter, Arial, sans-serif; font-size: 0.88rem; text-align: left; }
+#TOC { border: 1px solid var(--rule); padding: 1.2rem 1.5rem; background: #fbfcfd; }
+.subtitle, .date { color: var(--muted); font-family: Inter, Arial, sans-serif; }
+@media print { body { max-width: none; padding: 0; } a { color: inherit; text-decoration: none; } h1 { break-before: page; } }

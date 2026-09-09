@@ -1,0 +1,171 @@
+{
+  "input": "/Users/maxlam/Downloads/Cogent-analysis-audit/DIMPLE-GWAS/DIMPLE-GWAS-freeze3/docs/edition3/DIMPLE_GWAS_FREEZE3_RC1_DOCUMENTATION_EDITION3.docx",
+  "fonts_by_char_count": {
+    "Consolas": 5446,
+    "Calibri": 2079
+  },
+  "direct_run_formatting_runs": 974,
+  "direct_paragraph_formatting_paragraphs": 52,
+  "heading_like_paragraphs_not_heading_style": [
+    {
+      "para_index": 5,
+      "text": "Editorial and evidence status\t4",
+      "style": "Normal"
+    },
+    {
+      "para_index": 6,
+      "text": "Preface: three ways through one method\t5",
+      "style": "Normal"
+    },
+    {
+      "para_index": 7,
+      "text": "Part I - Scientific problem and representation\t7",
+      "style": "Normal"
+    },
+    {
+      "para_index": 8,
+      "text": "The scientific problem and the complete pipeline\t8",
+      "style": "Normal"
+    },
+    {
+      "para_index": 9,
+      "text": "GWAS summary statistics as high-dimensional trait vectors\t13",
+      "style": "Normal"
+    },
+    {
+      "para_index": 10,
+      "text": "Geometry before algorithms: preprocessing, distance, and RINT\t18",
+      "style": "Normal"
+    },
+    {
+      "para_index": 11,
+      "text": "Linear and nonlinear views of multivariate structure\t22",
+      "style": "Normal"
+    },
+    {
+      "para_index": 12,
+      "text": "Part II - Building the nonlinear representation\t26",
+      "style": "Normal"
+    },
+    {
+      "para_index": 13,
+      "text": "UMAP: from neighborhood graphs to coordinates\t27",
+      "style": "Normal"
+    },
+    {
+      "para_index": 14,
+      "text": "densMAP and relative local density\t31",
+      "style": "Normal"
+    },
+    {
+      "para_index": 15,
+      "text": "Repeated stochastic embeddings as a multi-view representation\t34",
+      "style": "Normal"
+    },
+    {
+      "para_index": 16,
+      "text": "Part III - Discovering and selecting density structure\t38",
+      "style": "Normal"
+    },
+    {
+      "para_index": 17,
+      "text": "HDBSCAN: from mutual reachability to persistent clusters\t39",
+      "style": "Normal"
+    },
+    {
+      "para_index": 18,
+      "text": "Searching the model landscape\t43",
+      "style": "Normal"
+    },
+    {
+      "para_index": 19,
+      "text": "Scoring and selecting models\t47",
+      "style": "Normal"
+    },
+    {
+      "para_index": 20,
+      "text": "Part IV - Interpretation and scientific practice\t51",
+      "style": "Normal"
+    },
+    {
+      "para_index": 21,
+      "text": "Validation, stability, and reproducibility\t52",
+      "style": "Normal"
+    },
+    {
+      "para_index": 22,
+      "text": "Returning to the original summary-statistic space\t55",
+      "style": "Normal"
+    },
+    {
+      "para_index": 23,
+      "text": "From discovered topology to defensible biological claims\t58",
+      "style": "Normal"
+    },
+    {
+      "para_index": 24,
+      "text": "Worked DIMPLE-GWAS cases and their evidence boundaries\t62",
+      "style": "Normal"
+    }
+  ],
+  "examples": {
+    "direct_paragraph_formatting": [
+      {
+        "para_index": 5,
+        "text": "Editorial and evidence status\t4",
+        "style": "Normal"
+      },
+      {
+        "para_index": 6,
+        "text": "Preface: three ways through one method\t5",
+        "style": "Normal"
+      },
+      {
+        "para_index": 7,
+        "text": "Part I - Scientific problem and representation\t7",
+        "style": "Normal"
+      },
+      {
+        "para_index": 8,
+        "text": "The scientific problem and the complete pipeline\t8",
+        "style": "Normal"
+      },
+      {
+        "para_index": 9,
+        "text": "GWAS summary statistics as high-dimensional trait vectors\t13",
+        "style": "Normal"
+      }
+    ],
+    "direct_run_formatting": [
+      {
+        "para_index": 5,
+        "run_text": "Editorial and evidence status",
+        "style": "Normal"
+      },
+      {
+        "para_index": 5,
+        "run_text": "\t4",
+        "style": "Normal"
+      },
+      {
+        "para_index": 6,
+        "run_text": "Preface: three ways through one method",
+        "style": "Normal"
+      },
+      {
+        "para_index": 6,
+        "run_text": "\t5",
+        "style": "Normal"
+      },
+      {
+        "para_index": 7,
+        "run_text": "Part I - Scientific problem and representation",
+        "style": "Normal"
+      }
+    ]
+  },
+  "notes": [
+    "Direct formatting is not always wrong, but it often causes inconsistent output when templates change.",
+    "Heading-like paragraphs not using Heading styles can break TOC and accessibility."
+  ]
+}

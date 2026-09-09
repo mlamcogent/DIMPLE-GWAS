@@ -1,0 +1,21 @@
+{
+  "adjusted_rand_index": 1.0,
+  "changed_noise_status_count": 0,
+  "comparison_schema": "dimple-gwas.comparison.v3",
+  "id_order_equal": true,
+  "id_sets_equal": true,
+  "interpretation": "Structural concordance metrics are label-permutation invariant; numeric label equality is not treated as cluster identity. Procrustes, when finite, evaluates only supplied coordinates.",
+  "left_cluster_count_excluding_noise": 3,
+  "left_model_id": "model_060fac0208bb58e2",
+  "left_noise_count": 0,
+  "mapped_membership_match_fraction": 1.0,
+  "mapped_membership_matches": 24,
+  "noise_set_jaccard": 1.0,
+  "normalized_mutual_information": 1.0,
+  "procrustes_disparity": 2.7088204667806472e-31,
+  "right_cluster_count_excluding_noise": 3,
+  "right_model_id": "model_060fac0208bb58e2",
+  "right_noise_count": 0,
+  "sample_count": 24,
+  "variation_of_information_nats": 0.0
+}

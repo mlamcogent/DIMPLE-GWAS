@@ -1,0 +1,45 @@
+{
+  "architecture": "arm64",
+  "command": [
+    "docs/textbook/edition2/build/runtime_env/bin/dimple-gwas",
+    "compare",
+    "--left",
+    "docs/textbook/edition2/labs/01_fixed_synthetic/run_20260826/models/top_model_artifacts/model_060fac0208bb58e2/summary.json",
+    "--right",
+    "docs/textbook/edition2/labs/03_explain_compare_validate/reproduced_20260826/models/top_model_artifacts/model_060fac0208bb58e2/summary.json",
+    "--output-dir",
+    "docs/textbook/edition2/labs/03_explain_compare_validate/comparison_20260826",
+    "--require-same-order"
+  ],
+  "command_display": "docs/textbook/edition2/build/runtime_env/bin/dimple-gwas compare --left docs/textbook/edition2/labs/01_fixed_synthetic/run_20260826/models/top_model_artifacts/model_060fac0208bb58e2/summary.json --right docs/textbook/edition2/labs/03_explain_compare_validate/reproduced_20260826/models/top_model_artifacts/model_060fac0208bb58e2/summary.json --output-dir docs/textbook/edition2/labs/03_explain_compare_validate/comparison_20260826 --require-same-order",
+  "end_utc": "2026-08-26T02:59:22.043742+00:00",
+  "exit_code": 0,
+  "inputs": [
+    {
+      "exists": true,
+      "path": "docs/textbook/edition2/labs/01_fixed_synthetic/run_20260826/models/top_model_artifacts/model_060fac0208bb58e2/summary.json",
+      "sha256": "00f239a03e5d585b6435945cb898c1a1ec1d00ad388fde386e55600999e511b6"
+    },
+    {
+      "exists": true,
+      "path": "docs/textbook/edition2/labs/03_explain_compare_validate/reproduced_20260826/models/top_model_artifacts/model_060fac0208bb58e2/summary.json",
+      "sha256": "33ef56b8717de99ecc564f611e4cdaeff45e67658ef38777bae4da682fc7dd36"
+    }
+  ],
+  "name": "lab03_compare",
+  "os": "Darwin",
+  "os_release": "25.5.0",
+  "python": "3.12.13",
+  "runtime_seconds": 1.641305,
+  "schema": "dimple-gwas.textbook-command-record.v1",
+  "start_utc": "2026-08-26T02:59:20.402437+00:00",
+  "stderr_log": "lab03_compare.stderr.log",
+  "stdout_log": "lab03_compare.stdout.log",
+  "thread_controls": {
+    "MKL_NUM_THREADS": null,
+    "NUMBA_NUM_THREADS": null,
+    "OMP_NUM_THREADS": null,
+    "OPENBLAS_NUM_THREADS": null
+  },
+  "working_directory": "<FREEZE3>"
+}

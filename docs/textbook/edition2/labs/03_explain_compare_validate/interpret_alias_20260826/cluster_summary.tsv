@@ -1,0 +1,4 @@
+cluster_label	is_noise	size	singleton	within_similarity_pair_count	within_similarity_mean	within_similarity_median	between_similarity_pair_count	between_similarity_mean
+0	False	8	False	28	0.9962946911811319	0.9963477687479194	128	0.003276401367584645
+1	False	8	False	28	0.9929509011473951	0.9929060390590969	128	0.004747576283206271
+2	False	8	False	28	0.9928023800070581	0.9929070213904188	128	0.003254332899126697

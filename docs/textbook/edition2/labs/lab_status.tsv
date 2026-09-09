@@ -1,0 +1,7 @@
+lab	execution_status	gate_status	inventoried_files	note_or_checksum_index
+00_hand_worked_toy	executed	pass	10	output_checksums.tsv
+01_fixed_synthetic	executed	pass	35	output_checksums.tsv
+02_custom_search_space	executed	pass	51	output_checksums.tsv
+03_explain_compare_validate	executed	pass	79	output_checksums.tsv
+04_mnist_benchmark	protocol_only	pass_with_limitation	1	Network acquisition and public benchmark execution not required for internal-review build.
+05_original_idp	track_a_historical_track_b_deferred	pass_with_limitation	1	Fresh 1,000-seed run deferred by coordinator until Docker.

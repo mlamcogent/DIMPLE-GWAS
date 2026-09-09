@@ -1,0 +1,5 @@
+name=search_space_extended
+started_at_utc=2026-08-26T15:21:29Z
+ended_at_utc=2026-08-26T15:21:29Z
+exit_status=0
+command=../DIMPLE-GWAS-freeze2/.venv/bin/python -m dimple_gwas show-search-space --search-mode extended --show-first 0 

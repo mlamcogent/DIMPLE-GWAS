@@ -1,0 +1,7 @@
+conflict_id	topic	conflict	resolution_rule	status	controlling_authority
+AUTH-001	Repository commit	No usable Git metadata exists at the workspace or Freeze 3 source root.	Use file checksums as the immutable identity record; report commit as unavailable.	resolved_with_limitation	1
+AUTH-002	Manuscript authority	Several dated manuscript/supplement drafts coexist.	Treat submitted merged PDF as submitted record; use 2026-05-25 manuscript and 2026-05-07 supplement as editable contextual sources; mark choice provisional.	resolved_with_qualification	5
+SCI-001	164-IDP fresh rerun	Historical artifacts are reconstructed but the 1,000-seed fit has not been freshly executed.	Defer to Docker phase per coordinator direction; provide exact local/container protocol and retain pending release gate.	resolved_with_limitation	2
+SCI-002	459-IDP parameters	Notebook and manuscript evidence disagree and the raw matrix/model table are absent.	Do not claim fresh reproduction; retain historical-only status.	unresolved	4
+DOC-001	Extended search count	Older Freeze 2 prose says 5,184; Freeze 3 code/config enumerate 1,728.	Use executed Freeze 3 count of 1,728 and identify older value as a documentation defect.	resolved	1
+CIT-001	Zhang/Yang/Zhao reviewer attribution	Gemini dossier attributes genomic PCA/ICA literature collectively to Zhang, Yang, and Zhao without exact reviewer-source mapping.	Verify identifiable primary works individually; do not describe them as reviewer-cited unless present in correspondence.	unresolved_attribution	5/6/7

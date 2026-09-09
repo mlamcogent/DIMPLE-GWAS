@@ -1,0 +1,25 @@
+chapter	file	motivation	intuition	formal_statistics	implementation_detail	executable_use	output_interpretation	assumptions_limits	diagnostics_failure_modes	worked_example	exercises_checks	citations_traceability	chapter_connections	total_of_36	status	note
+1	01_the_scientific_problem_scope_and_evidence_boundary.md	3	3	3	3	3	3	3	3	3	3	3	3	36	pass	editorial structure/evidence rubric; team scientific adjudication remains pending
+2	02_gwas_derived_phenotype_vectors_and_high_dimensional_geometry.md	3	3	3	3	3	3	3	3	3	3	3	3	36	pass	editorial structure/evidence rubric; team scientific adjudication remains pending
+3	03_similarity_distance_scaling_transformation_and_uncertainty.md	3	3	3	3	3	3	3	3	3	3	3	3	36	pass	editorial structure/evidence rubric; team scientific adjudication remains pending
+4	04_dimension_reduction_linear_and_nonlinear_perspectives.md	3	3	3	3	3	3	3	3	3	3	3	3	36	pass	editorial structure/evidence rubric; team scientific adjudication remains pending
+5	05_density_clustering_validation_and_circular_inference.md	3	3	3	3	3	3	3	3	3	3	3	3	36	pass	editorial structure/evidence rubric; team scientific adjudication remains pending
+6	06_data_contract_preprocessing_rint_and_orientation.md	3	3	3	3	3	3	3	3	3	3	3	3	36	pass	editorial structure/evidence rubric; team scientific adjudication remains pending
+7	07_umap_and_densmap.md	3	3	3	3	3	3	3	3	3	3	3	3	36	pass	editorial structure/evidence rubric; team scientific adjudication remains pending
+8	08_repeated_stochastic_embeddings_and_concatenated_geometry.md	3	3	3	3	3	3	3	3	3	3	3	3	36	pass	editorial structure/evidence rubric; team scientific adjudication remains pending
+9	09_hdbscan_hierarchy_density_selection_and_noise.md	3	3	3	3	3	3	3	3	3	3	3	3	36	pass	editorial structure/evidence rubric; team scientific adjudication remains pending
+10	10_search_space_enumeration_and_computational_design.md	3	3	3	3	3	3	3	3	3	3	3	3	36	pass	editorial structure/evidence rubric; team scientific adjudication remains pending
+11	11_candidate_diagnostics_legacy_dimple_ranking_ties_and_sensitivity.md	3	3	3	3	3	3	3	3	3	3	3	3	36	pass	editorial structure/evidence rubric; team scientific adjudication remains pending
+12	12_selected_model_reproduction_provenance_and_comparison.md	3	3	3	3	3	3	3	3	3	3	3	3	36	pass	editorial structure/evidence rubric; team scientific adjudication remains pending
+13	13_installation_environment_verification_and_first_run.md	3	3	3	3	3	3	3	3	3	3	3	3	36	pass	editorial structure/evidence rubric; team scientific adjudication remains pending
+14	14_configuration_and_search_space_inspection.md	3	3	3	3	3	3	3	3	3	3	3	3	36	pass	editorial structure/evidence rubric; team scientific adjudication remains pending
+15	15_complete_pipeline_execution_and_monitoring.md	3	3	3	3	3	3	3	3	3	3	3	3	36	pass	editorial structure/evidence rubric; team scientific adjudication remains pending
+16	16_model_summaries_selection_reproduction_comparison_and_validation.md	3	3	3	3	3	3	3	3	3	3	3	3	36	pass	editorial structure/evidence rubric; team scientific adjudication remains pending
+17	17_original_space_explanation_heatmaps_and_responsible_interpretation.md	3	3	3	3	3	3	3	3	3	3	3	3	36	pass	editorial structure/evidence rubric; team scientific adjudication remains pending
+18	18_a_hand_calculable_toy_analysis_from_matrix_to_score.md	3	3	3	3	3	3	3	3	3	3	3	3	36	pass	editorial structure/evidence rubric; team scientific adjudication remains pending
+19	19_fixed_synthetic_end_to_end_analysis.md	3	3	3	3	3	3	3	3	3	3	3	3	36	pass	editorial structure/evidence rubric; team scientific adjudication remains pending
+20	20_custom_bounded_search_sensitivity_and_selected_model_replay.md	3	3	3	3	3	3	3	3	3	3	3	3	36	pass	editorial structure/evidence rubric; team scientific adjudication remains pending
+21	21_explanation_comparison_validation_and_report_generation.md	3	3	3	3	3	3	3	3	3	3	3	3	36	pass	editorial structure/evidence rubric; team scientific adjudication remains pending
+22	22_mnist_benchmark_and_original_164_idp_reconstruction_protocol.md	3	3	3	3	3	3	3	3	3	3	3	3	36	pass	editorial structure/evidence rubric; team scientific adjudication remains pending
+23	23_technical_statistical_biological_and_cross_platform_validation.md	3	3	3	3	3	3	3	3	3	3	3	3	36	pass	editorial structure/evidence rubric; team scientific adjudication remains pending
+24	24_reproducible_reporting_limitations_migration_and_reviewer_facing_methods.md	3	3	3	3	3	3	3	3	3	3	3	3	36	pass	editorial structure/evidence rubric; team scientific adjudication remains pending

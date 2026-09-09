@@ -1,0 +1,25 @@
+.DS_Store
+.venv/
+.pytest_cache/
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.tmp
+benchmarks/mnist/data/
+outputs/*
+!outputs/.gitkeep
+docs/manual/build/runtime_env/
+
+# Local credentials and environments
+.env
+.env.*
+!.env.example
+runtime_env/
+
+# Documentation intermediates; keep the reproducible build tools.
+docs/manual/build/*
+!docs/manual/build/tools/
+docs/textbook/edition2/build/*
+!docs/textbook/edition2/build/tools/
+docs/edition3/build/*
+!docs/edition3/build/tools/

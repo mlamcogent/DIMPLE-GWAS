@@ -1,0 +1,6 @@
+{
+  "umap_configurations": 1,
+  "hdbscan_configurations": 1,
+  "candidate_models": 1
+}
+{"candidate_ordinal": 1, "hdbscan_allow_single_cluster": false, "hdbscan_alpha": 1.0, "hdbscan_cluster_selection_epsilon": 0.0, "hdbscan_cluster_selection_method": "eom", "hdbscan_cluster_selection_persistence": 0.0, "hdbscan_id": "hdb_84baddf0132db2f8", "hdbscan_max_cluster_size": 0, "hdbscan_metric": "euclidean", "hdbscan_min_cluster_size": 5, "hdbscan_min_samples": 2, "model_family": "umap=euclidean|hdbscan=euclidean|method=eom|max_cluster=unlimited", "model_id": "model_060fac0208bb58e2", "umap_densmap": true, "umap_id": "umap_49d543513062668f", "umap_learning_rate": 1.0, "umap_local_connectivity": 1.0, "umap_metric": "euclidean", "umap_min_dist": 0.0, "umap_n_components": 3, "umap_n_neighbors": 10, "umap_negative_sample_rate": 5, "umap_random_state": 42, "umap_repulsion_strength": 1.0, "umap_set_op_mix_ratio": 1.0, "umap_spread": 1.0}

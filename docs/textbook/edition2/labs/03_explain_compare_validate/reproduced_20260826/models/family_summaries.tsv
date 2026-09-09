@@ -1,0 +1,10 @@
+family_dimension	family_value	candidate_models	successful_models	failed_models	invalid_topology_models	best_score	median_score	median_silhouette	median_noise_fraction	median_number_of_clusters
+hdbscan_cluster_selection_method	eom	1	1	0	0	1.0	1.0	0.9423990249633789	0.0	3.0
+umap_metric	euclidean	1	1	0	0	1.0	1.0	0.9423990249633789	0.0	3.0
+hdbscan_metric	euclidean	1	1	0	0	1.0	1.0	0.9423990249633789	0.0	3.0
+hdbscan_max_cluster_size	0	1	1	0	0	1.0	1.0	0.9423990249633789	0.0	3.0
+umap_n_neighbors	10	1	1	0	0	1.0	1.0	0.9423990249633789	0.0	3.0
+umap_min_dist	0.0	1	1	0	0	1.0	1.0	0.9423990249633789	0.0	3.0
+hdbscan_min_cluster_size	5	1	1	0	0	1.0	1.0	0.9423990249633789	0.0	3.0
+hdbscan_min_samples	2	1	1	0	0	1.0	1.0	0.9423990249633789	0.0	3.0
+hdbscan_cluster_selection_epsilon	0.0	1	1	0	0	1.0	1.0	0.9423990249633789	0.0	3.0

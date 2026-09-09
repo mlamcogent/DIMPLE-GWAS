@@ -1,0 +1,11 @@
+2026-08-26 10:57:59,151 [INFO] Resolved 32 candidate models across 4 UMAP and 8 HDBSCAN configurations
+2026-08-26 10:57:59,160 [INFO] Prepared analysis matrix with 24 features and 80 input variables
+2026-08-26 10:57:59,161 [INFO] UMAP family 1/4: umap_49d543513062668f (8 candidate models)
+2026-08-26 10:58:09,263 [INFO] Completed UMAP family umap_49d543513062668f: 8 evaluated, 0 failed
+2026-08-26 10:58:09,264 [INFO] UMAP family 2/4: umap_f56f78a67f323115 (8 candidate models)
+2026-08-26 10:58:09,562 [INFO] Completed UMAP family umap_f56f78a67f323115: 8 evaluated, 0 failed
+2026-08-26 10:58:09,563 [INFO] UMAP family 3/4: umap_7f053045c5e95990 (8 candidate models)
+2026-08-26 10:58:09,905 [INFO] Completed UMAP family umap_7f053045c5e95990: 8 evaluated, 0 failed
+2026-08-26 10:58:09,905 [INFO] UMAP family 4/4: umap_5c2de156ba16581d (8 candidate models)
+2026-08-26 10:58:10,202 [INFO] Completed UMAP family umap_5c2de156ba16581d: 8 evaluated, 0 failed
+2026-08-26 10:58:10,332 [INFO] Run complete: 32 successful, 0 invalid topology, 0 failed; selected=model_241ad5e99af55074

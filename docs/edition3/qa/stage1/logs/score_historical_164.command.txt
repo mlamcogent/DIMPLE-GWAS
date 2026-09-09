@@ -1,0 +1,5 @@
+name=score_historical_164
+started_at_utc=2026-08-26T15:22:04Z
+ended_at_utc=2026-08-26T15:22:05Z
+exit_status=0
+command=../DIMPLE-GWAS-freeze2/.venv/bin/python -m dimple_gwas score-existing --models ../freeze3_workspace/comparisons/idp_runs/historical_tables/original_164_model_table.tsv --config configs/original_idp_164_historical_search.yaml --fit-include-noise --output docs/edition3/qa/stage1/generated/fresh_rescored_164_models.tsv 

@@ -1,0 +1,6 @@
+flowchart LR
+  A["Built-in search mode"] --> D["Deep merge"]
+  B["YAML overlay"] --> D
+  D --> E["Explicit CLI overrides"]
+  E --> F["Validation"]
+  F --> G["resolved_config.yaml"]

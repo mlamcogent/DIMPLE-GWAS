@@ -1,0 +1,47 @@
+chapter	title	words	h2_sections	code_blocks	figures	teaching_scaffold_sections	release_banner_count
+1	What DIMPLE-GWAS is and is not	405	8	0	0	8	1
+2	The scientific problem: structure among genetically informed phenotype vectors	415	8	0	0	8	1
+3	Stage 1 scope and the Freeze 3 RC1 status boundary	373	8	0	0	8	1
+4	From input matrix to candidate partitions	421	9	0	1	8	1
+5	Essential GWAS, vector-space, distance, and clustering concepts	456	9	0	0	8	1
+6	Why repeated nonlinear embeddings and density clustering are used	423	9	0	0	8	1
+7	Choosing among complementary methods	447	9	0	0	8	1
+8	Scientific interpretation, circularity, and validation boundaries	440	9	0	0	8	1
+9	System requirements and isolated environment setup	406	8	1	0	8	1
+10	Input data contract, orientation, metadata columns, and missingness	464	9	0	1	8	1
+11	Configuration files and precedence	427	9	1	1	8	1
+12	Inspecting a configuration and enumerating the search space	377	8	1	0	8	1
+13	Fixed synthetic quickstart	369	8	1	0	8	1
+14	Reading the run manifest	393	8	0	0	8	1
+15	Preprocessing and optional RINT	373	8	0	0	8	1
+16	UMAP and densMAP fundamentals	416	9	0	0	8	1
+17	Repeated seeds, concatenated embeddings, determinism, and compute cost	433	9	0	1	8	1
+18	HDBSCAN concepts and the Freeze 3 search grid	427	10	0	1	8	1
+19	Candidate-model metrics	399	9	0	0	8	1
+20	The legacy_dimple score and optional alternatives	418	8	0	0	8	1
+21	Ranking, summarising, and choosing a model	434	9	0	1	8	1
+22	Reproducing a selected model	355	8	1	0	8	1
+23	Comparing partitions and validating outputs	409	9	1	1	8	1
+24	Why UMAP coordinates are not biological loadings	379	9	0	0	8	1
+25	Returning to the original input-vector space	394	9	1	1	8	1
+26	Pearson and Spearman association summaries	362	8	0	0	8	1
+27	Cluster heatmaps, ordering, annotations, and cutpoints	416	9	0	1	8	1
+28	Noise assignments and uncertainty	371	9	0	0	8	1
+29	Avoiding double dipping and post-selection overclaiming	407	9	0	0	8	1
+30	Technical, statistical, and biological validation	395	9	0	1	8	1
+31	Reporting a DIMPLE-GWAS analysis	417	8	0	0	8	1
+32	Fixed synthetic dataset case study	424	9	0	1	8	1
+33	Custom bounded search-space case study	442	9	0	1	8	1
+34	Explanation, comparison, and validation case study	447	9	0	2	8	1
+35	MNIST as a software benchmark	393	8	0	0	8	1
+36	Original 164-IDP analysis	504	9	0	1	8	1
+37	Complete command reference	456	8	1	0	8	1
+38	Complete configuration reference	409	8	0	0	8	1
+39	Search-space reference	377	8	0	0	8	1
+40	Scoring and model-selection reference	372	8	0	0	8	1
+41	Output atlas and data dictionary	423	8	0	0	8	1
+42	Provenance and reproducibility checklist	433	9	0	1	8	1
+43	Error messages, troubleshooting, and recovery	438	8	0	0	8	1
+44	Performance, memory, threading, and bounded-run guidance	419	8	0	0	8	1
+45	Migration from Dev and Freeze 2	412	8	0	0	8	1
+46	Known issues and scientific limitations	433	8	0	0	8	1

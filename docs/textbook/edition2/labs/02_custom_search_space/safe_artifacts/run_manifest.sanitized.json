@@ -1,0 +1,193 @@
+{
+  "architecture": "arm64",
+  "artifacts": {
+    "all_models": {
+      "path": "<FREEZE3>/docs/textbook/edition2/labs/02_custom_search_space/run_20260826/models/all_models.tsv",
+      "sha256": "248e57076067cb51cce40922f9eed7de88627d49c584297bd8e2a916e000bc3f",
+      "size_bytes": 23093
+    },
+    "family_summaries": {
+      "path": "<FREEZE3>/docs/textbook/edition2/labs/02_custom_search_space/run_20260826/models/family_summaries.tsv",
+      "sha256": "bff19fc41cb702f96be1e98c3a097c2075eac6042c4954ac0effa8f959fc7175",
+      "size_bytes": 1413
+    },
+    "model_failures": {
+      "path": "<FREEZE3>/docs/textbook/edition2/labs/02_custom_search_space/run_20260826/logs/model_failures.tsv",
+      "sha256": "cb101945e7feb489127643e533ea5c0126ca95747f8d0bf5e18f63dd891202f2",
+      "size_bytes": 1297
+    },
+    "pareto_front": {
+      "path": "<FREEZE3>/docs/textbook/edition2/labs/02_custom_search_space/run_20260826/models/pareto_front.tsv",
+      "sha256": "942d56c6cf4f9cf39aa317bd8549918b4191f6c5b3e90641bcfa11884ca86973",
+      "size_bytes": 7202
+    },
+    "ranked_models": {
+      "path": "<FREEZE3>/docs/textbook/edition2/labs/02_custom_search_space/run_20260826/models/ranked_models.tsv",
+      "sha256": "24d3aa87389facc6e913d6dd6930781e1002daf85c66c61a5577be3db082af14",
+      "size_bytes": 23093
+    },
+    "top_models": {
+      "path": "<FREEZE3>/docs/textbook/edition2/labs/02_custom_search_space/run_20260826/models/top_models.tsv",
+      "sha256": "753c14a0c5e3eb0e6f00e38103aaee66b37746e0ddcc6389ee02d6249ab6163e",
+      "size_bytes": 4507
+    }
+  },
+  "backends": {
+    "clusterer": "hdbscan.contrib",
+    "reducer": "umap-learn"
+  },
+  "command": "dimple-gwas run --search-mode custom --config docs/textbook/edition2/labs/02_custom_search_space/tutorial_config.yaml --output-dir docs/textbook/edition2/labs/02_custom_search_space/run_20260826",
+  "completed_models": 32,
+  "configuration": {
+    "execution": {
+      "candidate_jobs": 1,
+      "compute_dbcv": true,
+      "legacy_ensemble_seeds": false,
+      "max_candidate_models": 0,
+      "max_samples_silhouette": 0,
+      "max_samples_trust": 3000,
+      "n_jobs": 1,
+      "n_random_states": 2,
+      "silhouette_seed": 42,
+      "strict": false,
+      "top_n_models": 5,
+      "trust_k": 10,
+      "trust_seed": 42,
+      "warn_candidate_count": 5000,
+      "write_parquet": true
+    },
+    "hdbscan": {
+      "allow_single_cluster": false,
+      "alpha": 1.0,
+      "cluster_selection_epsilon": [
+        0.0,
+        0.05
+      ],
+      "cluster_selection_method": "eom",
+      "cluster_selection_persistence": 0.0,
+      "max_cluster_size": 0,
+      "metric": "euclidean",
+      "min_cluster_size": [
+        4,
+        6
+      ],
+      "min_samples": [
+        2,
+        4
+      ]
+    },
+    "input": {
+      "annotation_file": "benchmarks/synthetic/synthetic_annotations.csv",
+      "annotation_index_col": "index",
+      "drop_first_n_cols": 4,
+      "path": "benchmarks/synthetic/synthetic_matrix.tsv",
+      "sep": "\t",
+      "zscore_transform": "none"
+    },
+    "interpretation": {
+      "coordinate_associations": false,
+      "coordinate_methods": [
+        "pearson"
+      ],
+      "force_large_matrix": false,
+      "max_full_heatmap": 1200,
+      "noise_policy": "separate_last",
+      "order": "cluster_then_hclust",
+      "require_complete_match": true,
+      "similarity_metric": "pearson",
+      "top_n_associations": 100,
+      "undefined_correlation": "error",
+      "write_similarity": true
+    },
+    "scoring": {
+      "custom": {},
+      "fit_include_noise": false,
+      "profile": "legacy_dimple"
+    },
+    "search_mode": "custom",
+    "umap": {
+      "densmap": true,
+      "learning_rate": 1.0,
+      "local_connectivity": 1.0,
+      "metric": "euclidean",
+      "min_dist": [
+        0.0,
+        0.1
+      ],
+      "n_components": 3,
+      "n_neighbors": [
+        10,
+        15
+      ],
+      "negative_sample_rate": 5,
+      "random_state": 42,
+      "repulsion_strength": 1.0,
+      "set_op_mix_ratio": 1.0,
+      "spread": 1.0
+    }
+  },
+  "configuration_sha256": "7aae288f06d228adb0579589cb8f7e4e3d0e385c6117abc09aaa4045c0c164ad",
+  "exclusions": [],
+  "failed_models": 0,
+  "failures": [],
+  "finished_at_utc": "2026-08-26T02:58:10.328659+00:00",
+  "git_commit": null,
+  "input": {
+    "path": "<FREEZE3>/benchmarks/synthetic/synthetic_matrix.tsv",
+    "sha256": "77d1956fd074da9d82ce0d6a9c896446895a5e22b2fc6da85417169d13b9bb01",
+    "size_bytes": 38457
+  },
+  "input_contract": {
+    "drop_first_n_cols": 4,
+    "orientation": "variants_by_vectors",
+    "preprocessing": "none",
+    "separator": "\t",
+    "vector_identifier_source": "analysis column names"
+  },
+  "manifest_schema": "dimple-gwas.provenance.v3",
+  "operating_system": "Darwin",
+  "package_source_sha256": "df87825992ab51dc016c673cf420a978ba5c161bd6c755e00a5199ead310e65b",
+  "package_versions": {
+    "Pillow": "12.3.0",
+    "PyYAML": "6.0.3",
+    "hdbscan": "0.8.44",
+    "joblib": "1.5.3",
+    "matplotlib": "3.11.1",
+    "numpy": "2.5.2",
+    "openpyxl": "3.1.5",
+    "pandas": "3.0.5",
+    "plotly": "7.0.0",
+    "pyarrow": "25.0.1",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.18.1",
+    "umap-learn": "0.5.12",
+    "xlrd": "2.0.2"
+  },
+  "parquet_output": {
+    "error": null,
+    "path": "docs/textbook/edition2/labs/02_custom_search_space/run_20260826/models/all_models.parquet",
+    "written": true
+  },
+  "platform": "macOS-26.5.1-arm64-arm-64bit",
+  "python_version": "3.12.13",
+  "random_seeds": [
+    42,
+    43
+  ],
+  "runtime_seconds": 11.136349832999713,
+  "scoring_formula_version": "For eligible candidates, component_normalized = component / component.max(). Each component weight is its raw dynamic range divided by the sum of raw ranges. raw_score = w_silhouette*silhouette_normalized + w_clusters*number_of_clusters_normalized - w_noise*noise_points_normalized. When fit_include_noise=false, noise_points_for_score=0 and w_noise=0. score=(raw_score-min(raw_score))/(max(raw_score)-min(raw_score)); a zero score range maps to 1.",
+  "scoring_profile": "legacy_dimple",
+  "search_space_size": 32,
+  "selected_model": "model_241ad5e99af55074",
+  "software": "DIMPLE-GWAS Freeze 3",
+  "software_version": "3.0.0rc1",
+  "started_at_utc": "2026-08-26T02:57:59.103531+00:00",
+  "status": "complete",
+  "thread_settings": {
+    "candidate_jobs": 1,
+    "hdbscan_core_dist_n_jobs": 1,
+    "n_jobs": 1
+  },
+  "umap_configurations": 4,
+  "warnings": []
+}

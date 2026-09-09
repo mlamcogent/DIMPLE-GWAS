@@ -1,0 +1,9 @@
+{
+  "checks": 24,
+  "failures": 0,
+  "passed": 24,
+  "run_dir": "<FREEZE3>/docs/textbook/edition2/labs/01_fixed_synthetic/run_20260826",
+  "status": "pass",
+  "validation_schema": "dimple-gwas.validation.v3",
+  "warnings": 0
+}

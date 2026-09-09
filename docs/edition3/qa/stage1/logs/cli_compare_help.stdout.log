@@ -1,0 +1,13 @@
+usage: dimple-gwas compare [-h] --left LEFT --right RIGHT --output-dir
+                           OUTPUT_DIR [--id-column ID_COLUMN]
+                           [--label-column LABEL_COLUMN]
+                           [--require-same-order]
+
+options:
+  -h, --help            show this help message and exit
+  --left LEFT           Left summary JSON or label table
+  --right RIGHT         Right summary JSON or label table
+  --output-dir OUTPUT_DIR
+  --id-column ID_COLUMN
+  --label-column LABEL_COLUMN
+  --require-same-order

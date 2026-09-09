@@ -1,0 +1,207 @@
+command	flags	destination	action	required	default	choices	help	source
+compare	--left	left	_StoreAction	True	null		Left summary JSON or label table	dimple_gwas/cli.py
+compare	--right	right	_StoreAction	True	null		Right summary JSON or label table	dimple_gwas/cli.py
+compare	--output-dir	output_dir	_StoreAction	True	null			dimple_gwas/cli.py
+compare	--id-column	id_column	_StoreAction	False	"""feature_id"""			dimple_gwas/cli.py
+compare	--label-column	label_column	_StoreAction	False	"""label"""			dimple_gwas/cli.py
+compare	--require-same-order	require_same_order	_StoreTrueAction	False	false			dimple_gwas/cli.py
+explain	--model-json	model_json	_StoreAction	False	null		Native top-model summary.json	dimple_gwas/cli.py
+explain	--legacy-table	legacy_table	_StoreAction	False	null		Legacy label/UMAP table (CSV/TSV/XLSX)	dimple_gwas/cli.py
+explain	--input	input_path	_StoreAction	False	null		Original matrix; optional native path override	dimple_gwas/cli.py
+explain	--outdir, --output-dir	output_dir	_StoreAction	False	null			dimple_gwas/cli.py
+explain	--config	config	_StoreAction	False	null		Optional Freeze 3 YAML providing interpretation defaults	dimple_gwas/cli.py
+explain	--input-sep	input_sep	_StoreAction	False	null			dimple_gwas/cli.py
+explain	--input-sheet	input_sheet	_StoreAction	False	0			dimple_gwas/cli.py
+explain	--legacy-sheet	legacy_sheet	_StoreAction	False	0			dimple_gwas/cli.py
+explain	--matrix-orientation	matrix_orientation	_StoreAction	False	"""auto"""	auto, variants_by_vectors, vectors_by_variants		dimple_gwas/cli.py
+explain	--vector-id-source	vector_id_source	_StoreAction	False	"""auto"""			dimple_gwas/cli.py
+explain	--drop-first-n-cols	drop_first_n_cols	_StoreAction	False	null			dimple_gwas/cli.py
+explain	--zscore-transform	zscore_transform	_StoreAction	False	null	none, rint		dimple_gwas/cli.py
+explain	--id-column	id_column	_StoreAction	False	null			dimple_gwas/cli.py
+explain	--label-column	label_column	_StoreAction	False	null			dimple_gwas/cli.py
+explain	--coordinate-columns	coordinate_columns	_StoreAction	False	null		Comma-separated supplied UMAP columns	dimple_gwas/cli.py
+explain	--similarity-metric	similarity_metric	_StoreAction	False	null	pearson, spearman		dimple_gwas/cli.py
+explain	--order	order	_StoreAction	False	null	cluster_then_hclust, cluster, hclust, input		dimple_gwas/cli.py
+explain	--noise-policy	noise_policy	_StoreAction	False	null	separate_last, include, exclude		dimple_gwas/cli.py
+explain	--undefined-correlation	undefined_correlation	_StoreAction	False	null	error, zero		dimple_gwas/cli.py
+explain	--require-complete-match	require_complete_match	_StoreTrueAction	False	null			dimple_gwas/cli.py
+explain	--allow-incomplete-match	require_complete_match	_StoreFalseAction	False	true			dimple_gwas/cli.py
+explain	--max-full-heatmap	max_full_heatmap	_StoreAction	False	null			dimple_gwas/cli.py
+explain	--write-similarity	write_similarity	_StoreTrueAction	False	null			dimple_gwas/cli.py
+explain	--no-write-similarity	write_similarity	_StoreFalseAction	False	true			dimple_gwas/cli.py
+explain	--force-large-matrix	force_large_matrix	_StoreTrueAction	False	null			dimple_gwas/cli.py
+explain	--coordinate-associations	coordinate_associations	_StoreTrueAction	False	null			dimple_gwas/cli.py
+explain	--coordinate-methods	coordinate_methods	_StoreAction	False	null			dimple_gwas/cli.py
+explain	--top-n-associations	top_n_associations	_StoreAction	False	null			dimple_gwas/cli.py
+inspect-config	--search-mode	search_mode	_StoreAction	False	"""standard"""	standard, extended, custom, fixed		dimple_gwas/cli.py
+inspect-config	--config	config	_StoreAction	False	null		YAML configuration; explicit CLI values override it	dimple_gwas/cli.py
+inspect-config	--input, --datainput	input_path	_StoreAction	False	null		GWAS summary-statistics matrix (CSV/TSV)	dimple_gwas/cli.py
+inspect-config	--drop-first-n-cols, --drop_first_n_cols	drop_first_n_cols	_StoreAction	False	null			dimple_gwas/cli.py
+inspect-config	--sep	sep	_StoreAction	False	null			dimple_gwas/cli.py
+inspect-config	--zscore-transform, --zscore_transform	zscore_transform	_StoreAction	False	null	none, rint		dimple_gwas/cli.py
+inspect-config	--annotation-file, --annotation_file, --idp_key	annotation_file	_StoreAction	False	null			dimple_gwas/cli.py
+inspect-config	--annotation-index-col, --annotation_index_col	annotation_index_col	_StoreAction	False	null			dimple_gwas/cli.py
+inspect-config	--umap-n-neighbors, --n-neighbors, --n_neighbors	umap_n_neighbors	_StoreAction	False	null			dimple_gwas/cli.py
+inspect-config	--umap-min-dist, --min-dist, --min_dist	umap_min_dist	_StoreAction	False	null			dimple_gwas/cli.py
+inspect-config	--umap-n-components, --n-components, --n_components	umap_n_components	_StoreAction	False	null			dimple_gwas/cli.py
+inspect-config	--umap-metric, --umap_metric	umap_metric	_StoreAction	False	null			dimple_gwas/cli.py
+inspect-config	--umap-spread	umap_spread	_StoreAction	False	null			dimple_gwas/cli.py
+inspect-config	--umap-learning-rate	umap_learning_rate	_StoreAction	False	null			dimple_gwas/cli.py
+inspect-config	--umap-repulsion-strength	umap_repulsion_strength	_StoreAction	False	null			dimple_gwas/cli.py
+inspect-config	--umap-negative-sample-rate	umap_negative_sample_rate	_StoreAction	False	null			dimple_gwas/cli.py
+inspect-config	--umap-local-connectivity	umap_local_connectivity	_StoreAction	False	null			dimple_gwas/cli.py
+inspect-config	--umap-set-op-mix-ratio	umap_set_op_mix_ratio	_StoreAction	False	null			dimple_gwas/cli.py
+inspect-config	--random-state, --random_state	umap_random_state	_StoreAction	False	null			dimple_gwas/cli.py
+inspect-config	--densmap	umap_densmap	_StoreTrueAction	False	null			dimple_gwas/cli.py
+inspect-config	--no-densmap	umap_densmap	_StoreFalseAction	False	true			dimple_gwas/cli.py
+inspect-config	--hdbscan-min-cluster-size, --grid-min-cluster-size, --grid_min_cluster_size	hdbscan_min_cluster_size	_StoreAction	False	null			dimple_gwas/cli.py
+inspect-config	--hdbscan-min-samples, --grid-min-samples, --grid_min_samples	hdbscan_min_samples	_StoreAction	False	null			dimple_gwas/cli.py
+inspect-config	--hdbscan-cluster-selection-epsilon, --grid-eps, --grid_eps	hdbscan_cluster_selection_epsilon	_StoreAction	False	null			dimple_gwas/cli.py
+inspect-config	--hdbscan-cluster-selection-persistence, --grid-cluster-selection-persistence, --grid_cluster_selection_persistence	hdbscan_cluster_selection_persistence	_StoreAction	False	null			dimple_gwas/cli.py
+inspect-config	--hdbscan-cluster-selection-method, --grid-cluster-selection-method, --grid_cluster_selection_method, --cluster_selection_method	hdbscan_cluster_selection_method	_StoreAction	False	null			dimple_gwas/cli.py
+inspect-config	--hdbscan-alpha, --grid-alpha, --grid_alpha	hdbscan_alpha	_StoreAction	False	null			dimple_gwas/cli.py
+inspect-config	--hdbscan-allow-single-cluster, --grid-allow-single-cluster, --grid_allow_single_cluster	hdbscan_allow_single_cluster	_StoreAction	False	null			dimple_gwas/cli.py
+inspect-config	--hdbscan-max-cluster-size, --max-cluster-size, --max_cluster_size	hdbscan_max_cluster_size	_StoreAction	False	null			dimple_gwas/cli.py
+inspect-config	--hdbscan-metric, --hdbscan_metric	hdbscan_metric	_StoreAction	False	null			dimple_gwas/cli.py
+inspect-config	--n-random-states, --n_random_states	n_random_states	_StoreAction	False	null			dimple_gwas/cli.py
+inspect-config	--n-jobs, --n_jobs	n_jobs	_StoreAction	False	null			dimple_gwas/cli.py
+inspect-config	--candidate-jobs	candidate_jobs	_StoreAction	False	null			dimple_gwas/cli.py
+inspect-config	--top-n-models	top_n_models	_StoreAction	False	null			dimple_gwas/cli.py
+inspect-config	--warn-candidate-count	warn_candidate_count	_StoreAction	False	null			dimple_gwas/cli.py
+inspect-config	--max-candidate-models	max_candidate_models	_StoreAction	False	null			dimple_gwas/cli.py
+inspect-config	--max-samples-trust, --max_samples_trust	max_samples_trust	_StoreAction	False	null			dimple_gwas/cli.py
+inspect-config	--max-samples-silhouette	max_samples_silhouette	_StoreAction	False	null			dimple_gwas/cli.py
+inspect-config	--trust-k, --trust_k	trust_k	_StoreAction	False	null			dimple_gwas/cli.py
+inspect-config	--trust-seed, --trust_seed	trust_seed	_StoreAction	False	null			dimple_gwas/cli.py
+inspect-config	--silhouette-seed	silhouette_seed	_StoreAction	False	null			dimple_gwas/cli.py
+inspect-config	--legacy-ensemble-seeds	legacy_ensemble_seeds	_StoreTrueAction	False	null			dimple_gwas/cli.py
+inspect-config	--no-legacy-ensemble-seeds	legacy_ensemble_seeds	_StoreFalseAction	False	true			dimple_gwas/cli.py
+inspect-config	--compute-dbcv	compute_dbcv	_StoreTrueAction	False	null			dimple_gwas/cli.py
+inspect-config	--no-compute-dbcv	compute_dbcv	_StoreFalseAction	False	true			dimple_gwas/cli.py
+inspect-config	--write-parquet	write_parquet	_StoreTrueAction	False	null			dimple_gwas/cli.py
+inspect-config	--no-write-parquet	write_parquet	_StoreFalseAction	False	true			dimple_gwas/cli.py
+inspect-config	--strict	strict	_StoreTrueAction	False	null			dimple_gwas/cli.py
+inspect-config	--scoring-profile	scoring_profile	_StoreAction	False	null	legacy_dimple, custom		dimple_gwas/cli.py
+inspect-config	--fit-include-noise	fit_include_noise	_StoreTrueAction	False	null			dimple_gwas/cli.py
+inspect-config	--fit-exclude-noise	fit_include_noise	_StoreFalseAction	False	true			dimple_gwas/cli.py
+inspect-config	--output	output	_StoreAction	False	null		Optional resolved YAML path	dimple_gwas/cli.py
+reproduce-model	--model-json	model_json	_StoreAction	True	null		best_model.json or top-model summary.json	dimple_gwas/cli.py
+reproduce-model	--input	input_path	_StoreAction	False	null			dimple_gwas/cli.py
+reproduce-model	--output-dir	output_dir	_StoreAction	True	null			dimple_gwas/cli.py
+reproduce-model	--n-jobs	n_jobs	_StoreAction	False	null			dimple_gwas/cli.py
+run	--search-mode	search_mode	_StoreAction	False	"""standard"""	standard, extended, custom, fixed		dimple_gwas/cli.py
+run	--config	config	_StoreAction	False	null		YAML configuration; explicit CLI values override it	dimple_gwas/cli.py
+run	--input, --datainput	input_path	_StoreAction	False	null		GWAS summary-statistics matrix (CSV/TSV)	dimple_gwas/cli.py
+run	--output-dir, --outdir	output_dir	_StoreAction	False	"""outputs"""			dimple_gwas/cli.py
+run	--drop-first-n-cols, --drop_first_n_cols	drop_first_n_cols	_StoreAction	False	null			dimple_gwas/cli.py
+run	--sep	sep	_StoreAction	False	null			dimple_gwas/cli.py
+run	--zscore-transform, --zscore_transform	zscore_transform	_StoreAction	False	null	none, rint		dimple_gwas/cli.py
+run	--annotation-file, --annotation_file, --idp_key	annotation_file	_StoreAction	False	null			dimple_gwas/cli.py
+run	--annotation-index-col, --annotation_index_col	annotation_index_col	_StoreAction	False	null			dimple_gwas/cli.py
+run	--umap-n-neighbors, --n-neighbors, --n_neighbors	umap_n_neighbors	_StoreAction	False	null			dimple_gwas/cli.py
+run	--umap-min-dist, --min-dist, --min_dist	umap_min_dist	_StoreAction	False	null			dimple_gwas/cli.py
+run	--umap-n-components, --n-components, --n_components	umap_n_components	_StoreAction	False	null			dimple_gwas/cli.py
+run	--umap-metric, --umap_metric	umap_metric	_StoreAction	False	null			dimple_gwas/cli.py
+run	--umap-spread	umap_spread	_StoreAction	False	null			dimple_gwas/cli.py
+run	--umap-learning-rate	umap_learning_rate	_StoreAction	False	null			dimple_gwas/cli.py
+run	--umap-repulsion-strength	umap_repulsion_strength	_StoreAction	False	null			dimple_gwas/cli.py
+run	--umap-negative-sample-rate	umap_negative_sample_rate	_StoreAction	False	null			dimple_gwas/cli.py
+run	--umap-local-connectivity	umap_local_connectivity	_StoreAction	False	null			dimple_gwas/cli.py
+run	--umap-set-op-mix-ratio	umap_set_op_mix_ratio	_StoreAction	False	null			dimple_gwas/cli.py
+run	--random-state, --random_state	umap_random_state	_StoreAction	False	null			dimple_gwas/cli.py
+run	--densmap	umap_densmap	_StoreTrueAction	False	null			dimple_gwas/cli.py
+run	--no-densmap	umap_densmap	_StoreFalseAction	False	true			dimple_gwas/cli.py
+run	--hdbscan-min-cluster-size, --grid-min-cluster-size, --grid_min_cluster_size	hdbscan_min_cluster_size	_StoreAction	False	null			dimple_gwas/cli.py
+run	--hdbscan-min-samples, --grid-min-samples, --grid_min_samples	hdbscan_min_samples	_StoreAction	False	null			dimple_gwas/cli.py
+run	--hdbscan-cluster-selection-epsilon, --grid-eps, --grid_eps	hdbscan_cluster_selection_epsilon	_StoreAction	False	null			dimple_gwas/cli.py
+run	--hdbscan-cluster-selection-persistence, --grid-cluster-selection-persistence, --grid_cluster_selection_persistence	hdbscan_cluster_selection_persistence	_StoreAction	False	null			dimple_gwas/cli.py
+run	--hdbscan-cluster-selection-method, --grid-cluster-selection-method, --grid_cluster_selection_method, --cluster_selection_method	hdbscan_cluster_selection_method	_StoreAction	False	null			dimple_gwas/cli.py
+run	--hdbscan-alpha, --grid-alpha, --grid_alpha	hdbscan_alpha	_StoreAction	False	null			dimple_gwas/cli.py
+run	--hdbscan-allow-single-cluster, --grid-allow-single-cluster, --grid_allow_single_cluster	hdbscan_allow_single_cluster	_StoreAction	False	null			dimple_gwas/cli.py
+run	--hdbscan-max-cluster-size, --max-cluster-size, --max_cluster_size	hdbscan_max_cluster_size	_StoreAction	False	null			dimple_gwas/cli.py
+run	--hdbscan-metric, --hdbscan_metric	hdbscan_metric	_StoreAction	False	null			dimple_gwas/cli.py
+run	--n-random-states, --n_random_states	n_random_states	_StoreAction	False	null			dimple_gwas/cli.py
+run	--n-jobs, --n_jobs	n_jobs	_StoreAction	False	null			dimple_gwas/cli.py
+run	--candidate-jobs	candidate_jobs	_StoreAction	False	null			dimple_gwas/cli.py
+run	--top-n-models	top_n_models	_StoreAction	False	null			dimple_gwas/cli.py
+run	--warn-candidate-count	warn_candidate_count	_StoreAction	False	null			dimple_gwas/cli.py
+run	--max-candidate-models	max_candidate_models	_StoreAction	False	null			dimple_gwas/cli.py
+run	--max-samples-trust, --max_samples_trust	max_samples_trust	_StoreAction	False	null			dimple_gwas/cli.py
+run	--max-samples-silhouette	max_samples_silhouette	_StoreAction	False	null			dimple_gwas/cli.py
+run	--trust-k, --trust_k	trust_k	_StoreAction	False	null			dimple_gwas/cli.py
+run	--trust-seed, --trust_seed	trust_seed	_StoreAction	False	null			dimple_gwas/cli.py
+run	--silhouette-seed	silhouette_seed	_StoreAction	False	null			dimple_gwas/cli.py
+run	--legacy-ensemble-seeds	legacy_ensemble_seeds	_StoreTrueAction	False	null			dimple_gwas/cli.py
+run	--no-legacy-ensemble-seeds	legacy_ensemble_seeds	_StoreFalseAction	False	true			dimple_gwas/cli.py
+run	--compute-dbcv	compute_dbcv	_StoreTrueAction	False	null			dimple_gwas/cli.py
+run	--no-compute-dbcv	compute_dbcv	_StoreFalseAction	False	true			dimple_gwas/cli.py
+run	--write-parquet	write_parquet	_StoreTrueAction	False	null			dimple_gwas/cli.py
+run	--no-write-parquet	write_parquet	_StoreFalseAction	False	true			dimple_gwas/cli.py
+run	--strict	strict	_StoreTrueAction	False	null			dimple_gwas/cli.py
+run	--scoring-profile	scoring_profile	_StoreAction	False	null	legacy_dimple, custom		dimple_gwas/cli.py
+run	--fit-include-noise	fit_include_noise	_StoreTrueAction	False	null			dimple_gwas/cli.py
+run	--fit-exclude-noise	fit_include_noise	_StoreFalseAction	False	true			dimple_gwas/cli.py
+score-existing	--models	models	_StoreAction	True	null			dimple_gwas/cli.py
+score-existing	--config	config	_StoreAction	False	null			dimple_gwas/cli.py
+score-existing	--scoring-profile	scoring_profile	_StoreAction	False	"""legacy_dimple"""	legacy_dimple, custom		dimple_gwas/cli.py
+score-existing	--fit-include-noise	fit_include_noise	_StoreTrueAction	False	false			dimple_gwas/cli.py
+score-existing	--output	output	_StoreAction	True	null			dimple_gwas/cli.py
+show-search-space	--search-mode	search_mode	_StoreAction	False	"""standard"""	standard, extended, custom, fixed		dimple_gwas/cli.py
+show-search-space	--config	config	_StoreAction	False	null		YAML configuration; explicit CLI values override it	dimple_gwas/cli.py
+show-search-space	--input, --datainput	input_path	_StoreAction	False	null		GWAS summary-statistics matrix (CSV/TSV)	dimple_gwas/cli.py
+show-search-space	--drop-first-n-cols, --drop_first_n_cols	drop_first_n_cols	_StoreAction	False	null			dimple_gwas/cli.py
+show-search-space	--sep	sep	_StoreAction	False	null			dimple_gwas/cli.py
+show-search-space	--zscore-transform, --zscore_transform	zscore_transform	_StoreAction	False	null	none, rint		dimple_gwas/cli.py
+show-search-space	--annotation-file, --annotation_file, --idp_key	annotation_file	_StoreAction	False	null			dimple_gwas/cli.py
+show-search-space	--annotation-index-col, --annotation_index_col	annotation_index_col	_StoreAction	False	null			dimple_gwas/cli.py
+show-search-space	--umap-n-neighbors, --n-neighbors, --n_neighbors	umap_n_neighbors	_StoreAction	False	null			dimple_gwas/cli.py
+show-search-space	--umap-min-dist, --min-dist, --min_dist	umap_min_dist	_StoreAction	False	null			dimple_gwas/cli.py
+show-search-space	--umap-n-components, --n-components, --n_components	umap_n_components	_StoreAction	False	null			dimple_gwas/cli.py
+show-search-space	--umap-metric, --umap_metric	umap_metric	_StoreAction	False	null			dimple_gwas/cli.py
+show-search-space	--umap-spread	umap_spread	_StoreAction	False	null			dimple_gwas/cli.py
+show-search-space	--umap-learning-rate	umap_learning_rate	_StoreAction	False	null			dimple_gwas/cli.py
+show-search-space	--umap-repulsion-strength	umap_repulsion_strength	_StoreAction	False	null			dimple_gwas/cli.py
+show-search-space	--umap-negative-sample-rate	umap_negative_sample_rate	_StoreAction	False	null			dimple_gwas/cli.py
+show-search-space	--umap-local-connectivity	umap_local_connectivity	_StoreAction	False	null			dimple_gwas/cli.py
+show-search-space	--umap-set-op-mix-ratio	umap_set_op_mix_ratio	_StoreAction	False	null			dimple_gwas/cli.py
+show-search-space	--random-state, --random_state	umap_random_state	_StoreAction	False	null			dimple_gwas/cli.py
+show-search-space	--densmap	umap_densmap	_StoreTrueAction	False	null			dimple_gwas/cli.py
+show-search-space	--no-densmap	umap_densmap	_StoreFalseAction	False	true			dimple_gwas/cli.py
+show-search-space	--hdbscan-min-cluster-size, --grid-min-cluster-size, --grid_min_cluster_size	hdbscan_min_cluster_size	_StoreAction	False	null			dimple_gwas/cli.py
+show-search-space	--hdbscan-min-samples, --grid-min-samples, --grid_min_samples	hdbscan_min_samples	_StoreAction	False	null			dimple_gwas/cli.py
+show-search-space	--hdbscan-cluster-selection-epsilon, --grid-eps, --grid_eps	hdbscan_cluster_selection_epsilon	_StoreAction	False	null			dimple_gwas/cli.py
+show-search-space	--hdbscan-cluster-selection-persistence, --grid-cluster-selection-persistence, --grid_cluster_selection_persistence	hdbscan_cluster_selection_persistence	_StoreAction	False	null			dimple_gwas/cli.py
+show-search-space	--hdbscan-cluster-selection-method, --grid-cluster-selection-method, --grid_cluster_selection_method, --cluster_selection_method	hdbscan_cluster_selection_method	_StoreAction	False	null			dimple_gwas/cli.py
+show-search-space	--hdbscan-alpha, --grid-alpha, --grid_alpha	hdbscan_alpha	_StoreAction	False	null			dimple_gwas/cli.py
+show-search-space	--hdbscan-allow-single-cluster, --grid-allow-single-cluster, --grid_allow_single_cluster	hdbscan_allow_single_cluster	_StoreAction	False	null			dimple_gwas/cli.py
+show-search-space	--hdbscan-max-cluster-size, --max-cluster-size, --max_cluster_size	hdbscan_max_cluster_size	_StoreAction	False	null			dimple_gwas/cli.py
+show-search-space	--hdbscan-metric, --hdbscan_metric	hdbscan_metric	_StoreAction	False	null			dimple_gwas/cli.py
+show-search-space	--n-random-states, --n_random_states	n_random_states	_StoreAction	False	null			dimple_gwas/cli.py
+show-search-space	--n-jobs, --n_jobs	n_jobs	_StoreAction	False	null			dimple_gwas/cli.py
+show-search-space	--candidate-jobs	candidate_jobs	_StoreAction	False	null			dimple_gwas/cli.py
+show-search-space	--top-n-models	top_n_models	_StoreAction	False	null			dimple_gwas/cli.py
+show-search-space	--warn-candidate-count	warn_candidate_count	_StoreAction	False	null			dimple_gwas/cli.py
+show-search-space	--max-candidate-models	max_candidate_models	_StoreAction	False	null			dimple_gwas/cli.py
+show-search-space	--max-samples-trust, --max_samples_trust	max_samples_trust	_StoreAction	False	null			dimple_gwas/cli.py
+show-search-space	--max-samples-silhouette	max_samples_silhouette	_StoreAction	False	null			dimple_gwas/cli.py
+show-search-space	--trust-k, --trust_k	trust_k	_StoreAction	False	null			dimple_gwas/cli.py
+show-search-space	--trust-seed, --trust_seed	trust_seed	_StoreAction	False	null			dimple_gwas/cli.py
+show-search-space	--silhouette-seed	silhouette_seed	_StoreAction	False	null			dimple_gwas/cli.py
+show-search-space	--legacy-ensemble-seeds	legacy_ensemble_seeds	_StoreTrueAction	False	null			dimple_gwas/cli.py
+show-search-space	--no-legacy-ensemble-seeds	legacy_ensemble_seeds	_StoreFalseAction	False	true			dimple_gwas/cli.py
+show-search-space	--compute-dbcv	compute_dbcv	_StoreTrueAction	False	null			dimple_gwas/cli.py
+show-search-space	--no-compute-dbcv	compute_dbcv	_StoreFalseAction	False	true			dimple_gwas/cli.py
+show-search-space	--write-parquet	write_parquet	_StoreTrueAction	False	null			dimple_gwas/cli.py
+show-search-space	--no-write-parquet	write_parquet	_StoreFalseAction	False	true			dimple_gwas/cli.py
+show-search-space	--strict	strict	_StoreTrueAction	False	null			dimple_gwas/cli.py
+show-search-space	--scoring-profile	scoring_profile	_StoreAction	False	null	legacy_dimple, custom		dimple_gwas/cli.py
+show-search-space	--fit-include-noise	fit_include_noise	_StoreTrueAction	False	null			dimple_gwas/cli.py
+show-search-space	--fit-exclude-noise	fit_include_noise	_StoreFalseAction	False	true			dimple_gwas/cli.py
+show-search-space	--output-dir	output_dir	_StoreAction	False	null		Write complete TSV/JSON manifests here	dimple_gwas/cli.py
+show-search-space	--show-first	show_first	_StoreAction	False	10			dimple_gwas/cli.py
+summarize-models	--models	models	_StoreAction	True	null			dimple_gwas/cli.py
+summarize-models	--output-dir	output_dir	_StoreAction	True	null			dimple_gwas/cli.py
+summarize-models	--top-n-models	top_n_models	_StoreAction	False	20			dimple_gwas/cli.py
+validate	--run-dir	run_dir	_StoreAction	True	null			dimple_gwas/cli.py
+validate	--output-dir	output_dir	_StoreAction	False	null			dimple_gwas/cli.py
+explain	interpret	command alias	alias	False			Exact alias of explain.	dimple_gwas/cli.py

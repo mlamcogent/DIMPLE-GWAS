@@ -1,0 +1,22 @@
+term	expanded_form_or_type	definition	first_chapters	boundary_note
+GWAS	genome-wide association study	A study that tests associations between genetic variants and a phenotype.	5	Do not confuse a GWAS association with causation.
+summary statistic	statistical result for one variant–phenotype test	In the input matrix, an analysis value indexed by a variant row and vector column.	2,5,10	The exact measure and harmonization must be documented upstream.
+vector / IDP	one phenotype-associated column across variants	The unit clustered after the input matrix is prepared and transposed.	2,10	IDP is a domain-specific vector label, not a generic feature.
+feature_id	stable retained vector identifier	Identifier written with labels and used for exact matching.	10,23,25,41	Whitespace and duplicates are validation concerns.
+RINT	rank inverse normal transformation	Optional rank-based normalization applied before transpose as implemented.	15	Off by default; it changes the analysis values.
+UMAP	Uniform Manifold Approximation and Projection	Nonlinear neighborhood-based embedding used by the pipeline.	6,16	Axes are not biological loadings.
+densMAP	density-augmented UMAP	UMAP mode adding a density-correlation objective.	16	Density preservation is not biological validation.
+seed	pseudorandom initializer	Base or derived integer controlling a repeated embedding.	17	A fixed seed does not ensure cross-platform bitwise equality.
+concatenated embedding	horizontal concatenation of repeated embeddings	The high-dimensional representation supplied to HDBSCAN.	17	An empirical stability strategy, not a true-topology estimator.
+HDBSCAN	hierarchical density-based spatial clustering of applications with noise	Density-clustering backend used to label vectors.	18	Freeze 3 uses the contributed hdbscan package.
+candidate model	one UMAP-family and HDBSCAN-parameter combination	A complete enumerated configuration that produces a retained success, invalid topology, or failure row.	18-21	A candidate is not necessarily eligible for ranking.
+selected model	rank-one retained eligible candidate	The candidate named in best_model.json and the selection manifest.	21-22	Selection is heuristic and conditional on the searched population.
+noise label -1	HDBSCAN noise/unassigned status	Algorithmic non-membership under one representation and parameterization.	18,28	Not biological irrelevance or absence of pleiotropy.
+silhouette	within-versus-nearest-cluster separation diagnostic	Metric-aware internal partition score used by legacy_dimple.	19-20	Geometry dependent; not biological validation.
+DBCV	density-based clustering validation	Optional density-aware diagnostic recorded by Freeze 3.	19-20	Not a legacy_dimple score component.
+ARI	adjusted Rand index	Permutation-invariant pairwise partition concordance metric.	23	Does not test biological validity.
+NMI	normalized mutual information	Permutation-invariant information overlap between partitions.	23	Numeric label values need not match.
+Procrustes disparity	shape discrepancy after alignment	Coordinate-only comparison diagnostic when both artifacts supply coordinates.	23	Separate from membership concordance.
+structural concordance	agreement in partition structure	Comparison of labels/noise sets invariant to label renaming.	23,30	Not exact computational reproduction.
+biological validation	external evidence that a grouping reflects meaningful biology	A later evidence layer beyond software and internal metrics.	30	Not established by passing tests or MNIST.
+provenance	record of source, inputs, settings, environment, commands, and artifacts	Evidence required to interpret and reproduce a run.	14,42	A dependency list alone is insufficient.

@@ -1,0 +1,11 @@
+usage: dimple-gwas score-existing [-h] --models MODELS [--config CONFIG]
+                                  [--scoring-profile {legacy_dimple,custom}]
+                                  [--fit-include-noise] --output OUTPUT
+
+options:
+  -h, --help            show this help message and exit
+  --models MODELS
+  --config CONFIG
+  --scoring-profile {legacy_dimple,custom}
+  --fit-include-noise
+  --output OUTPUT

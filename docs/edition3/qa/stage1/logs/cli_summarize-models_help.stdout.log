@@ -1,0 +1,8 @@
+usage: dimple-gwas summarize-models [-h] --models MODELS --output-dir
+                                    OUTPUT_DIR [--top-n-models TOP_N_MODELS]
+
+options:
+  -h, --help            show this help message and exit
+  --models MODELS
+  --output-dir OUTPUT_DIR
+  --top-n-models TOP_N_MODELS

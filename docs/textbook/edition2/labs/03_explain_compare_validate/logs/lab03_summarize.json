@@ -1,0 +1,39 @@
+{
+  "architecture": "arm64",
+  "command": [
+    "docs/textbook/edition2/build/runtime_env/bin/dimple-gwas",
+    "summarize-models",
+    "--models",
+    "docs/textbook/edition2/labs/01_fixed_synthetic/run_20260826/models/ranked_models.tsv",
+    "--output-dir",
+    "docs/textbook/edition2/labs/03_explain_compare_validate/summaries_20260826",
+    "--top-n-models",
+    "1"
+  ],
+  "command_display": "docs/textbook/edition2/build/runtime_env/bin/dimple-gwas summarize-models --models docs/textbook/edition2/labs/01_fixed_synthetic/run_20260826/models/ranked_models.tsv --output-dir docs/textbook/edition2/labs/03_explain_compare_validate/summaries_20260826 --top-n-models 1",
+  "end_utc": "2026-08-26T02:58:40.842353+00:00",
+  "exit_code": 0,
+  "inputs": [
+    {
+      "exists": true,
+      "path": "docs/textbook/edition2/labs/01_fixed_synthetic/run_20260826/models/ranked_models.tsv",
+      "sha256": "bd980cac73d772006f21462f63015a2c947e8c6391cc89c5137cd8f61ea1209a"
+    }
+  ],
+  "name": "lab03_summarize",
+  "os": "Darwin",
+  "os_release": "25.5.0",
+  "python": "3.12.13",
+  "runtime_seconds": 0.399363,
+  "schema": "dimple-gwas.textbook-command-record.v1",
+  "start_utc": "2026-08-26T02:58:40.442990+00:00",
+  "stderr_log": "lab03_summarize.stderr.log",
+  "stdout_log": "lab03_summarize.stdout.log",
+  "thread_controls": {
+    "MKL_NUM_THREADS": null,
+    "NUMBA_NUM_THREADS": null,
+    "OMP_NUM_THREADS": null,
+    "OPENBLAS_NUM_THREADS": null
+  },
+  "working_directory": "<FREEZE3>"
+}

@@ -1,0 +1,5 @@
+name=cli_summarize-models_help
+started_at_utc=2026-08-26T15:21:28Z
+ended_at_utc=2026-08-26T15:21:28Z
+exit_status=0
+command=../DIMPLE-GWAS-freeze2/.venv/bin/python -m dimple_gwas summarize-models --help 

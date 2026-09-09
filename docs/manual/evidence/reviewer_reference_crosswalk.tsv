@@ -1,0 +1,7 @@
+reviewer_point	method_issue	verified_sources	resolution	manual_location
+Reviewer #2 major 1	Position DIMPLE-GWAS as hypothesis-free phenotype grouping and complement to multivariate association/decomposition.	mostest2020; genomicsem2019; oblong2024	accepted and bounded	Chapters 1, 7, 31
+Reviewer #2 major 2	Do not equate modality alignment or noise status with biological distinctiveness.	hofer2020; hdbscan2015	accepted	Chapters 28-30, 36
+Reviewer #2 major 3	Use effect sizes/uncertainty rather than p-values alone for external validation.	reviewer action register	outside executable Stage 1 manual; principle included	Chapters 29-31
+Reviewer #2 major 4	Parameter guidance and complete tutorial.	umapdocs; hdbscandocs	implemented in draft	Chapters 11-23, 32-44
+Reviewer #2 major 6	Readable 2D figures and self-defining captions.	reviewer action register	applied to manual figures	Chapters 27, 32-36
+Gemini reviewer crosswalk	Attribution to Zhang/Yang/Zhao	oblong2024; zhang2023	partly rejected/unresolved	Reviewer-method appendix

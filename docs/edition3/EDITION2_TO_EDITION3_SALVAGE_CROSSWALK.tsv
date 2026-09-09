@@ -1,0 +1,21 @@
+edition2_source	edition3_destination	decision	rationale
+front_matter/*	textbook/front_matter/*	rewrite	Preserve release identity while simplifying reader paths and evidence vocabulary.
+chapters/01-05	textbook/chapters/01-04	rewrite	Remove audit scaffolds and establish a coherent scientific/geometry progression.
+chapters/06	textbook/chapters/02-03; workbook/labs/01-02	preserve_rewrite	Exact data contract and RINT order retained; teaching split from operation.
+chapters/07	textbook/chapters/05-06	preserve_rewrite	Strong mathematical core retained; UMAP and densMAP separated for pacing.
+chapters/08	textbook/chapters/07	rewrite	Clarify concatenation as an empirical multi-view representation, not consensus.
+chapters/09	textbook/chapters/08	preserve_rewrite	Hierarchy mathematics retained with more deliberate noise interpretation.
+chapters/10-11	textbook/chapters/09-10; workbook/labs/04	rewrite	Search and selection separated; table-relative score and historical manual selection foregrounded.
+chapters/12	textbook/chapters/11; workbook/labs/05	preserve_rewrite	Reproduction and comparison reorganized around levels of equivalence.
+chapters/13-17	workbook/labs/00-06; reference/*	relocate	Operational sequence belongs in workbook; exact lookup contracts belong in reference.
+chapters/18	workbook/labs/02; textbook/appendices/A_hand_calculations.md	preserve_rewrite	Hand calculations retained and shortened around the conceptual dependency chain.
+chapters/19-21	workbook/labs/03-06; textbook/chapters/14	preserve_rewrite	Executed evidence becomes a progressive case study rather than repeated output cards.
+chapters/22	textbook/chapters/14; workbook/labs/07-08	rewrite	Separate benchmark, retained historical adaptation, and pending full-run protocol.
+chapters/23-24	textbook/chapters/11-15; reference/provenance/*	rewrite_relocate	Scientific narrative retained; release matrices and reviewer traceability moved to reference.
+appendices/A-B	reference/cli; reference/configuration	preserve_update	Regenerate from current CLI/config evidence.
+appendices/C-D	ref/function_atlas; ref/output_atlas	preserve_update	Regenerate from Stage 1 implementation and coverage registers.
+appendices/E-G	reference/errors; workbook/troubleshooting; reference/provenance	preserve_rewrite	Keep operational value and update status language.
+appendices/H-I	textbook/appendices/notation_and_glossary.md	preserve_rewrite	Consolidate notation and glossary for one reader path.
+appendices/J	workbook/exercises/SOLUTIONS.md	rewrite	Replace generic exercise patterns with task-specific solutions.
+appendices/K-M	textbook/appendices/bibliography_and_evidence.md; evidence/*	preserve_update	Use verified Stage 1 bibliography and claim/reviewer crosswalk.
+appendices/N-O	KNOWN_LIMITATIONS_AND_PENDING_VALIDATION.md; reference/provenance/*	preserve_update	Carry current Stage 1 limitations without implying Docker/full-run completion.

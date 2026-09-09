@@ -1,0 +1,168 @@
+{
+  "architecture": "arm64",
+  "artifacts": {
+    "README.md": {
+      "path": "/Users/maxlam/Downloads/Cogent-analysis-audit/DIMPLE-GWAS/DIMPLE-GWAS-freeze3/docs/textbook/edition2/labs/03_explain_compare_validate/interpret_alias_20260826/README.md",
+      "sha256": "ff2578b9fb2b0e9c4a0fd21e7863ec2d093c1a48a800117f9fce89a184d2aea5",
+      "size_bytes": 615
+    },
+    "cluster_cutpoints.tsv": {
+      "path": "/Users/maxlam/Downloads/Cogent-analysis-audit/DIMPLE-GWAS/DIMPLE-GWAS-freeze3/docs/textbook/edition2/labs/03_explain_compare_validate/interpret_alias_20260826/cluster_cutpoints.tsv",
+      "sha256": "e0041df0616aa94455591d23b4b796627090fbbf1c9c3148b59c55d73d118d9a",
+      "size_bytes": 137
+    },
+    "cluster_summary.tsv": {
+      "path": "/Users/maxlam/Downloads/Cogent-analysis-audit/DIMPLE-GWAS/DIMPLE-GWAS-freeze3/docs/textbook/edition2/labs/03_explain_compare_validate/interpret_alias_20260826/cluster_summary.tsv",
+      "sha256": "92d5e525c9d5d468fd5f2f9a79bac65d18c8c4dbcca42596ccd13d78da3a0b48",
+      "size_bytes": 415
+    },
+    "exclusions.tsv": {
+      "path": "/Users/maxlam/Downloads/Cogent-analysis-audit/DIMPLE-GWAS/DIMPLE-GWAS-freeze3/docs/textbook/edition2/labs/03_explain_compare_validate/interpret_alias_20260826/exclusions.tsv",
+      "sha256": "b76d64749646c2ebcb6d271854c6ee377c25b6d1067c8f4e1930a7feb526ee60",
+      "size_bytes": 25
+    },
+    "heatmap_order.tsv": {
+      "path": "/Users/maxlam/Downloads/Cogent-analysis-audit/DIMPLE-GWAS/DIMPLE-GWAS-freeze3/docs/textbook/edition2/labs/03_explain_compare_validate/interpret_alias_20260826/heatmap_order.tsv",
+      "sha256": "d5c6095ee98bebd8a46b6aec0a8c1416ecfb84d9f195010f2e2610d084d3657f",
+      "size_bytes": 1329
+    },
+    "original_space_heatmap.html": {
+      "path": "/Users/maxlam/Downloads/Cogent-analysis-audit/DIMPLE-GWAS/DIMPLE-GWAS-freeze3/docs/textbook/edition2/labs/03_explain_compare_validate/interpret_alias_20260826/original_space_heatmap.html",
+      "sha256": "f6fedb4eb85225f428f7c3f12c7c00139fd95b79fff7908ace0813b6b6d289d3",
+      "size_bytes": 3808
+    },
+    "original_space_heatmap.png": {
+      "path": "/Users/maxlam/Downloads/Cogent-analysis-audit/DIMPLE-GWAS/DIMPLE-GWAS-freeze3/docs/textbook/edition2/labs/03_explain_compare_validate/interpret_alias_20260826/original_space_heatmap.png",
+      "sha256": "3ae196707ea2b8b05ce25216e8359c1ec0a2c4c3efdf9936302c11806adf8b8e",
+      "size_bytes": 1177
+    },
+    "original_space_similarity.tsv.gz": {
+      "path": "/Users/maxlam/Downloads/Cogent-analysis-audit/DIMPLE-GWAS/DIMPLE-GWAS-freeze3/docs/textbook/edition2/labs/03_explain_compare_validate/interpret_alias_20260826/original_space_similarity.tsv.gz",
+      "sha256": "7857a8c0126b897d8832d0f96f164fbcf48eba4bf2abfe16614c58bb9928c472",
+      "size_bytes": 3801
+    },
+    "projection_quality.tsv": {
+      "path": "/Users/maxlam/Downloads/Cogent-analysis-audit/DIMPLE-GWAS/DIMPLE-GWAS-freeze3/docs/textbook/edition2/labs/03_explain_compare_validate/interpret_alias_20260826/projection_quality.tsv",
+      "sha256": "cfb47f94a35209c39bb5fd1024bc8ef755d26ea01146103e12cd2ece3b653ecc",
+      "size_bytes": 312
+    }
+  },
+  "command": "dimple-gwas interpret --model-json docs/textbook/edition2/labs/01_fixed_synthetic/run_20260826/models/top_model_artifacts/model_060fac0208bb58e2/summary.json --input benchmarks/synthetic/synthetic_matrix.tsv --output-dir docs/textbook/edition2/labs/03_explain_compare_validate/interpret_alias_20260826",
+  "data_contract": {
+    "complete_match_required": true,
+    "coordinate_columns": [
+      "UMAP_1",
+      "UMAP_2",
+      "UMAP_3"
+    ],
+    "drop_first_n_cols": 4,
+    "id_column": "feature_id",
+    "label_column": "label",
+    "orientation": "variants_by_vectors",
+    "preprocessing": "none",
+    "vector_id_source": "matrix_columns"
+  },
+  "exclusions": [],
+  "failures": [],
+  "finished_at_utc": "2026-08-26T03:09:44.641686+00:00",
+  "git_commit": null,
+  "interpretation_configuration": {
+    "coordinate_associations": false,
+    "coordinate_methods": [
+      "pearson"
+    ],
+    "force_large_matrix": false,
+    "max_full_heatmap": 1200,
+    "noise_policy": "separate_last",
+    "order": "cluster_then_hclust",
+    "require_complete_match": true,
+    "similarity_metric": "pearson",
+    "top_n_associations": 100,
+    "undefined_correlation": "error",
+    "write_similarity": true
+  },
+  "manifest_schema": "dimple-gwas.interpretation.v3",
+  "mode": "native",
+  "model_id": "model_060fac0208bb58e2",
+  "operating_system": "Darwin",
+  "package_source_sha256": "df87825992ab51dc016c673cf420a978ba5c161bd6c755e00a5199ead310e65b",
+  "package_versions": {
+    "Pillow": "12.3.0",
+    "PyYAML": "6.0.3",
+    "hdbscan": "0.8.44",
+    "joblib": "1.5.3",
+    "matplotlib": "3.11.1",
+    "numpy": "2.5.2",
+    "openpyxl": "3.1.5",
+    "pandas": "3.0.5",
+    "plotly": "7.0.0",
+    "pyarrow": "25.0.1",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.18.1",
+    "umap-learn": "0.5.12",
+    "xlrd": "2.0.2"
+  },
+  "platform": "macOS-26.5.1-arm64-arm-64bit",
+  "python_version": "3.12.13",
+  "rendering": {
+    "rendered_vectors": 24,
+    "sampling": "none",
+    "selected_order_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "total_vectors": 24
+  },
+  "runtime_seconds": 1.2240778329996829,
+  "software": "DIMPLE-GWAS Freeze 3",
+  "software_version": "3.0.0rc1",
+  "sources": {
+    "input": {
+      "path": "/Users/maxlam/Downloads/Cogent-analysis-audit/DIMPLE-GWAS/DIMPLE-GWAS-freeze3/benchmarks/synthetic/synthetic_matrix.tsv",
+      "sha256": "77d1956fd074da9d82ce0d6a9c896446895a5e22b2fc6da85417169d13b9bb01",
+      "size_bytes": 38457
+    },
+    "labels": {
+      "path": "/Users/maxlam/Downloads/Cogent-analysis-audit/DIMPLE-GWAS/DIMPLE-GWAS-freeze3/docs/textbook/edition2/labs/01_fixed_synthetic/run_20260826/models/top_model_artifacts/model_060fac0208bb58e2/labels.tsv",
+      "sha256": "5b7ba37a542efcceebd5d39a69342279e44565f017c2c099e36060c3eb0496ee",
+      "size_bytes": 1099
+    },
+    "model_json": {
+      "path": "/Users/maxlam/Downloads/Cogent-analysis-audit/DIMPLE-GWAS/DIMPLE-GWAS-freeze3/docs/textbook/edition2/labs/01_fixed_synthetic/run_20260826/models/top_model_artifacts/model_060fac0208bb58e2/summary.json",
+      "sha256": "00f239a03e5d585b6435945cb898c1a1ec1d00ad388fde386e55600999e511b6",
+      "size_bytes": 5726
+    }
+  },
+  "started_at_utc": "2026-08-26T03:09:43.417829+00:00",
+  "status": "complete",
+  "undefined_similarity_cells": 0,
+  "vector_counts": {
+    "analyzed": 24,
+    "excluded": 0,
+    "label_rows": 24,
+    "matrix_vectors": 24
+  },
+  "warnings": []
+}

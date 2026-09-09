@@ -1,0 +1,35 @@
+{
+  "edge_cases": {
+    "ineligible": "status is not success or silhouette is unavailable; score is null",
+    "zero_component_max": "normalized component is 0",
+    "zero_final_range": "all eligible scores are 1",
+    "zero_total_range": "equal weights across active components"
+  },
+  "eligible_models": 333,
+  "fit_include_noise": true,
+  "formula": "For eligible candidates, component_normalized = component / component.max(). Each component weight is its raw dynamic range divided by the sum of raw ranges. raw_score = w_silhouette*silhouette_normalized + w_clusters*number_of_clusters_normalized - w_noise*noise_points_normalized. When fit_include_noise=false, noise_points_for_score=0 and w_noise=0. score=(raw_score-min(raw_score))/(max(raw_score)-min(raw_score)); a zero score range maps to 1.",
+  "input_schema": {
+    "column_migrations": {
+      "<implicit>": "status=success",
+      "<row order>": "model_id",
+      "Clusters": "number_of_clusters",
+      "Epsilon": "hdbscan_cluster_selection_epsilon",
+      "Min_cluster_size": "hdbscan_min_cluster_size",
+      "Min_samples": "hdbscan_min_samples",
+      "Noise_points": "number_of_noise_points",
+      "Silhouette_avg": "silhouette"
+    },
+    "source_rows": 333
+  },
+  "profile": "legacy_dimple",
+  "raw_ranges": {
+    "number_of_clusters": 3.0,
+    "number_of_noise_points": 47.0,
+    "silhouette": 0.317119315624211
+  },
+  "weights": {
+    "number_of_clusters": 0.059621855161896276,
+    "number_of_noise_points": 0.9340757308697083,
+    "silhouette": 0.006302413968395459
+  }
+}

@@ -1,0 +1,5 @@
+name=fixed_summarize
+started_at_utc=2026-08-26T15:22:04Z
+ended_at_utc=2026-08-26T15:22:04Z
+exit_status=0
+command=../DIMPLE-GWAS-freeze2/.venv/bin/python -m dimple_gwas summarize-models --models docs/edition3/qa/stage1/generated/fixed_run/models/all_models.tsv --output-dir docs/edition3/qa/stage1/generated/fixed_summaries --top-n-models 1 

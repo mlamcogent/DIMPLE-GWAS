@@ -1,0 +1,73 @@
+chapter	objective_id	learning_objective	assessment
+1	LO-01.1	Define Stage 1 units	chapter exercise and evidence walk-through
+1	LO-01.2	separate discovery from validation	chapter exercise and evidence walk-through
+1	LO-01.3	locate evidence status	chapter exercise and evidence walk-through
+2	LO-02.1	Construct vector notation	chapter exercise and evidence walk-through
+2	LO-02.2	explain LD/sample-overlap cautions	chapter exercise and evidence walk-through
+2	LO-02.3	interpret distances	chapter exercise and evidence walk-through
+3	LO-03.1	Compare metrics	chapter exercise and evidence walk-through
+3	LO-03.2	reason about scaling	chapter exercise and evidence walk-through
+3	LO-03.3	distinguish sensitivity from proof	chapter exercise and evidence walk-through
+4	LO-04.1	Contrast objectives	chapter exercise and evidence walk-through
+4	LO-04.2	explain neighborhood preservation	chapter exercise and evidence walk-through
+4	LO-04.3	locate non-identifiability	chapter exercise and evidence walk-through
+5	LO-05.1	Explain density partitions	chapter exercise and evidence walk-through
+5	LO-05.2	classify validation	chapter exercise and evidence walk-through
+5	LO-05.3	identify double dipping	chapter exercise and evidence walk-through
+6	LO-06.1	Validate input	chapter exercise and evidence walk-through
+6	LO-06.2	calculate RINT	chapter exercise and evidence walk-through
+6	LO-06.3	trace transpose and identifier handling	chapter exercise and evidence walk-through
+7	LO-07.1	Derive graph weights	chapter exercise and evidence walk-through
+7	LO-07.2	interpret cross-entropy	chapter exercise and evidence walk-through
+7	LO-07.3	explain densMAP trade-offs	chapter exercise and evidence walk-through
+8	LO-08.1	Derive seed schedule	chapter exercise and evidence walk-through
+8	LO-08.2	prove distance identity	chapter exercise and evidence walk-through
+8	LO-08.3	diagnose unaligned-run effects	chapter exercise and evidence walk-through
+9	LO-09.1	Calculate mutual reachability	chapter exercise and evidence walk-through
+9	LO-09.2	read hierarchy	chapter exercise and evidence walk-through
+9	LO-09.3	interpret -1 responsibly	chapter exercise and evidence walk-through
+10	LO-10.1	Enumerate products	chapter exercise and evidence walk-through
+10	LO-10.2	estimate compute	chapter exercise and evidence walk-through
+10	LO-10.3	trace candidate failure retention	chapter exercise and evidence walk-through
+11	LO-11.1	Derive metrics	chapter exercise and evidence walk-through
+11	LO-11.2	hand-score candidates	chapter exercise and evidence walk-through
+11	LO-11.3	analyze population dependence	chapter exercise and evidence walk-through
+12	LO-12.1	Replay fixed parameters	chapter exercise and evidence walk-through
+12	LO-12.2	compare partitions	chapter exercise and evidence walk-through
+12	LO-12.3	distinguish reconstruction layers	chapter exercise and evidence walk-through
+13	LO-13.1	Create clean environment	chapter exercise and evidence walk-through
+13	LO-13.2	verify version/help	chapter exercise and evidence walk-through
+13	LO-13.3	run a bounded smoke path	chapter exercise and evidence walk-through
+14	LO-14.1	Apply precedence	chapter exercise and evidence walk-through
+14	LO-14.2	validate keys	chapter exercise and evidence walk-through
+14	LO-14.3	predict exact candidate count	chapter exercise and evidence walk-through
+15	LO-15.1	Launch safely	chapter exercise and evidence walk-through
+15	LO-15.2	read progress	chapter exercise and evidence walk-through
+15	LO-15.3	recover from retained failures	chapter exercise and evidence walk-through
+16	LO-16.1	Summarize rankings	chapter exercise and evidence walk-through
+16	LO-16.2	select without leakage	chapter exercise and evidence walk-through
+16	LO-16.3	replay and validate	chapter exercise and evidence walk-through
+17	LO-17.1	Align IDs	chapter exercise and evidence walk-through
+17	LO-17.2	compute correlations	chapter exercise and evidence walk-through
+17	LO-17.3	read heatmaps without causal overclaim	chapter exercise and evidence walk-through
+18	LO-18.1	Perform manual transform	chapter exercise and evidence walk-through
+18	LO-18.2	compute metrics	chapter exercise and evidence walk-through
+18	LO-18.3	distinguish label equivalence	chapter exercise and evidence walk-through
+19	LO-19.1	Execute fixed fixture	chapter exercise and evidence walk-through
+19	LO-19.2	audit every output	chapter exercise and evidence walk-through
+19	LO-19.3	reproduce selected model	chapter exercise and evidence walk-through
+20	LO-20.1	Design bounded grid	chapter exercise and evidence walk-through
+20	LO-20.2	compare candidate populations	chapter exercise and evidence walk-through
+20	LO-20.3	replay selection	chapter exercise and evidence walk-through
+21	LO-21.1	Execute post-run commands	chapter exercise and evidence walk-through
+21	LO-21.2	inspect joins	chapter exercise and evidence walk-through
+21	LO-21.3	phrase bounded findings	chapter exercise and evidence walk-through
+22	LO-22.1	Separate public engineering benchmark from genetics	chapter exercise and evidence walk-through
+22	LO-22.2	distinguish historical/fresh tracks	chapter exercise and evidence walk-through
+22	LO-22.3	apply acceptance criteria	chapter exercise and evidence walk-through
+23	LO-23.1	Design layered validation	chapter exercise and evidence walk-through
+23	LO-23.2	choose tolerances	chapter exercise and evidence walk-through
+23	LO-23.3	identify pending cross-platform work	chapter exercise and evidence walk-through
+24	LO-24.1	Write methods from manifests	chapter exercise and evidence walk-through
+24	LO-24.2	disclose limitations	chapter exercise and evidence walk-through
+24	LO-24.3	migrate historical workflows	chapter exercise and evidence walk-through

@@ -1,0 +1,2 @@
+trustworthiness	continuity	trust_k_requested	trust_k_used	trust_sampled	trust_sample_size	trust_original_sample_size	embedding_quality_metric	scope	coordinate_columns
+0.8636363636363636	0.8766233766233766	30	11	False	24	24	euclidean	supplied_visualization_projection_not_clustering_validity	UMAP_1,UMAP_2,UMAP_3

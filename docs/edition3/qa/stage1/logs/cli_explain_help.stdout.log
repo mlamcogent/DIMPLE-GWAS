@@ -1,0 +1,59 @@
+usage: dimple-gwas explain [-h]
+                           (--model-json MODEL_JSON | --legacy-table LEGACY_TABLE)
+                           [--input INPUT_PATH] [--outdir OUTPUT_DIR]
+                           [--config CONFIG] [--input-sep INPUT_SEP]
+                           [--input-sheet INPUT_SHEET]
+                           [--legacy-sheet LEGACY_SHEET]
+                           [--matrix-orientation {auto,variants_by_vectors,vectors_by_variants}]
+                           [--vector-id-source VECTOR_ID_SOURCE]
+                           [--drop-first-n-cols DROP_FIRST_N_COLS]
+                           [--zscore-transform {none,rint}]
+                           [--id-column ID_COLUMN]
+                           [--label-column LABEL_COLUMN]
+                           [--coordinate-columns COORDINATE_COLUMNS]
+                           [--similarity-metric {pearson,spearman}]
+                           [--order {cluster_then_hclust,cluster,hclust,input}]
+                           [--noise-policy {separate_last,include,exclude}]
+                           [--undefined-correlation {error,zero}]
+                           [--require-complete-match]
+                           [--allow-incomplete-match]
+                           [--max-full-heatmap MAX_FULL_HEATMAP]
+                           [--write-similarity] [--no-write-similarity]
+                           [--force-large-matrix] [--coordinate-associations]
+                           [--coordinate-methods COORDINATE_METHODS]
+                           [--top-n-associations TOP_N_ASSOCIATIONS]
+
+options:
+  -h, --help            show this help message and exit
+  --model-json MODEL_JSON
+                        Native top-model summary.json
+  --legacy-table LEGACY_TABLE
+                        Legacy label/UMAP table (CSV/TSV/XLSX)
+  --input INPUT_PATH    Original matrix; optional native path override
+  --outdir OUTPUT_DIR, --output-dir OUTPUT_DIR
+  --config CONFIG       Optional Freeze 3 YAML providing interpretation
+                        defaults
+  --input-sep INPUT_SEP
+  --input-sheet INPUT_SHEET
+  --legacy-sheet LEGACY_SHEET
+  --matrix-orientation {auto,variants_by_vectors,vectors_by_variants}
+  --vector-id-source VECTOR_ID_SOURCE
+  --drop-first-n-cols DROP_FIRST_N_COLS
+  --zscore-transform {none,rint}
+  --id-column ID_COLUMN
+  --label-column LABEL_COLUMN
+  --coordinate-columns COORDINATE_COLUMNS
+                        Comma-separated supplied UMAP columns
+  --similarity-metric {pearson,spearman}
+  --order {cluster_then_hclust,cluster,hclust,input}
+  --noise-policy {separate_last,include,exclude}
+  --undefined-correlation {error,zero}
+  --require-complete-match
+  --allow-incomplete-match
+  --max-full-heatmap MAX_FULL_HEATMAP
+  --write-similarity
+  --no-write-similarity
+  --force-large-matrix
+  --coordinate-associations
+  --coordinate-methods COORDINATE_METHODS
+  --top-n-associations TOP_N_ASSOCIATIONS

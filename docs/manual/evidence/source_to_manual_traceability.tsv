@@ -1,0 +1,15 @@
+source_file	implementation_responsibility	manual_chapters	evidence_or_claim
+dimple_gwas/config.py	configuration defaults, precedence, validation	9-14	configuration_key_reference.tsv; command_and_flag_matrix.tsv
+dimple_gwas/preprocessing.py	input orientation, numeric checks, RINT	10, 15	claim DATA-001/002
+dimple_gwas/search_space.py	Cartesian enumeration and stable identifiers	12, 14, 18	search manifests
+dimple_gwas/umap_runner.py	repeated seeded UMAP/densMAP and concatenation	16-17	claim PIPE-002
+dimple_gwas/hdbscan_runner.py	contrib hdbscan fitting	18	claim PIPE-004
+dimple_gwas/metrics.py	topology, silhouette, DBCV, trust/continuity	19	claim SCORE-001/002
+dimple_gwas/scoring.py	legacy and custom score calculations	20	scoring manifests
+dimple_gwas/ranking.py	rank, top-N, Pareto, family summaries	21	model-selection manifest
+dimple_gwas/reporting.py	run and model artifacts	22, 39-41	output atlas
+dimple_gwas/provenance.py	source/input/artifact checksums and environment	37, 42	run manifests
+dimple_gwas/interpretation.py	original-space descriptive explanation	24-29	tutorial 3
+dimple_gwas/comparison.py	ID-matched structural/coordinate comparison	30, 34	tutorial 3
+dimple_gwas/validation.py	artifact/schema/hash checks	30, 42	tutorial 3
+dimple_gwas/cli.py	public commands and CLI precedence	9, 32-34, 38	captured --help

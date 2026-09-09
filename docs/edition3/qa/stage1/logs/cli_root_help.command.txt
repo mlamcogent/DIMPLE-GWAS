@@ -1,0 +1,5 @@
+name=cli_root_help
+started_at_utc=2026-08-26T15:21:27Z
+ended_at_utc=2026-08-26T15:21:27Z
+exit_status=0
+command=../DIMPLE-GWAS-freeze2/.venv/bin/python -m dimple_gwas --help 

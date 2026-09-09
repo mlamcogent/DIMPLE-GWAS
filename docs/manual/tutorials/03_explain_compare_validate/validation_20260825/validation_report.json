@@ -1,0 +1,9 @@
+{
+  "checks": 24,
+  "failures": 0,
+  "passed": 24,
+  "run_dir": "/Users/maxlam/Downloads/Cogent-analysis-audit/DIMPLE-GWAS/DIMPLE-GWAS-freeze3/docs/manual/tutorials/01_fixed_synthetic/run_20260825_v2",
+  "status": "pass",
+  "validation_schema": "dimple-gwas.validation.v3",
+  "warnings": 0
+}

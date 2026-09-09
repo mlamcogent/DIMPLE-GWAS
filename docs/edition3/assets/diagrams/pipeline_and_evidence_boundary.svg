@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+  <title id="title">DIMPLE-GWAS pipeline and evidence boundary</title>
+  <desc id="desc">Seven connected stages run from upstream GWAS quality control through matrix preparation, repeated embedding, HDBSCAN search, scoring, retained artifacts, and scientific follow-up. A dashed boundary shows that upstream harmonization and downstream biological validation are outside the core pipeline.</desc>
+  <defs><style>
+    .box{fill:#eef5fa;stroke:#235789;stroke-width:2}.outside{fill:#f7f7f7;stroke:#6b7280;stroke-width:2;stroke-dasharray:8 6}.arrow{stroke:#235789;stroke-width:3;fill:none;marker-end:url(#m)}
+    .h{font:700 23px Arial,sans-serif;fill:#17324d}.t{font:18px Arial,sans-serif;fill:#243746}.s{font:15px Arial,sans-serif;fill:#4b5563}.label{font:700 16px Arial,sans-serif;fill:#7a4c00}
+  </style><marker id="m" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L10,3 L0,6 Z" fill="#235789"/></marker></defs>
+  <text x="600" y="38" text-anchor="middle" class="h">From association matrix to an auditable exploratory partition</text>
+  <rect x="30" y="88" width="180" height="116" rx="14" class="outside"/><text x="120" y="120" text-anchor="middle" class="t">Upstream GWAS</text><text x="120" y="150" text-anchor="middle" class="s">alignment, LD, scale,</text><text x="120" y="174" text-anchor="middle" class="s">overlap, ancestry, QC</text>
+  <rect x="245" y="88" width="180" height="116" rx="14" class="box"/><text x="335" y="120" text-anchor="middle" class="t">Prepare matrix</text><text x="335" y="150" text-anchor="middle" class="s">metadata removal,</text><text x="335" y="174" text-anchor="middle" class="s">validation, optional RINT</text>
+  <rect x="460" y="88" width="180" height="116" rx="14" class="box"/><text x="550" y="120" text-anchor="middle" class="t">Repeated UMAP</text><text x="550" y="150" text-anchor="middle" class="s">seeded views, then</text><text x="550" y="174" text-anchor="middle" class="s">coordinate concatenation</text>
+  <rect x="675" y="88" width="180" height="116" rx="14" class="box"/><text x="765" y="120" text-anchor="middle" class="t">HDBSCAN search</text><text x="765" y="150" text-anchor="middle" class="s">density hierarchies,</text><text x="765" y="174" text-anchor="middle" class="s">clusters and noise</text>
+  <rect x="890" y="88" width="180" height="116" rx="14" class="box"/><text x="980" y="120" text-anchor="middle" class="t">Score and retain</text><text x="980" y="150" text-anchor="middle" class="s">ranking, ties, labels,</text><text x="980" y="174" text-anchor="middle" class="s">manifests and failures</text>
+  <path d="M210 146 H245" class="arrow"/><path d="M425 146 H460" class="arrow"/><path d="M640 146 H675" class="arrow"/><path d="M855 146 H890" class="arrow"/>
+  <rect x="350" y="290" width="220" height="120" rx="14" class="box"/><text x="460" y="324" text-anchor="middle" class="t">Structural checking</text><text x="460" y="354" text-anchor="middle" class="s">integrity, comparison,</text><text x="460" y="378" text-anchor="middle" class="s">stability and sensitivity</text>
+  <rect x="630" y="290" width="220" height="120" rx="14" class="outside"/><text x="740" y="324" text-anchor="middle" class="t">Scientific follow-up</text><text x="740" y="354" text-anchor="middle" class="s">independent evidence,</text><text x="740" y="378" text-anchor="middle" class="s">selection-aware inference</text>
+  <path d="M980 204 V246 H460 V290" class="arrow"/><path d="M570 350 H630" class="arrow"/>
+  <path d="M225 246 H1080" stroke="#b7791f" stroke-width="2" stroke-dasharray="10 7"/><text x="650" y="270" text-anchor="middle" class="label">Core DIMPLE-GWAS software boundary</text>
+  <text x="600" y="470" text-anchor="middle" class="s">A software-complete path does not by itself close the upstream data-quality or downstream biological-validation gates.</text>
+  <text x="600" y="500" text-anchor="middle" class="s">Every interpretation inherits the input construction, representation, metric, parameter search and selection rule.</text>
+</svg>

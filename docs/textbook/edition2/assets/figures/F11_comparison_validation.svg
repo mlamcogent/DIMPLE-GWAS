@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">Comparison tests structure after identifier alignment</title><desc id="desc">Partition, noise, geometry, and artifact validity are separate questions.</desc>
+<defs><marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#2f6f9f"/></marker>
+<filter id="shadow"><feDropShadow dx="0" dy="4" stdDeviation="5" flood-opacity="0.12"/></filter></defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="80" y="82" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700" fill="#17324d">Comparison tests structure after identifier alignment</text>
+<text x="80" y="124" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#617181">Partition, noise, geometry, and artifact validity are separate questions.</text>
+<rect x="90" y="230" width="310" height="190" rx="18" fill="#f3f7fa" stroke="#2f6f9f" stroke-width="3" filter="url(#shadow)"/>
+<text x="245.0" y="272" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#17324d">Left result</text>
+<text x="245.0" y="310" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">identifiers · labels</text>
+<text x="245.0" y="335" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">· optional</text>
+<text x="245.0" y="360" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">coordinates</text><rect x="90" y="520" width="310" height="190" rx="18" fill="#eaf5f3" stroke="#2a9d8f" stroke-width="3" filter="url(#shadow)"/>
+<text x="245.0" y="562" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#17324d">Right result</text>
+<text x="245.0" y="600" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">identifiers · labels</text>
+<text x="245.0" y="625" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">· optional</text>
+<text x="245.0" y="650" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">coordinates</text><line x1="400" y1="325" x2="700" y2="405" stroke="#2f6f9f" stroke-width="4" marker-end="url(#arrow)"/><line x1="400" y1="615" x2="700" y2="465" stroke="#2f6f9f" stroke-width="4" marker-end="url(#arrow)"/><rect x="700" y="310" width="430" height="250" rx="18" fill="#fff7df" stroke="#c79a2b" stroke-width="3" filter="url(#shadow)"/>
+<text x="915.0" y="352" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#17324d">Alignment and</text>
+<text x="915.0" y="382" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#17324d">concordance</text>
+<text x="915.0" y="420" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">ARI · NMI · VI · noise</text>
+<text x="915.0" y="445" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">Jaccard · mapped membership</text>
+<text x="915.0" y="470" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">· Procrustes</text><line x1="1130" y1="435" x2="1260" y2="435" stroke="#2f6f9f" stroke-width="4" marker-end="url(#arrow)"/><rect x="1260" y="335" width="260" height="200" rx="18" fill="#fff0ec" stroke="#e76f51" stroke-width="3" filter="url(#shadow)"/>
+<text x="1390.0" y="377" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#17324d">Validation</text>
+<text x="1390.0" y="407" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#17324d">report</text>
+<text x="1390.0" y="445" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">schema · files ·</text>
+<text x="1390.0" y="470" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">counts ·</text>
+<text x="1390.0" y="495" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">checksums ·</text>
+<text x="1390.0" y="520" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">contracts</text><rect x="510" y="670" width="730" height="42" rx="21" fill="#17324d"/><text x="875.0" y="698" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="white">Numeric label equality is neither necessary nor sufficient</text>
+<text x="80" y="858" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#617181">DIMPLE-GWAS Freeze 3 RC1 · Textbook Edition 2 · internal review</text>
+</svg>

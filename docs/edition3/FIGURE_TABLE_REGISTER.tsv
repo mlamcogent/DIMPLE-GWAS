@@ -1,0 +1,16 @@
+item_id	kind	title_or_topic	source	reader_build_representation	qa_status	evidence_boundary
+E3-FIG-001	figure	Pipeline and evidence boundary	assets/diagrams/pipeline_and_evidence_boundary.svg	PNG in all reader builds	visually_reviewed	Core workflow does not perform upstream GWAS QC or downstream biological confirmation
+E3-FIG-002	figure	Validation ladder	assets/diagrams/validation_ladder.svg	PNG in all reader builds	visually_reviewed	Lower-layer software validation does not confer biological validity
+E3-FIG-003	figure	Matrix orientation	assets/diagrams/matrix_orientation.svg	PNG in all reader builds	visually_reviewed	Unit clustered is the phenotype-associated vector after preprocessing and transpose
+E3-FIG-004	figure	Repeated embeddings	assets/diagrams/repeated_embeddings.svg	PNG in all reader builds	visually_reviewed	Horizontal concatenation is not consensus clustering
+E3-FIG-005	figure	Analysis hierarchy	assets/diagrams/analysis_hierarchy.svg	PNG in all reader builds	visually_reviewed	Synthetic, historical and manuscript analyses remain distinct
+E3-TBL-001	table	Hand-worked legacy score	textbook/chapters/10_scoring_selection_and_optimism.md	HTML table; compact labelled rows in DOCX/PDF	content_and_visual_pass	Illustrative arithmetic, not empirical evidence
+E3-TBL-002	table	Command map	reference/cli/CLI_REFERENCE.md	HTML table; compact labelled rows in DOCX/PDF	content_and_visual_pass	Live help remains authoritative for exact options
+E3-TBL-003	table	Search modes	reference/cli/CLI_REFERENCE.md	HTML table; compact labelled rows in DOCX/PDF	content_and_visual_pass	Candidate counts are built-in pre-override counts
+E3-TBL-004	table	Input configuration block	reference/configuration/CONFIGURATION_REFERENCE.md	HTML table; compact labelled rows in DOCX/PDF	content_and_visual_pass	Upstream harmonization remains outside the package
+E3-TBL-005	table	UMAP/densMAP configuration block	reference/configuration/CONFIGURATION_REFERENCE.md	HTML table; compact labelled rows in DOCX/PDF	content_and_visual_pass	Defaults are not universal scientific recommendations
+E3-TBL-006	table	HDBSCAN configuration block	reference/configuration/CONFIGURATION_REFERENCE.md	HTML table; compact labelled rows in DOCX/PDF	content_and_visual_pass	Noise is algorithmic non-assignment
+E3-TBL-007	table	Execution configuration block	reference/configuration/CONFIGURATION_REFERENCE.md	HTML table; compact labelled rows in DOCX/PDF	content_and_visual_pass	Default seed count can be computationally consequential
+E3-TBL-008	table	Function atlas	reference/function_atlas/FUNCTION_ATLAS.md	HTML table; compact labelled rows in DOCX/PDF	content_and_visual_pass	Full Stage 1 implementation register remains the exhaustive source
+E3-TBL-009	table	Errors and recovery	reference/errors/ERRORS_AND_RECOVERY.md	HTML table; compact labelled rows in DOCX/PDF	content_and_visual_pass	Responses preserve rather than overwrite evidence
+E3-TBL-010	table	Release matrix	reference/provenance/PROVENANCE_AND_RELEASE.md	HTML table; compact labelled rows in DOCX/PDF	content_and_visual_pass	Scientific and cross-platform layers remain open

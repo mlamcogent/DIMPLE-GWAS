@@ -1,0 +1,6 @@
+build/runtime_env/
+build/matplotlib_cache/
+build/tmp/
+qa/rendered_pages/
+qa/contact_sheets/
+*.DS_Store

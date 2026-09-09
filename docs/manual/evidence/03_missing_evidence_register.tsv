@@ -1,0 +1,7 @@
+gap_id	missing_evidence	affected_claim_or_task	bounded_handling	priority	status
+MISS-001	Git commit/tag metadata	required for commit-level release identity	Checksum manifest substitutes for this draft; Docker packaging should establish a versioned source identity.	high	open
+MISS-002	Fresh full 164-IDP 1,000-seed execution	scientific-freeze and fresh-reproduction claim	Deferred until Docker by coordinator; exact protocol included.	high	deferred
+MISS-003	Original 2,315-IDP raw matrix	fresh primary-analysis reproduction	Historical outputs only; no rerun claim.	high	open
+MISS-004	Original 459-IDP raw matrix and unambiguous parameters	fresh secondary-analysis reproduction	Historical outputs only; resolve against original run directory/log.	high	open
+MISS-005	Complete final editorial decision and remaining reviewer reports	journal-response crosswalk	Current textbook incorporates only materials present on build date.	medium	open
+MISS-006	Cross-platform Docker/GCP/AWS validation	container/cloud reproducibility claims	Explicitly out of scope; handoff supplied.	high	deferred

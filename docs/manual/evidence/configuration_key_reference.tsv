@@ -1,0 +1,58 @@
+key	standard_default	extended_default	fixed_default	custom_default	meaning	cli_exposure	source
+execution.candidate_jobs	1	1	1	1	Parallel HDBSCAN candidates; core-distance jobs become one when parallelized.	yes	dimple_gwas/config.py
+execution.compute_dbcv	true	true	true	true	Compute DBCV diagnostic when possible.	yes	dimple_gwas/config.py
+execution.legacy_ensemble_seeds	true	false	false	false	Use historical repeated-seed sequence.	yes	dimple_gwas/config.py
+execution.max_candidate_models	0	0	0	0	Hard safety ceiling; zero means unlimited.	yes	dimple_gwas/config.py
+execution.max_samples_silhouette	0	0	0	0	Maximum samples used for silhouette; zero means all.	yes	dimple_gwas/config.py
+execution.max_samples_trust	3000	3000	3000	3000	Maximum samples used for embedding trust/continuity; zero means all.	yes	dimple_gwas/config.py
+execution.n_jobs	-1	-1	-1	-1	Parallel jobs for repeated UMAP and HDBSCAN core distances.	yes	dimple_gwas/config.py
+execution.n_random_states	1000	10	1	1000	Number of repeated seeded embeddings per UMAP family.	yes	dimple_gwas/config.py
+execution.silhouette_seed	42	42	42	42	Subsampling seed for silhouette.	yes	dimple_gwas/config.py
+execution.strict	false	false	false	false	Abort when a UMAP family or candidate fails.	yes	dimple_gwas/config.py
+execution.top_n_models	20	20	20	20	Number of eligible ranked models retained.	yes	dimple_gwas/config.py
+execution.trust_k	30	30	30	30	Requested neighborhood size for trustworthiness/continuity.	yes	dimple_gwas/config.py
+execution.trust_seed	42	42	42	42	Subsampling seed for embedding-quality metrics.	yes	dimple_gwas/config.py
+execution.warn_candidate_count	5000	5000	5000	5000	Candidate-count warning threshold.	yes	dimple_gwas/config.py
+execution.write_parquet	true	true	true	true	Attempt supplementary Parquet model table.	yes	dimple_gwas/config.py
+hdbscan.allow_single_cluster	false	false	false	false	Permit a one-cluster result.	yes	dimple_gwas/config.py
+hdbscan.alpha	1.0	1.0	1.0	1.0	Robust single-linkage scaling parameter.	yes	dimple_gwas/config.py
+hdbscan.cluster_selection_epsilon	"{""start"": 0, ""step"": 1, ""stop"": 3}"	[0.0, 0.05]	0.0	"{""start"": 0, ""step"": 1, ""stop"": 3}"	Distance threshold used when extracting clusters.	yes	dimple_gwas/config.py
+hdbscan.cluster_selection_method	"""eom"""	"[""eom"", ""leaf""]"	"""eom"""	"""eom"""	EOM or leaf extraction.	yes	dimple_gwas/config.py
+hdbscan.cluster_selection_persistence	0.0	0.0	0.0	0.0	Minimum persistence threshold.	yes	dimple_gwas/config.py
+hdbscan.max_cluster_size	0	[0, 100]	0	0	EOM-only maximum size; zero means unlimited.	yes	dimple_gwas/config.py
+hdbscan.metric	"""euclidean"""	"[""euclidean"", ""cosine""]"	"""euclidean"""	"""euclidean"""	Distance metric supplied to contrib hdbscan and silhouette.	yes	dimple_gwas/config.py
+hdbscan.min_cluster_size	"{""start"": 5, ""step"": 1, ""stop"": 50}"	[5, 10, 20]	5	"{""start"": 5, ""step"": 1, ""stop"": 50}"	Smallest permitted cluster size.	yes	dimple_gwas/config.py
+hdbscan.min_samples	"{""start"": 2, ""step"": 1, ""stop"": 20}"	[2, 5, 10]	5	"{""start"": 2, ""step"": 1, ""stop"": 20}"	Density conservativeness/core-distance neighborhood.	yes	dimple_gwas/config.py
+input.annotation_file	null	null	null	null	Optional vector annotation table.	yes	dimple_gwas/config.py
+input.annotation_index_col	"""index"""	"""index"""	"""index"""	"""index"""	Annotation join column matched to retained feature_id.	yes	dimple_gwas/config.py
+input.drop_first_n_cols	4	4	4	4	Leading metadata columns excluded before transpose.	yes	dimple_gwas/config.py
+input.path	null	null	null	null	Variants-by-vectors CSV/TSV input path.	yes	dimple_gwas/config.py
+input.sep	null	null	null	null	Optional explicit input separator; otherwise inferred.	yes	dimple_gwas/config.py
+input.zscore_transform	"""none"""	"""none"""	"""none"""	"""none"""	Optional column-wise rank inverse normal transformation before transpose.	yes	dimple_gwas/config.py
+interpretation.coordinate_associations	false	false	false	false	Opt in to descriptive coordinate associations.	yes	dimple_gwas/config.py
+interpretation.coordinate_methods	"[""pearson""]"	"[""pearson""]"	"[""pearson""]"	"[""pearson""]"	Pearson and/or Spearman coordinate association methods.	yes	dimple_gwas/config.py
+interpretation.force_large_matrix	false	false	false	false	Override large-matrix protection.	yes	dimple_gwas/config.py
+interpretation.max_full_heatmap	1200	1200	1200	1200	Full heatmap size threshold.	yes	dimple_gwas/config.py
+interpretation.noise_policy	"""separate_last"""	"""separate_last"""	"""separate_last"""	"""separate_last"""	Place noise last, include it in ordering, or exclude it.	yes	dimple_gwas/config.py
+interpretation.order	"""cluster_then_hclust"""	"""cluster_then_hclust"""	"""cluster_then_hclust"""	"""cluster_then_hclust"""	Heatmap ordering: cluster_then_hclust, cluster, hclust, or input.	yes	dimple_gwas/config.py
+interpretation.require_complete_match	true	true	true	true	Require exact source/label identifier sets.	yes	dimple_gwas/config.py
+interpretation.similarity_metric	"""pearson"""	"""pearson"""	"""pearson"""	"""pearson"""	Pearson or Spearman similarity in the original variable space.	yes	dimple_gwas/config.py
+interpretation.top_n_associations	100	100	100	100	Maximum retained coordinate associations.	yes	dimple_gwas/config.py
+interpretation.undefined_correlation	"""error"""	"""error"""	"""error"""	"""error"""	Fail or replace undefined correlation with zero.	yes	dimple_gwas/config.py
+interpretation.write_similarity	true	true	true	true	Write the complete original-space similarity table.	yes	dimple_gwas/config.py
+scoring.custom	{}	{}	{}	{}	Metric rules with weight and maximize/minimize direction.	YAML only	dimple_gwas/config.py
+scoring.fit_include_noise	false	false	false	false	Include noise count in legacy dynamic-range fitting.	yes	dimple_gwas/config.py
+scoring.profile	"""legacy_dimple"""	"""legacy_dimple"""	"""legacy_dimple"""	"""legacy_dimple"""	legacy_dimple or explicit custom weighted score.	yes	dimple_gwas/config.py
+search_mode	"""standard"""	"""extended"""	"""fixed"""	"""custom"""	Built-in enumeration family: standard, extended, custom, or fixed.	yes	dimple_gwas/config.py
+umap.densmap	true	true	true	true	Enable density-augmented UMAP objective.	yes	dimple_gwas/config.py
+umap.learning_rate	1.0	1.0	1.0	1.0	UMAP optimizer initial learning rate.	yes	dimple_gwas/config.py
+umap.local_connectivity	1.0	1.0	1.0	1.0	Expected locally connected nearest neighbors.	yes	dimple_gwas/config.py
+umap.metric	"""euclidean"""	"[""euclidean"", ""cosine""]"	"""euclidean"""	"""euclidean"""	Metric used by UMAP to construct the neighbor graph.	yes	dimple_gwas/config.py
+umap.min_dist	0.0	[0.0, 0.1]	0.0	0.0	UMAP minimum embedding distance; searchable.	yes	dimple_gwas/config.py
+umap.n_components	3	3	3	3	Dimensions per repeated embedding; concatenated across repeats.	yes	dimple_gwas/config.py
+umap.n_neighbors	30	[15, 30, 50]	30	30	UMAP neighborhood size; searchable scalar/list/range.	yes	dimple_gwas/config.py
+umap.negative_sample_rate	5	5	5	5	Negative samples per positive optimization sample.	yes	dimple_gwas/config.py
+umap.random_state	42	42	42	42	Base seed used to derive repeated embedding seeds.	yes	dimple_gwas/config.py
+umap.repulsion_strength	1.0	1.0	1.0	1.0	UMAP negative-sample repulsion weight.	yes	dimple_gwas/config.py
+umap.set_op_mix_ratio	1.0	1.0	1.0	1.0	Fuzzy-set union/intersection interpolation.	yes	dimple_gwas/config.py
+umap.spread	1.0	1.0	1.0	1.0	Scale parameter paired with min_dist.	yes	dimple_gwas/config.py

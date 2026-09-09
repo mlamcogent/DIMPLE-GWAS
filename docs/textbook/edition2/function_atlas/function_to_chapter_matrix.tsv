@@ -1,0 +1,111 @@
+qualified_symbol	tier	planned_chapter	coverage_form
+cli._add_config_source	C	13–17; Appendix A	atlas reference entry
+cli._add_run_options	C	13–17; Appendix A	atlas reference entry
+cli._overrides	C	13–17; Appendix A	atlas reference entry
+cli._resolved	C	13–17; Appendix A	atlas reference entry
+cli.build_parser	A	13–17; Appendix A	full dossier
+cli._inspect	A	13–17; Appendix A	full dossier
+cli._show	A	13–17; Appendix A	full dossier
+cli._score	A	13–17; Appendix A	full dossier
+cli._summarize	A	13–17; Appendix A	full dossier
+cli._reproduce	A	13–17; Appendix A	full dossier
+cli._explain	A	13–17; Appendix A	full dossier
+cli._compare	A	13–17; Appendix A	full dossier
+cli._validate	A	13–17; Appendix A	full dossier
+cli.main	A	13–17; Appendix A	full dossier
+comparison._resolve_labels	C	12, 16, 21, 23	atlas reference entry
+comparison._columns	C	12, 16, 21, 23	atlas reference entry
+comparison._columns.<locals>.resolve	C	12, 16, 21, 23	atlas reference entry
+comparison._variation_of_information	C	12, 16, 21, 23	atlas reference entry
+comparison.run_comparison	A	12, 16, 21, 23	full dossier
+config._base_config	C	6, 10, 14; Appendix B	atlas reference entry
+config.builtin_config	B	6, 10, 14; Appendix B	operational/statistical dossier
+config.deep_merge	B	6, 10, 14; Appendix B	operational/statistical dossier
+config.load_yaml	B	6, 10, 14; Appendix B	operational/statistical dossier
+config.set_dotted	B	6, 10, 14; Appendix B	operational/statistical dossier
+config.resolve_config	A	6, 10, 14; Appendix B	full dossier
+config._coerce_bool	C	6, 10, 14; Appendix B	atlas reference entry
+config._range_values	C	6, 10, 14; Appendix B	atlas reference entry
+config._string_sequence	C	6, 10, 14; Appendix B	atlas reference entry
+config.as_list	B	6, 10, 14; Appendix B	operational/statistical dossier
+config.normalized_parameter_space	A	6, 10, 14; Appendix B	full dossier
+config._finite	C	6, 10, 14; Appendix B	atlas reference entry
+config.validate_config	A	6, 10, 14; Appendix B	full dossier
+config.config_as_json	B	6, 10, 14; Appendix B	operational/statistical dossier
+hdbscan_runner.estimator_kwargs	B	9	operational/statistical dossier
+hdbscan_runner.fit_hdbscan	A	9	full dossier
+interpretation.is_noise_label	B	17, 21	operational/statistical dossier
+interpretation.label_sort_key	B	17, 21	operational/statistical dossier
+interpretation.detect_coordinate_columns	B	17, 21	operational/statistical dossier
+interpretation._resolve_column	C	17, 21	atlas reference entry
+interpretation._native_sources	C	17, 21	atlas reference entry
+interpretation._align_inputs	C	17, 21	atlas reference entry
+interpretation.compute_similarity	A	17, 21	full dossier
+interpretation._hierarchical_order	C	17, 21	atlas reference entry
+interpretation.compute_order	A	17, 21	full dossier
+interpretation.calculate_cutpoints	B	17, 21	operational/statistical dossier
+interpretation.calculate_cluster_summary	B	17, 21	operational/statistical dossier
+interpretation.coordinate_association_table	A	17, 21	full dossier
+interpretation._write_readme	C	17, 21	atlas reference entry
+interpretation.run_explanation	A	17, 21	full dossier
+io.resolve_separator	B	6, 13–17	operational/statistical dossier
+io.read_table	A	6, 13–17	full dossier
+io.read_model_table	B	6, 13–17	operational/statistical dossier
+io.ensure_empty_output_dir	B	6, 13–17	operational/statistical dossier
+io.normalize_identifier	B	6, 13–17	operational/statistical dossier
+io.validated_identifiers	A	6, 13–17	full dossier
+io.atomic_json_dump	B	6, 13–17	operational/statistical dossier
+io.json_safe	B	6, 13–17	operational/statistical dossier
+metrics.effective_neighbor_count	B	7, 9, 11	operational/statistical dossier
+metrics.embedding_quality_metrics	A	7, 9, 11	full dossier
+metrics._cluster_sizes	C	7, 9, 11	atlas reference entry
+metrics.evaluate_candidate	A	7, 9, 11	full dossier
+metrics.is_finite_number	B	7, 9, 11	operational/statistical dossier
+pipeline.setup_logger	B	8–12, 15	operational/statistical dossier
+pipeline._failed_row	C	8–12, 15	atlas reference entry
+pipeline._evaluate_one	C	8–12, 15	atlas reference entry
+pipeline._annotation_frame	C	8–12, 15	atlas reference entry
+pipeline.run_search	A	8–12, 15	full dossier
+preprocessing.ExplanationMatrix	B	3, 6, 18	operational/statistical dossier
+preprocessing.rank_inverse_normal_transform	A	3, 6, 18	full dossier
+preprocessing.prepare_analysis_matrix	A	3, 6, 18	full dossier
+preprocessing._unique_feature_names	C	3, 6, 18	atlas reference entry
+preprocessing.infer_explanation_orientation	B	3, 6, 18	operational/statistical dossier
+preprocessing.prepare_explanation_matrix	A	3, 6, 18	full dossier
+provenance.sha256_file	B	12, 15, 23, 24	operational/statistical dossier
+provenance.package_versions	B	12, 15, 23, 24	operational/statistical dossier
+provenance.utc_now	B	12, 15, 23, 24	operational/statistical dossier
+provenance.file_record	B	12, 15, 23, 24	operational/statistical dossier
+provenance.package_source_digest	A	12, 15, 23, 24	full dossier
+provenance.base_manifest	A	12, 15, 23, 24	full dossier
+ranking.rank_models	A	11, 16, 20	full dossier
+ranking.top_models	B	11, 16, 20	operational/statistical dossier
+ranking.pareto_front	A	11, 16, 20	full dossier
+ranking.family_summaries	A	11, 16, 20	full dossier
+reporting._write_tsv	C	12, 15; output atlas	atlas reference entry
+reporting.write_resolved_config	B	12, 15; output atlas	operational/statistical dossier
+reporting.write_search_space	B	12, 15; output atlas	operational/statistical dossier
+reporting._top_artifact	C	12, 15; output atlas	atlas reference entry
+reporting.write_model_outputs	A	12, 15; output atlas	full dossier
+scoring.normalize_model_table_schema	B	11, 18, 20	operational/statistical dossier
+scoring._safe_divide_by_max	C	11, 18, 20	atlas reference entry
+scoring._scale_final	C	11, 18, 20	atlas reference entry
+scoring.legacy_dimple_score	A	11, 18, 20	full dossier
+scoring.custom_score	A	11, 18, 20	full dossier
+scoring.apply_scoring	A	11, 18, 20	full dossier
+search_space.canonical_json	B	10, 14, 20	operational/statistical dossier
+search_space.stable_identifier	B	10, 14, 20	operational/statistical dossier
+search_space.count_candidates	A	10, 14, 20	full dossier
+search_space._dict_product	C	10, 14, 20	atlas reference entry
+search_space.model_family	B	10, 14, 20	operational/statistical dossier
+search_space.enumerate_candidates	A	10, 14, 20	full dossier
+search_space.flatten_candidate	B	10, 14, 20	operational/statistical dossier
+umap_runner._fit_one	C	7, 8	atlas reference entry
+umap_runner.ensemble_seeds	A	7, 8	full dossier
+umap_runner.run_repeated_umap	A	7, 8	full dossier
+validation.run_validation	A	12, 16, 21, 23	full dossier
+validation.run_validation.<locals>.record	C	12, 16, 21, 23	atlas reference entry
+visualization._label_key	C	17, 21	atlas reference entry
+visualization.sample_block_preserving	B	17, 21	operational/statistical dossier
+visualization._correlation_rgb	C	17, 21	atlas reference entry
+visualization.render_heatmap	A	17, 21	full dossier

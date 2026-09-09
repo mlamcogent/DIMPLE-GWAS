@@ -1,0 +1,7 @@
+sheet	first_page	last_page	file	visual_status
+1	1	20	qa/visual/contact_sheets_final/contact_01_pages_001-020.jpg	pass
+2	21	40	qa/visual/contact_sheets_final/contact_02_pages_021-040.jpg	pass
+3	41	60	qa/visual/contact_sheets_final/contact_03_pages_041-060.jpg	pass
+4	61	80	qa/visual/contact_sheets_final/contact_04_pages_061-080.jpg	pass
+5	81	100	qa/visual/contact_sheets_final/contact_05_pages_081-100.jpg	pass
+6	101	105	qa/visual/contact_sheets_final/contact_06_pages_101-105.jpg	pass

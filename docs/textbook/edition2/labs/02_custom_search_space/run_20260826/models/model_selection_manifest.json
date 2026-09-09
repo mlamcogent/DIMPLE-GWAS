@@ -1,0 +1,35 @@
+{
+  "candidate_models": 32,
+  "edge_cases": {
+    "ineligible": "status is not success or silhouette is unavailable; score is null",
+    "zero_component_max": "normalized component is 0",
+    "zero_final_range": "all eligible scores are 1",
+    "zero_total_range": "equal weights across active components"
+  },
+  "eligible_models": 32,
+  "failed_models": 0,
+  "fit_include_noise": false,
+  "formula": "For eligible candidates, component_normalized = component / component.max(). Each component weight is its raw dynamic range divided by the sum of raw ranges. raw_score = w_silhouette*silhouette_normalized + w_clusters*number_of_clusters_normalized - w_noise*noise_points_normalized. When fit_include_noise=false, noise_points_for_score=0 and w_noise=0. score=(raw_score-min(raw_score))/(max(raw_score)-min(raw_score)); a zero score range maps to 1.",
+  "invalid_topology_models": 0,
+  "pareto_note": "Pareto membership is supplementary and is not a uniquely correct clustering solution.",
+  "profile": "legacy_dimple",
+  "rank_order": [
+    "score descending",
+    "raw_score descending",
+    "model_id ascending"
+  ],
+  "raw_ranges": {
+    "number_of_clusters": 0.0,
+    "number_of_noise_points": 0.0,
+    "silhouette": 0.015819191932678223
+  },
+  "selected_model": "model_241ad5e99af55074",
+  "successful_models": 32,
+  "top_n_requested": 5,
+  "top_n_retained": 5,
+  "weights": {
+    "number_of_clusters": 0.0,
+    "number_of_noise_points": 0.0,
+    "silhouette": 1.0
+  }
+}

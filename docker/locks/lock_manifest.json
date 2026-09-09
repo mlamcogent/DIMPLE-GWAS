@@ -1,0 +1,12 @@
+{
+  "date": "2026-09-05",
+  "current": "HASH_LOCKED_BUILT",
+  "exact_legacy": "INCOMPLETE",
+  "files": {
+    "build-linux-amd64.lock": "bfe22c107984f61b6c136df3064cd83a78ff26e8efece7b4196c00ea9a96e89b",
+    "current-linux-amd64.lock": "98637ae3352cbca5b71766b449c44e5a14b2e6270b348dcde810640d13000710",
+    "current-test.lock": "bab8af202fd166a5d79a78b2926e1b1d96111a730120e0abd26ce8d7b625a68c",
+    "legacy-explicit-linux-64.txt": "7e37976da6c3e7b3f7abe16b458abf37308eeef25a3ca26817bf9713625933bc",
+    "legacy-pip-lock.PENDING.md": "bc4efd93405f9b625aef892c624294b6662b84d6b52ff0a781f87507a9872c2c"
+  }
+}

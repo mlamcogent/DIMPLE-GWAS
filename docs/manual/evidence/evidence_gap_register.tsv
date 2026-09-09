@@ -1,0 +1,5 @@
+gap_id	unresolved_item	evidence_status	manual_handling	status
+CIT-GAP-001	Exact Yang and Zhao works allegedly cited by reviewers	No such named citations appear in the currently supplied Reviewer #2 action register.	Do not attribute papers to the reviewer; retain as unresolved until exact correspondence is supplied.	open
+CIT-GAP-002	Formal theory for concatenating repeated UMAP embeddings	No supplied or identified source proves that concatenated Euclidean distances equal an expected-distance estimator or recover true topology.	Describe as empirical stability strategy only.	bounded
+CIT-GAP-003	Direct selective-inference procedure for the exact DIMPLE UMAP+HDBSCAN pipeline	Gao et al. addresses hierarchical clustering, not this full selection pipeline.	Use it to establish the general circularity problem; recommend held-out/independent validation.	bounded
+CIT-GAP-004	Biological validity of original-space correlations	No method paper converts post-selection correlation summaries into causal evidence.	Label summaries descriptive and conditional.	bounded

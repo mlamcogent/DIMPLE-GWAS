@@ -1,0 +1,7 @@
+flowchart TB
+  A["Input rows: variants"] --> B["First N columns: metadata"]
+  A --> C["Remaining columns: phenotype vectors / IDPs"]
+  C --> D["Optional transform across analysis columns"]
+  D --> E["Transpose"]
+  E --> F["Analysis rows: vector IDs"]
+  E --> G["Analysis columns: input variants"]

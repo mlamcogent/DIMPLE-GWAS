@@ -1,0 +1,8 @@
+flowchart TB
+  S["Source SHA-256"] --> R["Run manifest"]
+  I["Input SHA-256"] --> R
+  C["Resolved config SHA-256"] --> R
+  E["Environment + package versions"] --> R
+  X["Command, seeds, threads, timestamps"] --> R
+  R --> A["Artifact hashes"]
+  A --> Q["Compare / validate / manual evidence"]

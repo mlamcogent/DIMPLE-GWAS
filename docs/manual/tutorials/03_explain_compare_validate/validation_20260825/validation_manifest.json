@@ -1,0 +1,61 @@
+{
+  "architecture": "arm64",
+  "artifacts": {
+    "checks": {
+      "path": "/Users/maxlam/Downloads/Cogent-analysis-audit/DIMPLE-GWAS/DIMPLE-GWAS-freeze3/docs/manual/tutorials/03_explain_compare_validate/validation_20260825/validation_checks.tsv",
+      "sha256": "03f52b046f490f04a3811ffb56586992ab5f9ff2de720216ddc65e7550b24d8d",
+      "size_bytes": 2724
+    },
+    "report": {
+      "path": "/Users/maxlam/Downloads/Cogent-analysis-audit/DIMPLE-GWAS/DIMPLE-GWAS-freeze3/docs/manual/tutorials/03_explain_compare_validate/validation_20260825/validation_report.json",
+      "sha256": "27aa9049f305bb812959cb1d691fbd7b16279f86f6b613b80e16615a32b947a5",
+      "size_bytes": 292
+    }
+  },
+  "command": "dimple-gwas validate --run-dir docs/manual/tutorials/01_fixed_synthetic/run_20260825_v2 --output-dir docs/manual/tutorials/03_explain_compare_validate/validation_20260825",
+  "exclusions": [],
+  "failures": [],
+  "finished_at_utc": "2026-08-25T12:47:49.768089+00:00",
+  "git_commit": null,
+  "manifest_schema": "dimple-gwas.validation-manifest.v3",
+  "operating_system": "Darwin",
+  "package_source_sha256": "df87825992ab51dc016c673cf420a978ba5c161bd6c755e00a5199ead310e65b",
+  "package_versions": {
+    "Pillow": "12.3.0",
+    "PyYAML": "6.0.3",
+    "hdbscan": "0.8.44",
+    "joblib": "1.5.3",
+    "matplotlib": "3.11.1",
+    "numpy": "2.5.2",
+    "openpyxl": "3.1.5",
+    "pandas": "3.0.5",
+    "plotly": "6.9.0",
+    "pyarrow": "25.0.1",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.18.1",
+    "umap-learn": "0.5.12",
+    "xlrd": "2.0.2"
+  },
+  "platform": "macOS-26.5.1-arm64-arm-64bit",
+  "python_version": "3.12.13",
+  "result": {
+    "checks": 24,
+    "failures": 0,
+    "passed": 24,
+    "run_dir": "/Users/maxlam/Downloads/Cogent-analysis-audit/DIMPLE-GWAS/DIMPLE-GWAS-freeze3/docs/manual/tutorials/01_fixed_synthetic/run_20260825_v2",
+    "status": "pass",
+    "validation_schema": "dimple-gwas.validation.v3",
+    "warnings": 0
+  },
+  "runtime_seconds": 0.03324458299903199,
+  "software": "DIMPLE-GWAS Freeze 3",
+  "software_version": "3.0.0rc1",
+  "started_at_utc": "2026-08-25T12:47:49.748015+00:00",
+  "status": "complete",
+  "validated_run_manifest": {
+    "path": "/Users/maxlam/Downloads/Cogent-analysis-audit/DIMPLE-GWAS/DIMPLE-GWAS-freeze3/docs/manual/tutorials/01_fixed_synthetic/run_20260825_v2/run_manifest.json",
+    "sha256": "b97419d5b8b7252d15920f09c825e1f93068002cc8c119c41d356c6d56650bfa",
+    "size_bytes": 6702
+  },
+  "warnings": []
+}

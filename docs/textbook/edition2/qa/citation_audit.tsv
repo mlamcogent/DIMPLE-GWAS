@@ -1,0 +1,28 @@
+citation_key	used_in_book	bibliography_anchor	metadata_status	identifier	source_type	nearby_claim	audit_status	note
+mcinnes2018umap	yes	pass	verified	10.21105/joss.00861	primary	UMAP algorithm and software	pass	verified source retained in bibliography
+narayan2021densmap	yes	pass	verified	10.1038/s41587-020-00801-7	primary	densMAP density objective	pass	verified source retained in bibliography
+campello2015hdbscan	yes	pass	verified	10.1145/2733381	primary	HDBSCAN hierarchy and stability	pass	verified source retained in bibliography
+mcinnes2017hdbscan	yes	pass	verified	10.21105/joss.00205	primary-software	contributed Python implementation	pass	verified source retained in bibliography
+rousseeuw1987	yes	pass	verified	10.1016/0377-0427(87)90125-7	primary	silhouette definition	pass	verified source retained in bibliography
+calinski1974	yes	pass	verified	10.1080/03610927408827101	primary	variance-ratio criterion	pass	verified source retained in bibliography
+davies1979	yes	pass	verified	10.1109/TPAMI.1979.4766909	primary	Davies-Bouldin index	pass	verified source retained in bibliography
+moulavi2014dbcv	yes	pass	verified	10.1137/1.9781611973440.96	primary	DBCV	pass	verified source retained in bibliography
+beasley2009	yes	pass	verified	10.1007/s10519-009-9281-0	primary	RINT benefits and limitations	pass	verified source retained in bibliography
+hubert1985	yes	pass	verified	10.1007/BF01908075	primary	adjusted Rand index	pass	verified source retained in bibliography
+vinh2010	yes	pass	verified	JMLR 11:2837-2854	primary	NMI and information-theoretic comparison	pass	verified source retained in bibliography
+gower1975	yes	pass	verified	10.1007/BF02291478	primary	configuration alignment	pass	verified source retained in bibliography
+venna2010	yes	pass	verified	JMLR 11:451-490	primary	neighborhood preservation, trustworthiness/continuity context	pass	verified source retained in bibliography
+aggarwal2001	yes	pass	verified	10.1007/3-540-44503-X_27	primary	high-dimensional distance behavior	pass	verified source retained in bibliography
+kriegeskorte2009	yes	pass	verified	10.1038/nn.2303	primary-perspective	circular selection and analysis	pass	verified source retained in bibliography
+gao2024	yes	pass	verified	10.1080/01621459.2022.2116331	primary	bounded selective-inference context	pass	verified source retained in bibliography
+reproduciblesum2015	yes	pass	verified	10.1016/j.parco.2015.09.001	primary	floating-point parallel reproducibility	pass	verified source retained in bibliography
+buliksullivan2015	yes	pass	verified	10.1038/ng.3211	primary	LD and confounding context	pass	verified source retained in bibliography
+elliott2018	yes	pass	verified	10.1038/s41586-018-0571-7	primary	imaging-derived phenotype GWAS context	pass	verified source retained in bibliography
+oblong2024	yes	pass	verified	10.1111/gbb.12876	primary	genomic PCA/ICA comparator; corrected attribution	pass	verified source retained in bibliography
+grotzinger2019	no	pass	verified	10.1038/s41562-019-0566-x	primary	Genomic SEM comparator	pass	verified reserve source; not cited in current narrative
+turley2018	yes	pass	verified	10.1038/s41588-017-0009-4	primary	MTAG comparator	pass	verified source retained in bibliography
+vandermeer2020	yes	pass	verified	10.1038/s41467-020-17368-1	primary	MOSTest comparator	pass	verified source retained in bibliography
+lee2021	yes	pass	verified	10.1016/j.ajhg.2020.11.017	primary	PLEIO comparator	pass	verified source retained in bibliography
+zhang2023	no	pass	verified	10.1016/j.ajhg.2023.09.015	primary	distinct Zhang pleiotropy paper, not reviewer attribution	pass	verified reserve source; not cited in current narrative
+Yang-attributed paper	no	not_applicable	unresolved attribution		private reviewer correspondence	none; attribution is not used as a source	pass_with_limitation	named unresolved and deliberately not cited pending team identification
+Zhao-attributed paper	no	not_applicable	unresolved attribution		private reviewer correspondence	none; attribution is not used as a source	pass_with_limitation	named unresolved and deliberately not cited pending team identification

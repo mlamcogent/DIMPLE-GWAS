@@ -1,0 +1,10 @@
+gap_id	missing_evidence	affected_claim_or_task	bounded_handling	priority	status
+MISS-001	Git commit, branch, tag, and remotes	release/source identity	Use SHA-256 identity for TE2; establish Git identity before Docker/public release.	high	open
+MISS-002	Fresh 164-IDP 1,000-seed execution	fresh scientific reproduction	Deferred until Docker; retain exact protocol and do not claim fresh results.	high	deferred
+MISS-003	Original 2,315-IDP raw matrix	fresh primary analysis	Historical-only discussion; do not select a substitute.	high	open
+MISS-004	Original 459-IDP raw matrix and unambiguous configuration	fresh secondary analysis	Historical-only discussion pending exact data/config identity.	high	open
+MISS-005	Complete editorial decision and Reviewer #1 report	complete journal-response crosswalk	Edition 2 uses only supplied Reviewer #2 material and labels the set incomplete.	medium	open
+MISS-006	Exact Yang- and Zhao-attributed reviewer papers	reviewer bibliography attribution	No such citations occur in the supplied reviewer email/action register; keep unresolved and uncited.	medium	open
+MISS-007	Docker/Linux/GCP/AWS execution and security evidence	cross-platform and release validation	Explicitly pending; use the documentation handoff only.	high	deferred
+MISS-008	Team-approved textbook authorship styling beyond manuscript order	final publication metadata	Use manuscript author order and degree convention for internal review; adjudicate affiliation/contribution typography before public release.	low	bounded
+MISS-009	Book distribution licence and DOI/ISBN/publisher metadata	public release packaging	Omit identifiers and label internal review; add only after team decision.	medium	open

@@ -1,0 +1,64 @@
+search_mode: fixed
+input:
+  path: benchmarks/synthetic/synthetic_matrix.tsv
+  drop_first_n_cols: 4
+  sep: "\t"
+  zscore_transform: none
+  annotation_file: benchmarks/synthetic/synthetic_annotations.csv
+  annotation_index_col: index
+umap:
+  n_neighbors: 10
+  min_dist: 0.1
+  n_components: 3
+  metric: euclidean
+  spread: 1.0
+  learning_rate: 1.0
+  repulsion_strength: 1.0
+  negative_sample_rate: 5
+  local_connectivity: 1.0
+  set_op_mix_ratio: 1.0
+  random_state: 42
+  densmap: true
+hdbscan:
+  min_cluster_size: 4
+  min_samples: 2
+  cluster_selection_epsilon: 0.05
+  cluster_selection_persistence: 0.0
+  cluster_selection_method: eom
+  alpha: 1.0
+  allow_single_cluster: false
+  max_cluster_size: 0
+  metric: euclidean
+execution:
+  n_random_states: 2
+  n_jobs: 1
+  candidate_jobs: 1
+  top_n_models: 5
+  warn_candidate_count: 5000
+  max_candidate_models: 0
+  max_samples_trust: 3000
+  max_samples_silhouette: 0
+  trust_k: 10
+  trust_seed: 42
+  silhouette_seed: 42
+  legacy_ensemble_seeds: false
+  write_parquet: true
+  compute_dbcv: true
+  strict: false
+scoring:
+  profile: legacy_dimple
+  fit_include_noise: false
+  custom: {}
+interpretation:
+  similarity_metric: pearson
+  order: cluster_then_hclust
+  noise_policy: separate_last
+  undefined_correlation: error
+  require_complete_match: true
+  max_full_heatmap: 1200
+  write_similarity: true
+  force_large_matrix: false
+  coordinate_associations: false
+  coordinate_methods:
+  - pearson
+  top_n_associations: 100

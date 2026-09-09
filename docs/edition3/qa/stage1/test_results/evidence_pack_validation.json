@@ -1,0 +1,276 @@
+{
+  "checks": [
+    {
+      "check_id": "required:00_SOURCE_INVENTORY_AND_CHECKSUMS.tsv",
+      "expected": "nonempty file",
+      "observed": 15167,
+      "status": "PASS"
+    },
+    {
+      "check_id": "required:01_AUTHORITY_LINEAGE_AND_RELEASE_BOUNDARY.md",
+      "expected": "nonempty file",
+      "observed": 5280,
+      "status": "PASS"
+    },
+    {
+      "check_id": "required:02_IMPLEMENTATION_TRUTH_REGISTER.tsv",
+      "expected": "nonempty file",
+      "observed": 14928,
+      "status": "PASS"
+    },
+    {
+      "check_id": "required:03_VERIFIED_METHODS_AND_EDUCATIONAL_EVIDENCE_DOSSIER.md",
+      "expected": "nonempty file",
+      "observed": 14116,
+      "status": "PASS"
+    },
+    {
+      "check_id": "required:04_PRIOR_REPORT_CLAIM_AUDIT.tsv",
+      "expected": "nonempty file",
+      "observed": 8796,
+      "status": "PASS"
+    },
+    {
+      "check_id": "required:05_CLAIM_EVIDENCE_REGISTER.tsv",
+      "expected": "nonempty file",
+      "observed": 11373,
+      "status": "PASS"
+    },
+    {
+      "check_id": "required:06_VERIFIED_BIBLIOGRAPHY.bib",
+      "expected": "nonempty file",
+      "observed": 16996,
+      "status": "PASS"
+    },
+    {
+      "check_id": "required:07_REVIEWER_LITERATURE_CROSSWALK.md",
+      "expected": "nonempty file",
+      "observed": 6979,
+      "status": "PASS"
+    },
+    {
+      "check_id": "required:08_ANALYSIS_HIERARCHY_AND_GOLDEN_RUNS.md",
+      "expected": "nonempty file",
+      "observed": 5761,
+      "status": "PASS"
+    },
+    {
+      "check_id": "required:09_FUNCTION_CONCEPT_OUTPUT_COVERAGE.tsv",
+      "expected": "nonempty file",
+      "observed": 6157,
+      "status": "PASS"
+    },
+    {
+      "check_id": "required:10_TUTORIAL_EXECUTION_BASELINE.md",
+      "expected": "nonempty file",
+      "observed": 5986,
+      "status": "PASS"
+    },
+    {
+      "check_id": "required:11_SAFE_LANGUAGE_AND_MISCONCEPTION_REGISTER.tsv",
+      "expected": "nonempty file",
+      "observed": 6753,
+      "status": "PASS"
+    },
+    {
+      "check_id": "required:12_UNRESOLVED_EVIDENCE_GAPS.md",
+      "expected": "nonempty file",
+      "observed": 6348,
+      "status": "PASS"
+    },
+    {
+      "check_id": "required:13_STAGE1_GATE_REPORT.md",
+      "expected": "nonempty file",
+      "observed": 5242,
+      "status": "PASS"
+    },
+    {
+      "check_id": "required:STAGE1_MANIFEST.json",
+      "expected": "nonempty file",
+      "observed": 19942,
+      "status": "PASS"
+    },
+    {
+      "check_id": "tsv_rectangular:00_SOURCE_INVENTORY_AND_CHECKSUMS.tsv",
+      "expected": "all rows match header width",
+      "observed": {
+        "bad_rows": [],
+        "columns": 5,
+        "rows": 92
+      },
+      "status": "PASS"
+    },
+    {
+      "check_id": "tsv_ids_unique:00_SOURCE_INVENTORY_AND_CHECKSUMS.tsv",
+      "expected": 0,
+      "observed": 0,
+      "status": "PASS"
+    },
+    {
+      "check_id": "tsv_rectangular:02_IMPLEMENTATION_TRUTH_REGISTER.tsv",
+      "expected": "all rows match header width",
+      "observed": {
+        "bad_rows": [],
+        "columns": 16,
+        "rows": 46
+      },
+      "status": "PASS"
+    },
+    {
+      "check_id": "tsv_ids_unique:02_IMPLEMENTATION_TRUTH_REGISTER.tsv",
+      "expected": 0,
+      "observed": 0,
+      "status": "PASS"
+    },
+    {
+      "check_id": "tsv_rectangular:04_PRIOR_REPORT_CLAIM_AUDIT.tsv",
+      "expected": "all rows match header width",
+      "observed": {
+        "bad_rows": [],
+        "columns": 7,
+        "rows": 33
+      },
+      "status": "PASS"
+    },
+    {
+      "check_id": "tsv_ids_unique:04_PRIOR_REPORT_CLAIM_AUDIT.tsv",
+      "expected": 0,
+      "observed": 0,
+      "status": "PASS"
+    },
+    {
+      "check_id": "tsv_rectangular:05_CLAIM_EVIDENCE_REGISTER.tsv",
+      "expected": "all rows match header width",
+      "observed": {
+        "bad_rows": [],
+        "columns": 9,
+        "rows": 47
+      },
+      "status": "PASS"
+    },
+    {
+      "check_id": "tsv_ids_unique:05_CLAIM_EVIDENCE_REGISTER.tsv",
+      "expected": 0,
+      "observed": 0,
+      "status": "PASS"
+    },
+    {
+      "check_id": "tsv_rectangular:09_FUNCTION_CONCEPT_OUTPUT_COVERAGE.tsv",
+      "expected": "all rows match header width",
+      "observed": {
+        "bad_rows": [],
+        "columns": 9,
+        "rows": 26
+      },
+      "status": "PASS"
+    },
+    {
+      "check_id": "tsv_ids_unique:09_FUNCTION_CONCEPT_OUTPUT_COVERAGE.tsv",
+      "expected": 0,
+      "observed": 0,
+      "status": "PASS"
+    },
+    {
+      "check_id": "tsv_rectangular:11_SAFE_LANGUAGE_AND_MISCONCEPTION_REGISTER.tsv",
+      "expected": "all rows match header width",
+      "observed": {
+        "bad_rows": [],
+        "columns": 7,
+        "rows": 25
+      },
+      "status": "PASS"
+    },
+    {
+      "check_id": "tsv_ids_unique:11_SAFE_LANGUAGE_AND_MISCONCEPTION_REGISTER.tsv",
+      "expected": 0,
+      "observed": 0,
+      "status": "PASS"
+    },
+    {
+      "check_id": "bibliography_entry_count",
+      "expected": ">=35",
+      "observed": 41,
+      "status": "PASS"
+    },
+    {
+      "check_id": "bibliography_keys_unique",
+      "expected": 0,
+      "observed": 0,
+      "status": "PASS"
+    },
+    {
+      "check_id": "bibliography_dois_unique",
+      "expected": 0,
+      "observed": 0,
+      "status": "PASS"
+    },
+    {
+      "check_id": "single_gate_decision",
+      "expected": 1,
+      "observed": 1,
+      "status": "PASS"
+    },
+    {
+      "check_id": "twelve_gate_rows",
+      "expected": 12,
+      "observed": 12,
+      "status": "PASS"
+    },
+    {
+      "check_id": "manifest_decision",
+      "expected": "PASS_WITH_LIMITATIONS",
+      "observed": "PASS_WITH_LIMITATIONS",
+      "status": "PASS"
+    },
+    {
+      "check_id": "manifest_gate_count",
+      "expected": 12,
+      "observed": 12,
+      "status": "PASS"
+    },
+    {
+      "check_id": "manifest_gap_count",
+      "expected": 18,
+      "observed": 18,
+      "status": "PASS"
+    },
+    {
+      "check_id": "manifest_source_count",
+      "expected": 91,
+      "observed": 91,
+      "status": "PASS"
+    },
+    {
+      "check_id": "fourteen_dossier_domains",
+      "expected": 14,
+      "observed": 14,
+      "status": "PASS"
+    },
+    {
+      "check_id": "source_inventory_count",
+      "expected": ">=80",
+      "observed": 91,
+      "status": "PASS"
+    },
+    {
+      "check_id": "source_hash_format",
+      "expected": "all 64-char lowercase hex",
+      "observed": "all",
+      "status": "PASS"
+    },
+    {
+      "check_id": "publishable_evidence_has_no_absolute_user_paths",
+      "expected": [],
+      "observed": [],
+      "status": "PASS"
+    },
+    {
+      "check_id": "publishable_evidence_has_no_secret_patterns",
+      "expected": [],
+      "observed": [],
+      "status": "PASS"
+    }
+  ],
+  "required_file_count": 15,
+  "status": "PASS"
+}

@@ -1,0 +1,25 @@
+chapter	part	title	substantive_word_target	minimum_words	editorial_reason_if_below_1500
+1	I	The scientific problem, scope, and evidence boundary	3200	1500	
+2	I	GWAS-derived phenotype vectors and high-dimensional geometry	3800	1500	
+3	I	Similarity, distance, scaling, transformation, and uncertainty	3800	1500	
+4	I	Dimension reduction: linear and nonlinear perspectives	3200	1500	
+5	I	Density clustering, validation, and circular inference	3600	1500	
+6	II	Data contract, preprocessing, RINT, and orientation	4000	1500	
+7	II	UMAP and densMAP from graph construction to optimization	5000	1500	
+8	II	Repeated stochastic embeddings and concatenated geometry	3800	1500	
+9	II	HDBSCAN hierarchy, density, selection, and noise	4800	1500	
+10	II	Search-space enumeration and computational design	3300	1500	
+11	II	Candidate diagnostics, legacy_dimple, ranking, ties, and sensitivity	5200	1500	
+12	II	Selected-model reproduction, provenance, and comparison	4000	1500	
+13	III	Installation, environment verification, and first run	3000	1500	
+14	III	Configuration and search-space inspection	3200	1500	
+15	III	Complete pipeline execution and monitoring	3600	1500	
+16	III	Model summaries, selection, reproduction, comparison, and validation	3800	1500	
+17	III	Original-space explanation, heatmaps, and responsible interpretation	4000	1500	
+18	IV	A hand-calculable toy analysis from matrix to score	3600	1500	
+19	IV	Fixed synthetic end-to-end analysis	3800	1500	
+20	IV	Custom bounded search, sensitivity, and selected-model replay	3400	1500	
+21	IV	Explanation, comparison, validation, and report generation	3400	1500	
+22	IV	MNIST benchmark and original 164-IDP reconstruction protocol	3800	1500	
+23	V	Technical, statistical, biological, and cross-platform validation	3800	1500	
+24	V	Reproducible reporting, limitations, migration, and reviewer-facing methods	3600	1500	

@@ -1,0 +1,10 @@
+flowchart LR
+  A["Variants × vectors input"] --> B["Drop declared metadata columns"]
+  B --> C["Optional RINT"]
+  C --> D["Transpose: vectors × variants"]
+  D --> E["Repeated seeded UMAP / densMAP"]
+  E --> F["Concatenated embedding"]
+  F --> G["Enumerated HDBSCAN candidates"]
+  G --> H["Metrics and declared score"]
+  H --> I["Ranked and retained models"]
+  I --> J["Explain / compare / validate"]

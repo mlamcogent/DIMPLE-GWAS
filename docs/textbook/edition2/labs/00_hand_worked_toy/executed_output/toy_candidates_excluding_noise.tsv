@@ -1,0 +1,4 @@
+model_id	candidate_ordinal	status	silhouette	number_of_clusters	number_of_noise_points	raw_score	score	Score_raw	Score	scoring_profile	fit_include_noise
+toy_A	1	success	0.7	2	0	0.5454545454545454	0.0	0.5454545454545454	0.0	legacy_dimple	False
+toy_B	2	success	0.5	3	1	0.7467532467532467	0.45588235294117646	0.7467532467532467	0.45588235294117646	legacy_dimple	False
+toy_C	3	success	0.6	4	2	0.987012987012987	1.0	0.987012987012987	1.0	legacy_dimple	False

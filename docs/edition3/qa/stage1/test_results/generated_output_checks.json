@@ -1,0 +1,105 @@
+{
+  "checks": [
+    {
+      "check_id": "junit_exists",
+      "expected": "file exists",
+      "observed": "docs/edition3/qa/stage1/test_results/freeze3_pytest.xml",
+      "status": "PASS"
+    },
+    {
+      "check_id": "all_logged_commands_exit_zero",
+      "expected": "all 0",
+      "observed": {
+        "cli_compare_help": 0,
+        "cli_explain_help": 0,
+        "cli_inspect-config_help": 0,
+        "cli_interpret_help": 0,
+        "cli_reproduce-model_help": 0,
+        "cli_root_help": 0,
+        "cli_run_help": 0,
+        "cli_score-existing_help": 0,
+        "cli_show-search-space_help": 0,
+        "cli_summarize-models_help": 0,
+        "cli_validate_help": 0,
+        "cli_version": 0,
+        "environment": 0,
+        "fixed_compare": 0,
+        "fixed_explain": 0,
+        "fixed_reproduce": 0,
+        "fixed_run": 0,
+        "fixed_summarize": 0,
+        "fixed_validate": 0,
+        "inspect_custom_scoring": 0,
+        "inspect_extended_search": 0,
+        "inspect_leaf_vs_eom": 0,
+        "inspect_legacy_dev": 0,
+        "inspect_original_idp_164_historical_search": 0,
+        "inspect_original_idp_164_selected": 0,
+        "inspect_reproduce_single_model": 0,
+        "pip_check": 0,
+        "pytest_full": 0,
+        "score_historical_164": 0,
+        "search_space_extended": 0,
+        "search_space_fixed": 0,
+        "search_space_standard": 0
+      },
+      "status": "PASS"
+    },
+    {
+      "check_id": "fixed_comparison_adjusted_rand_index",
+      "expected": 1.0,
+      "observed": 1.0,
+      "status": "PASS"
+    },
+    {
+      "check_id": "fixed_comparison_normalized_mutual_information",
+      "expected": 1.0,
+      "observed": 1.0,
+      "status": "PASS"
+    },
+    {
+      "check_id": "fixed_comparison_noise_set_jaccard",
+      "expected": 1.0,
+      "observed": 1.0,
+      "status": "PASS"
+    },
+    {
+      "check_id": "fixed_comparison_mapped_membership_match_fraction",
+      "expected": 1.0,
+      "observed": 1.0,
+      "status": "PASS"
+    },
+    {
+      "check_id": "fixed_validation_passed",
+      "expected": "pass",
+      "observed": "pass",
+      "status": "PASS"
+    },
+    {
+      "check_id": "historical_164_row_count",
+      "expected": 333,
+      "observed": 333,
+      "status": "PASS"
+    },
+    {
+      "check_id": "historical_164_join_count",
+      "expected": 333,
+      "observed": 333,
+      "status": "PASS"
+    },
+    {
+      "check_id": "historical_164_score_max_abs_delta",
+      "expected": "<=1e-12",
+      "observed": 0.0,
+      "status": "PASS"
+    },
+    {
+      "check_id": "fixed_model_id_stable",
+      "expected": "model_060fac0208bb58e2",
+      "observed": "model_060fac0208bb58e2",
+      "status": "PASS"
+    }
+  ],
+  "generated_file_count": 121,
+  "status": "PASS"
+}

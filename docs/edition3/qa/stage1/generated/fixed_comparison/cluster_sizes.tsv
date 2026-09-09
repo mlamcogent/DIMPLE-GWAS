@@ -1,0 +1,7 @@
+label	size	side	is_noise
+1	8	left	False
+2	8	left	False
+0	8	left	False
+1	8	right	False
+2	8	right	False
+0	8	right	False

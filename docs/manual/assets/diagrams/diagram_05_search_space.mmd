@@ -1,0 +1,7 @@
+flowchart LR
+  U["UMAP parameter Cartesian product"] --> X["×"]
+  H["HDBSCAN parameter Cartesian product"] --> X
+  X --> C["Complete deterministic candidates"]
+  C --> S["Success"]
+  C --> I["Invalid topology"]
+  C --> F["Failure retained with error"]

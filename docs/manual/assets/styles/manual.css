@@ -1,0 +1,32 @@
+@page { size: A4; margin: 18mm 17mm 19mm 17mm; }
+:root { --ink:#182635; --blue:#0b5f8a; --pale:#eaf3f8; --warn:#fff4d6; --line:#b6c4ce; }
+html { background:#eef2f5; }
+body { max-width: 920px; margin: 0 auto; background:white; color:var(--ink); font-family: Inter, Aptos, Arial, sans-serif; line-height:1.48; padding:42px 58px; }
+h1,h2,h3 { color:#123d57; line-height:1.18; break-after:avoid-page; }
+h1 { border-bottom:2px solid #6fa3bd; padding-bottom:.25em; margin-top:1.5em; }
+h2 { margin-top:1.25em; }
+p, li { orphans:3; widows:3; }
+blockquote { margin:1em 0; padding:.7em 1em; border-left:5px solid #d79c00; background:var(--warn); }
+code { font-family: "SFMono-Regular", Consolas, monospace; font-size:.88em; background:#f2f5f7; padding:.08em .25em; }
+pre { background:#152534; color:#f5f8fa; padding:12px 14px; border-radius:5px; overflow-wrap:anywhere; white-space:pre-wrap; break-inside:avoid; }
+pre code { background:transparent; color:inherit; padding:0; }
+.xref { font-size:.86em; color:#52616b; border-top:1px dotted #c3cdd3; padding-top:.45em; break-inside:avoid; }
+table { width:100%; border-collapse:collapse; font-size:.88em; break-inside:auto; }
+th,td { border:1px solid var(--line); padding:6px 7px; vertical-align:top; }
+th { background:var(--pale); text-align:left; }
+tr { break-inside:avoid; }
+img, svg { display:block; max-width:100%; height:auto; margin:12px auto; break-inside:avoid; }
+a { color:var(--blue); }
+.title-page { min-height:82vh; display:flex; flex-direction:column; justify-content:center; text-align:center; break-after:page; }
+.title-page h1 { font-size:2.25em; border:0; }
+.title-page blockquote { text-align:left; }
+.page-header,.page-footer { display:none; }
+hr { border:0; border-top:1px solid var(--line); margin:2em 0; }
+@media print {
+  html { background:white; }
+  body { max-width:none; margin:0; padding:0; font-size:10.2pt; }
+  .page-header,.page-footer { display:none !important; }
+  h1 { break-before:page; }
+  .title-page h1 { break-before:auto; }
+  a { color:inherit; text-decoration:none; }
+}

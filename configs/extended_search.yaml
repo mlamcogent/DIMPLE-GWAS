@@ -1,0 +1,20 @@
+search_mode: extended
+umap:
+  n_neighbors: [15, 30, 50]
+  min_dist: [0.0, 0.1]
+  metric: [euclidean, cosine]
+hdbscan:
+  min_cluster_size: [5, 10, 20]
+  min_samples: [2, 5, 10]
+  cluster_selection_epsilon: [0.0, 0.05]
+  cluster_selection_method: [eom, leaf]
+  max_cluster_size: [0, 100]
+  metric: [euclidean, cosine]
+execution:
+  n_random_states: 10
+  top_n_models: 20
+  warn_candidate_count: 5000
+scoring:
+  profile: legacy_dimple
+  fit_include_noise: false
+

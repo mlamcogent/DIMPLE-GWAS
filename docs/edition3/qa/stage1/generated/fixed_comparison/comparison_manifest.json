@@ -1,0 +1,95 @@
+{
+  "architecture": "arm64",
+  "artifacts": {
+    "cluster_sizes.tsv": {
+      "path": "/Users/maxlam/Downloads/Cogent-analysis-audit/DIMPLE-GWAS/DIMPLE-GWAS-freeze3/docs/edition3/qa/stage1/generated/fixed_comparison/cluster_sizes.tsv",
+      "sha256": "1c49f973165146fc7d2c4bd434a4dfd934ce1c2099413675c2b41745973c9bf4",
+      "size_bytes": 118
+    },
+    "comparison_summary.json": {
+      "path": "/Users/maxlam/Downloads/Cogent-analysis-audit/DIMPLE-GWAS/DIMPLE-GWAS-freeze3/docs/edition3/qa/stage1/generated/fixed_comparison/comparison_summary.json",
+      "sha256": "d0fb215c54bf361cacef88fd81aebc7ca19bfd625b50a2cf2bf1c3e3d51743d4",
+      "size_bytes": 866
+    },
+    "label_confusion.tsv": {
+      "path": "/Users/maxlam/Downloads/Cogent-analysis-audit/DIMPLE-GWAS/DIMPLE-GWAS-freeze3/docs/edition3/qa/stage1/generated/fixed_comparison/label_confusion.tsv",
+      "sha256": "47e1a07ffef8a2f0f40c4367e2df855bb4a902f8e8815342b582fc83539b905a",
+      "size_bytes": 41
+    },
+    "membership_comparison.tsv": {
+      "path": "/Users/maxlam/Downloads/Cogent-analysis-audit/DIMPLE-GWAS/DIMPLE-GWAS-freeze3/docs/edition3/qa/stage1/generated/fixed_comparison/membership_comparison.tsv",
+      "sha256": "893207d1573985dca1e8e6c0b093d6f1668c85c1bba91103e832c1b142c0beab",
+      "size_bytes": 1077
+    },
+    "optimal_label_mapping.tsv": {
+      "path": "/Users/maxlam/Downloads/Cogent-analysis-audit/DIMPLE-GWAS/DIMPLE-GWAS-freeze3/docs/edition3/qa/stage1/generated/fixed_comparison/optimal_label_mapping.tsv",
+      "sha256": "02763485a1b86e2eaf5678694f7251ec7d8caa3d50c36e26f0167fa02bf47842",
+      "size_bytes": 56
+    }
+  },
+  "command": "dimple-gwas compare --left docs/edition3/qa/stage1/generated/fixed_run/models/top_model_artifacts/model_060fac0208bb58e2/summary.json --right docs/edition3/qa/stage1/generated/fixed_reproduction/models/top_model_artifacts/model_060fac0208bb58e2/summary.json --output-dir docs/edition3/qa/stage1/generated/fixed_comparison --require-same-order",
+  "exclusions": [],
+  "failures": [],
+  "finished_at_utc": "2026-08-26T15:22:03.815448+00:00",
+  "git_commit": null,
+  "manifest_schema": "dimple-gwas.comparison-manifest.v3",
+  "operating_system": "Darwin",
+  "package_source_sha256": "df87825992ab51dc016c673cf420a978ba5c161bd6c755e00a5199ead310e65b",
+  "package_versions": {
+    "Pillow": "12.3.0",
+    "PyYAML": "6.0.3",
+    "hdbscan": "0.8.44",
+    "joblib": "1.5.3",
+    "matplotlib": "3.11.1",
+    "numpy": "2.4.6",
+    "openpyxl": null,
+    "pandas": "3.0.3",
+    "plotly": "6.9.0",
+    "pyarrow": "25.0.0",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.18.0",
+    "umap-learn": "0.5.12",
+    "xlrd": null
+  },
+  "platform": "macOS-26.5.1-arm64-arm-64bit",
+  "python_version": "3.12.13",
+  "runtime_seconds": 0.06346699999994598,
+  "software": "DIMPLE-GWAS Freeze 3",
+  "software_version": "3.0.0rc1",
+  "sources": {
+    "left": {
+      "path": "/Users/maxlam/Downloads/Cogent-analysis-audit/DIMPLE-GWAS/DIMPLE-GWAS-freeze3/docs/edition3/qa/stage1/generated/fixed_run/models/top_model_artifacts/model_060fac0208bb58e2/labels.tsv",
+      "sha256": "5b7ba37a542efcceebd5d39a69342279e44565f017c2c099e36060c3eb0496ee",
+      "size_bytes": 1099
+    },
+    "right": {
+      "path": "/Users/maxlam/Downloads/Cogent-analysis-audit/DIMPLE-GWAS/DIMPLE-GWAS-freeze3/docs/edition3/qa/stage1/generated/fixed_reproduction/models/top_model_artifacts/model_060fac0208bb58e2/labels.tsv",
+      "sha256": "5b7ba37a542efcceebd5d39a69342279e44565f017c2c099e36060c3eb0496ee",
+      "size_bytes": 1099
+    }
+  },
+  "started_at_utc": "2026-08-26T15:22:03.773874+00:00",
+  "status": "complete",
+  "summary": {
+    "adjusted_rand_index": 1.0,
+    "changed_noise_status_count": 0,
+    "comparison_schema": "dimple-gwas.comparison.v3",
+    "id_order_equal": true,
+    "id_sets_equal": true,
+    "interpretation": "Structural concordance metrics are label-permutation invariant; numeric label equality is not treated as cluster identity. Procrustes, when finite, evaluates only supplied coordinates.",
+    "left_cluster_count_excluding_noise": 3,
+    "left_model_id": "model_060fac0208bb58e2",
+    "left_noise_count": 0,
+    "mapped_membership_match_fraction": 1.0,
+    "mapped_membership_matches": 24,
+    "noise_set_jaccard": 1.0,
+    "normalized_mutual_information": 1.0,
+    "procrustes_disparity": 2.7088204667806472e-31,
+    "right_cluster_count_excluding_noise": 3,
+    "right_model_id": "model_060fac0208bb58e2",
+    "right_noise_count": 0,
+    "sample_count": 24,
+    "variation_of_information_nats": 0.0
+  },
+  "warnings": []
+}

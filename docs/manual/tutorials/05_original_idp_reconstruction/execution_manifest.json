@@ -1,0 +1,20 @@
+{
+  "artifacts": [
+    {
+      "path": "tutorials/05_original_idp_reconstruction/README.md",
+      "sha256": "6ef089f16888c157c8621cb640c4eefc627e31a459f091f0536fccdc7ca3a2e0",
+      "size_bytes": 1545
+    }
+  ],
+  "command_logs": [],
+  "created_utc": "2026-08-25T13:37:18.980876+00:00",
+  "notes": [
+    "Track A documents immutable historical counts, score adaptation, and manual row-16 selection.",
+    "Track B full 164-IDP 1,000-seed execution is deferred until Docker by coordinator direction."
+  ],
+  "package_source_sha256": "df87825992ab51dc016c673cf420a978ba5c161bd6c755e00a5199ead310e65b",
+  "schema": "dimple-gwas.manual-tutorial.v1",
+  "software_version": "3.0.0rc1",
+  "status": "historical_track_complete_fresh_track_deferred",
+  "tutorial": "05_original_idp_reconstruction"
+}

@@ -1,0 +1,3 @@
+# Appendix D — Reviewer-method crosswalk
+
+The machine-readable crosswalk is `evidence/reviewer_reference_crosswalk.tsv`. The draft adopts the reviewer requests for clearer method positioning, parameter guidance, a practical tutorial, cautious treatment of unassigned IDPs, and separation of technical from biological validation. The supplied action register does not identify exact Yang or Zhao works, so no paper is attributed to those reviewers by inference. The PCA/ICA paper named in the manuscript is correctly attributed to Oblong et al. (2024), while Zhang et al. (2023) is a different pleiotropy paper.

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">HDBSCAN converts density into a hierarchy and a flat partition</title><desc id="desc">Noise is a retained analytical outcome, not a missing value.</desc>
+<defs><marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#2f6f9f"/></marker>
+<filter id="shadow"><feDropShadow dx="0" dy="4" stdDeviation="5" flood-opacity="0.12"/></filter></defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="80" y="82" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700" fill="#17324d">HDBSCAN converts density into a hierarchy and a flat partition</text>
+<text x="80" y="124" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#617181">Noise is a retained analytical outcome, not a missing value.</text>
+<rect x="90" y="250" width="310" height="180" rx="18" fill="#f3f7fa" stroke="#2f6f9f" stroke-width="3" filter="url(#shadow)"/>
+<text x="245.0" y="292" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#17324d">Core distances</text>
+<text x="245.0" y="330" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">local density scale</text>
+<text x="245.0" y="355" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">from min_samples</text><line x1="400" y1="340" x2="520" y2="340" stroke="#2f6f9f" stroke-width="4" marker-end="url(#arrow)"/><rect x="520" y="250" width="310" height="180" rx="18" fill="#eaf5f3" stroke="#2a9d8f" stroke-width="3" filter="url(#shadow)"/>
+<text x="675.0" y="292" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#17324d">Mutual</text>
+<text x="675.0" y="322" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#17324d">reachability</text>
+<text x="675.0" y="360" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">max(core_i, core_j,</text>
+<text x="675.0" y="385" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">distance)</text><line x1="830" y1="340" x2="950" y2="340" stroke="#2f6f9f" stroke-width="4" marker-end="url(#arrow)"/><rect x="950" y="250" width="310" height="180" rx="18" fill="#fff7df" stroke="#c79a2b" stroke-width="3" filter="url(#shadow)"/>
+<text x="1105.0" y="292" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#17324d">Hierarchy</text>
+<text x="1105.0" y="330" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">minimum spanning</text>
+<text x="1105.0" y="355" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">tree · condensed</text>
+<text x="1105.0" y="380" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">tree</text><line x1="1260" y1="340" x2="1380" y2="340" stroke="#2f6f9f" stroke-width="4" marker-end="url(#arrow)"/><rect x="1380" y="250" width="150" height="180" rx="18" fill="#fff0ec" stroke="#e76f51" stroke-width="3" filter="url(#shadow)"/>
+<text x="1455.0" y="292" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#17324d">Flat labels</text>
+<text x="1455.0" y="330" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">clusters + −1</text><rect x="430" y="550" width="740" height="42" rx="21" fill="#17324d"/><text x="800.0" y="578" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="white">Stability selects branches; −1 means parameter-conditional unassignment</text>
+<text x="80" y="858" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#617181">DIMPLE-GWAS Freeze 3 RC1 · Textbook Edition 2 · internal review</text>
+</svg>

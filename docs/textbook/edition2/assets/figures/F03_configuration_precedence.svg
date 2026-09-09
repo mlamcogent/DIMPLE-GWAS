@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">Configuration is resolved in three layers</title><desc id="desc">The overlay file is not the executed method until precedence has been resolved.</desc>
+<defs><marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#2f6f9f"/></marker>
+<filter id="shadow"><feDropShadow dx="0" dy="4" stdDeviation="5" flood-opacity="0.12"/></filter></defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="80" y="82" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700" fill="#17324d">Configuration is resolved in three layers</text>
+<text x="80" y="124" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#617181">The overlay file is not the executed method until precedence has been resolved.</text>
+<rect x="100" y="230" width="350" height="170" rx="18" fill="#f3f7fa" stroke="#2f6f9f" stroke-width="3" filter="url(#shadow)"/>
+<text x="275.0" y="272" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#17324d">Built-in mode</text>
+<text x="275.0" y="310" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">standard · extended ·</text>
+<text x="275.0" y="335" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">fixed · custom</text><line x1="450" y1="315" x2="620" y2="315" stroke="#2f6f9f" stroke-width="4" marker-end="url(#arrow)"/><rect x="620" y="230" width="350" height="170" rx="18" fill="#eaf5f3" stroke="#2a9d8f" stroke-width="3" filter="url(#shadow)"/>
+<text x="795.0" y="272" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#17324d">Merged YAML</text>
+<text x="795.0" y="310" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">recursive overlay on</text>
+<text x="795.0" y="335" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">mode defaults</text><line x1="970" y1="315" x2="1140" y2="315" stroke="#2f6f9f" stroke-width="4" marker-end="url(#arrow)"/><rect x="1140" y="230" width="350" height="170" rx="18" fill="#fff7df" stroke="#c79a2b" stroke-width="3" filter="url(#shadow)"/>
+<text x="1315.0" y="272" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#17324d">Explicit CLI</text>
+<text x="1315.0" y="310" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">highest-precedence</text>
+<text x="1315.0" y="335" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">values</text><line x1="795" y1="400" x2="795" y2="550" stroke="#2f6f9f" stroke-width="4" marker-end="url(#arrow)"/><rect x="515" y="550" width="560" height="150" rx="18" fill="#fff0ec" stroke="#e76f51" stroke-width="3" filter="url(#shadow)"/>
+<text x="795.0" y="592" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#17324d">Resolved configuration</text>
+<text x="795.0" y="630" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">inspect-config records the method</text>
+<text x="795.0" y="655" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">that will execute</text><rect x="500" y="755" width="590" height="42" rx="21" fill="#17324d"/><text x="795.0" y="783" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="white">show-search-space fixes the candidate denominator</text>
+<text x="80" y="858" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#617181">DIMPLE-GWAS Freeze 3 RC1 · Textbook Edition 2 · internal review</text>
+</svg>

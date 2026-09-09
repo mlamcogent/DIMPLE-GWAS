@@ -1,0 +1,14 @@
+interface	documented_in	runtime_help_checked	syntax_status	execution_status	exit_code	evidence	note
+inspect-config	Appendix A; relevant workflow chapter	yes	pass	pass	0	labs/execution_manifest.json#lab01_inspect_config	fresh isolated-environment record
+show-search-space	Appendix A; relevant workflow chapter	yes	pass	pass	0	labs/execution_manifest.json#lab01_show_search_space	fresh isolated-environment record
+run	Appendix A; relevant workflow chapter	yes	pass	pass	0	labs/execution_manifest.json#lab01_run	fresh isolated-environment record
+score-existing	Appendix A; relevant workflow chapter	yes	pass	pass	0	labs/execution_manifest.json#lab03_score_existing	fresh isolated-environment record
+summarize-models	Appendix A; relevant workflow chapter	yes	pass	pass	0	labs/execution_manifest.json#lab03_summarize	fresh isolated-environment record
+reproduce-model	Appendix A; relevant workflow chapter	yes	pass	pass	0	labs/execution_manifest.json#lab03_reproduce	fresh isolated-environment record
+explain	Appendix A; relevant workflow chapter	yes	pass	pass	0	labs/execution_manifest.json#lab03_explain	fresh isolated-environment record
+interpret	Appendix A; relevant workflow chapter	yes	pass	pass	0	labs/execution_manifest.json#lab03_interpret_alias	interpret is the executed compatibility alias for explain
+compare	Appendix A; relevant workflow chapter	yes	pass	pass	0	labs/execution_manifest.json#lab03_compare	fresh isolated-environment record
+validate	Appendix A; relevant workflow chapter	yes	pass	pass	0	labs/execution_manifest.json#lab03_validate	fresh isolated-environment record
+dimple-gwas --help	Appendix A	yes	pass	pass	0	appendices/A_complete_cli_reference.md	top-level grammar captured from the fresh environment
+dimple-gwas --version	Chapter 13; Appendix A	not_applicable	pass	pass	0	build/logs/cli/python_module_version.json	reported 3.0.0rc1
+python -m dimple_gwas	Chapter 13; Appendices A, G, O	yes	pass	pass	0	build/logs/cli/python_module_version.json	module entry point reaches the same dispatcher

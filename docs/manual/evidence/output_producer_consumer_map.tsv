@@ -1,0 +1,36 @@
+command	artifact	meaning	producer	consumer	format	condition
+run	resolved_config.yaml	resolved configuration	write_resolved_config	user, reproduce-model	YAML	always
+run/show-search-space	search_space_manifest.tsv/json	complete deterministic enumeration	write_search_space	audit, validate	TSV + JSON	always when command succeeds
+run	run_manifest.json	software/input/config/runtime/artifact provenance	write_model_outputs	validate, audit	JSON	complete run
+run	logs/run.log	execution narrative	setup_logger	operator	text	always
+run	models/all_models.tsv	all candidates in candidate order	write_model_outputs	score-existing, audit	TSV	always
+run	models/ranked_models.tsv	eligible candidates ranked with failures retained	write_model_outputs	summarize-models, selection	TSV	always
+run	models/all_models.parquet	supplementary columnar candidate table	write_model_outputs	analysis	Parquet	optional; failure recorded
+run	models/top_models.tsv	retained top-N eligible models	write_model_outputs	user	TSV	always; may be empty
+run	models/best_model.json	selected row, parameters, resolved config	write_model_outputs	reproduce-model	JSON	always; null model possible
+run	models/model_selection_manifest.json	formula, realized weights, counts, tie ordering	write_model_outputs	audit	JSON	always
+run	models/pareto_front.tsv	supplementary non-dominated candidate set	write_model_outputs	review	TSV	always
+run	models/family_summaries.tsv	parameter-family success/failure/metric summaries	write_model_outputs	review	TSV	always
+run	models/top_model_artifacts/<id>/labels.tsv	exact IDs, labels, display coordinates	_top_artifact	explain, compare	TSV	successful retained refit
+run	models/top_model_artifacts/<id>/summary.json	native retained-model contract and label hash	_top_artifact	reproduce-model, explain, compare	JSON	successful retained refit
+run	models/top_model_artifacts/<id>/reproduce.yaml	one-model fixed configuration	_top_artifact	operator	YAML	successful retained refit
+run	stage02_hdbscan_gridsearch_results.csv	legacy-compatible all-candidate alias	write_model_outputs	historical workflow	CSV	always
+run	stage03_optimized_cluster_solutions.csv	legacy-compatible ranked alias	write_model_outputs	historical workflow	CSV	always
+run	stage09_umap_vizdata_with_clusters.csv	selected labels and display coordinates	write_model_outputs	visualization, legacy workflow	CSV	selected retained refit
+run	stage09b_umap_vizdata_with_annotations.csv	selected labels joined to annotations	write_model_outputs	user	CSV	valid annotation join
+score-existing	<output> + <output>.manifest.json	rescored/ranked table and scoring schema record	_score	summarize-models	TSV + JSON	always
+summarize-models	family_summaries.tsv, pareto_front.tsv, top_models.tsv, summary.json	post hoc model summaries	_summarize	user	TSV + JSON	always
+explain	original_space_similarity.tsv.gz	ordered full similarity matrix	run_explanation	heatmap, audit	gzip TSV	when enabled
+explain	heatmap_order.tsv	exact plotted order, label, noise flag, coordinates	run_explanation	figure audit	TSV	always
+explain	cluster_cutpoints.tsv	zero/one-based block boundaries	run_explanation	figure audit	TSV	always
+explain	cluster_summary.tsv	within/between descriptive similarity summaries	run_explanation	user	TSV	always
+explain	projection_quality.tsv	trustworthiness/continuity of supplied coordinates	run_explanation	user	TSV	when coordinates are usable
+explain	coordinate_associations.tsv	opt-in descriptive coordinate correlations	run_explanation	user	TSV	opt-in only
+explain	exclusions.tsv	unmatched/noise-policy exclusions	run_explanation	audit	TSV	always, header when empty
+explain	original_space_heatmap.png/html	static and interactive ordered heatmaps	run_explanation	user	PNG + HTML	always within safeguards
+explain	interpretation_manifest.json + README.md	scope, hashes, options, caveats	run_explanation	audit, user	JSON + Markdown	always
+compare	comparison_summary.json	ARI/NMI/VI/noise/membership/coordinate metrics	run_comparison	user	JSON	always
+compare	membership_comparison.tsv, cluster_sizes.tsv, label_confusion.tsv, optimal_label_mapping.tsv	ID-level and cluster-level concordance	run_comparison	user	TSV	always
+compare	comparison_manifest.json	sources/options/output hashes	run_comparison	audit	JSON	always
+validate	validation_checks.tsv	one pass/warn/fail row per contract check	run_validation	user, CI	TSV	always
+validate	validation_report.json + validation_manifest.json	aggregate status and provenance	run_validation	user, CI	JSON	always

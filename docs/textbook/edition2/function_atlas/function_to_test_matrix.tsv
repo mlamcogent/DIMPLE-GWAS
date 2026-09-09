@@ -1,0 +1,111 @@
+qualified_symbol	tier	direct_test_count	direct_tests	coverage_note
+cli._add_config_source	C	0		direct name match plus integration mapping required where zero
+cli._add_run_options	C	0		direct name match plus integration mapping required where zero
+cli._overrides	C	0		direct name match plus integration mapping required where zero
+cli._resolved	C	0		direct name match plus integration mapping required where zero
+cli.build_parser	A	1	tests/test_freeze3_comparison_validation.py::test_cli_exposes_new_commands_and_alias	direct name match plus integration mapping required where zero
+cli._inspect	A	0		direct name match plus integration mapping required where zero
+cli._show	A	0		direct name match plus integration mapping required where zero
+cli._score	A	0		direct name match plus integration mapping required where zero
+cli._summarize	A	0		direct name match plus integration mapping required where zero
+cli._reproduce	A	0		direct name match plus integration mapping required where zero
+cli._explain	A	0		direct name match plus integration mapping required where zero
+cli._compare	A	0		direct name match plus integration mapping required where zero
+cli._validate	A	0		direct name match plus integration mapping required where zero
+cli.main	A	1	tests/test_freeze3_comparison_validation.py::test_cli_compare_end_to_end	direct name match plus integration mapping required where zero
+comparison._resolve_labels	C	0		direct name match plus integration mapping required where zero
+comparison._columns	C	0		direct name match plus integration mapping required where zero
+comparison._columns.<locals>.resolve	C	0		direct name match plus integration mapping required where zero
+comparison._variation_of_information	C	0		direct name match plus integration mapping required where zero
+comparison.run_comparison	A	3	tests/test_freeze3_comparison_validation.py::test_comparison_rejects_duplicate_ids; tests/test_freeze3_comparison_validation.py::test_comparison_requires_identical_id_sets; tests/test_freeze3_comparison_validation.py::test_label_permutation_comparison_is_structurally_equal	direct name match plus integration mapping required where zero
+config._base_config	C	0		direct name match plus integration mapping required where zero
+config.builtin_config	B	0		direct name match plus integration mapping required where zero
+config.deep_merge	B	0		direct name match plus integration mapping required where zero
+config.load_yaml	B	0		direct name match plus integration mapping required where zero
+config.set_dotted	B	0		direct name match plus integration mapping required where zero
+config.resolve_config	A	11	tests/test_config.py::test_cli_override_precedence; tests/test_config.py::test_fixed_mode_rejects_lists; tests/test_config.py::test_invalid_combinations_rejected; tests/test_config.py::test_standard_defaults_match_dev_declarations; tests/test_freeze3_interpretation.py::test_interpretation_defaults_are_additive; tests/test_freeze3_interpretation.py::test_invalid_interpretation_configuration_fails; tests/test_freeze3_interpretation.py::test_legacy_incomplete_matching_writes_exclusions; tests/test_freeze3_interpretation.py::test_native_explanation_end_to_end; tests/test_freeze3_interpretation.py::test_native_explanation_refuses_nonempty_output; tests/test_search_space.py::test_search_enumeration_and_stable_ids; tests/test_search_space.py::test_search_limit_never_silently_samples	direct name match plus integration mapping required where zero
+config._coerce_bool	C	0		direct name match plus integration mapping required where zero
+config._range_values	C	0		direct name match plus integration mapping required where zero
+config._string_sequence	C	0		direct name match plus integration mapping required where zero
+config.as_list	B	1	tests/test_config.py::test_scalar_list_and_range_handling	direct name match plus integration mapping required where zero
+config.normalized_parameter_space	A	1	tests/test_config.py::test_cli_override_precedence	direct name match plus integration mapping required where zero
+config._finite	C	0		direct name match plus integration mapping required where zero
+config.validate_config	A	0		direct name match plus integration mapping required where zero
+config.config_as_json	B	0		direct name match plus integration mapping required where zero
+hdbscan_runner.estimator_kwargs	B	0		direct name match plus integration mapping required where zero
+hdbscan_runner.fit_hdbscan	A	1	tests/test_failure_and_provenance.py::test_failed_candidate_is_retained	direct name match plus integration mapping required where zero
+interpretation.is_noise_label	B	0		direct name match plus integration mapping required where zero
+interpretation.label_sort_key	B	0		direct name match plus integration mapping required where zero
+interpretation.detect_coordinate_columns	B	1	tests/test_freeze3_interpretation.py::test_coordinate_detection_is_numeric_suffix_order	direct name match plus integration mapping required where zero
+interpretation._resolve_column	C	0		direct name match plus integration mapping required where zero
+interpretation._native_sources	C	0		direct name match plus integration mapping required where zero
+interpretation._align_inputs	C	0		direct name match plus integration mapping required where zero
+interpretation.compute_similarity	A	1	tests/test_freeze3_interpretation.py::test_similarity_undefined_fails_by_default	direct name match plus integration mapping required where zero
+interpretation._hierarchical_order	C	0		direct name match plus integration mapping required where zero
+interpretation.compute_order	A	1	tests/test_freeze3_interpretation.py::test_cluster_order_is_numeric_and_noise_last	direct name match plus integration mapping required where zero
+interpretation.calculate_cutpoints	B	1	tests/test_freeze3_interpretation.py::test_cutpoint_indices_are_auditable	direct name match plus integration mapping required where zero
+interpretation.calculate_cluster_summary	B	0		direct name match plus integration mapping required where zero
+interpretation.coordinate_association_table	A	0		direct name match plus integration mapping required where zero
+interpretation._write_readme	C	0		direct name match plus integration mapping required where zero
+interpretation.run_explanation	A	3	tests/test_freeze3_interpretation.py::test_legacy_incomplete_matching_writes_exclusions; tests/test_freeze3_interpretation.py::test_native_explanation_end_to_end; tests/test_freeze3_interpretation.py::test_native_explanation_refuses_nonempty_output	direct name match plus integration mapping required where zero
+io.resolve_separator	B	0		direct name match plus integration mapping required where zero
+io.read_table	A	1	tests/test_freeze3_interpretation.py::test_reader_supports_excel_sheet	direct name match plus integration mapping required where zero
+io.read_model_table	B	0		direct name match plus integration mapping required where zero
+io.ensure_empty_output_dir	B	1	tests/test_freeze3_interpretation.py::test_empty_output_directory_helper	direct name match plus integration mapping required where zero
+io.normalize_identifier	B	0		direct name match plus integration mapping required where zero
+io.validated_identifiers	A	1	tests/test_freeze3_interpretation.py::test_validated_identifiers_strip_but_reject_duplicates	direct name match plus integration mapping required where zero
+io.atomic_json_dump	B	0		direct name match plus integration mapping required where zero
+io.json_safe	B	0		direct name match plus integration mapping required where zero
+metrics.effective_neighbor_count	B	1	tests/test_preprocessing_metrics.py::test_effective_neighbor_edge_cases	direct name match plus integration mapping required where zero
+metrics.embedding_quality_metrics	A	1	tests/test_preprocessing_metrics.py::test_optimized_trustworthiness_and_continuity	direct name match plus integration mapping required where zero
+metrics._cluster_sizes	C	0		direct name match plus integration mapping required where zero
+metrics.evaluate_candidate	A	0		direct name match plus integration mapping required where zero
+metrics.is_finite_number	B	0		direct name match plus integration mapping required where zero
+pipeline.setup_logger	B	0		direct name match plus integration mapping required where zero
+pipeline._failed_row	C	0		direct name match plus integration mapping required where zero
+pipeline._evaluate_one	C	1	tests/test_failure_and_provenance.py::test_failed_candidate_is_retained	direct name match plus integration mapping required where zero
+pipeline._annotation_frame	C	0		direct name match plus integration mapping required where zero
+pipeline.run_search	A	2	tests/test_pipeline_integration.py::test_custom_leaf_eom_metric_and_max_size_run; tests/test_pipeline_integration.py::test_fixed_model_reproduction	direct name match plus integration mapping required where zero
+preprocessing.ExplanationMatrix	B	0		direct name match plus integration mapping required where zero
+preprocessing.rank_inverse_normal_transform	A	1	tests/test_preprocessing_metrics.py::test_rint_and_numeric_matrix	direct name match plus integration mapping required where zero
+preprocessing.prepare_analysis_matrix	A	1	tests/test_preprocessing_metrics.py::test_rint_and_numeric_matrix	direct name match plus integration mapping required where zero
+preprocessing._unique_feature_names	C	0		direct name match plus integration mapping required where zero
+preprocessing.infer_explanation_orientation	B	1	tests/test_freeze3_interpretation.py::test_orientation_inference_uses_exact_overlap	direct name match plus integration mapping required where zero
+preprocessing.prepare_explanation_matrix	A	2	tests/test_freeze3_interpretation.py::test_variants_by_vectors_preserves_vector_ids; tests/test_freeze3_interpretation.py::test_vectors_by_variants_explicit_id_column	direct name match plus integration mapping required where zero
+provenance.sha256_file	B	1	tests/test_failure_and_provenance.py::test_authoritative_source_hash_unchanged	direct name match plus integration mapping required where zero
+provenance.package_versions	B	0		direct name match plus integration mapping required where zero
+provenance.utc_now	B	0		direct name match plus integration mapping required where zero
+provenance.file_record	B	0		direct name match plus integration mapping required where zero
+provenance.package_source_digest	A	1	tests/test_freeze3_comparison_validation.py::test_package_source_digest_is_stable	direct name match plus integration mapping required where zero
+provenance.base_manifest	A	0		direct name match plus integration mapping required where zero
+ranking.rank_models	A	1	tests/test_scoring_ranking.py::test_custom_scoring_ranking_top_n_and_pareto	direct name match plus integration mapping required where zero
+ranking.top_models	B	1	tests/test_scoring_ranking.py::test_custom_scoring_ranking_top_n_and_pareto	direct name match plus integration mapping required where zero
+ranking.pareto_front	A	2	tests/test_pipeline_integration.py::test_custom_leaf_eom_metric_and_max_size_run; tests/test_scoring_ranking.py::test_custom_scoring_ranking_top_n_and_pareto	direct name match plus integration mapping required where zero
+ranking.family_summaries	A	1	tests/test_pipeline_integration.py::test_custom_leaf_eom_metric_and_max_size_run	direct name match plus integration mapping required where zero
+reporting._write_tsv	C	0		direct name match plus integration mapping required where zero
+reporting.write_resolved_config	B	0		direct name match plus integration mapping required where zero
+reporting.write_search_space	B	0		direct name match plus integration mapping required where zero
+reporting._top_artifact	C	0		direct name match plus integration mapping required where zero
+reporting.write_model_outputs	A	0		direct name match plus integration mapping required where zero
+scoring.normalize_model_table_schema	B	1	tests/test_freeze3_comparison_validation.py::test_historical_notebook_model_schema_is_adapted	direct name match plus integration mapping required where zero
+scoring._safe_divide_by_max	C	0		direct name match plus integration mapping required where zero
+scoring._scale_final	C	0		direct name match plus integration mapping required where zero
+scoring.legacy_dimple_score	A	2	tests/test_scoring_ranking.py::test_legacy_formula_matches_literal_reference; tests/test_scoring_ranking.py::test_zero_variance_and_noise_exclusion	direct name match plus integration mapping required where zero
+scoring.custom_score	A	1	tests/test_scoring_ranking.py::test_custom_scoring_ranking_top_n_and_pareto	direct name match plus integration mapping required where zero
+scoring.apply_scoring	A	0		direct name match plus integration mapping required where zero
+search_space.canonical_json	B	0		direct name match plus integration mapping required where zero
+search_space.stable_identifier	B	0		direct name match plus integration mapping required where zero
+search_space.count_candidates	A	1	tests/test_config.py::test_standard_defaults_match_dev_declarations	direct name match plus integration mapping required where zero
+search_space._dict_product	C	0		direct name match plus integration mapping required where zero
+search_space.model_family	B	0		direct name match plus integration mapping required where zero
+search_space.enumerate_candidates	A	3	tests/test_failure_and_provenance.py::test_failed_candidate_is_retained; tests/test_search_space.py::test_search_enumeration_and_stable_ids; tests/test_search_space.py::test_search_limit_never_silently_samples	direct name match plus integration mapping required where zero
+search_space.flatten_candidate	B	0		direct name match plus integration mapping required where zero
+umap_runner._fit_one	C	0		direct name match plus integration mapping required where zero
+umap_runner.ensemble_seeds	A	0		direct name match plus integration mapping required where zero
+umap_runner.run_repeated_umap	A	0		direct name match plus integration mapping required where zero
+validation.run_validation	A	2	tests/test_freeze3_comparison_validation.py::test_validation_detects_hash_mismatch; tests/test_freeze3_comparison_validation.py::test_validation_passes_complete_contract	direct name match plus integration mapping required where zero
+validation.run_validation.<locals>.record	C	0		direct name match plus integration mapping required where zero
+visualization._label_key	C	0		direct name match plus integration mapping required where zero
+visualization.sample_block_preserving	B	1	tests/test_freeze3_interpretation.py::test_block_sampling_preserves_tiny_cluster	direct name match plus integration mapping required where zero
+visualization._correlation_rgb	C	0		direct name match plus integration mapping required where zero
+visualization.render_heatmap	A	0		direct name match plus integration mapping required where zero

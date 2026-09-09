@@ -1,0 +1,47 @@
+edition1_chapter	edition1_title	edition2_destination	action	note
+1	What DIMPLE-GWAS is and is not	1-24 or appendix; adjudicated during drafting	rewrite/merge	Edition 1 evidence retained; prose not copied wholesale
+2	The scientific problem: structure among genetically informed phenotype vectors	1-24 or appendix; adjudicated during drafting	rewrite/merge	Edition 1 evidence retained; prose not copied wholesale
+3	Stage 1 scope and the Freeze 3 RC1 status boundary	1,23,24	rewrite/merge	Edition 1 evidence retained; prose not copied wholesale
+4	From input matrix to candidate partitions	3,6	rewrite/merge	Edition 1 evidence retained; prose not copied wholesale
+5	Essential GWAS, vector-space, distance, and clustering concepts	1-24 or appendix; adjudicated during drafting	rewrite/merge	Edition 1 evidence retained; prose not copied wholesale
+6	Why repeated nonlinear embeddings and density clustering are used	1-24 or appendix; adjudicated during drafting	rewrite/merge	Edition 1 evidence retained; prose not copied wholesale
+7	Choosing among complementary methods	1-24 or appendix; adjudicated during drafting	rewrite/merge	Edition 1 evidence retained; prose not copied wholesale
+8	Scientific interpretation, circularity, and validation boundaries	12,16,23	rewrite/merge	Edition 1 evidence retained; prose not copied wholesale
+9	System requirements and isolated environment setup	13	rewrite/merge	Edition 1 evidence retained; prose not copied wholesale
+10	Input data contract, orientation, metadata columns, and missingness	3,6	rewrite/merge	Edition 1 evidence retained; prose not copied wholesale
+11	Configuration files and precedence	10,14	rewrite/merge	Edition 1 evidence retained; prose not copied wholesale
+12	Inspecting a configuration and enumerating the search space	10,14	rewrite/merge	Edition 1 evidence retained; prose not copied wholesale
+13	Fixed synthetic quickstart	18-22	rewrite/merge	Edition 1 evidence retained; prose not copied wholesale
+14	Reading the run manifest	1-24 or appendix; adjudicated during drafting	rewrite/merge	Edition 1 evidence retained; prose not copied wholesale
+15	Preprocessing and optional RINT	3,6	rewrite/merge	Edition 1 evidence retained; prose not copied wholesale
+16	UMAP and densMAP fundamentals	7-8	rewrite/merge	Edition 1 evidence retained; prose not copied wholesale
+17	Repeated seeds, concatenated embeddings, determinism, and compute cost	1-24 or appendix; adjudicated during drafting	rewrite/merge	Edition 1 evidence retained; prose not copied wholesale
+18	HDBSCAN concepts and the Freeze 3 search grid	9	rewrite/merge	Edition 1 evidence retained; prose not copied wholesale
+19	Candidate-model metrics	1-24 or appendix; adjudicated during drafting	rewrite/merge	Edition 1 evidence retained; prose not copied wholesale
+20	The legacy_dimple score and optional alternatives	11,16	rewrite/merge	Edition 1 evidence retained; prose not copied wholesale
+21	Ranking, summarising, and choosing a model	11,16	rewrite/merge	Edition 1 evidence retained; prose not copied wholesale
+22	Reproducing a selected model	12,16,23	rewrite/merge	Edition 1 evidence retained; prose not copied wholesale
+23	Comparing partitions and validating outputs	12,16,23	rewrite/merge	Edition 1 evidence retained; prose not copied wholesale
+24	Why UMAP coordinates are not biological loadings	7-8	rewrite/merge	Edition 1 evidence retained; prose not copied wholesale
+25	Returning to the original input-vector space	3,6	rewrite/merge	Edition 1 evidence retained; prose not copied wholesale
+26	Pearson and Spearman association summaries	1-24 or appendix; adjudicated during drafting	rewrite/merge	Edition 1 evidence retained; prose not copied wholesale
+27	Cluster heatmaps, ordering, annotations, and cutpoints	17,21	rewrite/merge	Edition 1 evidence retained; prose not copied wholesale
+28	Noise assignments and uncertainty	9	rewrite/merge	Edition 1 evidence retained; prose not copied wholesale
+29	Avoiding double dipping and post-selection overclaiming	11,16	rewrite/merge	Edition 1 evidence retained; prose not copied wholesale
+30	Technical, statistical, and biological validation	12,16,23	rewrite/merge	Edition 1 evidence retained; prose not copied wholesale
+31	Reporting a DIMPLE-GWAS analysis	1-24 or appendix; adjudicated during drafting	rewrite/merge	Edition 1 evidence retained; prose not copied wholesale
+32	Fixed synthetic dataset case study	18-22	rewrite/merge	Edition 1 evidence retained; prose not copied wholesale
+33	Custom bounded search-space case study	10,14	rewrite/merge	Edition 1 evidence retained; prose not copied wholesale
+34	Explanation, comparison, and validation case study	12,16,23	rewrite/merge	Edition 1 evidence retained; prose not copied wholesale
+35	MNIST as a software benchmark	18-22	rewrite/merge	Edition 1 evidence retained; prose not copied wholesale
+36	Original 164-IDP analysis	18-22	rewrite/merge	Edition 1 evidence retained; prose not copied wholesale
+37	Complete command reference	1-24 or appendix; adjudicated during drafting	rewrite/merge	Edition 1 evidence retained; prose not copied wholesale
+38	Complete configuration reference	10,14	rewrite/merge	Edition 1 evidence retained; prose not copied wholesale
+39	Search-space reference	10,14	rewrite/merge	Edition 1 evidence retained; prose not copied wholesale
+40	Scoring and model-selection reference	11,16	rewrite/merge	Edition 1 evidence retained; prose not copied wholesale
+41	Output atlas and data dictionary	1-24 or appendix; adjudicated during drafting	rewrite/merge	Edition 1 evidence retained; prose not copied wholesale
+42	Provenance and reproducibility checklist	12,16,23	rewrite/merge	Edition 1 evidence retained; prose not copied wholesale
+43	Error messages, troubleshooting, and recovery	1-24 or appendix; adjudicated during drafting	rewrite/merge	Edition 1 evidence retained; prose not copied wholesale
+44	Performance, memory, threading, and bounded-run guidance	1-24 or appendix; adjudicated during drafting	rewrite/merge	Edition 1 evidence retained; prose not copied wholesale
+45	Migration from Dev and Freeze 2	1-24 or appendix; adjudicated during drafting	rewrite/merge	Edition 1 evidence retained; prose not copied wholesale
+46	Known issues and scientific limitations	1,23,24	rewrite/merge	Edition 1 evidence retained; prose not copied wholesale

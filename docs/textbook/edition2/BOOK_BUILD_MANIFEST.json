@@ -1,0 +1,204 @@
+{
+  "author_source": {
+    "path": "Cogent manuscript/Manuscript-draft5_05.25.2026.docx",
+    "policy": "Preserve manuscript order and degree convention; exclude contacts from textbook artifacts.",
+    "sha256": "eb4cce0f23f1c3d385e8ff0fa378e59d43caf2c2c6974aa96f642db26fc4fcdd"
+  },
+  "authors": [
+    "Upasana Bhattacharyya, PhD",
+    "Jibin John, PhD",
+    "Zhong, Yuanxin, PhD",
+    "Michael Preuss, PhD",
+    "Tian Ge, PhD",
+    "Todd Lencz, PhD",
+    "Max Lam, PhD"
+  ],
+  "baseline": {
+    "audit_evidence": [
+      "qa/edition1_content_audit.md",
+      "qa/edition1_chapter_gap_matrix.tsv",
+      "qa/edition1_red_team_report.md",
+      "qa/edition1_visual_defect_ledger.tsv",
+      "qa/edition1_page_figure_audit.md"
+    ],
+    "chapters": 46,
+    "confirmed_material_visual_defects": [
+      "VIS-001",
+      "VIS-002",
+      "VIS-003"
+    ],
+    "edition1_markdown": "docs/manual/DIMPLE_GWAS_FREEZE3_RC1_ANALYST_MANUAL.md",
+    "edition1_pdf": "docs/manual/DIMPLE_GWAS_FREEZE3_RC1_ANALYST_MANUAL.pdf",
+    "pages": 122
+  },
+  "coordinator_decisions": {
+    "distribution_stage": "internal review, prepared as close to public-facing as possible",
+    "docker_validation": "pending",
+    "fresh_164_idp_1000_seed_run": "deferred until Docker stage",
+    "reviewer_correspondence": "private evidence; sanitized crosswalk only",
+    "team_adjudication": "pending"
+  },
+  "curriculum": {
+    "chapters": 24,
+    "gate_4": "pass",
+    "parts": 5,
+    "planned_substantive_words": 90700
+  },
+  "documentation": {
+    "edition_date": "2026-08-26",
+    "full_title": "DIMPLE-GWAS Freeze 3 RC1 Academic Textbook and Analyst Reference, Edition 2",
+    "short_label": "TE2",
+    "status": "internal_review_near_public_facing"
+  },
+  "edition2_artifacts": {
+    "html": {
+      "bytes": 2048569,
+      "path": "DIMPLE_GWAS_FREEZE3_RC1_ACADEMIC_TEXTBOOK_EDITION2.html",
+      "self_contained": true,
+      "sha256": "42ba8527d31865114d934e2c4d0f6444a7db7b07370704ed3fa31647e8358986"
+    },
+    "markdown": {
+      "bytes": 862857,
+      "path": "DIMPLE_GWAS_FREEZE3_RC1_ACADEMIC_TEXTBOOK_EDITION2.md",
+      "regex_words": 109808,
+      "sha256": "d6bcdd943c85257b06ab958cf97911a15dab9220af97a0a49204d83519700c9e"
+    },
+    "pdf": {
+      "bytes": 6293648,
+      "empty_text_pages": [],
+      "extracted_words": 110000,
+      "outline_root_items": 0,
+      "page_size": "US Letter",
+      "pages": 370,
+      "path": "DIMPLE_GWAS_FREEZE3_RC1_ACADEMIC_TEXTBOOK_EDITION2.pdf",
+      "sha256": "66ac16e8dee4f1c3f0902fdc7875dcdc0d08f9f1e230e977f639724fd79d9003",
+      "tagged": true
+    }
+  },
+  "edition2_metrics": {
+    "appendices": 15,
+    "assembled_words_regex": 109808,
+    "callables": 110,
+    "chapters": 24,
+    "claim_register_entries": 30,
+    "command_interfaces_verified": 13,
+    "contact_sheets_inspected": 19,
+    "executed_command_records": 14,
+    "figures": 21,
+    "figures_inspected": 21,
+    "fresh_output_patterns_verified": 34,
+    "labs": 6,
+    "main_chapter_words_regex": 87534,
+    "numbered_display_equations": 9,
+    "output_artifact_patterns": 35,
+    "parts": 5,
+    "rendered_pages_inspected": 370,
+    "tables": 35,
+    "tests": {
+      "passed": 45,
+      "warnings_retained": 5
+    },
+    "tier_a_b_dossiers_complete": 78,
+    "used_citation_keys": 23,
+    "verified_bibliography_entries": 25
+  },
+  "function_inventory": {
+    "denominator": 110,
+    "gate_1": "pass",
+    "gate_c_final_dossiers": "pass",
+    "kind_counts": {
+      "class": 1,
+      "module_function": 107,
+      "nested_function": 2
+    },
+    "scope": "package-defined module functions, classes, methods, and nested local functions; imported third-party callables excluded",
+    "tier_a_b_complete_dossiers": 78,
+    "tier_counts": {
+      "A": 42,
+      "B": 36,
+      "C": 32
+    }
+  },
+  "labs": {
+    "0": "executed_pass",
+    "1": "executed_pass",
+    "2": "executed_pass",
+    "3": "executed_pass",
+    "4": "protocol_only",
+    "5": "historical_documented_fresh_run_deferred_until_docker",
+    "command_records": 14,
+    "gate_6": "pass_with_bounded_labs_4_5",
+    "tests": "45 passed; 5 retained warnings"
+  },
+  "literature": {
+    "claim_register_entries": 30,
+    "unresolved_reviewer_attributions": [
+      "Yang-attributed paper",
+      "Zhao-attributed paper"
+    ],
+    "verified_entries": 25
+  },
+  "output_atlas": {
+    "artifact_patterns": 35,
+    "freshly_verified": 34,
+    "gate_7": "pass_with_optional_coordinate_associations_not_executed",
+    "important_non_artifacts": 3,
+    "optional_unexecuted": 1
+  },
+  "phase_status": {
+    "phase_0_baseline_audit": "complete",
+    "phase_10_typesetting": "complete_pdf_html_markdown",
+    "phase_11_qa": "complete_with_documented_release_limitations",
+    "phase_1_function_atlas": "complete_gate_c_pass",
+    "phase_2_statistical_foundations": "complete",
+    "phase_3_claims_and_literature": "complete_with_named_attribution_gap",
+    "phase_4_curriculum": "complete",
+    "phase_5_calibration": "complete_99_of_100",
+    "phase_6_labs": "complete_labs_0_3_pass_labs_4_5_bounded",
+    "phase_7_output_atlas": "complete_with_optional_coordinate_associations_not_executed",
+    "phase_8_drafting": "complete_24_chapters_15_appendices",
+    "phase_9_figures": "complete_21_figures"
+  },
+  "qa": {
+    "acceptance_gates": {
+      "A": "pass",
+      "B": "pass_with_limitation",
+      "C": "pass",
+      "D": "pass",
+      "E": "pass_with_limitation",
+      "F": "pass_with_limitation",
+      "G": "pass_with_limitation",
+      "H": "pass_with_limitation",
+      "I": "pass_with_limitation",
+      "J": "pass",
+      "K": "pass_with_limitation"
+    },
+    "chapter_rubric_range_of_36": {
+      "maximum": 36,
+      "minimum": 36
+    },
+    "failed_citation_rows": 0,
+    "failed_cross_references": 0,
+    "failed_function_rows": 0,
+    "known_render_defects_after_remediation": 0,
+    "privacy_findings": 0
+  },
+  "schema": "dimple-gwas.textbook-edition2-build.v1",
+  "software": {
+    "git_identity": null,
+    "git_identity_note": "No usable Git metadata is present; SHA-256 identity is used.",
+    "name": "DIMPLE-GWAS Freeze 3 RC1",
+    "version": "3.0.0rc1"
+  },
+  "source_identities": {
+    "edition1_markdown_sha256": "bbfc71ac27544bbee8eda79881a404ee0e354319e32cb809ff81304f1fdd205b",
+    "edition1_pdf_sha256": "1939e8b5745819749f14ed23fe2e3ad41b71f23949151525a87b14d47be56566",
+    "edition2_macro_sha256": "7a6fcb9f1dc4ad1702d8d9529604c71cfe86011705f232971e746ee9b6db3625",
+    "pyproject_sha256": "25fb916335c8ce56d73848c8892cc0c41f7483e20fcfc80696d994a944704576"
+  },
+  "statistical_concepts": {
+    "count": 35,
+    "coverage": "equations, cautions, functions, outputs, chapters, and evidence mapped",
+    "gate_2": "pass_planning"
+  }
+}

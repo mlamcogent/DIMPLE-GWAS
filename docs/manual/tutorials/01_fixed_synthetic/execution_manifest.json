@@ -1,0 +1,249 @@
+{
+  "artifacts": [
+    {
+      "path": "tutorials/01_fixed_synthetic/README.md",
+      "sha256": "5f1b3de9db22fbbfa251071d7d98742a79bd75907f99e9abe16f4032d3d9d259",
+      "size_bytes": 1229
+    },
+    {
+      "path": "tutorials/01_fixed_synthetic/run_20260825/logs/model_failures.tsv",
+      "sha256": "cb101945e7feb489127643e533ea5c0126ca95747f8d0bf5e18f63dd891202f2",
+      "size_bytes": 1297
+    },
+    {
+      "path": "tutorials/01_fixed_synthetic/run_20260825/logs/run.log",
+      "sha256": "a36cd46f691c1b1630b8ab087afa486ea1702d6e8b65439b2cd445a593aaa8b1",
+      "size_bytes": 609
+    },
+    {
+      "path": "tutorials/01_fixed_synthetic/run_20260825/models/all_models.parquet",
+      "sha256": "b8c5a5d443a1faa5f1d7868ca05e2fc87e8e3d861b7642088be4235743dd54b9",
+      "size_bytes": 45449
+    },
+    {
+      "path": "tutorials/01_fixed_synthetic/run_20260825/models/all_models.tsv",
+      "sha256": "dd846882b697c0fde82c3a91503e2a1f581a3c3ea483e04d4101849f97a0f3fb",
+      "size_bytes": 1932
+    },
+    {
+      "path": "tutorials/01_fixed_synthetic/run_20260825/models/best_model.json",
+      "sha256": "1728f946825cac7358b60dc541e98b7cc86927ab6ec5c644cfb063b3c14a9fac",
+      "size_bytes": 5276
+    },
+    {
+      "path": "tutorials/01_fixed_synthetic/run_20260825/models/family_summaries.tsv",
+      "sha256": "18c3117be9d8fdd47aaee5b94e127dc000a71e293fa2004a33914bf1f0be023f",
+      "size_bytes": 816
+    },
+    {
+      "path": "tutorials/01_fixed_synthetic/run_20260825/models/model_selection_manifest.json",
+      "sha256": "591c1b9f468930ee51f4631b0b1a364c20eba77dff4b3f3dfae1275f27275611",
+      "size_bytes": 1458
+    },
+    {
+      "path": "tutorials/01_fixed_synthetic/run_20260825/models/pareto_front.tsv",
+      "sha256": "a420d6267a1934a830fe6bbdfe41a817114f37ce607bf75b3acdf4c8d38d1507",
+      "size_bytes": 2056
+    },
+    {
+      "path": "tutorials/01_fixed_synthetic/run_20260825/models/ranked_models.tsv",
+      "sha256": "dd846882b697c0fde82c3a91503e2a1f581a3c3ea483e04d4101849f97a0f3fb",
+      "size_bytes": 1932
+    },
+    {
+      "path": "tutorials/01_fixed_synthetic/run_20260825/models/top_model_artifacts/model_060fac0208bb58e2/labels.tsv",
+      "sha256": "5b7ba37a542efcceebd5d39a69342279e44565f017c2c099e36060c3eb0496ee",
+      "size_bytes": 1099
+    },
+    {
+      "path": "tutorials/01_fixed_synthetic/run_20260825/models/top_model_artifacts/model_060fac0208bb58e2/reproduce.yaml",
+      "sha256": "63778d55010005e184622c75d111a48ad1cbb4309d539328d76ec4f1d84fa4c4",
+      "size_bytes": 1466
+    },
+    {
+      "path": "tutorials/01_fixed_synthetic/run_20260825/models/top_model_artifacts/model_060fac0208bb58e2/summary.json",
+      "sha256": "1487dc090fdc69d687846b1e66be43e208c29ca62dd6a33c2e506eb532a27989",
+      "size_bytes": 5732
+    },
+    {
+      "path": "tutorials/01_fixed_synthetic/run_20260825/models/top_models.tsv",
+      "sha256": "dd846882b697c0fde82c3a91503e2a1f581a3c3ea483e04d4101849f97a0f3fb",
+      "size_bytes": 1932
+    },
+    {
+      "path": "tutorials/01_fixed_synthetic/run_20260825/resolved_config.yaml",
+      "sha256": "63778d55010005e184622c75d111a48ad1cbb4309d539328d76ec4f1d84fa4c4",
+      "size_bytes": 1466
+    },
+    {
+      "path": "tutorials/01_fixed_synthetic/run_20260825/run_manifest.json",
+      "sha256": "b88cba1c3a1b9442309fe612cdfe897c06bd1a7945e20bc9270d44b3f9e1add1",
+      "size_bytes": 6683
+    },
+    {
+      "path": "tutorials/01_fixed_synthetic/run_20260825/search_space_manifest.json",
+      "sha256": "34ea61c45adca21e9bfcf0b805924b5eaede5f50fbd613072ea56c125b31e296",
+      "size_bytes": 1234
+    },
+    {
+      "path": "tutorials/01_fixed_synthetic/run_20260825/search_space_manifest.tsv",
+      "sha256": "eed884ddb4e457237930b16cf77dd9440b0008e916ac948f69b7822e83ccb64b",
+      "size_bytes": 732
+    },
+    {
+      "path": "tutorials/01_fixed_synthetic/run_20260825/stage02_hdbscan_gridsearch_results.csv",
+      "sha256": "8165cae644dfba20afa6e413bc021d13c2590123e02df3fde2733be1e5e4f5b2",
+      "size_bytes": 1932
+    },
+    {
+      "path": "tutorials/01_fixed_synthetic/run_20260825/stage03_optimized_cluster_solutions.csv",
+      "sha256": "8165cae644dfba20afa6e413bc021d13c2590123e02df3fde2733be1e5e4f5b2",
+      "size_bytes": 1932
+    },
+    {
+      "path": "tutorials/01_fixed_synthetic/run_20260825/stage09_umap_vizdata_with_clusters.csv",
+      "sha256": "ea9426b088eaf1825322ffde4d936a3e26342b2f616838780c21beae8a57adb5",
+      "size_bytes": 1099
+    },
+    {
+      "path": "tutorials/01_fixed_synthetic/run_20260825_v2/logs/model_failures.tsv",
+      "sha256": "cb101945e7feb489127643e533ea5c0126ca95747f8d0bf5e18f63dd891202f2",
+      "size_bytes": 1297
+    },
+    {
+      "path": "tutorials/01_fixed_synthetic/run_20260825_v2/logs/run.log",
+      "sha256": "24240b70b98e4b3b308b13280cfc876c4655483ed8889e5b0ed2ababa6b17cfa",
+      "size_bytes": 508
+    },
+    {
+      "path": "tutorials/01_fixed_synthetic/run_20260825_v2/models/all_models.parquet",
+      "sha256": "b1aef7f23bc137bafa14438c9b9d941aa1c383aaaba8891e8a44c478addceb1e",
+      "size_bytes": 45449
+    },
+    {
+      "path": "tutorials/01_fixed_synthetic/run_20260825_v2/models/all_models.tsv",
+      "sha256": "bcb475e1c1337fae5995d8386385ebf85cfe38f775b70dee2632214654b35ab4",
+      "size_bytes": 1930
+    },
+    {
+      "path": "tutorials/01_fixed_synthetic/run_20260825_v2/models/best_model.json",
+      "sha256": "fcfd3aba1b6d71b13d237a079d0c5cd84b3cb6c91c00c34e49160adfbd4cb072",
+      "size_bytes": 5269
+    },
+    {
+      "path": "tutorials/01_fixed_synthetic/run_20260825_v2/models/family_summaries.tsv",
+      "sha256": "18c3117be9d8fdd47aaee5b94e127dc000a71e293fa2004a33914bf1f0be023f",
+      "size_bytes": 816
+    },
+    {
+      "path": "tutorials/01_fixed_synthetic/run_20260825_v2/models/model_selection_manifest.json",
+      "sha256": "591c1b9f468930ee51f4631b0b1a364c20eba77dff4b3f3dfae1275f27275611",
+      "size_bytes": 1458
+    },
+    {
+      "path": "tutorials/01_fixed_synthetic/run_20260825_v2/models/pareto_front.tsv",
+      "sha256": "e9e3bd7b32b3ec31c462dc95d3e61e7b0eab5c286bc42ee46f6378bc3dd6fc8d",
+      "size_bytes": 2054
+    },
+    {
+      "path": "tutorials/01_fixed_synthetic/run_20260825_v2/models/ranked_models.tsv",
+      "sha256": "bcb475e1c1337fae5995d8386385ebf85cfe38f775b70dee2632214654b35ab4",
+      "size_bytes": 1930
+    },
+    {
+      "path": "tutorials/01_fixed_synthetic/run_20260825_v2/models/top_model_artifacts/model_060fac0208bb58e2/labels.tsv",
+      "sha256": "5b7ba37a542efcceebd5d39a69342279e44565f017c2c099e36060c3eb0496ee",
+      "size_bytes": 1099
+    },
+    {
+      "path": "tutorials/01_fixed_synthetic/run_20260825_v2/models/top_model_artifacts/model_060fac0208bb58e2/labels_with_annotations.tsv",
+      "sha256": "a2ca699ce9c5d58f23760b75871bf009d79fc3a7faf9dd1fc03741e84c8bc389",
+      "size_bytes": 1455
+    },
+    {
+      "path": "tutorials/01_fixed_synthetic/run_20260825_v2/models/top_model_artifacts/model_060fac0208bb58e2/reproduce.yaml",
+      "sha256": "956730f862a4165b386abd78e3015ddfbb6481764f5677b04f583c291b87e59c",
+      "size_bytes": 1461
+    },
+    {
+      "path": "tutorials/01_fixed_synthetic/run_20260825_v2/models/top_model_artifacts/model_060fac0208bb58e2/summary.json",
+      "sha256": "b580d57f085aae63bfb0f8b838e1679a74205d2bf79e9272690f44945c58996d",
+      "size_bytes": 5725
+    },
+    {
+      "path": "tutorials/01_fixed_synthetic/run_20260825_v2/models/top_models.tsv",
+      "sha256": "bcb475e1c1337fae5995d8386385ebf85cfe38f775b70dee2632214654b35ab4",
+      "size_bytes": 1930
+    },
+    {
+      "path": "tutorials/01_fixed_synthetic/run_20260825_v2/resolved_config.yaml",
+      "sha256": "956730f862a4165b386abd78e3015ddfbb6481764f5677b04f583c291b87e59c",
+      "size_bytes": 1461
+    },
+    {
+      "path": "tutorials/01_fixed_synthetic/run_20260825_v2/run_manifest.json",
+      "sha256": "b97419d5b8b7252d15920f09c825e1f93068002cc8c119c41d356c6d56650bfa",
+      "size_bytes": 6702
+    },
+    {
+      "path": "tutorials/01_fixed_synthetic/run_20260825_v2/search_space_manifest.json",
+      "sha256": "34ea61c45adca21e9bfcf0b805924b5eaede5f50fbd613072ea56c125b31e296",
+      "size_bytes": 1234
+    },
+    {
+      "path": "tutorials/01_fixed_synthetic/run_20260825_v2/search_space_manifest.tsv",
+      "sha256": "eed884ddb4e457237930b16cf77dd9440b0008e916ac948f69b7822e83ccb64b",
+      "size_bytes": 732
+    },
+    {
+      "path": "tutorials/01_fixed_synthetic/run_20260825_v2/stage02_hdbscan_gridsearch_results.csv",
+      "sha256": "44219a0fb8af9ba9c8e59132896891dd6abbffc87357492d682aa3600edd55d1",
+      "size_bytes": 1930
+    },
+    {
+      "path": "tutorials/01_fixed_synthetic/run_20260825_v2/stage03_optimized_cluster_solutions.csv",
+      "sha256": "44219a0fb8af9ba9c8e59132896891dd6abbffc87357492d682aa3600edd55d1",
+      "size_bytes": 1930
+    },
+    {
+      "path": "tutorials/01_fixed_synthetic/run_20260825_v2/stage09_umap_vizdata_with_clusters.csv",
+      "sha256": "ea9426b088eaf1825322ffde4d936a3e26342b2f616838780c21beae8a57adb5",
+      "size_bytes": 1099
+    },
+    {
+      "path": "tutorials/01_fixed_synthetic/run_20260825_v2/stage09b_umap_vizdata_with_annotations.csv",
+      "sha256": "131d0d5007f3c72dc369eb4d3f48385deb3e4adc18044b92f772142b6f862119",
+      "size_bytes": 1455
+    },
+    {
+      "path": "tutorials/01_fixed_synthetic/search_space_20260825/search_space_manifest.json",
+      "sha256": "34ea61c45adca21e9bfcf0b805924b5eaede5f50fbd613072ea56c125b31e296",
+      "size_bytes": 1234
+    },
+    {
+      "path": "tutorials/01_fixed_synthetic/search_space_20260825/search_space_manifest.tsv",
+      "sha256": "eed884ddb4e457237930b16cf77dd9440b0008e916ac948f69b7822e83ccb64b",
+      "size_bytes": 732
+    },
+    {
+      "path": "tutorials/01_fixed_synthetic/tutorial_config.yaml",
+      "sha256": "16406ec39de81f87493c6bc6cbe28252a607ab85c429195af4b9924154d6e8ff",
+      "size_bytes": 1017
+    }
+  ],
+  "command_logs": [
+    "build/logs/tutorial01_inspect_config.log",
+    "build/logs/tutorial01_show_search_space.log",
+    "build/logs/tutorial01_run_v2.log"
+  ],
+  "created_utc": "2026-08-25T13:37:18.973205+00:00",
+  "notes": [
+    "One candidate; selected model_060fac0208bb58e2; 1 completed model.",
+    "The earlier run_20260825 is retained as a documented annotation-join mistake; run_20260825_v2 is canonical."
+  ],
+  "package_source_sha256": "df87825992ab51dc016c673cf420a978ba5c161bd6c755e00a5199ead310e65b",
+  "schema": "dimple-gwas.manual-tutorial.v1",
+  "software_version": "3.0.0rc1",
+  "status": "complete",
+  "tutorial": "01_fixed_synthetic"
+}

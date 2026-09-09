@@ -1,0 +1,12 @@
+gate	name	status	evidence	limitation_or_next_step
+A	Baseline diagnosis	pass	qa/edition1_content_audit.md; qa/edition1_visual_defect_ledger.tsv	none
+B	Evidence integrity	pass_with_limitation	evidence/01_input_inventory.tsv; evidence/02_authority_conflict_map.tsv; evidence/03_missing_evidence_register.tsv; evidence/04_source_checksums.tsv	No usable Git identity; SHA-256 identity is authoritative. Two reviewer-attributed sources remain unidentified and uncited.
+C	Function completeness	pass	qa/function_coverage_report.tsv; function_atlas/function_dossiers.tsv	none
+D	Statistical textbook depth	pass	qa/chapter_rubric_scores.tsv; qa/calibration_chapter_review.md; evidence/statistical_concept_coverage.tsv	Team scientific adjudication is still required before public release.
+E	Executable learning	pass_with_limitation	labs/execution_manifest.json; labs/lab_status.tsv; build/logs/pytest/pytest_full.json	Labs 0–3 executed. Lab 4 is protocol-only; Lab 5 fresh 164-IDP/1,000-seed execution is deferred until Docker.
+F	Output completeness	pass_with_limitation	output_atlas/output_atlas.tsv; evidence/output_producer_consumer_map.tsv	35/35 patterns documented and 34/35 freshly verified; opt-in coordinate-association artifact was not executed.
+G	Scientific calibration	pass_with_limitation	evidence/claim_evidence_register.tsv; evidence/edition1_and_gemini_correction_ledger.tsv	Text is calibrated; biological, Docker, and cross-platform validation remain pending.
+H	Citation integrity	pass_with_limitation	qa/citation_audit.tsv; references/VERIFIED_BIBLIOGRAPHY.md	25 sources verified; Yang/Zhao attributions remain unresolved and are not cited.
+I	Editorial coherence	pass_with_limitation	qa/duplicate_prose_audit.tsv; qa/cross_reference_audit.tsv; qa/chapter_rubric_scores.tsv	Repeated contract prose is retained for reference traceability; team adjudication should decide any final compression.
+J	Visual and typesetting quality	pass	qa/page_render_qa.tsv; qa/contact_sheet_inventory.tsv; qa/figure_visual_qa.tsv	none; all 370 pages and 21 figures inspected after remediation
+K	Reproducibility and handoff	pass_with_limitation	BOOK_BUILD_MANIFEST.json; checksums/edition2_build_checksums.sha256; appendices/O_docker_cloud_handoff.md	Build Docker image, rerun the full 164-IDP/1,000-seed protocol, and complete Linux/container/cross-platform validation.

@@ -1,0 +1,262 @@
+{
+  "artifacts": [
+    {
+      "path": "tutorials/03_explain_compare_validate/README.md",
+      "sha256": "459a96539796ba438b30cb3c880477cd6803a53024b1587492ba7448268825af",
+      "size_bytes": 1774
+    },
+    {
+      "path": "tutorials/03_explain_compare_validate/comparison_20260825/cluster_sizes.tsv",
+      "sha256": "1c49f973165146fc7d2c4bd434a4dfd934ce1c2099413675c2b41745973c9bf4",
+      "size_bytes": 118
+    },
+    {
+      "path": "tutorials/03_explain_compare_validate/comparison_20260825/comparison_manifest.json",
+      "sha256": "578e0d6d1afbfe406af0933523e91282ca952523f8709706f2b2c6963719126b",
+      "size_bytes": 4712
+    },
+    {
+      "path": "tutorials/03_explain_compare_validate/comparison_20260825/comparison_summary.json",
+      "sha256": "d0fb215c54bf361cacef88fd81aebc7ca19bfd625b50a2cf2bf1c3e3d51743d4",
+      "size_bytes": 866
+    },
+    {
+      "path": "tutorials/03_explain_compare_validate/comparison_20260825/label_confusion.tsv",
+      "sha256": "47e1a07ffef8a2f0f40c4367e2df855bb4a902f8e8815342b582fc83539b905a",
+      "size_bytes": 41
+    },
+    {
+      "path": "tutorials/03_explain_compare_validate/comparison_20260825/membership_comparison.tsv",
+      "sha256": "893207d1573985dca1e8e6c0b093d6f1668c85c1bba91103e832c1b142c0beab",
+      "size_bytes": 1077
+    },
+    {
+      "path": "tutorials/03_explain_compare_validate/comparison_20260825/optimal_label_mapping.tsv",
+      "sha256": "02763485a1b86e2eaf5678694f7251ec7d8caa3d50c36e26f0167fa02bf47842",
+      "size_bytes": 56
+    },
+    {
+      "path": "tutorials/03_explain_compare_validate/explanation_20260825/README.md",
+      "sha256": "ff2578b9fb2b0e9c4a0fd21e7863ec2d093c1a48a800117f9fce89a184d2aea5",
+      "size_bytes": 615
+    },
+    {
+      "path": "tutorials/03_explain_compare_validate/explanation_20260825/cluster_cutpoints.tsv",
+      "sha256": "e0041df0616aa94455591d23b4b796627090fbbf1c9c3148b59c55d73d118d9a",
+      "size_bytes": 137
+    },
+    {
+      "path": "tutorials/03_explain_compare_validate/explanation_20260825/cluster_summary.tsv",
+      "sha256": "92d5e525c9d5d468fd5f2f9a79bac65d18c8c4dbcca42596ccd13d78da3a0b48",
+      "size_bytes": 415
+    },
+    {
+      "path": "tutorials/03_explain_compare_validate/explanation_20260825/exclusions.tsv",
+      "sha256": "b76d64749646c2ebcb6d271854c6ee377c25b6d1067c8f4e1930a7feb526ee60",
+      "size_bytes": 25
+    },
+    {
+      "path": "tutorials/03_explain_compare_validate/explanation_20260825/heatmap_order.tsv",
+      "sha256": "d5c6095ee98bebd8a46b6aec0a8c1416ecfb84d9f195010f2e2610d084d3657f",
+      "size_bytes": 1329
+    },
+    {
+      "path": "tutorials/03_explain_compare_validate/explanation_20260825/interpretation_manifest.json",
+      "sha256": "ffe08587803321a53f269df58861f036495c587fcc6f044ffb14f08f64d16ea1",
+      "size_bytes": 6598
+    },
+    {
+      "path": "tutorials/03_explain_compare_validate/explanation_20260825/original_space_heatmap.html",
+      "sha256": "f6fedb4eb85225f428f7c3f12c7c00139fd95b79fff7908ace0813b6b6d289d3",
+      "size_bytes": 3808
+    },
+    {
+      "path": "tutorials/03_explain_compare_validate/explanation_20260825/original_space_heatmap.png",
+      "sha256": "3ae196707ea2b8b05ce25216e8359c1ec0a2c4c3efdf9936302c11806adf8b8e",
+      "size_bytes": 1177
+    },
+    {
+      "path": "tutorials/03_explain_compare_validate/explanation_20260825/original_space_similarity.tsv.gz",
+      "sha256": "95250c80d9880bbf8549ce786f600d38a4c6b107225e51405e636343cbb7d21e",
+      "size_bytes": 3801
+    },
+    {
+      "path": "tutorials/03_explain_compare_validate/explanation_20260825/projection_quality.tsv",
+      "sha256": "cfb47f94a35209c39bb5fd1024bc8ef755d26ea01146103e12cd2ece3b653ecc",
+      "size_bytes": 312
+    },
+    {
+      "path": "tutorials/03_explain_compare_validate/reproduced_20260825/logs/model_failures.tsv",
+      "sha256": "cb101945e7feb489127643e533ea5c0126ca95747f8d0bf5e18f63dd891202f2",
+      "size_bytes": 1297
+    },
+    {
+      "path": "tutorials/03_explain_compare_validate/reproduced_20260825/logs/run.log",
+      "sha256": "626540f3d8a49b6b84b49d575c5a7adbcaddac04ecb248045dcd82e977ae4aba",
+      "size_bytes": 508
+    },
+    {
+      "path": "tutorials/03_explain_compare_validate/reproduced_20260825/models/all_models.parquet",
+      "sha256": "330c21237df238bbb526e3abda4bba97eec7b8c572093f533d32c3cb10121160",
+      "size_bytes": 45449
+    },
+    {
+      "path": "tutorials/03_explain_compare_validate/reproduced_20260825/models/all_models.tsv",
+      "sha256": "6b00669e7d3b31e0e0e0297fe37fb54b81e3c22ba39337dfa0088988c34e5871",
+      "size_bytes": 1930
+    },
+    {
+      "path": "tutorials/03_explain_compare_validate/reproduced_20260825/models/best_model.json",
+      "sha256": "fe865b49b52035f2631e23322da926ef52ec8b5759299682342ff22d929af449",
+      "size_bytes": 5269
+    },
+    {
+      "path": "tutorials/03_explain_compare_validate/reproduced_20260825/models/family_summaries.tsv",
+      "sha256": "18c3117be9d8fdd47aaee5b94e127dc000a71e293fa2004a33914bf1f0be023f",
+      "size_bytes": 816
+    },
+    {
+      "path": "tutorials/03_explain_compare_validate/reproduced_20260825/models/model_selection_manifest.json",
+      "sha256": "591c1b9f468930ee51f4631b0b1a364c20eba77dff4b3f3dfae1275f27275611",
+      "size_bytes": 1458
+    },
+    {
+      "path": "tutorials/03_explain_compare_validate/reproduced_20260825/models/pareto_front.tsv",
+      "sha256": "964a76297e43a7187168f5b76d697b161d84a7df6c47b74e7d1d3a3aabe2711d",
+      "size_bytes": 2054
+    },
+    {
+      "path": "tutorials/03_explain_compare_validate/reproduced_20260825/models/ranked_models.tsv",
+      "sha256": "6b00669e7d3b31e0e0e0297fe37fb54b81e3c22ba39337dfa0088988c34e5871",
+      "size_bytes": 1930
+    },
+    {
+      "path": "tutorials/03_explain_compare_validate/reproduced_20260825/models/top_model_artifacts/model_060fac0208bb58e2/labels.tsv",
+      "sha256": "5b7ba37a542efcceebd5d39a69342279e44565f017c2c099e36060c3eb0496ee",
+      "size_bytes": 1099
+    },
+    {
+      "path": "tutorials/03_explain_compare_validate/reproduced_20260825/models/top_model_artifacts/model_060fac0208bb58e2/labels_with_annotations.tsv",
+      "sha256": "a2ca699ce9c5d58f23760b75871bf009d79fc3a7faf9dd1fc03741e84c8bc389",
+      "size_bytes": 1455
+    },
+    {
+      "path": "tutorials/03_explain_compare_validate/reproduced_20260825/models/top_model_artifacts/model_060fac0208bb58e2/reproduce.yaml",
+      "sha256": "00316e1f2509c0209b7cbdc641668b4084d0c6fdf81b3b25a833970b61fb2f3c",
+      "size_bytes": 1461
+    },
+    {
+      "path": "tutorials/03_explain_compare_validate/reproduced_20260825/models/top_model_artifacts/model_060fac0208bb58e2/summary.json",
+      "sha256": "ca9fc5a1228007834ef67e08859712200e3432c49a2760f3a4b2ae30a8b18e37",
+      "size_bytes": 5725
+    },
+    {
+      "path": "tutorials/03_explain_compare_validate/reproduced_20260825/models/top_models.tsv",
+      "sha256": "6b00669e7d3b31e0e0e0297fe37fb54b81e3c22ba39337dfa0088988c34e5871",
+      "size_bytes": 1930
+    },
+    {
+      "path": "tutorials/03_explain_compare_validate/reproduced_20260825/resolved_config.yaml",
+      "sha256": "2969d12f4c2248f8b5e4914a5721cc8e2ccfa900c63b941ef98467d8ce14a9ce",
+      "size_bytes": 1461
+    },
+    {
+      "path": "tutorials/03_explain_compare_validate/reproduced_20260825/run_manifest.json",
+      "sha256": "2270bc1b2778498827eb9ce433c6da18b84516c987ee007a9197d0be41811700",
+      "size_bytes": 6905
+    },
+    {
+      "path": "tutorials/03_explain_compare_validate/reproduced_20260825/search_space_manifest.json",
+      "sha256": "34ea61c45adca21e9bfcf0b805924b5eaede5f50fbd613072ea56c125b31e296",
+      "size_bytes": 1234
+    },
+    {
+      "path": "tutorials/03_explain_compare_validate/reproduced_20260825/search_space_manifest.tsv",
+      "sha256": "eed884ddb4e457237930b16cf77dd9440b0008e916ac948f69b7822e83ccb64b",
+      "size_bytes": 732
+    },
+    {
+      "path": "tutorials/03_explain_compare_validate/reproduced_20260825/stage02_hdbscan_gridsearch_results.csv",
+      "sha256": "b7360b379ea0b162a333f6f6f127331b4373bcb50eeb72162849063171a07ea0",
+      "size_bytes": 1930
+    },
+    {
+      "path": "tutorials/03_explain_compare_validate/reproduced_20260825/stage03_optimized_cluster_solutions.csv",
+      "sha256": "b7360b379ea0b162a333f6f6f127331b4373bcb50eeb72162849063171a07ea0",
+      "size_bytes": 1930
+    },
+    {
+      "path": "tutorials/03_explain_compare_validate/reproduced_20260825/stage09_umap_vizdata_with_clusters.csv",
+      "sha256": "ea9426b088eaf1825322ffde4d936a3e26342b2f616838780c21beae8a57adb5",
+      "size_bytes": 1099
+    },
+    {
+      "path": "tutorials/03_explain_compare_validate/reproduced_20260825/stage09b_umap_vizdata_with_annotations.csv",
+      "sha256": "131d0d5007f3c72dc369eb4d3f48385deb3e4adc18044b92f772142b6f862119",
+      "size_bytes": 1455
+    },
+    {
+      "path": "tutorials/03_explain_compare_validate/scored_20260825.tsv",
+      "sha256": "d317f2cabfa690bb1e4f07f4b65b27e484535773d626cfc649e3a76e0eb5f779",
+      "size_bytes": 2003
+    },
+    {
+      "path": "tutorials/03_explain_compare_validate/scored_20260825.tsv.manifest.json",
+      "sha256": "3b0ce627270606c4da39398b3732c2883f1ccdeeba0dc7b158ff21b766781a61",
+      "size_bytes": 1129
+    },
+    {
+      "path": "tutorials/03_explain_compare_validate/summaries_20260825/family_summaries.tsv",
+      "sha256": "d22c0ba1193fcb4794f3390a1634e6dceedb3a87fe9c616ecb8ff9d16eb5228a",
+      "size_bytes": 816
+    },
+    {
+      "path": "tutorials/03_explain_compare_validate/summaries_20260825/pareto_front.tsv",
+      "sha256": "642f644e5a4da329c748503145796dec8ddc2a1f6b251671393376dffbc3f5ac",
+      "size_bytes": 2127
+    },
+    {
+      "path": "tutorials/03_explain_compare_validate/summaries_20260825/summary.json",
+      "sha256": "14d686a98bc934e411a470bbbe4addce828270f599f7ed6563ac1dcb573c3541",
+      "size_bytes": 76
+    },
+    {
+      "path": "tutorials/03_explain_compare_validate/summaries_20260825/top_models.tsv",
+      "sha256": "d317f2cabfa690bb1e4f07f4b65b27e484535773d626cfc649e3a76e0eb5f779",
+      "size_bytes": 2003
+    },
+    {
+      "path": "tutorials/03_explain_compare_validate/validation_20260825/validation_checks.tsv",
+      "sha256": "03f52b046f490f04a3811ffb56586992ab5f9ff2de720216ddc65e7550b24d8d",
+      "size_bytes": 2724
+    },
+    {
+      "path": "tutorials/03_explain_compare_validate/validation_20260825/validation_manifest.json",
+      "sha256": "8c04eb6dfd9a375142199cb1b057b6b902e1587533e83630a555acca626eee7f",
+      "size_bytes": 2467
+    },
+    {
+      "path": "tutorials/03_explain_compare_validate/validation_20260825/validation_report.json",
+      "sha256": "27aa9049f305bb812959cb1d691fbd7b16279f86f6b613b80e16615a32b947a5",
+      "size_bytes": 292
+    }
+  ],
+  "command_logs": [
+    "build/logs/tutorial03_score_existing.log",
+    "build/logs/tutorial03_summarize.log",
+    "build/logs/tutorial03_reproduce.log",
+    "build/logs/tutorial03_explain.log",
+    "build/logs/tutorial03_compare.log",
+    "build/logs/tutorial03_validate.log"
+  ],
+  "created_utc": "2026-08-25T13:37:18.980275+00:00",
+  "notes": [
+    "Comparison ARI=1.0, NMI=1.0, mapped membership=1.0, Procrustes=2.709e-31.",
+    "Validation pass: 24/24 checks, 0 warnings, 0 failures."
+  ],
+  "package_source_sha256": "df87825992ab51dc016c673cf420a978ba5c161bd6c755e00a5199ead310e65b",
+  "schema": "dimple-gwas.manual-tutorial.v1",
+  "software_version": "3.0.0rc1",
+  "status": "complete",
+  "tutorial": "03_explain_compare_validate"
+}

@@ -1,0 +1,43 @@
+test_file	test_name	contract_area	source_line	type	fresh_result
+tests/test_config.py	test_scalar_list_and_range_handling	configuration parsing, defaults, validation, CLI precedence	9	automated	passed in fresh 45-test local suite
+tests/test_config.py	test_cli_override_precedence	configuration parsing, defaults, validation, CLI precedence	17	automated	passed in fresh 45-test local suite
+tests/test_config.py	test_standard_defaults_match_dev_declarations	configuration parsing, defaults, validation, CLI precedence	25	automated	passed in fresh 45-test local suite
+tests/test_config.py	test_invalid_combinations_rejected	configuration parsing, defaults, validation, CLI precedence	41	automated	passed in fresh 45-test local suite
+tests/test_config.py	test_fixed_mode_rejects_lists	configuration parsing, defaults, validation, CLI precedence	46	automated	passed in fresh 45-test local suite
+tests/test_failure_and_provenance.py	test_failed_candidate_is_retained	retained failures and authoritative hashes	10	automated	passed in fresh 45-test local suite
+tests/test_failure_and_provenance.py	test_authoritative_source_hash_unchanged	retained failures and authoritative hashes	30	automated	passed in fresh 45-test local suite
+tests/test_freeze3_comparison_validation.py	test_label_permutation_comparison_is_structurally_equal	label comparison, schemas, hashes, CLI commands	38	automated	passed in fresh 45-test local suite
+tests/test_freeze3_comparison_validation.py	test_comparison_requires_identical_id_sets	label comparison, schemas, hashes, CLI commands	48	automated	passed in fresh 45-test local suite
+tests/test_freeze3_comparison_validation.py	test_comparison_rejects_duplicate_ids	label comparison, schemas, hashes, CLI commands	56	automated	passed in fresh 45-test local suite
+tests/test_freeze3_comparison_validation.py	test_validation_passes_complete_contract	label comparison, schemas, hashes, CLI commands	104	automated	passed in fresh 45-test local suite
+tests/test_freeze3_comparison_validation.py	test_validation_detects_hash_mismatch	label comparison, schemas, hashes, CLI commands	112	automated	passed in fresh 45-test local suite
+tests/test_freeze3_comparison_validation.py	test_package_source_digest_is_stable	label comparison, schemas, hashes, CLI commands	121	automated	passed in fresh 45-test local suite
+tests/test_freeze3_comparison_validation.py	test_historical_notebook_model_schema_is_adapted	label comparison, schemas, hashes, CLI commands	128	automated	passed in fresh 45-test local suite
+tests/test_freeze3_comparison_validation.py	test_cli_exposes_new_commands_and_alias	label comparison, schemas, hashes, CLI commands	141	automated	passed in fresh 45-test local suite
+tests/test_freeze3_comparison_validation.py	test_cli_compare_end_to_end	label comparison, schemas, hashes, CLI commands	151	automated	passed in fresh 45-test local suite
+tests/test_freeze3_interpretation.py	test_interpretation_defaults_are_additive	native/legacy explanation, orientation, matching, ordering, outputs	58	automated	passed in fresh 45-test local suite
+tests/test_freeze3_interpretation.py	test_invalid_interpretation_configuration_fails	native/legacy explanation, orientation, matching, ordering, outputs	66	automated	passed in fresh 45-test local suite
+tests/test_freeze3_interpretation.py	test_reader_supports_excel_sheet	native/legacy explanation, orientation, matching, ordering, outputs	71	automated	passed in fresh 45-test local suite
+tests/test_freeze3_interpretation.py	test_validated_identifiers_strip_but_reject_duplicates	native/legacy explanation, orientation, matching, ordering, outputs	79	automated	passed in fresh 45-test local suite
+tests/test_freeze3_interpretation.py	test_variants_by_vectors_preserves_vector_ids	native/legacy explanation, orientation, matching, ordering, outputs	87	automated	passed in fresh 45-test local suite
+tests/test_freeze3_interpretation.py	test_vectors_by_variants_explicit_id_column	native/legacy explanation, orientation, matching, ordering, outputs	97	automated	passed in fresh 45-test local suite
+tests/test_freeze3_interpretation.py	test_orientation_inference_uses_exact_overlap	native/legacy explanation, orientation, matching, ordering, outputs	110	automated	passed in fresh 45-test local suite
+tests/test_freeze3_interpretation.py	test_coordinate_detection_is_numeric_suffix_order	native/legacy explanation, orientation, matching, ordering, outputs	118	automated	passed in fresh 45-test local suite
+tests/test_freeze3_interpretation.py	test_similarity_undefined_fails_by_default	native/legacy explanation, orientation, matching, ordering, outputs	123	automated	passed in fresh 45-test local suite
+tests/test_freeze3_interpretation.py	test_cluster_order_is_numeric_and_noise_last	native/legacy explanation, orientation, matching, ordering, outputs	133	automated	passed in fresh 45-test local suite
+tests/test_freeze3_interpretation.py	test_cutpoint_indices_are_auditable	native/legacy explanation, orientation, matching, ordering, outputs	140	automated	passed in fresh 45-test local suite
+tests/test_freeze3_interpretation.py	test_block_sampling_preserves_tiny_cluster	native/legacy explanation, orientation, matching, ordering, outputs	146	automated	passed in fresh 45-test local suite
+tests/test_freeze3_interpretation.py	test_native_explanation_end_to_end	native/legacy explanation, orientation, matching, ordering, outputs	153	automated	passed in fresh 45-test local suite
+tests/test_freeze3_interpretation.py	test_native_explanation_refuses_nonempty_output	native/legacy explanation, orientation, matching, ordering, outputs	172	automated	passed in fresh 45-test local suite
+tests/test_freeze3_interpretation.py	test_legacy_incomplete_matching_writes_exclusions	native/legacy explanation, orientation, matching, ordering, outputs	186	automated	passed in fresh 45-test local suite
+tests/test_freeze3_interpretation.py	test_empty_output_directory_helper	native/legacy explanation, orientation, matching, ordering, outputs	205	automated	passed in fresh 45-test local suite
+tests/test_pipeline_integration.py	test_custom_leaf_eom_metric_and_max_size_run	end-to-end search and fixed-model reproduction	10	automated	passed in fresh 45-test local suite
+tests/test_pipeline_integration.py	test_fixed_model_reproduction	end-to-end search and fixed-model reproduction	27	automated	passed in fresh 45-test local suite
+tests/test_preprocessing_metrics.py	test_rint_and_numeric_matrix	RINT, numeric contract, trustworthiness/continuity	13	automated	passed in fresh 45-test local suite
+tests/test_preprocessing_metrics.py	test_optimized_trustworthiness_and_continuity	RINT, numeric contract, trustworthiness/continuity	21	automated	passed in fresh 45-test local suite
+tests/test_preprocessing_metrics.py	test_effective_neighbor_edge_cases	RINT, numeric contract, trustworthiness/continuity	35	automated	passed in fresh 45-test local suite
+tests/test_scoring_ranking.py	test_legacy_formula_matches_literal_reference	legacy formula, custom scores, ranking, Pareto	24	automated	passed in fresh 45-test local suite
+tests/test_scoring_ranking.py	test_zero_variance_and_noise_exclusion	legacy formula, custom scores, ranking, Pareto	44	automated	passed in fresh 45-test local suite
+tests/test_scoring_ranking.py	test_custom_scoring_ranking_top_n_and_pareto	legacy formula, custom scores, ranking, Pareto	51	automated	passed in fresh 45-test local suite
+tests/test_search_space.py	test_search_enumeration_and_stable_ids	deterministic enumeration, stable IDs, safety limit	7	automated	passed in fresh 45-test local suite
+tests/test_search_space.py	test_search_limit_never_silently_samples	deterministic enumeration, stable IDs, safety limit	24	automated	passed in fresh 45-test local suite

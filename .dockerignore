@@ -1,0 +1,29 @@
+**
+!docker/
+!docker/**
+# Operator guard: source-root builds intentionally cannot copy scientific source.
+# Build only generated allowlisted run contexts using docker/scripts/pipeline.py.
+**/.git
+**/.env
+**/.env.*
+**/.venv
+**/__pycache__
+**/.pytest_cache
+**/*.pyc
+**/*.pem
+**/*.key
+**/*credentials*
+**/*token*
+**/test_data
+**/outputs
+**/benchmarks
+**/docs/manual
+**/docs/textbook
+**/docs/edition3
+**/freeze3_workspace
+**/Cogent manuscript
+**/*.tar
+**/*.xlsx
+**/*.csv
+**/*.tsv
+**/*.ipynb

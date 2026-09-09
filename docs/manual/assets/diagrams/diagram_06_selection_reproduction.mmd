@@ -1,0 +1,7 @@
+flowchart LR
+  A["All candidate rows"] --> B["Eligibility + metrics"]
+  B --> C["Declared score"]
+  C --> D["Rank + tie order"]
+  D --> E["best_model.json"]
+  E --> F["reproduce-model fixed rerun"]
+  F --> G["compare membership and coordinates"]

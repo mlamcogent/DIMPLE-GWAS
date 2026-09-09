@@ -1,0 +1,20 @@
+{
+  "artifacts": [
+    {
+      "path": "tutorials/04_mnist_benchmark/README.md",
+      "sha256": "2e4552075f9238f78d3a44751437f8b55ca57e9c4aebc47b0506e36842ab1e8b",
+      "size_bytes": 1073
+    }
+  ],
+  "command_logs": [],
+  "created_utc": "2026-08-25T13:37:18.980618+00:00",
+  "notes": [
+    "Not freshly rerun in the manual build; prior verified outputs and a 273.47-second historical runtime are documented.",
+    "A fresh acquisition/rerun belongs to the Docker stage and must record dataset identity and licence."
+  ],
+  "package_source_sha256": "df87825992ab51dc016c673cf420a978ba5c161bd6c755e00a5199ead310e65b",
+  "schema": "dimple-gwas.manual-tutorial.v1",
+  "software_version": "3.0.0rc1",
+  "status": "bounded_historical_evidence",
+  "tutorial": "04_mnist_benchmark"
+}

@@ -1,0 +1,146 @@
+{
+  "created_at_utc": "2026-09-02T08:01:34.386895+00:00",
+  "document_status": "reader_draft",
+  "manifest_self_hash_policy": "This manifest does not hash itself.",
+  "package": {
+    "name": "DIMPLE-GWAS",
+    "package_source_sha256": "df87825992ab51dc016c673cf420a978ba5c161bd6c755e00a5199ead310e65b",
+    "stage1_gate": "PASS_WITH_LIMITATIONS",
+    "stage1_report": "evidence/13_STAGE1_GATE_REPORT.md",
+    "version": "3.0.0rc1"
+  },
+  "primary_artifacts": [
+    {
+      "bytes": 162294,
+      "path": "DIMPLE_GWAS_FREEZE3_RC1_DOCUMENTATION_EDITION3.md",
+      "role": "reader_markdown",
+      "sha256": "05cf1c4b5de638d00f751c603a834c6e325d39b377267386e8b8a0ceeb98eefb"
+    },
+    {
+      "bytes": 849209,
+      "path": "DIMPLE_GWAS_FREEZE3_RC1_DOCUMENTATION_EDITION3.html",
+      "role": "self_contained_reader_html",
+      "sha256": "5eeed89d5e1760b62f67151aafbf93db13d9aad51f35c7c56200b94338b8236d"
+    },
+    {
+      "bytes": 475145,
+      "path": "DIMPLE_GWAS_FREEZE3_RC1_DOCUMENTATION_EDITION3.docx",
+      "role": "privacy_scrubbed_reader_docx",
+      "sha256": "992825d167d9ff76d587a8f0a925a90e0e8acb665d66e7f22a9c314a3dba98a5"
+    },
+    {
+      "bytes": 1255345,
+      "path": "DIMPLE_GWAS_FREEZE3_RC1_DOCUMENTATION_EDITION3.pdf",
+      "role": "tagged_reader_pdf",
+      "sha256": "e4c07efa4ef81606e6f942c9c6374eb2b145b4bf11255fa67426ea3e7178b3e0"
+    }
+  ],
+  "profile": {
+    "appendices": 2,
+    "citation_keys_used": 32,
+    "display_math_expressions": 31,
+    "docx_tables": 0,
+    "figures": 5,
+    "inline_math_expressions": 159,
+    "markdown_html_tables": 10,
+    "master_approximate_words": 21906,
+    "pdf_extracted_words": 24769,
+    "rendered_pages": 105,
+    "technical_reference_modules": 6,
+    "textbook_chapters": 15,
+    "workbook_labs": 9
+  },
+  "qa": {
+    "a11y": {
+      "high": 0,
+      "low": 0,
+      "medium": 0
+    },
+    "content_status": "PASS",
+    "exact_duplicate_substantive_paragraphs": 0,
+    "missing_figures": 0,
+    "pdf_tagged": true,
+    "privacy_scrubbed": true,
+    "software_tests": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 1,
+      "tests": 45,
+      "warnings": 5
+    },
+    "unresolved_citations": 0,
+    "visual_pages_passed": 105
+  },
+  "release_limitations": [
+    "fresh historical 164-IDP 1,000-seed rerun pending",
+    "2,315 and 459 raw matrices absent; 459 parameters conflict",
+    "real-data stability and independent biological validation incomplete",
+    "optional XLSX dependency absent in retained environment",
+    "Docker/Linux/x86-64/cloud/cross-platform qualification pending",
+    "no Git commit or signed release tag"
+  ],
+  "schema": "dimple-gwas.documentation-edition3-build.v1",
+  "status": "PASS_WITH_RELEASE_LIMITATIONS",
+  "supporting_artifacts": [
+    {
+      "bytes": 1880,
+      "path": "README.md",
+      "role": "edition_overview",
+      "sha256": "9eb551189dd29dd3a676e3fae099fa2f571001ce9d6f6b55ee4459cc4749ca96"
+    },
+    {
+      "bytes": 3385,
+      "path": "QUICKSTART.md",
+      "role": "bounded_quickstart",
+      "sha256": "119d6d6b8559455ac384af6cfbfbc4713e21419a268ea72f1be79bbbde0a674f"
+    },
+    {
+      "bytes": 2685,
+      "path": "KNOWN_LIMITATIONS_AND_PENDING_VALIDATION.md",
+      "role": "reader_limitations",
+      "sha256": "87b18ea38ce8b7356d2bdf3f5a87c72f6240185ff71a971e411a61309d1eeb21"
+    },
+    {
+      "bytes": 2907,
+      "path": "EDITION2_TO_EDITION3_SALVAGE_CROSSWALK.tsv",
+      "role": "edition_crosswalk",
+      "sha256": "b1ca62648afe7e95ee5bb88e72ace3c7a3ca7fb9baddf0a3981ccce817b3031e"
+    },
+    {
+      "bytes": 4177,
+      "path": "EDITION3_CHANGELOG.md",
+      "role": "changelog",
+      "sha256": "2433e06fdec6157f192e212ad042c06fac5211175be8b6837b59f5f2f3aa91f3"
+    },
+    {
+      "bytes": 3016,
+      "path": "EDITION3_BUILD_REPORT.md",
+      "role": "build_report",
+      "sha256": "5ec0f0a00dbb0705a62350b8d96deaac95aa276daf7e28caa0db81c79fe76179"
+    },
+    {
+      "bytes": 4127,
+      "path": "EDITION3_QA_REPORT.md",
+      "role": "qa_report",
+      "sha256": "2f4c52d3d003427ef5bdd07aaf7d6207be884ea09ee69d44403714ed6860ba74"
+    },
+    {
+      "bytes": 6156,
+      "path": "FUNCTION_CONCEPT_OUTPUT_COVERAGE.tsv",
+      "role": "coverage_register",
+      "sha256": "9e9b2281ebf182f204a5ac6147981684e62a8d9deb90126b9b4909c8ec180f6a"
+    },
+    {
+      "bytes": 2348,
+      "path": "COMMAND_EXECUTION_REGISTER.tsv",
+      "role": "command_register",
+      "sha256": "b91904c080181fb06baeba714ceeffc28efebfb810d1d8b19729ea655294fc6e"
+    },
+    {
+      "bytes": 3112,
+      "path": "FIGURE_TABLE_REGISTER.tsv",
+      "role": "figure_table_register",
+      "sha256": "f1f657f8ad0a9d3c83d12c65161b7a74b6b3ec288ac7479bef2b83766dd10699"
+    }
+  ]
+}

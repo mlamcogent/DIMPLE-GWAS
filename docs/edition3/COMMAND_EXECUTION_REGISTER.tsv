@@ -1,0 +1,13 @@
+command_id	stage	purpose	execution_evidence	exit_status	result	limitation_or_note
+E3-CMD-001	Stage 1 authority	Verify the documentation gate	evidence/13_STAGE1_GATE_REPORT.md	0	PASS_WITH_LIMITATIONS	Stage 1 evidence is authoritative for this reader draft
+E3-CMD-002	Assembly	Assemble modular Markdown into the master manuscript	build/assembly_stats.json	0	PASS	15 textbook chapters plus workbook and reference assembled
+E3-CMD-003	Content QA	Resolve citations, figures, placeholders, paths, duplicate prose and undeclared TeX	qa/content/content_qa.json	0	PASS	32 bibliography keys resolved; five figures; 159 inline and 31 display math expressions; zero raw TeX outside math
+E3-CMD-004	HTML build	Build a self-contained reader HTML	DIMPLE_GWAS_FREEZE3_RC1_DOCUMENTATION_EDITION3.html	0	PASS	Populated HTML contents; five embedded PNG figures; ten tables; 190 MathML elements; blue code styling
+E3-CMD-005	DOCX compatibility	Materialize contents and convert ten complex Markdown tables into compact labelled rows	build/edition3_docx_source.md	0	PASS	43 contents entries with verified page numbers; table workaround preserves every cell value
+E3-CMD-006	DOCX build	Compile and style the reader DOCX	DIMPLE_GWAS_FREEZE3_RC1_DOCUMENTATION_EDITION3.docx	0	PASS	Narrative-proposal typography; five inline figures; 196 native math objects; blue software parameters
+E3-CMD-007	Privacy	Remove Word revision session, personal and custom metadata	DIMPLE_GWAS_FREEZE3_RC1_DOCUMENTATION_EDITION3.docx	0	PASS	No semantic content was redacted
+E3-CMD-008	Render	Render the final DOCX and emit its PDF	build/rendering/docx_final	0	PASS	105 tagged Letter pages
+E3-CMD-009	Visual QA	Measure and review every rendered page	qa/visual/page_render_qa.tsv	0	PASS	105 pages across six contact sheets inspected; no blank or edge-touch flags
+E3-CMD-010	Accessibility	Audit headings, figures, tables and links	qa/accessibility/docx_a11y.json	0	PASS	Zero high, medium or low findings
+E3-CMD-011	Software regression	Run the Freeze 3 test suite	qa/software/pytest.xml	0	PASS_WITH_SKIP	44 passed; one optional XLSX test skipped; five warnings
+E3-CMD-012	PDF integrity	Inspect page metadata and extracted text	DIMPLE_GWAS_FREEZE3_RC1_DOCUMENTATION_EDITION3.pdf	0	PASS	105 pages; 24,769 extracted words; zero raw-TeX/stray-marker/placeholder/private-path/replacement-character hits

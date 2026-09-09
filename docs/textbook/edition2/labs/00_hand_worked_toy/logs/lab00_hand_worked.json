@@ -1,0 +1,33 @@
+{
+  "architecture": "arm64",
+  "command": [
+    "docs/textbook/edition2/build/runtime_env/bin/python",
+    "docs/textbook/edition2/labs/00_hand_worked_toy/run_hand_worked.py"
+  ],
+  "command_display": "docs/textbook/edition2/build/runtime_env/bin/python docs/textbook/edition2/labs/00_hand_worked_toy/run_hand_worked.py",
+  "end_utc": "2026-08-26T02:57:03.666785+00:00",
+  "exit_code": 0,
+  "inputs": [
+    {
+      "exists": true,
+      "path": "docs/textbook/edition2/labs/00_hand_worked_toy/run_hand_worked.py",
+      "sha256": "595822932b4a89266f18aacb801d96c177e304ee58ba10a66089e8c3f1ca707b"
+    }
+  ],
+  "name": "lab00_hand_worked",
+  "os": "Darwin",
+  "os_release": "25.5.0",
+  "python": "3.12.13",
+  "runtime_seconds": 1.564342,
+  "schema": "dimple-gwas.textbook-command-record.v1",
+  "start_utc": "2026-08-26T02:57:02.102443+00:00",
+  "stderr_log": "lab00_hand_worked.stderr.log",
+  "stdout_log": "lab00_hand_worked.stdout.log",
+  "thread_controls": {
+    "MKL_NUM_THREADS": null,
+    "NUMBA_NUM_THREADS": null,
+    "OMP_NUM_THREADS": null,
+    "OPENBLAS_NUM_THREADS": null
+  },
+  "working_directory": "<FREEZE3>"
+}

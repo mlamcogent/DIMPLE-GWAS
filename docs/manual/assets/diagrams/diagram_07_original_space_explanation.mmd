@@ -1,0 +1,6 @@
+flowchart LR
+  L["Retained labels + exact feature_id"] --> M["Identifier match"]
+  O["Original input matrix"] --> M
+  M --> S["Original-space Pearson / Spearman"]
+  S --> H["Order, cutpoints, heatmap, summaries"]
+  H --> W["Descriptive only; no refit or causal inference"]

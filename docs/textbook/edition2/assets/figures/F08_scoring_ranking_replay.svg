@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">Diagnostics become a ranking only through a declared objective</title><desc id="desc">Raw metrics, normalization population, tie rules, and analyst selection all belong in the report.</desc>
+<defs><marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#2f6f9f"/></marker>
+<filter id="shadow"><feDropShadow dx="0" dy="4" stdDeviation="5" flood-opacity="0.12"/></filter></defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="80" y="82" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700" fill="#17324d">Diagnostics become a ranking only through a declared objective</text>
+<text x="80" y="124" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#617181">Raw metrics, normalization population, tie rules, and analyst selection all belong in the report.</text>
+<rect x="70" y="250" width="260" height="180" rx="18" fill="#f3f7fa" stroke="#2f6f9f" stroke-width="3" filter="url(#shadow)"/>
+<text x="200.0" y="292" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#17324d">Raw</text>
+<text x="200.0" y="322" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#17324d">diagnostics</text>
+<text x="200.0" y="360" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">silhouette ·</text>
+<text x="200.0" y="385" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">clusters · noise</text>
+<text x="200.0" y="410" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">· DBCV ·</text>
+<text x="200.0" y="435" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">persistence</text><line x1="330" y1="340" x2="450" y2="340" stroke="#2f6f9f" stroke-width="4" marker-end="url(#arrow)"/><rect x="450" y="250" width="260" height="180" rx="18" fill="#eaf5f3" stroke="#2a9d8f" stroke-width="3" filter="url(#shadow)"/>
+<text x="580.0" y="292" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#17324d">Score profile</text>
+<text x="580.0" y="330" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">declared</text>
+<text x="580.0" y="355" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">components and</text>
+<text x="580.0" y="380" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">directions</text><line x1="710" y1="340" x2="830" y2="340" stroke="#2f6f9f" stroke-width="4" marker-end="url(#arrow)"/><rect x="830" y="250" width="260" height="180" rx="18" fill="#fff7df" stroke="#c79a2b" stroke-width="3" filter="url(#shadow)"/>
+<text x="960.0" y="292" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#17324d">Population</text>
+<text x="960.0" y="322" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#17324d">scaling</text>
+<text x="960.0" y="360" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">score depends on</text>
+<text x="960.0" y="385" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">candidate set</text><line x1="1090" y1="340" x2="1210" y2="340" stroke="#2f6f9f" stroke-width="4" marker-end="url(#arrow)"/><rect x="1210" y="250" width="320" height="180" rx="18" fill="#fff0ec" stroke="#e76f51" stroke-width="3" filter="url(#shadow)"/>
+<text x="1370.0" y="292" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#17324d">Deterministic</text>
+<text x="1370.0" y="322" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#17324d">ranking</text>
+<text x="1370.0" y="360" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">tie-break rules ·</text>
+<text x="1370.0" y="385" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">selected ID · replay</text><rect x="415" y="555" width="770" height="42" rx="21" fill="#17324d"/><text x="800.0" y="583" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="white">legacy_dimple is a reproducible objective, not independent confirmation</text>
+<text x="80" y="858" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#617181">DIMPLE-GWAS Freeze 3 RC1 · Textbook Edition 2 · internal review</text>
+</svg>

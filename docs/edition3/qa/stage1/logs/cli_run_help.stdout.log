@@ -1,0 +1,97 @@
+usage: dimple-gwas run [-h] [--search-mode {standard,extended,custom,fixed}]
+                       [--config CONFIG] [--input INPUT_PATH]
+                       [--output-dir OUTPUT_DIR]
+                       [--drop-first-n-cols DROP_FIRST_N_COLS] [--sep SEP]
+                       [--zscore-transform {none,rint}]
+                       [--annotation-file ANNOTATION_FILE]
+                       [--annotation-index-col ANNOTATION_INDEX_COL]
+                       [--umap-n-neighbors UMAP_N_NEIGHBORS]
+                       [--umap-min-dist UMAP_MIN_DIST]
+                       [--umap-n-components UMAP_N_COMPONENTS]
+                       [--umap-metric UMAP_METRIC] [--umap-spread UMAP_SPREAD]
+                       [--umap-learning-rate UMAP_LEARNING_RATE]
+                       [--umap-repulsion-strength UMAP_REPULSION_STRENGTH]
+                       [--umap-negative-sample-rate UMAP_NEGATIVE_SAMPLE_RATE]
+                       [--umap-local-connectivity UMAP_LOCAL_CONNECTIVITY]
+                       [--umap-set-op-mix-ratio UMAP_SET_OP_MIX_RATIO]
+                       [--random-state UMAP_RANDOM_STATE] [--densmap]
+                       [--no-densmap]
+                       [--hdbscan-min-cluster-size HDBSCAN_MIN_CLUSTER_SIZE]
+                       [--hdbscan-min-samples HDBSCAN_MIN_SAMPLES]
+                       [--hdbscan-cluster-selection-epsilon HDBSCAN_CLUSTER_SELECTION_EPSILON]
+                       [--hdbscan-cluster-selection-persistence HDBSCAN_CLUSTER_SELECTION_PERSISTENCE]
+                       [--hdbscan-cluster-selection-method HDBSCAN_CLUSTER_SELECTION_METHOD]
+                       [--hdbscan-alpha HDBSCAN_ALPHA]
+                       [--hdbscan-allow-single-cluster HDBSCAN_ALLOW_SINGLE_CLUSTER]
+                       [--hdbscan-max-cluster-size HDBSCAN_MAX_CLUSTER_SIZE]
+                       [--hdbscan-metric HDBSCAN_METRIC]
+                       [--n-random-states N_RANDOM_STATES] [--n-jobs N_JOBS]
+                       [--candidate-jobs CANDIDATE_JOBS]
+                       [--top-n-models TOP_N_MODELS]
+                       [--warn-candidate-count WARN_CANDIDATE_COUNT]
+                       [--max-candidate-models MAX_CANDIDATE_MODELS]
+                       [--max-samples-trust MAX_SAMPLES_TRUST]
+                       [--max-samples-silhouette MAX_SAMPLES_SILHOUETTE]
+                       [--trust-k TRUST_K] [--trust-seed TRUST_SEED]
+                       [--silhouette-seed SILHOUETTE_SEED]
+                       [--legacy-ensemble-seeds] [--no-legacy-ensemble-seeds]
+                       [--compute-dbcv] [--no-compute-dbcv] [--write-parquet]
+                       [--no-write-parquet] [--strict]
+                       [--scoring-profile {legacy_dimple,custom}]
+                       [--fit-include-noise] [--fit-exclude-noise]
+
+options:
+  -h, --help            show this help message and exit
+  --search-mode {standard,extended,custom,fixed}
+  --config CONFIG       YAML configuration; explicit CLI values override it
+  --input INPUT_PATH, --datainput INPUT_PATH
+                        GWAS summary-statistics matrix (CSV/TSV)
+  --output-dir OUTPUT_DIR, --outdir OUTPUT_DIR
+  --drop-first-n-cols DROP_FIRST_N_COLS, --drop_first_n_cols DROP_FIRST_N_COLS
+  --sep SEP
+  --zscore-transform {none,rint}, --zscore_transform {none,rint}
+  --annotation-file ANNOTATION_FILE, --annotation_file ANNOTATION_FILE, --idp_key ANNOTATION_FILE
+  --annotation-index-col ANNOTATION_INDEX_COL, --annotation_index_col ANNOTATION_INDEX_COL
+  --umap-n-neighbors UMAP_N_NEIGHBORS, --n-neighbors UMAP_N_NEIGHBORS, --n_neighbors UMAP_N_NEIGHBORS
+  --umap-min-dist UMAP_MIN_DIST, --min-dist UMAP_MIN_DIST, --min_dist UMAP_MIN_DIST
+  --umap-n-components UMAP_N_COMPONENTS, --n-components UMAP_N_COMPONENTS, --n_components UMAP_N_COMPONENTS
+  --umap-metric UMAP_METRIC, --umap_metric UMAP_METRIC
+  --umap-spread UMAP_SPREAD
+  --umap-learning-rate UMAP_LEARNING_RATE
+  --umap-repulsion-strength UMAP_REPULSION_STRENGTH
+  --umap-negative-sample-rate UMAP_NEGATIVE_SAMPLE_RATE
+  --umap-local-connectivity UMAP_LOCAL_CONNECTIVITY
+  --umap-set-op-mix-ratio UMAP_SET_OP_MIX_RATIO
+  --random-state UMAP_RANDOM_STATE, --random_state UMAP_RANDOM_STATE
+  --densmap
+  --no-densmap
+  --hdbscan-min-cluster-size HDBSCAN_MIN_CLUSTER_SIZE, --grid-min-cluster-size HDBSCAN_MIN_CLUSTER_SIZE, --grid_min_cluster_size HDBSCAN_MIN_CLUSTER_SIZE
+  --hdbscan-min-samples HDBSCAN_MIN_SAMPLES, --grid-min-samples HDBSCAN_MIN_SAMPLES, --grid_min_samples HDBSCAN_MIN_SAMPLES
+  --hdbscan-cluster-selection-epsilon HDBSCAN_CLUSTER_SELECTION_EPSILON, --grid-eps HDBSCAN_CLUSTER_SELECTION_EPSILON, --grid_eps HDBSCAN_CLUSTER_SELECTION_EPSILON
+  --hdbscan-cluster-selection-persistence HDBSCAN_CLUSTER_SELECTION_PERSISTENCE, --grid-cluster-selection-persistence HDBSCAN_CLUSTER_SELECTION_PERSISTENCE, --grid_cluster_selection_persistence HDBSCAN_CLUSTER_SELECTION_PERSISTENCE
+  --hdbscan-cluster-selection-method HDBSCAN_CLUSTER_SELECTION_METHOD, --grid-cluster-selection-method HDBSCAN_CLUSTER_SELECTION_METHOD, --grid_cluster_selection_method HDBSCAN_CLUSTER_SELECTION_METHOD, --cluster_selection_method HDBSCAN_CLUSTER_SELECTION_METHOD
+  --hdbscan-alpha HDBSCAN_ALPHA, --grid-alpha HDBSCAN_ALPHA, --grid_alpha HDBSCAN_ALPHA
+  --hdbscan-allow-single-cluster HDBSCAN_ALLOW_SINGLE_CLUSTER, --grid-allow-single-cluster HDBSCAN_ALLOW_SINGLE_CLUSTER, --grid_allow_single_cluster HDBSCAN_ALLOW_SINGLE_CLUSTER
+  --hdbscan-max-cluster-size HDBSCAN_MAX_CLUSTER_SIZE, --max-cluster-size HDBSCAN_MAX_CLUSTER_SIZE, --max_cluster_size HDBSCAN_MAX_CLUSTER_SIZE
+  --hdbscan-metric HDBSCAN_METRIC, --hdbscan_metric HDBSCAN_METRIC
+  --n-random-states N_RANDOM_STATES, --n_random_states N_RANDOM_STATES
+  --n-jobs N_JOBS, --n_jobs N_JOBS
+  --candidate-jobs CANDIDATE_JOBS
+  --top-n-models TOP_N_MODELS
+  --warn-candidate-count WARN_CANDIDATE_COUNT
+  --max-candidate-models MAX_CANDIDATE_MODELS
+  --max-samples-trust MAX_SAMPLES_TRUST, --max_samples_trust MAX_SAMPLES_TRUST
+  --max-samples-silhouette MAX_SAMPLES_SILHOUETTE
+  --trust-k TRUST_K, --trust_k TRUST_K
+  --trust-seed TRUST_SEED, --trust_seed TRUST_SEED
+  --silhouette-seed SILHOUETTE_SEED
+  --legacy-ensemble-seeds
+  --no-legacy-ensemble-seeds
+  --compute-dbcv
+  --no-compute-dbcv
+  --write-parquet
+  --no-write-parquet
+  --strict
+  --scoring-profile {legacy_dimple,custom}
+  --fit-include-noise
+  --fit-exclude-noise

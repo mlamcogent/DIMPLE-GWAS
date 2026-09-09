@@ -1,0 +1,5 @@
+name=fixed_reproduce
+started_at_utc=2026-08-26T15:21:52Z
+ended_at_utc=2026-08-26T15:22:02Z
+exit_status=0
+command=../DIMPLE-GWAS-freeze2/.venv/bin/python -m dimple_gwas reproduce-model --model-json docs/edition3/qa/stage1/generated/fixed_run/models/top_model_artifacts/model_060fac0208bb58e2/summary.json --output-dir docs/edition3/qa/stage1/generated/fixed_reproduction --n-jobs 1 

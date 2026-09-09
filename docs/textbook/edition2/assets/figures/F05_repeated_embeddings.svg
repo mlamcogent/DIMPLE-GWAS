@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">Repeated seeded layouts create a concatenated geometry</title><desc id="desc">Each run contributes q coordinates; raw axis scale influences its distance contribution.</desc>
+<defs><marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#2f6f9f"/></marker>
+<filter id="shadow"><feDropShadow dx="0" dy="4" stdDeviation="5" flood-opacity="0.12"/></filter></defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="80" y="82" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700" fill="#17324d">Repeated seeded layouts create a concatenated geometry</text>
+<text x="80" y="124" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#617181">Each run contributes q coordinates; raw axis scale influences its distance contribution.</text>
+<rect x="90" y="205" width="300" height="130" rx="18" fill="#eaf5f3" stroke="#2a9d8f" stroke-width="3" filter="url(#shadow)"/>
+<text x="240.0" y="247" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#17324d">Seed 42</text>
+<text x="240.0" y="285" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">p × q coordinates</text><rect x="90" y="385" width="300" height="130" rx="18" fill="#fff7df" stroke="#c79a2b" stroke-width="3" filter="url(#shadow)"/>
+<text x="240.0" y="427" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#17324d">Seed 43</text>
+<text x="240.0" y="465" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">p × q coordinates</text><rect x="90" y="565" width="300" height="130" rx="18" fill="#fff0ec" stroke="#e76f51" stroke-width="3" filter="url(#shadow)"/>
+<text x="240.0" y="607" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#17324d">Seed 44</text>
+<text x="240.0" y="645" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">p × q coordinates</text><line x1="390" y1="270" x2="700" y2="375" stroke="#2f6f9f" stroke-width="4" marker-end="url(#arrow)"/><line x1="390" y1="450" x2="700" y2="420" stroke="#2f6f9f" stroke-width="4" marker-end="url(#arrow)"/><line x1="390" y1="630" x2="700" y2="465" stroke="#2f6f9f" stroke-width="4" marker-end="url(#arrow)"/><rect x="700" y="300" width="440" height="240" rx="18" fill="#edf2f8" stroke="#2f6f9f" stroke-width="3" filter="url(#shadow)"/>
+<text x="920.0" y="342" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#17324d">Raw horizontal</text>
+<text x="920.0" y="372" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#17324d">concatenation</text>
+<text x="920.0" y="410" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">p × (qS) analytical</text>
+<text x="920.0" y="435" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">representation</text><line x1="1140" y1="420" x2="1270" y2="420" stroke="#2f6f9f" stroke-width="4" marker-end="url(#arrow)"/><rect x="1270" y="320" width="250" height="200" rx="18" fill="#f3f7fa" stroke="#2f6f9f" stroke-width="3" filter="url(#shadow)"/>
+<text x="1395.0" y="362" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#17324d">HDBSCAN</text>
+<text x="1395.0" y="400" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">distance sums</text>
+<text x="1395.0" y="425" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">contributions</text>
+<text x="1395.0" y="450" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">from every</text>
+<text x="1395.0" y="475" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">seeded layout</text><rect x="570" y="660" width="670" height="42" rx="21" fill="#17324d"/><text x="905.0" y="688" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="white">No Procrustes alignment is performed before concatenation</text>
+<text x="80" y="858" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#617181">DIMPLE-GWAS Freeze 3 RC1 · Textbook Edition 2 · internal review</text>
+</svg>

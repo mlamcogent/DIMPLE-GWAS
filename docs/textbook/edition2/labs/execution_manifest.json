@@ -1,0 +1,118 @@
+{
+  "commands": [
+    {
+      "command": "docs/textbook/edition2/build/runtime_env/bin/python docs/textbook/edition2/labs/00_hand_worked_toy/run_hand_worked.py",
+      "exit_code": 0,
+      "lab": "00_hand_worked_toy",
+      "name": "lab00_hand_worked",
+      "runtime_seconds": 1.564342,
+      "start_utc": "2026-08-26T02:57:02.102443+00:00"
+    },
+    {
+      "command": "docs/textbook/edition2/build/runtime_env/bin/dimple-gwas inspect-config --search-mode fixed --config docs/textbook/edition2/labs/01_fixed_synthetic/tutorial_config.yaml",
+      "exit_code": 0,
+      "lab": "01_fixed_synthetic",
+      "name": "lab01_inspect_config",
+      "runtime_seconds": 0.087666,
+      "start_utc": "2026-08-26T02:57:20.349425+00:00"
+    },
+    {
+      "command": "docs/textbook/edition2/build/runtime_env/bin/dimple-gwas show-search-space --search-mode fixed --config docs/textbook/edition2/labs/01_fixed_synthetic/tutorial_config.yaml --output-dir docs/textbook/edition2/labs/01_fixed_synthetic/search_space_20260826",
+      "exit_code": 0,
+      "lab": "01_fixed_synthetic",
+      "name": "lab01_show_search_space",
+      "runtime_seconds": 0.598097,
+      "start_utc": "2026-08-26T02:57:20.472220+00:00"
+    },
+    {
+      "command": "docs/textbook/edition2/build/runtime_env/bin/dimple-gwas run --search-mode fixed --config docs/textbook/edition2/labs/01_fixed_synthetic/tutorial_config.yaml --output-dir docs/textbook/edition2/labs/01_fixed_synthetic/run_20260826",
+      "exit_code": 0,
+      "lab": "01_fixed_synthetic",
+      "name": "lab01_run",
+      "runtime_seconds": 12.223335,
+      "start_utc": "2026-08-26T02:57:29.349740+00:00"
+    },
+    {
+      "command": "docs/textbook/edition2/build/runtime_env/bin/dimple-gwas inspect-config --search-mode custom --config docs/textbook/edition2/labs/02_custom_search_space/tutorial_config.yaml",
+      "exit_code": 0,
+      "lab": "02_custom_search_space",
+      "name": "lab02_inspect_config",
+      "runtime_seconds": 0.086708,
+      "start_utc": "2026-08-26T02:57:50.384679+00:00"
+    },
+    {
+      "command": "docs/textbook/edition2/build/runtime_env/bin/dimple-gwas show-search-space --search-mode custom --config docs/textbook/edition2/labs/02_custom_search_space/tutorial_config.yaml --output-dir docs/textbook/edition2/labs/02_custom_search_space/search_space_20260826",
+      "exit_code": 0,
+      "lab": "02_custom_search_space",
+      "name": "lab02_show_search_space",
+      "runtime_seconds": 0.427445,
+      "start_utc": "2026-08-26T02:57:50.507906+00:00"
+    },
+    {
+      "command": "docs/textbook/edition2/build/runtime_env/bin/dimple-gwas run --search-mode custom --config docs/textbook/edition2/labs/02_custom_search_space/tutorial_config.yaml --output-dir docs/textbook/edition2/labs/02_custom_search_space/run_20260826",
+      "exit_code": 0,
+      "lab": "02_custom_search_space",
+      "name": "lab02_run",
+      "runtime_seconds": 12.183759,
+      "start_utc": "2026-08-26T02:57:58.667065+00:00"
+    },
+    {
+      "command": "docs/textbook/edition2/build/runtime_env/bin/dimple-gwas score-existing --models docs/textbook/edition2/labs/01_fixed_synthetic/run_20260826/models/all_models.tsv --output docs/textbook/edition2/labs/03_explain_compare_validate/scored_20260826.tsv",
+      "exit_code": 0,
+      "lab": "03_explain_compare_validate",
+      "name": "lab03_score_existing",
+      "runtime_seconds": 0.691577,
+      "start_utc": "2026-08-26T02:58:39.713616+00:00"
+    },
+    {
+      "command": "docs/textbook/edition2/build/runtime_env/bin/dimple-gwas summarize-models --models docs/textbook/edition2/labs/01_fixed_synthetic/run_20260826/models/ranked_models.tsv --output-dir docs/textbook/edition2/labs/03_explain_compare_validate/summaries_20260826 --top-n-models 1",
+      "exit_code": 0,
+      "lab": "03_explain_compare_validate",
+      "name": "lab03_summarize",
+      "runtime_seconds": 0.399363,
+      "start_utc": "2026-08-26T02:58:40.442990+00:00"
+    },
+    {
+      "command": "docs/textbook/edition2/build/runtime_env/bin/dimple-gwas reproduce-model --model-json docs/textbook/edition2/labs/01_fixed_synthetic/run_20260826/models/top_model_artifacts/model_060fac0208bb58e2/summary.json --input benchmarks/synthetic/synthetic_matrix.tsv --output-dir docs/textbook/edition2/labs/03_explain_compare_validate/reproduced_20260826 --n-jobs 1",
+      "exit_code": 0,
+      "lab": "03_explain_compare_validate",
+      "name": "lab03_reproduce",
+      "runtime_seconds": 10.947009,
+      "start_utc": "2026-08-26T02:58:47.748764+00:00"
+    },
+    {
+      "command": "docs/textbook/edition2/build/runtime_env/bin/dimple-gwas explain --model-json docs/textbook/edition2/labs/01_fixed_synthetic/run_20260826/models/top_model_artifacts/model_060fac0208bb58e2/summary.json --input benchmarks/synthetic/synthetic_matrix.tsv --output-dir docs/textbook/edition2/labs/03_explain_compare_validate/explanation_20260826",
+      "exit_code": 0,
+      "lab": "03_explain_compare_validate",
+      "name": "lab03_explain",
+      "runtime_seconds": 1.638371,
+      "start_utc": "2026-08-26T02:59:07.632276+00:00"
+    },
+    {
+      "command": "docs/textbook/edition2/build/runtime_env/bin/dimple-gwas interpret --model-json docs/textbook/edition2/labs/01_fixed_synthetic/run_20260826/models/top_model_artifacts/model_060fac0208bb58e2/summary.json --input benchmarks/synthetic/synthetic_matrix.tsv --output-dir docs/textbook/edition2/labs/03_explain_compare_validate/interpret_alias_20260826",
+      "exit_code": 0,
+      "lab": "03_explain_compare_validate",
+      "name": "lab03_interpret_alias",
+      "runtime_seconds": 2.070657,
+      "start_utc": "2026-08-26T03:09:42.696939+00:00"
+    },
+    {
+      "command": "docs/textbook/edition2/build/runtime_env/bin/dimple-gwas compare --left docs/textbook/edition2/labs/01_fixed_synthetic/run_20260826/models/top_model_artifacts/model_060fac0208bb58e2/summary.json --right docs/textbook/edition2/labs/03_explain_compare_validate/reproduced_20260826/models/top_model_artifacts/model_060fac0208bb58e2/summary.json --output-dir docs/textbook/edition2/labs/03_explain_compare_validate/comparison_20260826 --require-same-order",
+      "exit_code": 0,
+      "lab": "03_explain_compare_validate",
+      "name": "lab03_compare",
+      "runtime_seconds": 1.641305,
+      "start_utc": "2026-08-26T02:59:20.402437+00:00"
+    },
+    {
+      "command": "docs/textbook/edition2/build/runtime_env/bin/dimple-gwas validate --run-dir docs/textbook/edition2/labs/01_fixed_synthetic/run_20260826 --output-dir docs/textbook/edition2/labs/03_explain_compare_validate/validation_20260826",
+      "exit_code": 0,
+      "lab": "03_explain_compare_validate",
+      "name": "lab03_validate",
+      "runtime_seconds": 0.367723,
+      "start_utc": "2026-08-26T02:59:22.074307+00:00"
+    }
+  ],
+  "schema": "dimple-gwas.textbook-lab-execution.v1",
+  "software_version": "3.0.0rc1"
+}

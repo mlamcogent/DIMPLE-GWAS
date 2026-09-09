@@ -1,0 +1,6 @@
+usage: dimple-gwas validate [-h] --run-dir RUN_DIR [--output-dir OUTPUT_DIR]
+
+options:
+  -h, --help            show this help message and exit
+  --run-dir RUN_DIR
+  --output-dir OUTPUT_DIR

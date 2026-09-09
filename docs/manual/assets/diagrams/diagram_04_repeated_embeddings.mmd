@@ -1,0 +1,8 @@
+flowchart LR
+  A["Prepared matrix"] --> U1["Seed s: UMAP d dims"]
+  A --> U2["Seed s+1: UMAP d dims"]
+  A --> UN["Seed s+n-1: UMAP d dims"]
+  U1 --> C["Horizontal concatenation: d × n dims"]
+  U2 --> C
+  UN --> C
+  C --> H["HDBSCAN metric space"]

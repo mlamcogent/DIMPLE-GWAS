@@ -1,0 +1,5 @@
+name=inspect_original_idp_164_historical_search
+started_at_utc=2026-08-26T15:21:28Z
+ended_at_utc=2026-08-26T15:21:28Z
+exit_status=0
+command=../DIMPLE-GWAS-freeze2/.venv/bin/python -m dimple_gwas inspect-config --config configs/original_idp_164_historical_search.yaml 

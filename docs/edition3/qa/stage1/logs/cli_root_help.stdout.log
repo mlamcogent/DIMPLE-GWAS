@@ -1,0 +1,23 @@
+usage: dimple-gwas [-h] [--version]
+                   {run,inspect-config,show-search-space,score-existing,summarize-models,reproduce-model,explain,interpret,compare,validate}
+                   ...
+
+DIMPLE-GWAS Freeze 3 topology search and original-space interpretation
+
+positional arguments:
+  {run,inspect-config,show-search-space,score-existing,summarize-models,reproduce-model,explain,interpret,compare,validate}
+    run                 Run UMAP/HDBSCAN topology search
+    inspect-config      Resolve and validate configuration
+    show-search-space   Enumerate candidate models without fitting
+    score-existing      Apply a declared score to an existing model table
+    summarize-models    Create family and Pareto summaries
+    reproduce-model     Re-run a retained model artifact
+    explain (interpret)
+                        Explain retained labels in the original input space
+                        without refitting
+    compare             Compare two retained clustering artifacts by exact IDs
+    validate            Validate run schemas, artifacts, and recorded hashes
+
+options:
+  -h, --help            show this help message and exit
+  --version             show program's version number and exit

@@ -1,0 +1,5 @@
+name=pytest_full
+started_at_utc=2026-08-26T15:21:29Z
+ended_at_utc=2026-08-26T15:21:41Z
+exit_status=0
+command=../DIMPLE-GWAS-freeze2/.venv/bin/python -m pytest -q --junitxml=docs/edition3/qa/stage1/test_results/freeze3_pytest.xml 

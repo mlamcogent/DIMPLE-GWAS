@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dimple-gwas"
+version = "3.0.0rc1"
+description = "Auditable UMAP/HDBSCAN topology search and original-space interpretation"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+dependencies = [
+  "numpy>=1.23",
+  "pandas>=1.5",
+  "scipy>=1.9",
+  "scikit-learn>=1.2",
+  "joblib>=1.2",
+  "umap-learn>=0.5.5",
+  "hdbscan>=0.8.40",
+  "PyYAML>=6.0",
+  "pyarrow>=12.0",
+  "openpyxl>=3.1",
+  "xlrd>=2.0",
+  "Pillow>=9.0",
+]
+
+[project.optional-dependencies]
+plots = ["plotly>=5.15", "matplotlib>=3.7"]
+test = ["pytest>=7.4"]
+
+[project.scripts]
+dimple-gwas = "dimple_gwas.cli:main"
+
+[tool.setuptools]
+packages = ["dimple_gwas"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"

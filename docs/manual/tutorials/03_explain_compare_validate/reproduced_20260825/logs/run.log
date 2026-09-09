@@ -1,0 +1,5 @@
+2026-08-25 20:47:36,364 [INFO] Resolved 1 candidate models across 1 UMAP and 1 HDBSCAN configurations
+2026-08-25 20:47:36,378 [INFO] Prepared analysis matrix with 24 features and 80 input variables
+2026-08-25 20:47:36,379 [INFO] UMAP family 1/1: umap_49d543513062668f (1 candidate models)
+2026-08-25 20:47:46,087 [INFO] Completed UMAP family umap_49d543513062668f: 1 evaluated, 0 failed
+2026-08-25 20:47:46,168 [INFO] Run complete: 1 successful, 0 invalid topology, 0 failed; selected=model_060fac0208bb58e2

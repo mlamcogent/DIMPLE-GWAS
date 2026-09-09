@@ -1,0 +1,8 @@
+chapters	claim_scope	citation_keys
+5-8	conceptual foundations and boundaries	umap2018; densmap2021; hdbscan2015; selective2024; oblong2024
+16-18	UMAP/densMAP/repeated embeddings/HDBSCAN	umap2018; densmap2021; hdbscan2015; hdbscan2017; umapdocs; hdbscandocs
+19-21	metrics, score, and selection	silhouette1987; dbcv2014; sklearnsilhouette
+24-31	explainability and validation	selective2024; umap2018; hdbscan2015
+7	comparator matrix	oblong2024; genomicsem2019; mtag2018; mostest2020; pleio2021; zhang2023
+35	MNIST benchmark	software/internal benchmark evidence only
+36	historical 164-IDP case	internal historical records; elliott2018 for UKB context

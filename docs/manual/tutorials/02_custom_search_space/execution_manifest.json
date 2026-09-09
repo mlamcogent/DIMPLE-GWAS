@@ -1,0 +1,229 @@
+{
+  "artifacts": [
+    {
+      "path": "tutorials/02_custom_search_space/README.md",
+      "sha256": "6aca0e172809decace8a8056798509be1b6b121df03654cceb7e5f5dbd2141b8",
+      "size_bytes": 1210
+    },
+    {
+      "path": "tutorials/02_custom_search_space/run_20260825/logs/model_failures.tsv",
+      "sha256": "cb101945e7feb489127643e533ea5c0126ca95747f8d0bf5e18f63dd891202f2",
+      "size_bytes": 1297
+    },
+    {
+      "path": "tutorials/02_custom_search_space/run_20260825/logs/run.log",
+      "sha256": "3a88d7c86718d7a85b019cf7ceeaa851f5161ee17d4561ecbeee59b4fe94f2f7",
+      "size_bytes": 1077
+    },
+    {
+      "path": "tutorials/02_custom_search_space/run_20260825/models/all_models.parquet",
+      "sha256": "8d3febb0d4a7a4c3a66e7a9421f022f1244b9b477a9f759eaf152e7714b4c331",
+      "size_bytes": 47771
+    },
+    {
+      "path": "tutorials/02_custom_search_space/run_20260825/models/all_models.tsv",
+      "sha256": "75e58376751e3f320fc975e9b574d4e5525163e555f26194686c221162442d8e",
+      "size_bytes": 23083
+    },
+    {
+      "path": "tutorials/02_custom_search_space/run_20260825/models/best_model.json",
+      "sha256": "39cc81b4a900b237b845e9c62b7d8c831d8db3fa2320b88c3cd3f6cfd793f1c3",
+      "size_bytes": 5433
+    },
+    {
+      "path": "tutorials/02_custom_search_space/run_20260825/models/family_summaries.tsv",
+      "sha256": "bff19fc41cb702f96be1e98c3a097c2075eac6042c4954ac0effa8f959fc7175",
+      "size_bytes": 1413
+    },
+    {
+      "path": "tutorials/02_custom_search_space/run_20260825/models/model_selection_manifest.json",
+      "sha256": "1ee3d9c068cc739bb9a3398dbc026621bf3adcc7ebe1cfffab992e43261a933f",
+      "size_bytes": 1478
+    },
+    {
+      "path": "tutorials/02_custom_search_space/run_20260825/models/pareto_front.tsv",
+      "sha256": "785b25cd548a985c89c03622e4ec9bcb2f057fd4ddbc35a4a489128c7eccb666",
+      "size_bytes": 7202
+    },
+    {
+      "path": "tutorials/02_custom_search_space/run_20260825/models/ranked_models.tsv",
+      "sha256": "3d8d1773b69f54e237ed979a94963a05f7be0fb671e6c8da19bfe514fcd032c6",
+      "size_bytes": 23083
+    },
+    {
+      "path": "tutorials/02_custom_search_space/run_20260825/models/top_model_artifacts/model_241ad5e99af55074/labels.tsv",
+      "sha256": "c77557e02c8af46d67b4cff664b876a9c13a72b9f5f749bca20670cfcfdb1414",
+      "size_bytes": 1074
+    },
+    {
+      "path": "tutorials/02_custom_search_space/run_20260825/models/top_model_artifacts/model_241ad5e99af55074/labels_with_annotations.tsv",
+      "sha256": "a4c2eb751dbaf8fb6394581bc992c630d95fa72f08c69205f56e43462c9a2174",
+      "size_bytes": 1430
+    },
+    {
+      "path": "tutorials/02_custom_search_space/run_20260825/models/top_model_artifacts/model_241ad5e99af55074/reproduce.yaml",
+      "sha256": "ad17bdca1a8c545f8810a29e9f141b14df1756ca910da570acfb35f02682d84f",
+      "size_bytes": 1463
+    },
+    {
+      "path": "tutorials/02_custom_search_space/run_20260825/models/top_model_artifacts/model_241ad5e99af55074/summary.json",
+      "sha256": "f71f45eadcad23431d94185fef0dcfc2fd00dd03c99f81e90349b3921c96edaa",
+      "size_bytes": 5889
+    },
+    {
+      "path": "tutorials/02_custom_search_space/run_20260825/models/top_model_artifacts/model_29cd5874d3f7874f/labels.tsv",
+      "sha256": "c77557e02c8af46d67b4cff664b876a9c13a72b9f5f749bca20670cfcfdb1414",
+      "size_bytes": 1074
+    },
+    {
+      "path": "tutorials/02_custom_search_space/run_20260825/models/top_model_artifacts/model_29cd5874d3f7874f/labels_with_annotations.tsv",
+      "sha256": "a4c2eb751dbaf8fb6394581bc992c630d95fa72f08c69205f56e43462c9a2174",
+      "size_bytes": 1430
+    },
+    {
+      "path": "tutorials/02_custom_search_space/run_20260825/models/top_model_artifacts/model_29cd5874d3f7874f/reproduce.yaml",
+      "sha256": "1d54892b7c24e04efb55204ea153e839561e75f66effff035e0b355720f90cf1",
+      "size_bytes": 1463
+    },
+    {
+      "path": "tutorials/02_custom_search_space/run_20260825/models/top_model_artifacts/model_29cd5874d3f7874f/summary.json",
+      "sha256": "feac4a011bce46bfdf9a730959cd7dd97bc50a5b0c4df3b869d2749df51b482e",
+      "size_bytes": 5888
+    },
+    {
+      "path": "tutorials/02_custom_search_space/run_20260825/models/top_model_artifacts/model_4e461eb04126fd78/labels.tsv",
+      "sha256": "c77557e02c8af46d67b4cff664b876a9c13a72b9f5f749bca20670cfcfdb1414",
+      "size_bytes": 1074
+    },
+    {
+      "path": "tutorials/02_custom_search_space/run_20260825/models/top_model_artifacts/model_4e461eb04126fd78/labels_with_annotations.tsv",
+      "sha256": "a4c2eb751dbaf8fb6394581bc992c630d95fa72f08c69205f56e43462c9a2174",
+      "size_bytes": 1430
+    },
+    {
+      "path": "tutorials/02_custom_search_space/run_20260825/models/top_model_artifacts/model_4e461eb04126fd78/reproduce.yaml",
+      "sha256": "fa22df0178bf0b95da597633bfbd08708bb55a77aec8636fae2438eed49f9f8f",
+      "size_bytes": 1463
+    },
+    {
+      "path": "tutorials/02_custom_search_space/run_20260825/models/top_model_artifacts/model_4e461eb04126fd78/summary.json",
+      "sha256": "78e97e5af595788211a1485ca97e586c98462442797fc27c0b5ea6259dcbdb9b",
+      "size_bytes": 5889
+    },
+    {
+      "path": "tutorials/02_custom_search_space/run_20260825/models/top_model_artifacts/model_ae5ffc7585b17285/labels.tsv",
+      "sha256": "c77557e02c8af46d67b4cff664b876a9c13a72b9f5f749bca20670cfcfdb1414",
+      "size_bytes": 1074
+    },
+    {
+      "path": "tutorials/02_custom_search_space/run_20260825/models/top_model_artifacts/model_ae5ffc7585b17285/labels_with_annotations.tsv",
+      "sha256": "a4c2eb751dbaf8fb6394581bc992c630d95fa72f08c69205f56e43462c9a2174",
+      "size_bytes": 1430
+    },
+    {
+      "path": "tutorials/02_custom_search_space/run_20260825/models/top_model_artifacts/model_ae5ffc7585b17285/reproduce.yaml",
+      "sha256": "8abde1a82088b7db1c33d30f7a6aea0c8b1ce8df816c84a919b07661143e0ff6",
+      "size_bytes": 1462
+    },
+    {
+      "path": "tutorials/02_custom_search_space/run_20260825/models/top_model_artifacts/model_ae5ffc7585b17285/summary.json",
+      "sha256": "b2214d08e4125427ed079f81e6b602818c663a928cd05c0d8ffe7227d341b613",
+      "size_bytes": 5887
+    },
+    {
+      "path": "tutorials/02_custom_search_space/run_20260825/models/top_model_artifacts/model_d1e8e9cec7243729/labels.tsv",
+      "sha256": "c77557e02c8af46d67b4cff664b876a9c13a72b9f5f749bca20670cfcfdb1414",
+      "size_bytes": 1074
+    },
+    {
+      "path": "tutorials/02_custom_search_space/run_20260825/models/top_model_artifacts/model_d1e8e9cec7243729/labels_with_annotations.tsv",
+      "sha256": "a4c2eb751dbaf8fb6394581bc992c630d95fa72f08c69205f56e43462c9a2174",
+      "size_bytes": 1430
+    },
+    {
+      "path": "tutorials/02_custom_search_space/run_20260825/models/top_model_artifacts/model_d1e8e9cec7243729/reproduce.yaml",
+      "sha256": "1a149cbb6f9dec86193396010e726089c3655ca1cff7d42f01c2ecf9d509c4ac",
+      "size_bytes": 1462
+    },
+    {
+      "path": "tutorials/02_custom_search_space/run_20260825/models/top_model_artifacts/model_d1e8e9cec7243729/summary.json",
+      "sha256": "4f6f0fe914e32f4b19bd5daa60150a4a7472e898a41b34825ca052cfea88a822",
+      "size_bytes": 5886
+    },
+    {
+      "path": "tutorials/02_custom_search_space/run_20260825/models/top_models.tsv",
+      "sha256": "edcdc8d5be372231e718519d32503d212438c15b25a30e3ab840138fac8ae1d7",
+      "size_bytes": 4508
+    },
+    {
+      "path": "tutorials/02_custom_search_space/run_20260825/resolved_config.yaml",
+      "sha256": "5e97129156997eb607c170c80e22a936bf4e44dedd2f1910bfb49b145de1e77d",
+      "size_bytes": 1519
+    },
+    {
+      "path": "tutorials/02_custom_search_space/run_20260825/run_manifest.json",
+      "sha256": "1c537d25239a32d77a348b560b6753a0c226a612c1354c7b83c9a407b2eb8898",
+      "size_bytes": 6881
+    },
+    {
+      "path": "tutorials/02_custom_search_space/run_20260825/search_space_manifest.json",
+      "sha256": "d08e00ca751a1fb1013804c35ba708a4bea83af396e73199f60f0522e222bba6",
+      "size_bytes": 32833
+    },
+    {
+      "path": "tutorials/02_custom_search_space/run_20260825/search_space_manifest.tsv",
+      "sha256": "3260a3893c3b5a067bd275e73bfab25c98a97b9ba9b78767f3a458c8e29c1dbb",
+      "size_bytes": 7622
+    },
+    {
+      "path": "tutorials/02_custom_search_space/run_20260825/stage02_hdbscan_gridsearch_results.csv",
+      "sha256": "1c2fe8f4013ec04fe6fa4c0a8bbd4e58fd74ce7fa4ca89cd6e553ab18e412bff",
+      "size_bytes": 23147
+    },
+    {
+      "path": "tutorials/02_custom_search_space/run_20260825/stage03_optimized_cluster_solutions.csv",
+      "sha256": "bf0b5c8470c0239b975f9ca811f92b917763512bed0c0fe37e66552cf1e79e7d",
+      "size_bytes": 23147
+    },
+    {
+      "path": "tutorials/02_custom_search_space/run_20260825/stage09_umap_vizdata_with_clusters.csv",
+      "sha256": "c319a424f6fa1662045d2c9d0e2ca0b7929b6a28f4fd7a2d44eb060109518575",
+      "size_bytes": 1074
+    },
+    {
+      "path": "tutorials/02_custom_search_space/run_20260825/stage09b_umap_vizdata_with_annotations.csv",
+      "sha256": "9eb0b655c1c94c1085249ac5d29a4101411476d636c423e4e7528710f688c64d",
+      "size_bytes": 1430
+    },
+    {
+      "path": "tutorials/02_custom_search_space/search_space_20260825/search_space_manifest.json",
+      "sha256": "d08e00ca751a1fb1013804c35ba708a4bea83af396e73199f60f0522e222bba6",
+      "size_bytes": 32833
+    },
+    {
+      "path": "tutorials/02_custom_search_space/search_space_20260825/search_space_manifest.tsv",
+      "sha256": "3260a3893c3b5a067bd275e73bfab25c98a97b9ba9b78767f3a458c8e29c1dbb",
+      "size_bytes": 7622
+    },
+    {
+      "path": "tutorials/02_custom_search_space/tutorial_config.yaml",
+      "sha256": "6bf73dcc3e5874a580132902f78cd18fb152d7245db772e1fca84cb31ae85d5a",
+      "size_bytes": 1050
+    }
+  ],
+  "command_logs": [
+    "build/logs/tutorial02_inspect_config.log",
+    "build/logs/tutorial02_show_search_space.log",
+    "build/logs/tutorial02_run.log"
+  ],
+  "created_utc": "2026-08-25T13:37:18.976339+00:00",
+  "notes": [
+    "32 candidates, 32 completed, 0 failed; selected model_241ad5e99af55074.",
+    "Runtime 10.713 seconds in the recorded local environment."
+  ],
+  "package_source_sha256": "df87825992ab51dc016c673cf420a978ba5c161bd6c755e00a5199ead310e65b",
+  "schema": "dimple-gwas.manual-tutorial.v1",
+  "software_version": "3.0.0rc1",
+  "status": "complete",
+  "tutorial": "02_custom_search_space"
+}

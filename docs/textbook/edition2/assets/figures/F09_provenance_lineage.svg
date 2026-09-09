@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">Reproduction begins with lineage, not with a plot</title><desc id="desc">Selected-model artifacts join input identity, resolved method, candidate identity, and replay instructions.</desc>
+<defs><marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#2f6f9f"/></marker>
+<filter id="shadow"><feDropShadow dx="0" dy="4" stdDeviation="5" flood-opacity="0.12"/></filter></defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="80" y="82" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700" fill="#17324d">Reproduction begins with lineage, not with a plot</text>
+<text x="80" y="124" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#617181">Selected-model artifacts join input identity, resolved method, candidate identity, and replay instructions.</text>
+<rect x="80" y="240" width="280" height="190" rx="18" fill="#f3f7fa" stroke="#2f6f9f" stroke-width="3" filter="url(#shadow)"/>
+<text x="220.0" y="282" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#17324d">Checksummed</text>
+<text x="220.0" y="312" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#17324d">input</text>
+<text x="220.0" y="350" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">matrix ·</text>
+<text x="220.0" y="375" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">identifiers ·</text>
+<text x="220.0" y="400" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">annotations</text><line x1="360" y1="335" x2="465" y2="335" stroke="#2f6f9f" stroke-width="4" marker-end="url(#arrow)"/><rect x="465" y="240" width="280" height="190" rx="18" fill="#eaf5f3" stroke="#2a9d8f" stroke-width="3" filter="url(#shadow)"/>
+<text x="605.0" y="282" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#17324d">Resolved</text>
+<text x="605.0" y="312" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#17324d">method</text>
+<text x="605.0" y="350" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">software ·</text>
+<text x="605.0" y="375" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">dependencies ·</text>
+<text x="605.0" y="400" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">config · seeds</text><line x1="745" y1="335" x2="850" y2="335" stroke="#2f6f9f" stroke-width="4" marker-end="url(#arrow)"/><rect x="850" y="240" width="280" height="190" rx="18" fill="#fff7df" stroke="#c79a2b" stroke-width="3" filter="url(#shadow)"/>
+<text x="990.0" y="282" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#17324d">Candidate</text>
+<text x="990.0" y="312" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#17324d">record</text>
+<text x="990.0" y="350" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">model ID · metrics</text>
+<text x="990.0" y="375" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">· status · failure</text><line x1="1130" y1="335" x2="1235" y2="335" stroke="#2f6f9f" stroke-width="4" marker-end="url(#arrow)"/><rect x="1235" y="240" width="285" height="190" rx="18" fill="#fff0ec" stroke="#e76f51" stroke-width="3" filter="url(#shadow)"/>
+<text x="1377.5" y="282" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#17324d">Selected</text>
+<text x="1377.5" y="312" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#17324d">artifacts</text>
+<text x="1377.5" y="350" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">labels · summary ·</text>
+<text x="1377.5" y="375" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">reproduce YAML ·</text>
+<text x="1377.5" y="400" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">checksum</text><line x1="1375" y1="430" x2="1375" y2="610" stroke="#2f6f9f" stroke-width="4" marker-end="url(#arrow)"/><rect x="1000" y="610" width="520" height="120" rx="18" fill="#edf2f8" stroke="#2f6f9f" stroke-width="3" filter="url(#shadow)"/>
+<text x="1260.0" y="652" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#17324d">Reproduction and</text>
+<text x="1260.0" y="682" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#17324d">comparison</text>
+<text x="1260.0" y="720" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">identifier alignment + partition +</text>
+<text x="1260.0" y="745" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">geometry checks</text><rect x="235" y="610" width="650" height="42" rx="21" fill="#17324d"/><text x="560.0" y="638" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="white">Sanitized publication copy preserves identity without machine paths</text>
+<text x="80" y="858" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#617181">DIMPLE-GWAS Freeze 3 RC1 · Textbook Edition 2 · internal review</text>
+</svg>

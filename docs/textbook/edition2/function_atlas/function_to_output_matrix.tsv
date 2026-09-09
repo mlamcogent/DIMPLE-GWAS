@@ -1,0 +1,49 @@
+qualified_symbol	tier	artifact	relationship	planned_chapter
+cli._score	A	rescored_table.tsv	direct writer/producer	13–17; Appendix A
+cli._score	A	rescored_table.tsv.manifest.json	direct writer/producer	13–17; Appendix A
+cli._summarize	A	family_summaries.tsv	direct writer/producer	13–17; Appendix A
+cli._summarize	A	pareto_front.tsv	direct writer/producer	13–17; Appendix A
+cli._summarize	A	top_models.tsv	direct writer/producer	13–17; Appendix A
+cli._summarize	A	summary.json	direct writer/producer	13–17; Appendix A
+comparison.run_comparison	A	comparison_summary.json	direct writer/producer	12, 16, 21, 23
+comparison.run_comparison	A	membership_comparison.tsv	direct writer/producer	12, 16, 21, 23
+comparison.run_comparison	A	cluster_sizes.tsv	direct writer/producer	12, 16, 21, 23
+comparison.run_comparison	A	label_confusion.tsv	direct writer/producer	12, 16, 21, 23
+comparison.run_comparison	A	optimal_label_mapping.tsv	direct writer/producer	12, 16, 21, 23
+comparison.run_comparison	A	comparison_manifest.json	direct writer/producer	12, 16, 21, 23
+interpretation.run_explanation	A	original_space_similarity.tsv.gz	direct writer/producer	17, 21
+interpretation.run_explanation	A	heatmap_order.tsv	direct writer/producer	17, 21
+interpretation.run_explanation	A	cluster_cutpoints.tsv	direct writer/producer	17, 21
+interpretation.run_explanation	A	cluster_summary.tsv	direct writer/producer	17, 21
+interpretation.run_explanation	A	projection_quality.tsv	direct writer/producer	17, 21
+interpretation.run_explanation	A	coordinate_associations.tsv	direct writer/producer	17, 21
+interpretation.run_explanation	A	exclusions.tsv	direct writer/producer	17, 21
+interpretation.run_explanation	A	original_space_heatmap.png	direct writer/producer	17, 21
+interpretation.run_explanation	A	original_space_heatmap.html	direct writer/producer	17, 21
+interpretation.run_explanation	A	interpretation_manifest.json	direct writer/producer	17, 21
+interpretation.run_explanation	A	README.md	direct writer/producer	17, 21
+pipeline.setup_logger	B	logs/run.log	direct writer/producer	8–12, 15
+reporting.write_resolved_config	B	resolved_config.yaml	direct writer/producer	12, 15; output atlas
+reporting.write_search_space	B	search_space_manifest.tsv	direct writer/producer	12, 15; output atlas
+reporting.write_search_space	B	search_space_manifest.json	direct writer/producer	12, 15; output atlas
+reporting._top_artifact	C	labels.tsv	direct writer/producer	12, 15; output atlas
+reporting._top_artifact	C	summary.json	direct writer/producer	12, 15; output atlas
+reporting._top_artifact	C	reproduce.yaml	direct writer/producer	12, 15; output atlas
+reporting.write_model_outputs	A	run_manifest.json	direct writer/producer	12, 15; output atlas
+reporting.write_model_outputs	A	models/all_models.tsv	direct writer/producer	12, 15; output atlas
+reporting.write_model_outputs	A	models/all_models.parquet	direct writer/producer	12, 15; output atlas
+reporting.write_model_outputs	A	models/ranked_models.tsv	direct writer/producer	12, 15; output atlas
+reporting.write_model_outputs	A	models/top_models.tsv	direct writer/producer	12, 15; output atlas
+reporting.write_model_outputs	A	models/best_model.json	direct writer/producer	12, 15; output atlas
+reporting.write_model_outputs	A	models/model_selection_manifest.json	direct writer/producer	12, 15; output atlas
+reporting.write_model_outputs	A	models/pareto_front.tsv	direct writer/producer	12, 15; output atlas
+reporting.write_model_outputs	A	models/family_summaries.tsv	direct writer/producer	12, 15; output atlas
+reporting.write_model_outputs	A	stage02_hdbscan_gridsearch_results.csv	direct writer/producer	12, 15; output atlas
+reporting.write_model_outputs	A	stage03_optimized_cluster_solutions.csv	direct writer/producer	12, 15; output atlas
+reporting.write_model_outputs	A	stage09_umap_vizdata_with_clusters.csv	direct writer/producer	12, 15; output atlas
+reporting.write_model_outputs	A	stage09b_umap_vizdata_with_annotations.csv	direct writer/producer	12, 15; output atlas
+validation.run_validation	A	validation_checks.tsv	direct writer/producer	12, 16, 21, 23
+validation.run_validation	A	validation_report.json	direct writer/producer	12, 16, 21, 23
+validation.run_validation	A	validation_manifest.json	direct writer/producer	12, 16, 21, 23
+visualization.render_heatmap	A	original_space_heatmap.png	direct writer/producer	17, 21
+visualization.render_heatmap	A	original_space_heatmap.html	direct writer/producer	17, 21

@@ -1,0 +1,5 @@
+name=fixed_run
+started_at_utc=2026-08-26T15:21:41Z
+ended_at_utc=2026-08-26T15:21:50Z
+exit_status=0
+command=../DIMPLE-GWAS-freeze2/.venv/bin/python -m dimple_gwas run --config docs/textbook/edition2/labs/01_fixed_synthetic/tutorial_config.yaml --output-dir docs/edition3/qa/stage1/generated/fixed_run 

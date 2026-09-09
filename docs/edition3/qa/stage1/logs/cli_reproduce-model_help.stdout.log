@@ -1,0 +1,11 @@
+usage: dimple-gwas reproduce-model [-h] --model-json MODEL_JSON
+                                   [--input INPUT_PATH] --output-dir
+                                   OUTPUT_DIR [--n-jobs N_JOBS]
+
+options:
+  -h, --help            show this help message and exit
+  --model-json MODEL_JSON
+                        best_model.json or top-model summary.json
+  --input INPUT_PATH
+  --output-dir OUTPUT_DIR
+  --n-jobs N_JOBS

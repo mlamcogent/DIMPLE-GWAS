@@ -1,0 +1,25 @@
+check	status	detail
+required:resolved_config.yaml	pass	docs/textbook/edition2/labs/01_fixed_synthetic/run_20260826/resolved_config.yaml
+required:search_space_manifest.tsv	pass	docs/textbook/edition2/labs/01_fixed_synthetic/run_20260826/search_space_manifest.tsv
+required:search_space_manifest.json	pass	docs/textbook/edition2/labs/01_fixed_synthetic/run_20260826/search_space_manifest.json
+required:models/all_models.tsv	pass	docs/textbook/edition2/labs/01_fixed_synthetic/run_20260826/models/all_models.tsv
+required:models/ranked_models.tsv	pass	docs/textbook/edition2/labs/01_fixed_synthetic/run_20260826/models/ranked_models.tsv
+required:models/top_models.tsv	pass	docs/textbook/edition2/labs/01_fixed_synthetic/run_20260826/models/top_models.tsv
+required:models/model_selection_manifest.json	pass	docs/textbook/edition2/labs/01_fixed_synthetic/run_20260826/models/model_selection_manifest.json
+required:run_manifest.json	pass	docs/textbook/edition2/labs/01_fixed_synthetic/run_20260826/run_manifest.json
+run_manifest_json	pass	valid JSON
+resolved_config_yaml	pass	mapping expected
+search_space_tsv_readable	pass	rows=1
+search_space_json_readable	pass	candidate_models=1
+search_space_counts_equal	pass	tsv=1; json=1
+ranked_model_schema	pass	missing=[]
+top_models_readable	pass	rows=1
+selected_model_summary	pass	docs/textbook/edition2/labs/01_fixed_synthetic/run_20260826/models/top_model_artifacts/model_060fac0208bb58e2/summary.json
+selected_model_labels	pass	docs/textbook/edition2/labs/01_fixed_synthetic/run_20260826/models/top_model_artifacts/model_060fac0208bb58e2/labels.tsv
+selected_labels_hash	pass	recorded hash matches
+artifact:all_models	pass	/Users/maxlam/Downloads/Cogent-analysis-audit/DIMPLE-GWAS/DIMPLE-GWAS-freeze3/docs/textbook/edition2/labs/01_fixed_synthetic/run_20260826/models/all_models.tsv
+artifact:family_summaries	pass	/Users/maxlam/Downloads/Cogent-analysis-audit/DIMPLE-GWAS/DIMPLE-GWAS-freeze3/docs/textbook/edition2/labs/01_fixed_synthetic/run_20260826/models/family_summaries.tsv
+artifact:model_failures	pass	/Users/maxlam/Downloads/Cogent-analysis-audit/DIMPLE-GWAS/DIMPLE-GWAS-freeze3/docs/textbook/edition2/labs/01_fixed_synthetic/run_20260826/logs/model_failures.tsv
+artifact:pareto_front	pass	/Users/maxlam/Downloads/Cogent-analysis-audit/DIMPLE-GWAS/DIMPLE-GWAS-freeze3/docs/textbook/edition2/labs/01_fixed_synthetic/run_20260826/models/pareto_front.tsv
+artifact:ranked_models	pass	/Users/maxlam/Downloads/Cogent-analysis-audit/DIMPLE-GWAS/DIMPLE-GWAS-freeze3/docs/textbook/edition2/labs/01_fixed_synthetic/run_20260826/models/ranked_models.tsv
+artifact:top_models	pass	/Users/maxlam/Downloads/Cogent-analysis-audit/DIMPLE-GWAS/DIMPLE-GWAS-freeze3/docs/textbook/edition2/labs/01_fixed_synthetic/run_20260826/models/top_models.tsv

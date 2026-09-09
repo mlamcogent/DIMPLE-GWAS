@@ -1,0 +1,22 @@
+figure_id	file	opened	legible	no_overlap	caption_bounded	review_note
+F01	assets/figures/F01_pipeline_overview.svg	yes	yes	yes	yes	source asset and containing PDF page inspected; pass
+F02	assets/figures/F02_input_orientation.svg	yes	yes	yes	yes	source asset and containing PDF page inspected; pass
+F03	assets/figures/F03_configuration_precedence.svg	yes	yes	yes	yes	source asset and containing PDF page inspected; pass
+F04	assets/figures/F04_umap_densmap_flow.svg	yes	yes	yes	yes	source asset and containing PDF page inspected; pass
+F05	assets/figures/F05_repeated_embeddings.svg	yes	yes	yes	yes	source asset and containing PDF page inspected; pass
+F06	assets/figures/F06_hdbscan_hierarchy.svg	yes	yes	yes	yes	source asset and containing PDF page inspected; pass
+F07	assets/figures/F07_search_space_lifecycle.svg	yes	yes	yes	yes	source asset and containing PDF page inspected; pass
+F08	assets/figures/F08_scoring_ranking_replay.svg	yes	yes	yes	yes	source asset and containing PDF page inspected; pass
+F09	assets/figures/F09_provenance_lineage.svg	yes	yes	yes	yes	source asset and containing PDF page inspected; pass
+F10	assets/figures/F10_original_space_explanation.svg	yes	yes	yes	yes	source asset and containing PDF page inspected; pass
+F11	assets/figures/F11_comparison_validation.svg	yes	yes	yes	yes	source asset and containing PDF page inspected; pass
+F12	assets/figures/F12_validation_ladder.svg	yes	yes	yes	yes	source asset and containing PDF page inspected; pass
+F13	assets/figures/F13_fixed_fixture_embedding.png	yes	yes	yes	yes	source asset and containing PDF page inspected; pass
+F14	assets/figures/F14_custom_search_ranking.png	yes	yes	yes	yes	source asset and containing PDF page inspected; pass
+F15	assets/figures/F15_selected_candidate_diagnostics.png	yes	yes	yes	yes	source asset and containing PDF page inspected; pass
+F16	assets/figures/F16_reproduction_concordance.png	yes	yes	yes	yes	source asset and containing PDF page inspected; pass
+F17	assets/figures/F17_original_space_heatmap.png	yes	yes	yes	yes	source asset and containing PDF page inspected; pass
+F18	assets/figures/F18_evidence_status.png	yes	yes	yes	yes	source asset and containing PDF page inspected; pass
+F19	assets/figures/F19_rint_transformation.png	yes	yes	yes	yes	source asset and containing PDF page inspected; pass
+F20	assets/figures/F20_toy_distance_matrix.png	yes	yes	yes	yes	source asset and containing PDF page inspected; pass
+F21	assets/figures/F21_cluster_size_noise_summary.png	yes	yes	yes	yes	source asset and containing PDF page inspected; pass

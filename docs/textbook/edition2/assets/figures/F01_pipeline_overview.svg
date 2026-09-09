@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">From scientific question to retained evidence</title><desc id="desc">The software pipeline is an evidence chain, not a single clustering call.</desc>
+<defs><marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#2f6f9f"/></marker>
+<filter id="shadow"><feDropShadow dx="0" dy="4" stdDeviation="5" flood-opacity="0.12"/></filter></defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="80" y="82" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700" fill="#17324d">From scientific question to retained evidence</text>
+<text x="80" y="124" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#617181">The software pipeline is an evidence chain, not a single clustering call.</text>
+<rect x="65" y="250" width="230" height="180" rx="18" fill="#f3f7fa" stroke="#2f6f9f" stroke-width="3" filter="url(#shadow)"/>
+<text x="180.0" y="292" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#17324d">GWAS-derived</text>
+<text x="180.0" y="322" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#17324d">matrix</text>
+<text x="180.0" y="360" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">phenotype</text>
+<text x="180.0" y="385" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">vectors ×</text>
+<text x="180.0" y="410" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">retained</text>
+<text x="180.0" y="435" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">variants</text><line x1="295" y1="340" x2="365" y2="340" stroke="#2f6f9f" stroke-width="4" marker-end="url(#arrow)"/><rect x="365" y="250" width="230" height="180" rx="18" fill="#eaf5f3" stroke="#2a9d8f" stroke-width="3" filter="url(#shadow)"/>
+<text x="480.0" y="292" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#17324d">Prepare</text>
+<text x="480.0" y="330" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">validate ·</text>
+<text x="480.0" y="355" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">orient ·</text>
+<text x="480.0" y="380" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">optional RINT</text><line x1="595" y1="340" x2="665" y2="340" stroke="#2f6f9f" stroke-width="4" marker-end="url(#arrow)"/><rect x="665" y="250" width="230" height="180" rx="18" fill="#fff7df" stroke="#c79a2b" stroke-width="3" filter="url(#shadow)"/>
+<text x="780.0" y="292" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#17324d">Represent</text>
+<text x="780.0" y="330" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">seeded UMAP /</text>
+<text x="780.0" y="355" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">densMAP families</text><line x1="895" y1="340" x2="965" y2="340" stroke="#2f6f9f" stroke-width="4" marker-end="url(#arrow)"/><rect x="965" y="250" width="230" height="180" rx="18" fill="#fff0ec" stroke="#e76f51" stroke-width="3" filter="url(#shadow)"/>
+<text x="1080.0" y="292" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#17324d">Cluster &amp;</text>
+<text x="1080.0" y="322" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#17324d">score</text>
+<text x="1080.0" y="360" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">HDBSCAN grid ·</text>
+<text x="1080.0" y="385" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">diagnostics ·</text>
+<text x="1080.0" y="410" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">rank</text><line x1="1195" y1="340" x2="1265" y2="340" stroke="#2f6f9f" stroke-width="4" marker-end="url(#arrow)"/><rect x="1265" y="250" width="270" height="180" rx="18" fill="#f3f7fa" stroke="#2f6f9f" stroke-width="3" filter="url(#shadow)"/>
+<text x="1400.0" y="292" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#17324d">Retain &amp;</text>
+<text x="1400.0" y="322" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#17324d">explain</text>
+<text x="1400.0" y="360" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">artifacts · replay</text>
+<text x="1400.0" y="385" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">· compare ·</text>
+<text x="1400.0" y="410" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#1e2933">validate</text><rect x="530" y="555" width="540" height="42" rx="21" fill="#17324d"/><text x="800.0" y="583" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="white">Every arrow is a checksummed provenance transition</text>
+<text x="80" y="858" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#617181">DIMPLE-GWAS Freeze 3 RC1 · Textbook Edition 2 · internal review</text>
+</svg>
