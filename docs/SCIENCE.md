@@ -1,0 +1,15 @@
+# Science contract and provenance
+
+The release fixes nine Euclidean 3D DensMAP configurations. Cross neighbors 15, 30 and 50 with minimum distances 0, 0.1 and 0.5. Use seeds 1 through 1000 inclusive, in ascending order within each configuration. The 3-column output of each seed is converted to float32 and concatenated horizontally into that configuration's 3000-dimensional ensemble. The nine ensembles remain distinct. The original design reference is the 30-neighbor, zero-minimum-distance configuration.
+
+Each ensemble uses HDBSCAN with excess-of-mass selection. The grid crosses minimum samples 2–19, minimum cluster size 5–49, and cluster-selection epsilon 0, 1 or 2. That produces 2,430 parameter tuples per configuration and 21,870 rows in total. Validate exact seed coverage, candidate tuples, label rows, ordered IDs, and per-stage artifact identity before using them. Seed chunk size and job parallelism affect scheduling.
+
+Silhouette is computed on assigned objects with Euclidean distances in the selected configuration's 3000-dimensional ensemble. A candidate is eligible only when the assigned population contains at least two clusters and fewer clusters than assigned objects. Ineligible rows remain in the pool with null silhouette and scores. Scores use only eligible rows.
+
+The primary score follows the historical notebook implementation. For silhouette, cluster count and noise count, divide each value by its eligible-pool maximum. A zero maximum contributes a zero normalized component. Weight each component by its raw range divided by the sum of the three raw ranges. A zero total range gives equal weights. Add the weighted silhouette and cluster count and subtract the weighted noise count. A negative maximum is used as a signed divisor, as in the inherited implementation. The supplemental min–max score is 1 when its range is zero. The primary ordering uses the raw score descending, then configuration ID ascending, then candidate ordinal ascending. [Implementation](../bin/freeze5_scoring.py)
+
+Pool all raw rows from all nine configurations before global normalization or weighting. Each within-configuration rank is a separate calculation. The corresponding scores should be interpreted only within their named scope. Winners reuse the saved labels at the verified candidate position. Truth labels are allowed only in the optional post-selection evaluation.
+
+Run provenance includes the exact raw input and grid digests, preprocessing declaration, normalized array and ordered ID digests, source manifest, worker image identity, dataset shape, software versions and final eligibility. Work artifacts carry run identity across seed and candidate assembly. Use the workflow trace and controller and Batch records to link the run to an observed worker digest and object version.
+
+Local acceptance establishes specific software properties with synthetic data and local stubs. It does not establish numerical identity across platforms or dependency versions, a scientifically acceptable model for a new dataset, a complete 2315-trait result, or a live runtime or cost estimate.

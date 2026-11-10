@@ -1,0 +1,6 @@
+task_id	hash	native_id	name	status	exit	submit	start	complete	duration	realtime	%cpu	peak_rss	peak_vmem	rchar	wchar
+1	27/85f7cf	86344	PREPARE	COMPLETED	0	2026-11-11 01:23:22.738	2026-11-11 01:23:22.825	2026-11-11 01:23:24.140	1.4s	1.2s	-	-	-	-	-
+2	03/9e04ba	86397	UMAP_CHUNK (pca:1-1)	COMPLETED	0	2026-11-11 01:23:24.219	2026-11-11 01:23:24.251	2026-11-11 01:23:33.142	8.9s	8.8s	-	-	-	-	-
+3	db/228582	86463	CONCAT (pca)	COMPLETED	0	2026-11-11 01:23:33.231	2026-11-11 01:23:33.251	2026-11-11 01:23:36.451	3.2s	3.1s	-	-	-	-	-
+5	83/77936b	86519	GRID (pca:min_samples=3)	FAILED	77	2026-11-11 01:23:36.472	2026-11-11 01:23:36.559	2026-11-11 01:23:36.601	129ms	42ms	-	-	-	-	-
+4	a0/0d567e	86521	GRID (pca:min_samples=2)	ABORTED	-	2026-11-11 01:23:36.480	2026-11-11 01:23:36.561	-	-	-	-	-	-	-	-

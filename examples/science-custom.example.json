@@ -1,0 +1,24 @@
+{
+  "umap": {
+    "n_neighbors": 5,
+    "min_dist": 0.1,
+    "n_components": 2,
+    "densmap": false
+  },
+  "execution": {
+    "n_random_states": 2
+  },
+  "hdbscan": {
+    "min_samples": [
+      2
+    ],
+    "min_cluster_size": [
+      5,
+      10
+    ],
+    "cluster_selection_epsilon": [
+      0,
+      0.25
+    ]
+  }
+}

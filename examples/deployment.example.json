@@ -1,0 +1,18 @@
+{
+  "region": "REPLACE_REGION",
+  "queue": "REPLACE_QUEUE_NAME",
+  "image": "REPLACE_REGISTRY_REPOSITORY_AND_SHA256_DIGEST",
+  "job_role": "REPLACE_ECS_TASK_JOB_ROLE_ARN",
+  "execution_role": "REPLACE_ECS_TASK_EXECUTION_ROLE_ARN",
+  "log_group": "REPLACE_LOG_GROUP_NAME",
+  "bucket": "REPLACE_STACK_BUCKET",
+  "project_prefix": "research",
+  "seed_chunk": 25,
+  "queue_size": 16,
+  "task_hours": 4,
+  "prepare_memory_gib": 4,
+  "umap_memory_gib": 4,
+  "concat_memory_gib": 8,
+  "grid_memory_gib": 8,
+  "rank_memory_gib": 8
+}

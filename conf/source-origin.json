@@ -1,0 +1,25 @@
+{
+  "derived_members": {
+    "bin/freeze5_scoring.py": "byte-identical",
+    "bin/research.py": "shared intake and strict artifact validation; preserved scientific math and pooled selection",
+    "conf/digits-nine.json": "fixed recipe fields selected into conf/recipe.json",
+    "main.nf": "portable staging, execution parameterization and lineage; same scientific fanout"
+  },
+  "excluded_ancestor_material": "owner overlays, deployment defaults, input contracts specific to digits, logs, tests tied to private data, receipts and runtime binaries",
+  "license_sha256": "5d23fe1b469dd95430f6d70a6eb902d502174415a8dded435cf6ff0592544620",
+  "runtime_lock_origin_sha256": "e1a8e7cd97e1b4c596d1a2f4804ea0503faa20f90d9c27de959d92ebcb6a10a3",
+  "schema": "dimple.freeze5.2.source-origin/v1",
+  "source_archive": {
+    "bytes": 39858,
+    "sha256": "007a2cee3036bb7901ee7509d9807b447e2cf63bb426b8edf3b461e6e2177f2a",
+    "version": "5.1.0-research-digits.1"
+  },
+  "verified_ancestor_core_sha256": {
+    "VERSION": "9255ca37113750ec752109287c416c5b1e2e59364dc948a63ee41d38dc60ce19",
+    "bin/freeze5_scoring.py": "50aecc32d8483f28d10e27401a3b347b3bf5f5d9d8f4fd5ec60cce2ebd452981",
+    "bin/research.py": "e9d9e19b7b0e2460c3c35ce6cffe88682bae03eeb8e95c8b7455a1782783a073",
+    "conf/digits-nine.json": "5fcd3f4ac7cdea597d6c2615bc6c6efa793fd16973a9867d10b81d660ae812d0",
+    "main.nf": "c95ae3ce78f92c025124e9434fbde193b26fa99a8b7fda622b042b2c414f85a5",
+    "nextflow.config": "222d73a72c8965a500d1b982a8feb31cbb96e8df3b15509691eb7f0f16acf8e1"
+  }
+}

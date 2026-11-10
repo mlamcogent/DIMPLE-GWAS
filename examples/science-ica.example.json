@@ -1,0 +1,20 @@
+{
+  "backend": "ica",
+  "ica": {
+    "retained_components": 2,
+    "seed": 42,
+    "tol": 0.0001,
+    "max_iter": 1000
+  },
+  "hdbscan": {
+    "min_samples": [
+      2
+    ],
+    "min_cluster_size": [
+      5
+    ],
+    "cluster_selection_epsilon": [
+      0
+    ]
+  }
+}
