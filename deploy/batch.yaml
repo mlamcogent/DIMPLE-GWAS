@@ -1,0 +1,150 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: DIMPLE Freeze 5.2 private storage and native AWS Batch EC2 resources
+Parameters:
+  VpcId:
+    Type: AWS::EC2::VPC::Id
+  PrivateSubnets:
+    Type: List<AWS::EC2::Subnet::Id>
+    Description: Existing private subnets in VpcId with approved HTTPS egress and no public IP assignment.
+  BatchServiceRoleArn:
+    Type: String
+    AllowedPattern: 'arn:aws:iam::[0-9]{12}:role/aws-service-role/batch\.amazonaws\.com/AWSServiceRoleForBatch'
+  InstanceProfileArn:
+    Type: String
+    AllowedPattern: 'arn:aws:iam::[0-9]{12}:instance-profile/[A-Za-z0-9_+=,.@/-]+'
+  MaxVcpus:
+    Type: Number
+    Default: 24
+    MinValue: 4
+    MaxValue: 256
+  RootVolumeGiB:
+    Type: Number
+    Default: 80
+    MinValue: 40
+    MaxValue: 1024
+  InstanceTypes:
+    Type: CommaDelimitedList
+    Default: m6i.2xlarge
+    Description: Approved available x86_64 instance types sized for the requested per-task RAM and disk.
+  QueueState:
+    Type: String
+    AllowedValues: [DISABLED, ENABLED]
+    Default: DISABLED
+  LogRetentionDays:
+    Type: Number
+    AllowedValues: [7, 14, 30, 60, 90, 180, 365]
+    Default: 30
+Resources:
+  RunBucket:
+    Type: AWS::S3::Bucket
+    DeletionPolicy: Retain
+    UpdateReplacePolicy: Retain
+    Properties:
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault:
+              SSEAlgorithm: AES256
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        BlockPublicPolicy: true
+        IgnorePublicAcls: true
+        RestrictPublicBuckets: true
+      OwnershipControls:
+        Rules:
+          - ObjectOwnership: BucketOwnerEnforced
+      VersioningConfiguration:
+        Status: Enabled
+  RunBucketPolicy:
+    Type: AWS::S3::BucketPolicy
+    DeletionPolicy: Retain
+    UpdateReplacePolicy: Retain
+    Properties:
+      Bucket: !Ref RunBucket
+      PolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Sid: DenyInsecureTransport
+            Effect: Deny
+            Principal: '*'
+            Action: 's3:*'
+            Resource:
+              - !GetAtt RunBucket.Arn
+              - !Sub '${RunBucket.Arn}/*'
+            Condition:
+              Bool:
+                aws:SecureTransport: 'false'
+  WorkerSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: DIMPLE Batch worker HTTPS egress and no ingress
+      VpcId: !Ref VpcId
+      SecurityGroupEgress:
+        - IpProtocol: tcp
+          FromPort: 443
+          ToPort: 443
+          CidrIp: 0.0.0.0/0
+  WorkerLaunchTemplate:
+    Type: AWS::EC2::LaunchTemplate
+    Properties:
+      LaunchTemplateData:
+        MetadataOptions:
+          HttpEndpoint: enabled
+          HttpTokens: required
+          HttpPutResponseHopLimit: 1
+          InstanceMetadataTags: disabled
+        BlockDeviceMappings:
+          - DeviceName: /dev/xvda
+            Ebs:
+              Encrypted: true
+              DeleteOnTermination: true
+              VolumeSize: !Ref RootVolumeGiB
+              VolumeType: gp3
+  WorkerCompute:
+    Type: AWS::Batch::ComputeEnvironment
+    Properties:
+      Type: MANAGED
+      State: ENABLED
+      ServiceRole: !Ref BatchServiceRoleArn
+      ComputeResources:
+        Type: EC2
+        AllocationStrategy: BEST_FIT_PROGRESSIVE
+        Ec2Configuration:
+          - ImageType: ECS_AL2023
+        MinvCpus: 0
+        MaxvCpus: !Ref MaxVcpus
+        InstanceTypes: !Ref InstanceTypes
+        InstanceRole: !Ref InstanceProfileArn
+        SecurityGroupIds: [!Ref WorkerSecurityGroup]
+        Subnets: !Ref PrivateSubnets
+        LaunchTemplate:
+          LaunchTemplateId: !Ref WorkerLaunchTemplate
+          Version: !GetAtt WorkerLaunchTemplate.LatestVersionNumber
+  JobQueue:
+    Type: AWS::Batch::JobQueue
+    Properties:
+      State: !Ref QueueState
+      JobQueueName: !Sub '${AWS::StackName}-jobs'
+      Priority: 1
+      ComputeEnvironmentOrder:
+        - Order: 1
+          ComputeEnvironment: !Ref WorkerCompute
+  BatchLogs:
+    Type: AWS::Logs::LogGroup
+    DeletionPolicy: Retain
+    UpdateReplacePolicy: Retain
+    Properties:
+      LogGroupName: !Sub '/dimple/${AWS::StackName}/jobs'
+      RetentionInDays: !Ref LogRetentionDays
+Outputs:
+  Region:
+    Value: !Ref AWS::Region
+  Bucket:
+    Value: !Ref RunBucket
+  QueueName:
+    Value: !Sub '${AWS::StackName}-jobs'
+  QueueArn:
+    Value: !Ref JobQueue
+  LogGroup:
+    Value: !Ref BatchLogs
+  WorkerSecurityGroupId:
+    Value: !Ref WorkerSecurityGroup

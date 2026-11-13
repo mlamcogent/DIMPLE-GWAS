@@ -1,0 +1,14 @@
+{
+  "project": "YOUR_PROJECT_ID",
+  "location": "asia-southeast1",
+  "service_account": "dimple-batch-sa@YOUR_PROJECT_ID.iam.gserviceaccount.com",
+  "bucket": "YOUR_BUCKET_NAME",
+  "project_prefix": "dimple",
+  "image": "asia-southeast1-docker.pkg.dev/YOUR_PROJECT_ID/dimple/dimple-gwas-f5@sha256:4398934e14aded2b5ec2c891f39a2d0f559522cf276799997a49f4a45c24a383",
+  "seed_chunk": 25,
+  "queue_size": 6,
+  "task_hours": 4,
+  "boot_disk_gib": 50,
+  "network": "projects/YOUR_PROJECT_ID/global/networks/default",
+  "subnetwork": "projects/YOUR_PROJECT_ID/regions/asia-southeast1/subnetworks/default"
+}

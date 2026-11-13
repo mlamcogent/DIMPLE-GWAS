@@ -1,0 +1,6 @@
+cff-version: 1.2.0
+message: "Please cite the exact DIMPLE-GWAS software version and archive or commit used. No DOI has been assigned in this file."
+title: "DIMPLE-GWAS portable scientific deployment"
+type: software
+version: "5.3.0-research-multicloud.2"
+license: MIT

@@ -1,0 +1,17 @@
+{
+  "backend": "pca",
+  "pca": {
+    "retained_components": 2
+  },
+  "hdbscan": {
+    "min_samples": [
+      2
+    ],
+    "min_cluster_size": [
+      5
+    ],
+    "cluster_selection_epsilon": [
+      0
+    ]
+  }
+}

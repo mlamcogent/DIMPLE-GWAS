@@ -1,0 +1,68 @@
+{
+  "baseline_config_id": "n30_d0",
+  "configs": [
+    {
+      "config_id": "n15_d0",
+      "n_neighbors": 15,
+      "min_dist": 0,
+      "n_components": 3,
+      "densmap": true
+    },
+    {
+      "config_id": "n15_d0p1",
+      "n_neighbors": 15,
+      "min_dist": 0.1,
+      "n_components": 3,
+      "densmap": true
+    },
+    {
+      "config_id": "n15_d0p5",
+      "n_neighbors": 15,
+      "min_dist": 0.5,
+      "n_components": 3,
+      "densmap": true
+    },
+    {
+      "config_id": "n30_d0",
+      "n_neighbors": 30,
+      "min_dist": 0,
+      "n_components": 3,
+      "densmap": true
+    },
+    {
+      "config_id": "n30_d0p1",
+      "n_neighbors": 30,
+      "min_dist": 0.1,
+      "n_components": 3,
+      "densmap": true
+    },
+    {
+      "config_id": "n30_d0p5",
+      "n_neighbors": 30,
+      "min_dist": 0.5,
+      "n_components": 3,
+      "densmap": true
+    },
+    {
+      "config_id": "n50_d0",
+      "n_neighbors": 50,
+      "min_dist": 0,
+      "n_components": 3,
+      "densmap": true
+    },
+    {
+      "config_id": "n50_d0p1",
+      "n_neighbors": 50,
+      "min_dist": 0.1,
+      "n_components": 3,
+      "densmap": true
+    },
+    {
+      "config_id": "n50_d0p5",
+      "n_neighbors": 50,
+      "min_dist": 0.5,
+      "n_components": 3,
+      "densmap": true
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "VERSION": "3fd3aba067aadc0208120485727a3270424ea1ac7bb9c50e1eed09fd70aadb6b",
+  "bin/dimple_representations/__init__.py": "d53ed067bd6e04f59a34322bc5c7bae82e1c1913053ae4e7420d57ab08bacd20",
+  "bin/dimple_representations/config.py": "aa7ba83ea4c38a2d57a2d3c038e24e4ce40b52bd5cd08225bad5b6ca4e81e3ac",
+  "bin/dimple_representations/hdbscan_runner.py": "9681958851be153bd5022a4b7bd88bfeaec62a5ee7950b7e58fab8ce6601c80c",
+  "bin/dimple_representations/ica_runner.py": "f432a6e0b72f235eacbb931d75e196a65c2cb7d5452b5d04b4c77dafeff6dfa0",
+  "bin/dimple_representations/pca_runner.py": "6c8ec4cc080bf5df416e8a3641a952c0cffe38827d9b8355b80803a18da25444",
+  "bin/freeze5_scoring.py": "50aecc32d8483f28d10e27401a3b347b3bf5f5d9d8f4fd5ec60cce2ebd452981",
+  "bin/matrix_intake.py": "dcfb15eba0596bb2233d07b9d33e23c613586c07cefcbfe23e1a9aa29def300a",
+  "bin/research.py": "ad2da5de29c2b6779c614aae3d02760ef99159abf55802e9b710aa5db239fb59",
+  "bin/science_config.py": "697f9db150a377613da0b5304caebc458fadc75f0a72aefb8b301950bedf5178",
+  "conf/recipe.json": "c7444343111f0bc08de03768f4d0b6d21f33348c712c25260d281af361041f89",
+  "main.nf": "8b58ab87df51aef97e418576c6a20e9e8e937e4ea2bceee888d7830f60384235",
+  "nextflow.config": "09aa03afdbe5f9168953871edad26cb37dfedfe440c08acd6b9bbdfecbf6ae80"
+}

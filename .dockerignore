@@ -1,0 +1,17 @@
+*
+!deploy/
+!deploy/Dockerfile
+!deploy/requirements-linux-amd64.lock
+!bin/
+!bin/research.py
+!bin/freeze5_scoring.py
+!bin/matrix_intake.py
+!conf/
+!conf/recipe.json
+!docs/
+!docs/ATTRIBUTION.md
+!VERSION
+!LICENSE
+!main.nf
+!nextflow.config
+!source_manifest.json
