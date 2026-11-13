@@ -2,7 +2,7 @@
 
 Freeze 5.2 is a portable research workflow for clustering objects described by a dense numeric feature matrix. Nextflow runs the approved nine-configuration DensMAP and HDBSCAN study on native AWS Batch. Each deployment uses the operator's private storage, queue, roles, and digest-pinned worker image.
 
-- [Deployment sheet](docs/DEPLOY.md) walks through local input checks, owner-reviewed AWS setup, a one-job staging check, a full run, and cleanup.
+- [Deployment sheet](docs/DEPLOY_AWS.md) walks through local input checks, owner-reviewed AWS setup, a one-job staging check, a full run, and cleanup.
 - [User manual](docs/MANUAL.md) covers matrix formats, options, results, and troubleshooting.
 - [Science and provenance](docs/SCIENCE.md) defines the fixed recipe, scoring, and traceability.
 - [Publisher handoff](docs/RELEASE.md) describes the GitHub source release and Docker Hub worker build.

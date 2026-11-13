@@ -11,12 +11,11 @@ import tarfile
 
 ROOT = Path(__file__).resolve().parents[1]
 NAMES = (
-    'evidence/nextflow-failure-resume/COMMANDS.txt', 'evidence/nextflow-failure-resume/PROVENANCE.json', 'evidence/nextflow-failure-resume/README.md', 'evidence/nextflow-failure-resume/TEST_RECEIPT.json', 'evidence/nextflow-failure-resume/attempt1.log', 'evidence/nextflow-failure-resume/attempt1.nextflow.log', 'evidence/nextflow-failure-resume/attempt1.trace.txt', 'evidence/nextflow-failure-resume/attempt2.log', 'evidence/nextflow-failure-resume/attempt2.nextflow.log', 'evidence/nextflow-failure-resume/attempt2.trace.txt', 'evidence/nextflow-failure-resume/clean-extract-tests.log', 'evidence/nextflow-failure-resume/failure-wrapper.sh', 'evidence/nextflow-failure-resume/grid.json', 'evidence/nextflow-failure-resume/history.txt', 'evidence/nextflow-failure-resume/nextflow.config',
     'bin/runner_stack.py', 'bin/launch_attempt.py', 'bin/export_evidence.py', 'bin/stop_run.py', 'docs/DEPLOY_FIXES.md', 'bin/science_config.py', 'bin/dimple_representations/__init__.py', 'bin/dimple_representations/config.py', 'bin/dimple_representations/pca_runner.py', 'bin/dimple_representations/ica_runner.py', 'bin/dimple_representations/hdbscan_runner.py', 'CITATION.cff', 'examples/science-custom.example.json', 'examples/science-pca.example.json', 'examples/science-ica.example.json', 'docs/QUICKSTART.md', 'docs/PARAMETER_FIX_VALIDATION.md', 'tests/test_intake_drops.py', 'tests/test_custom_science.py', '.dockerignore', '.gitignore', 'LICENSE', 'README.md', 'VERSION', 'main.nf', 'nextflow.config',
     'source_manifest.json', 'bin/freeze5_scoring.py', 'bin/matrix_intake.py', 'bin/pack_release.py',
     'bin/plan_batch.py', 'bin/research.py', 'conf/recipe.json', 'conf/source-origin.json',
-    'deploy/Dockerfile', 'deploy/batch.yaml', 'deploy/requirements-linux-amd64.lock',
-    'docs/ATTRIBUTION.md', 'docs/DEPLOY.md', 'docs/LOCAL_VALIDATION.md', 'docs/MANUAL.md',
+    'deploy/Dockerfile', 'deploy/bootstrap.yaml', 'deploy/batch.yaml', 'tests/test_bootstrap.py', 'tests/test_awsbatch_wrapper.py', 'docs/WORKDIR_FIX.md', 'deploy/requirements-linux-amd64.lock',
+    'docs/ATTRIBUTION.md', 'docs/DEPLOY.md', 'docs/DEPLOY_AWS.md', 'docs/LOCAL_VALIDATION.md', 'docs/MANUAL.md',
     'docs/RELEASE.md', 'docs/SCIENCE.md', 'examples/deployment.example.json',
     'examples/synthetic-matrix.csv', 'examples/synthetic-transposed.csv', 'tests/test_portable.py', 'tests/test_deploy_fixes.py',
 )

@@ -1,0 +1,279 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: DIMPLE Freeze 5.2 blank-account network, roles and SSM-only controller (Singapore)
+Parameters:
+  WorkerStackName:
+    Type: String
+    Default: dimple-f52-workers
+    AllowedPattern: '[a-z][a-z0-9-]{0,39}'
+    Description: Exact batch.yaml stack name; scopes execution-role log access.
+  ControllerType:
+    Type: String
+    Default: t3.medium
+    AllowedValues: [t3.medium, t3.large, m6i.large, m6i.xlarge]
+  ControllerAmi:
+    Type: AWS::EC2::Image::Id
+    Description: Resolve the AL2023 x86_64 SSM parameter once, pass its AMI ID, and retain that exact ID on updates.
+  ExistingBatchServiceRoleArn:
+    Type: String
+    Default: ''
+    AllowedPattern: '^$|arn:aws:iam::[0-9]{12}:role/aws-service-role/batch\.amazonaws\.com/AWSServiceRoleForBatch'
+    Description: Set if the account already has the Batch service-linked role; otherwise this stack creates it.
+  RunnerProfileName:
+    Type: String
+    Default: ''
+    AllowedPattern: '^$|[A-Za-z0-9_+=,.@-]{1,128}'
+    Description: After creating the run-scoped runner stack, update to its instance-profile name. Empty uses SSM-only bootstrap role.
+Conditions:
+  CreateBatchServiceRole: !Equals [!Ref ExistingBatchServiceRoleArn, '']
+  UseRunnerProfile: !Not [!Equals [!Ref RunnerProfileName, '']]
+Resources:
+  Vpc:
+    Type: AWS::EC2::VPC
+    Properties:
+      CidrBlock: 10.72.0.0/16
+      EnableDnsSupport: true
+      EnableDnsHostnames: true
+  InternetGateway:
+    Type: AWS::EC2::InternetGateway
+  InternetGatewayAttachment:
+    Type: AWS::EC2::VPCGatewayAttachment
+    Properties:
+      VpcId: !Ref Vpc
+      InternetGatewayId: !Ref InternetGateway
+  PublicSubnet:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref Vpc
+      CidrBlock: 10.72.0.0/24
+      AvailabilityZone: !Select [0, !GetAZs '']
+      MapPublicIpOnLaunch: false
+  PrivateSubnetA:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref Vpc
+      CidrBlock: 10.72.16.0/20
+      AvailabilityZone: !Select [0, !GetAZs '']
+      MapPublicIpOnLaunch: false
+  PrivateSubnetB:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref Vpc
+      CidrBlock: 10.72.32.0/20
+      AvailabilityZone: !Select [1, !GetAZs '']
+      MapPublicIpOnLaunch: false
+  PublicRouteTable:
+    Type: AWS::EC2::RouteTable
+    Properties:
+      VpcId: !Ref Vpc
+  PublicAssociation:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      SubnetId: !Ref PublicSubnet
+      RouteTableId: !Ref PublicRouteTable
+  InternetRoute:
+    Type: AWS::EC2::Route
+    DependsOn: InternetGatewayAttachment
+    Properties:
+      RouteTableId: !Ref PublicRouteTable
+      DestinationCidrBlock: 0.0.0.0/0
+      GatewayId: !Ref InternetGateway
+  NatAddress:
+    Type: AWS::EC2::EIP
+    DependsOn: InternetGatewayAttachment
+    Properties:
+      Domain: vpc
+  NatGateway:
+    Type: AWS::EC2::NatGateway
+    Properties:
+      AllocationId: !GetAtt NatAddress.AllocationId
+      SubnetId: !Ref PublicSubnet
+  PrivateRouteTable:
+    Type: AWS::EC2::RouteTable
+    Properties:
+      VpcId: !Ref Vpc
+  PrivateRoute:
+    Type: AWS::EC2::Route
+    Properties:
+      RouteTableId: !Ref PrivateRouteTable
+      DestinationCidrBlock: 0.0.0.0/0
+      NatGatewayId: !Ref NatGateway
+  PrivateAssociationA:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      SubnetId: !Ref PrivateSubnetA
+      RouteTableId: !Ref PrivateRouteTable
+  PrivateAssociationB:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      SubnetId: !Ref PrivateSubnetB
+      RouteTableId: !Ref PrivateRouteTable
+  S3Endpoint:
+    Type: AWS::EC2::VPCEndpoint
+    Properties:
+      VpcId: !Ref Vpc
+      ServiceName: !Sub 'com.amazonaws.${AWS::Region}.s3'
+      VpcEndpointType: Gateway
+      RouteTableIds: [!Ref PrivateRouteTable]
+  ControllerSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      VpcId: !Ref Vpc
+      GroupDescription: DIMPLE controller HTTPS egress only; no inbound SSH; use SSM
+      SecurityGroupEgress:
+        - IpProtocol: tcp
+          FromPort: 443
+          ToPort: 443
+          CidrIp: 0.0.0.0/0
+  BatchServiceRole:
+    Type: AWS::IAM::ServiceLinkedRole
+    Condition: CreateBatchServiceRole
+    Properties:
+      AWSServiceName: batch.amazonaws.com
+      Description: AWS Batch managed compute service-linked role
+  WorkerRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: ec2.amazonaws.com
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - !Sub 'arn:${AWS::Partition}:iam::aws:policy/service-role/AmazonEC2ContainerServiceforEC2Role'
+  WorkerProfile:
+    Type: AWS::IAM::InstanceProfile
+    Properties:
+      Roles: [!Ref WorkerRole]
+  JobRole:
+    Type: AWS::IAM::Role
+    Properties:
+      Description: Run data access is attached by the existing generated runner stack, not granted account-wide.
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: ecs-tasks.amazonaws.com
+            Action: sts:AssumeRole
+  ExecutionRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: ecs-tasks.amazonaws.com
+            Action: sts:AssumeRole
+      Policies:
+        - PolicyName: WorkerLogs
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action: [logs:CreateLogStream, logs:PutLogEvents]
+                Resource: !Sub 'arn:${AWS::Partition}:logs:${AWS::Region}:${AWS::AccountId}:log-group:/dimple/${WorkerStackName}/jobs:log-stream:*'
+  ControllerRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: ec2.amazonaws.com
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - !Sub 'arn:${AWS::Partition}:iam::aws:policy/AmazonSSMManagedInstanceCore'
+  ControllerProfile:
+    Type: AWS::IAM::InstanceProfile
+    Properties:
+      Roles: [!Ref ControllerRole]
+  Controller:
+    Type: AWS::EC2::Instance
+    DependsOn: [PrivateRoute, PrivateAssociationA, InternetRoute]
+    CreationPolicy:
+      ResourceSignal:
+        Count: 1
+        Timeout: PT30M
+    Properties:
+      ImageId: !Ref ControllerAmi
+      InstanceType: !Ref ControllerType
+      IamInstanceProfile: !If [UseRunnerProfile, !Ref RunnerProfileName, !Ref ControllerProfile]
+      SubnetId: !Ref PrivateSubnetA
+      SecurityGroupIds: [!Ref ControllerSecurityGroup]
+      MetadataOptions:
+        HttpEndpoint: enabled
+        HttpTokens: required
+        HttpPutResponseHopLimit: 1
+      BlockDeviceMappings:
+        - DeviceName: /dev/xvda
+          Ebs:
+            VolumeSize: 40
+            VolumeType: gp3
+            Encrypted: true
+            DeleteOnTermination: true
+      Tags:
+        - Key: Name
+          Value: !Sub '${AWS::StackName}-controller'
+      UserData:
+        Fn::Base64: !Sub |
+          #!/bin/bash
+          set -Eeuo pipefail
+          exec > >(tee /var/log/dimple-bootstrap.log | logger -t dimple-bootstrap -s 2>/dev/console) 2>&1
+          # AL2023 ships aws-cfn-bootstrap. If initial dependency install fails,
+          # CreationPolicy times out rather than reporting a usable controller.
+          dnf install -y aws-cfn-bootstrap
+          trap '/opt/aws/bin/cfn-signal -e $? --stack ${AWS::StackName} --resource Controller --region ${AWS::Region}' EXIT
+          test '${AWS::Region}' = ap-southeast-1
+          dnf install -y awscli-2 gcc make openssl-devel bzip2-devel libffi-devel zlib-devel xz-devel readline-devel sqlite-devel tar gzip java-21-amazon-corretto-headless
+          # Pin the controller interpreter; do not replace the OS Python.
+          cd /usr/local/src
+          curl --fail --location --retry 3 --proto '=https' --tlsv1.2 https://www.python.org/ftp/python/3.11.11/Python-3.11.11.tgz -o Python-3.11.11.tgz
+          echo '883bddee3c92fcb91cf9c09c5343196953cbb9ced826213545849693970868ed  Python-3.11.11.tgz' | sha256sum -c -
+          tar -xzf Python-3.11.11.tgz
+          cd Python-3.11.11
+          ./configure --prefix=/opt/dimple-python-3.11.11 --with-ensurepip=install
+          make -j2
+          make altinstall
+          ln -s /opt/dimple-python-3.11.11/bin/python3.11 /usr/local/bin/python3
+          test "$(/usr/local/bin/python3 --version)" = 'Python 3.11.11'
+          curl --fail --location --retry 3 --proto '=https' --tlsv1.2 https://github.com/nextflow-io/nextflow/releases/download/v26.10.3/nextflow -o /usr/local/bin/nextflow
+          echo '5f9b4069c4eb62104442e0a64d01a7b6557146008c6b180bf78a995605540896  /usr/local/bin/nextflow' | sha256sum -c -
+          chmod 0755 /usr/local/bin/nextflow
+          CONTROLLER_HOME=$(getent passwd ec2-user | cut -d: -f6)
+          install -d -o ec2-user -g ec2-user -m 0700 $CONTROLLER_HOME/dimple
+          runuser -l ec2-user -c 'set -euo pipefail; export NXF_VER=26.10.3; /usr/local/bin/nextflow -version | tee "$HOME/dimple/nextflow-version.txt"; grep -q "version 26.10.3" "$HOME/dimple/nextflow-version.txt"; /usr/local/bin/nextflow plugin install nf-amazon@3.12.1; test -d $HOME/.nextflow/plugins/nf-amazon-3.12.1'
+          cat > /etc/profile.d/dimple.sh <<'EOF'
+          export NXF_VER=26.10.3
+          export NXF_OPTS='-Xms256m -Xmx1024m'
+          export PATH=/usr/local/bin:$PATH
+          EOF
+          systemctl enable --now amazon-ssm-agent
+          printf 'Python 3.11.11; Nextflow 26.10.3; nf-amazon 3.12.1; Java 21\n' > $CONTROLLER_HOME/dimple/BOOTSTRAP_OK
+          chown ec2-user:ec2-user $CONTROLLER_HOME/dimple/BOOTSTRAP_OK
+Outputs:
+  VpcId:
+    Value: !Ref Vpc
+  PrivateSubnets:
+    Value: !Join [',', [!Ref PrivateSubnetA, !Ref PrivateSubnetB]]
+  BatchServiceRoleArn:
+    Value: !If [CreateBatchServiceRole, !Sub 'arn:${AWS::Partition}:iam::${AWS::AccountId}:role/aws-service-role/batch.amazonaws.com/AWSServiceRoleForBatch', !Ref ExistingBatchServiceRoleArn]
+  InstanceProfileArn:
+    Value: !GetAtt WorkerProfile.Arn
+  JobRoleArn:
+    Value: !GetAtt JobRole.Arn
+  JobRoleName:
+    Value: !Ref JobRole
+  ExecutionRoleArn:
+    Value: !GetAtt ExecutionRole.Arn
+  ControllerId:
+    Value: !Ref Controller
+  ControllerRoleName:
+    Value: !Ref ControllerRole
+  ControllerProfileName:
+    Value: !Ref ControllerProfile
+  ControllerSecurityGroupId:
+    Value: !Ref ControllerSecurityGroup

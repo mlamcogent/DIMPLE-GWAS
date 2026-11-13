@@ -21,9 +21,9 @@
       "sha256": "5d23fe1b469dd95430f6d70a6eb902d502174415a8dded435cf6ff0592544620"
     },
     "README.md": {
-      "bytes": 1502,
+      "bytes": 1506,
       "mode": "0644",
-      "sha256": "0189e1ea6df46cad18eece7b1fdc11916204ffe17cfe637e521ac61754716f54"
+      "sha256": "b667d158688ede1064554049f3fb0568a754d4547f3931a2573d5c423aaa5e43"
     },
     "VERSION": {
       "bytes": 26,
@@ -76,9 +76,9 @@
       "sha256": "dcfb15eba0596bb2233d07b9d33e23c613586c07cefcbfe23e1a9aa29def300a"
     },
     "bin/pack_release.py": {
-      "bytes": 5833,
+      "bytes": 5174,
       "mode": "0644",
-      "sha256": "0b080cfecc91e3986382020be214c07e4ea3be1a34e132a75e5bc555a027d537"
+      "sha256": "31ae14fc1a0f48f948a3fd28a3b49c111a766f843bba66998cde3e00e24a014e"
     },
     "bin/plan_batch.py": {
       "bytes": 8708,
@@ -116,14 +116,19 @@
       "sha256": "c789af788060bae4d36c187bd9c411b274a0eb94ff32b12678284abe961477de"
     },
     "deploy/Dockerfile": {
-      "bytes": 1476,
+      "bytes": 1489,
       "mode": "0644",
-      "sha256": "eb1333f5315912f6fead9122b9858b1dfd21f1e3a3814ad62148caaf79c726b3"
+      "sha256": "14b713d428810ce18ee7179a99f5081ed06eb0932e4438ab0fad7189746ad8a3"
     },
     "deploy/batch.yaml": {
-      "bytes": 4479,
+      "bytes": 4529,
       "mode": "0644",
-      "sha256": "948567c38d760cd7c34a72afd1548ecd3a71714b358e7d6bec22c489d3e03263"
+      "sha256": "cfb09c2bbbcd47cbb093aa81ace2938fbda089558e905e4bcf9056cd698a9c2c"
+    },
+    "deploy/bootstrap.yaml": {
+      "bytes": 10644,
+      "mode": "0644",
+      "sha256": "2e872d6b9d969158cc2f407d273ff4dbdfc8a8c7df7858f9d917769e328cd1c4"
     },
     "deploy/requirements-linux-amd64.lock": {
       "bytes": 1526,
@@ -136,14 +141,19 @@
       "sha256": "0f8bb0a36be45ab8bbb67ec74de25fde05d224a76c532363932e3d6ca93b9a55"
     },
     "docs/DEPLOY.md": {
-      "bytes": 7912,
+      "bytes": 190,
       "mode": "0644",
-      "sha256": "4db9f025667b77e301507183b9bcc594c9b999fd353c0f28ece6da87df3a9950"
+      "sha256": "dd26f7ab5c49a092258f2cb431aaf21ea545354a5ab4ca16a185075a102e34f3"
+    },
+    "docs/DEPLOY_AWS.md": {
+      "bytes": 24712,
+      "mode": "0644",
+      "sha256": "e3cab025a7ecec2d1a4e41a57a824e66438ddefb8cd34de76961b485154bb733"
     },
     "docs/DEPLOY_FIXES.md": {
-      "bytes": 8333,
+      "bytes": 7359,
       "mode": "0644",
-      "sha256": "97dc60350010f42f21bfd7f5e21a8527e4ddeded8ebc815d1c084aba9a0f6a48"
+      "sha256": "00e3da28cebfd377315b8b5a8b01887b94283365a3a4a7899f6c8e6cd9e39e1e"
     },
     "docs/LOCAL_VALIDATION.md": {
       "bytes": 2019,
@@ -156,9 +166,9 @@
       "sha256": "f5f3347ee4496efed99eacdfa303302cf9033d8ab288732c0d3b6f19e59f4f3e"
     },
     "docs/PARAMETER_FIX_VALIDATION.md": {
-      "bytes": 1795,
+      "bytes": 2035,
       "mode": "0644",
-      "sha256": "ebca664f4ebbc3a1bc28586ed5ec71e363a8f476dc09d3a27019b9357d545268"
+      "sha256": "79dce22a89092556544873f5c970038fca20a8d545d6f39f47b6eb03a86b71ab"
     },
     "docs/QUICKSTART.md": {
       "bytes": 2554,
@@ -175,85 +185,15 @@
       "mode": "0644",
       "sha256": "588e3a49f2ccb88890d6ea0bfe257e1bdd80adac00bdd224028dd82638801209"
     },
-    "evidence/nextflow-failure-resume/COMMANDS.txt": {
-      "bytes": 1254,
+    "docs/WORKDIR_FIX.md": {
+      "bytes": 2232,
       "mode": "0644",
-      "sha256": "e9fa8e3f62cb3b9d2b2da462d821ec237e35bb256a95702a2c13f89ae3f1ae92"
-    },
-    "evidence/nextflow-failure-resume/PROVENANCE.json": {
-      "bytes": 4069,
-      "mode": "0644",
-      "sha256": "3a21fd4e20cbbdcf7346951fb249de30b81db52a5b0c5b2b3694b121527f9f41"
-    },
-    "evidence/nextflow-failure-resume/README.md": {
-      "bytes": 1646,
-      "mode": "0644",
-      "sha256": "4e3c8544e1fe545f87150ddd1ea8ca0b99eb6df0ad03ed6f927c97d8250a26f0"
-    },
-    "evidence/nextflow-failure-resume/TEST_RECEIPT.json": {
-      "bytes": 979,
-      "mode": "0644",
-      "sha256": "eba0077ff98258b81a8e7c7f3b7dbf1c95c9fc1ed4d0c4ef9b75e60348e5c855"
-    },
-    "evidence/nextflow-failure-resume/attempt1.log": {
-      "bytes": 1293,
-      "mode": "0644",
-      "sha256": "e38f2e31db387981ad2d3f47c3f82be1a255d3e7113613dfed6305ae214f2031"
-    },
-    "evidence/nextflow-failure-resume/attempt1.nextflow.log": {
-      "bytes": 15122,
-      "mode": "0644",
-      "sha256": "bc87ad8ca533df7fe3d866ef074f8efd5eb1ec9c034ecfdc7599828888140cb4"
-    },
-    "evidence/nextflow-failure-resume/attempt1.trace.txt": {
-      "bytes": 787,
-      "mode": "0644",
-      "sha256": "1623a1118aeb4ac650ed99598e77b29ab98f5b6842001cf43cf6d11b1557412e"
-    },
-    "evidence/nextflow-failure-resume/attempt2.log": {
-      "bytes": 546,
-      "mode": "0644",
-      "sha256": "0352e56c46908804410a8c05efd097a0951d969b70b0bb028145fc655d6961e4"
-    },
-    "evidence/nextflow-failure-resume/attempt2.nextflow.log": {
-      "bytes": 12944,
-      "mode": "0644",
-      "sha256": "2f343657577a8fdf88172e17bbcd9742af7f200ad0d625b2e9165c528e3d2082"
-    },
-    "evidence/nextflow-failure-resume/attempt2.trace.txt": {
-      "bytes": 936,
-      "mode": "0644",
-      "sha256": "a0dad0470a66c32ac7b6b952df38ce31b8bebe65c826cdf3cf2e05c3819fc047"
-    },
-    "evidence/nextflow-failure-resume/clean-extract-tests.log": {
-      "bytes": 52465,
-      "mode": "0644",
-      "sha256": "40096a32636e27c53bd83fa74615be5431bd47989195b88af9199312e3109b0a"
-    },
-    "evidence/nextflow-failure-resume/failure-wrapper.sh": {
-      "bytes": 383,
-      "mode": "0644",
-      "sha256": "adaa43d7227f5cbc599fea28c05375d6f3e6d2b943a2d88a75a0d07b60c41272"
-    },
-    "evidence/nextflow-failure-resume/grid.json": {
-      "bytes": 1399,
-      "mode": "0644",
-      "sha256": "f9c0aab864d02d6fca00fc26105a7779d694185950145c17674da5b5ebd9f4cc"
-    },
-    "evidence/nextflow-failure-resume/history.txt": {
-      "bytes": 1379,
-      "mode": "0644",
-      "sha256": "35dec7d921a5d085e5d908426478794d0c9584fe3dbc94b600c537a133d1d04d"
-    },
-    "evidence/nextflow-failure-resume/nextflow.config": {
-      "bytes": 2227,
-      "mode": "0644",
-      "sha256": "6bb4d8f43abd61c9393528d51f951f019ad89841f828512ef2d624fc513d72fc"
+      "sha256": "b52de57dfa16af0b3a63c0ff7810150aac93f003f8bf142437557f9377aa9f52"
     },
     "examples/deployment.example.json": {
-      "bytes": 525,
+      "bytes": 583,
       "mode": "0644",
-      "sha256": "55ec1334d7f9596ae3e598ea4916f162fc9f6ab1f54e5a60f27f6e9c96e5850a"
+      "sha256": "b854c39f717fc5e317cc08421d39fbeae3df354b443a2dd937ed83c11da4c652"
     },
     "examples/science-custom.example.json": {
       "bytes": 322,
@@ -294,6 +234,16 @@
       "bytes": 1286,
       "mode": "0644",
       "sha256": "9624dca7d5f5156aebb298384453c4aaf4f349bee3c1af104a532ece4b6a2f1c"
+    },
+    "tests/test_awsbatch_wrapper.py": {
+      "bytes": 7970,
+      "mode": "0644",
+      "sha256": "5fe556a0ed2eca7942bbaddc320658707ec9510891433a69f9d1feccaa59ddca"
+    },
+    "tests/test_bootstrap.py": {
+      "bytes": 2172,
+      "mode": "0644",
+      "sha256": "3c0d1a196bf3f7a2a2bf047fd719aea322bed1f014f1394ac7c341b3371620de"
     },
     "tests/test_custom_science.py": {
       "bytes": 7252,

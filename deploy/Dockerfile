@@ -27,6 +27,7 @@ COPY docs/ATTRIBUTION.md /opt/dimple/docs/
 LABEL org.opencontainers.image.title="DIMPLE Freeze 5.2 research worker" \
       org.opencontainers.image.version="5.2.0-research-portable.3"
 ENV HOME=/tmp
+WORKDIR /tmp
 USER 10001
 ENTRYPOINT []
 

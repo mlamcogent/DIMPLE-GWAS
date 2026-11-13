@@ -14,8 +14,8 @@ Parameters:
     AllowedPattern: 'arn:aws:iam::[0-9]{12}:instance-profile/[A-Za-z0-9_+=,.@/-]+'
   MaxVcpus:
     Type: Number
-    Default: 24
-    MinValue: 4
+    Default: 16
+    MinValue: 0
     MaxValue: 256
   RootVolumeGiB:
     Type: Number
@@ -148,3 +148,5 @@ Outputs:
     Value: !Ref BatchLogs
   WorkerSecurityGroupId:
     Value: !Ref WorkerSecurityGroup
+  WorkerComputeArn:
+    Value: !Ref WorkerCompute

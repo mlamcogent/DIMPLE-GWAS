@@ -7,3 +7,5 @@ Actual synthetic fits: standalone PCA and ICA use the exact existing canonical i
 Actual local Nextflow26.10.3 failure→resume: synthetic60×3 PCA route; first GRID attempt deliberately exits77, then resume succeeds with PREPARE, representation and CONCAT cached and GRID/RANK completed. Earlier attempt logs/traces remain separate. Launcher-specific failure/resume is additionally exercised with a shim, not confused with the real workflow test.
 
 No image rebuild, AWS/GCP execution, publication, real participant input or2,315-trait matrix was used. Existing images do not contain these source changes. Live cloud qualification remains separate. Current intake retains minimum51 objects even for custom/PCA/ICA settings; smaller inputs are rejected explicitly. Numerical outputs/provenance vary for intentionally changed parameters; no claim of all metadata bytes remaining identical is made.
+
+The historical native Nextflow failure/resume logs are not distributed in this source-only package. The local test suite still exercises launcher failure/resume with a shim; it does not rerun that historical native workflow qualification.

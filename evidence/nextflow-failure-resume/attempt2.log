@@ -1,9 +1,0 @@
-N E X T F L O W  ~  version 26.10.3
-Launching `WORKSPACE/validation/freeze5_2_paramfix_20261111/science_nextflow_reviewed/pipeline/main.nf` [happy_turing] - revision: b3533ad21c
-[27/85f7cf] Cached process > PREPARE
-[03/9e04ba] Cached process > UMAP_CHUNK (pca:1-1)
-[db/228582] Cached process > CONCAT (pca)
-WARN: Task runtime metrics are not reported when using macOS without a container engine
-[84/e67392] Submitted process > GRID (pca:min_samples=2)
-[3b/03dbc0] Submitted process > GRID (pca:min_samples=3)
-[48/a2eb2d] Submitted process > RANK

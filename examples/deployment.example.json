@@ -1,7 +1,7 @@
 {
   "region": "REPLACE_REGION",
   "queue": "REPLACE_QUEUE_NAME",
-  "image": "REPLACE_REGISTRY_REPOSITORY_AND_SHA256_DIGEST",
+  "image": "docker.io/zymlam/dimple-gwas-f5@sha256:278f7c36f475a82ad3b2444c911b6d90dcc8d2a59e936d48dcf3590b192c09cb",
   "job_role": "REPLACE_ECS_TASK_JOB_ROLE_ARN",
   "execution_role": "REPLACE_ECS_TASK_EXECUTION_ROLE_ARN",
   "log_group": "REPLACE_LOG_GROUP_NAME",
