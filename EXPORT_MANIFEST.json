@@ -151,9 +151,9 @@
       "sha256": "0f8bb0a36be45ab8bbb67ec74de25fde05d224a76c532363932e3d6ca93b9a55"
     },
     "docs/DEPLOY.md": {
-      "bytes": 12023,
+      "bytes": 25917,
       "mode": "0644",
-      "sha256": "6caa546cfb7dfb588ed84ee5126d075dfa43cbf3ec4ce006d13668bedbb87537"
+      "sha256": "ba8405c5d1f0fd99a45443b7c99705267df03372ef82fdda9b01976891e09998"
     },
     "docs/DEPLOY_FIXES.md": {
       "bytes": 8333,
