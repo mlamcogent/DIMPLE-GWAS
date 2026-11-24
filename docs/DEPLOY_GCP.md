@@ -1,6 +1,6 @@
 # Freeze 5.3 GCP deployment: owner terminal sheet
 
-This is the GCP route in the same AWS + GCP package. Science, intake, scoring, recipe and workflow are unchanged. These are instructions, not evidence that resources have been created or a live GCP task has passed. No GCP changes, image build or publication were performed to prepare this package.
+This is the GCP route in the same AWS + GCP package. Science, intake, scoring, recipe and workflow are unchanged. These are instructions, not evidence that resources have been created in your project. No GCP changes, image build or publication were performed to prepare this package. Freeze 5.3 stable passed live AWS + GCP digits interoperability on 23 November 2026 (ARI 1.0; see VALIDATION_5_3.md).
 
 ## Quick GCP test
 1. On a durable controller install Java 21, Nextflow 26.10.3/nf-google 1.29.1, Python and Google CLI; arrange ADC.
@@ -75,7 +75,7 @@ PGA must be True. It reaches Google APIs, Cloud Storage and Artifact Registry, *
 
 ## 2. Make the approved image reachable privately
 
-The published worker image is `docker.io/zymlam/dimple-gwas-f5:5.3.0-research-multicloud.2-gcpfix02@sha256:4398934e14aded2b5ec2c891f39a2d0f559522cf276799997a49f4a45c24a383`. It is linux/amd64, UID10001, WORKDIR `/tmp`. GCP live qualification remains pending. Copy the public image from an internet-connected Docker host to your own regional Artifact Registry; private workers have no internet and cannot pull Docker Hub directly.
+The published worker image is `docker.io/zymlam/dimple-gwas-f5:5.3.0-research-multicloud.2-gcpfix02@sha256:4398934e14aded2b5ec2c891f39a2d0f559522cf276799997a49f4a45c24a383`. It is linux/amd64, UID10001, WORKDIR `/tmp`; the same digest is tagged `5.3.0` (Freeze 5.3 stable). GCP live qualification passed on 23 November 2026 using a regional mirror of this digest. Copy the public image from an internet-connected Docker host to your own regional Artifact Registry; private workers have no internet and cannot pull Docker Hub directly.
 
 ```bash
 SOURCE_IMAGE='docker.io/zymlam/dimple-gwas-f5:5.3.0-research-multicloud.2-gcpfix02@sha256:4398934e14aded2b5ec2c891f39a2d0f559522cf276799997a49f4a45c24a383'

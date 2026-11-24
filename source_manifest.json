@@ -11,5 +11,5 @@
   "bin/science_config.py": "697f9db150a377613da0b5304caebc458fadc75f0a72aefb8b301950bedf5178",
   "conf/recipe.json": "c7444343111f0bc08de03768f4d0b6d21f33348c712c25260d281af361041f89",
   "main.nf": "8b58ab87df51aef97e418576c6a20e9e8e937e4ea2bceee888d7830f60384235",
-  "nextflow.config": "09aa03afdbe5f9168953871edad26cb37dfedfe440c08acd6b9bbdfecbf6ae80"
+  "nextflow.config": "799e422b986223fddc7ab85e23a0293daa866977c41ac3bff1d83f397b4d4a3f"
 }

@@ -6,7 +6,7 @@ One package retains AWS Batch and adds Google Batch/GCS, using the same flexible
 - GCP: [deployment sheet](docs/DEPLOY_GCP.md).
 - Shared [manual](docs/MANUAL.md), [interoperability](docs/INTEROPERABILITY.md), [current validation](docs/VALIDATION_5_3.md).
 
-**Worker image public:** `docker.io/zymlam/dimple-gwas-f5:5.3.0-research-multicloud.2-gcpfix02@sha256:4398934e14aded2b5ec2c891f39a2d0f559522cf276799997a49f4a45c24a383`. GCP live qualification is pending. This is research software; local tests and image availability are not scientific acceptance.
+**Freeze 5.3 stable.** Worker image `docker.io/zymlam/dimple-gwas-f5:5.3.0@sha256:4398934e14aded2b5ec2c891f39a2d0f559522cf276799997a49f4a45c24a383` (linux/amd64; the same digest is also tagged `5.3.0-research-multicloud.2-gcpfix02`). On 23 November 2026 the digits benchmark ran on both AWS Batch and Google Batch with this image digest and identical input, grid and commands: all 2,430 candidates matched across clouds with ARI 1.0, including the primary K, K_eom, K_leaf and legacy global winners. See [VALIDATION_5_3.md](docs/VALIDATION_5_3.md). This is research software; cross-cloud reproducibility on the digits benchmark is not scientific acceptance for other data.
 
 The inherited 5.2 baseline documentation follows for provenance; the multi-cloud guidance above takes precedence.
 

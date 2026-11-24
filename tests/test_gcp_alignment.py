@@ -39,6 +39,6 @@ class GcpAlignment(unittest.TestCase):
         s=(ROOT/'deploy/Dockerfile').read_text()
         self.assertIn('ENV HOME=/tmp\nWORKDIR /tmp\nUSER 10001',s)
         d=(ROOT/'docs/DEPLOY_GCP.md').read_text()
-        for v in ['IAP-only', 'RUN_CONTROLLER_DIR', 'docker.io/zymlam/dimple-gwas-f5:', 'GCP live qualification remains pending','not spending caps','not Docker Hub','a project-wide hard vCPU cap','No GCP changes']:
+        for v in ['IAP-only', 'RUN_CONTROLLER_DIR', 'docker.io/zymlam/dimple-gwas-f5:', 'GCP live qualification passed on 23 November 2026','not spending caps','not Docker Hub','a project-wide hard vCPU cap','No GCP changes']:
             self.assertIn(v,d)
 if __name__=='__main__': unittest.main()

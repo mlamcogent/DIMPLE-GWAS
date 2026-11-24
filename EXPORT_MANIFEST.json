@@ -21,9 +21,9 @@
       "sha256": "5d23fe1b469dd95430f6d70a6eb902d502174415a8dded435cf6ff0592544620"
     },
     "README.md": {
-      "bytes": 2558,
+      "bytes": 2934,
       "mode": "0644",
-      "sha256": "8c82272b41c821df6306ed666f1b67cd2863b0235a19b5b7bc94b8d62f2a0738"
+      "sha256": "4fb9908db9d6669e1e70092ce849ed3701d9cdfab6a2f6001c73724e926a86ba"
     },
     "VERSION": {
       "bytes": 28,
@@ -116,9 +116,9 @@
       "sha256": "c7444343111f0bc08de03768f4d0b6d21f33348c712c25260d281af361041f89"
     },
     "conf/source-origin.json": {
-      "bytes": 2009,
+      "bytes": 2065,
       "mode": "0644",
-      "sha256": "d095e7691cf169b2e7a96d8986e12d4a18c435eb6a17c1ec66dcc013645ed747"
+      "sha256": "2cb8eaafe229b321658e6f010bfec5ba363f853595a2dbfbc6b01d4be401391d"
     },
     "deploy/Dockerfile": {
       "bytes": 1491,
@@ -156,19 +156,19 @@
       "sha256": "97dc60350010f42f21bfd7f5e21a8527e4ddeded8ebc815d1c084aba9a0f6a48"
     },
     "docs/DEPLOY_GCP.md": {
-      "bytes": 15317,
+      "bytes": 15526,
       "mode": "0644",
-      "sha256": "4bdbd91f5602b486e3716afa29a13b05ceb708c292d65ac775a6e5cf4d9c59b3"
+      "sha256": "dbb9f359038d0b0d1cac98e42aa0581f06337db5b1eb2352ce06e29684dccd5c"
     },
     "docs/INTEROPERABILITY.md": {
-      "bytes": 8403,
+      "bytes": 8502,
       "mode": "0644",
-      "sha256": "42f2eb7849c87d5fb4c8003b9290ac88bd68ebdba9060429499b41d21092c890"
+      "sha256": "6809dfd14a050121b808b61aff8aed48807925fae52be78bc605f15f74066761"
     },
     "docs/LOCAL_VALIDATION.md": {
-      "bytes": 2145,
+      "bytes": 2234,
       "mode": "0644",
-      "sha256": "a12342500fa88dfd5a6cca955ea0e630ae2115e5385295cd27977949118e261e"
+      "sha256": "d04d245150ae2b2cd108f0c6bf87b622657181b6f1e6869da3df2045cb604bd9"
     },
     "docs/MANUAL.md": {
       "bytes": 16760,
@@ -196,9 +196,9 @@
       "sha256": "588e3a49f2ccb88890d6ea0bfe257e1bdd80adac00bdd224028dd82638801209"
     },
     "docs/VALIDATION_5_3.md": {
-      "bytes": 2352,
+      "bytes": 3541,
       "mode": "0644",
-      "sha256": "3da23469130753dd0a8d554b006827bd8ca3b112c4512212890b5d5f1a17c3af"
+      "sha256": "7fb420027101aac45955aac0697d0cd567c6a17a36dfba8cf29e563fb438ddec"
     },
     "examples/deployment.example.json": {
       "bytes": 525,
@@ -241,14 +241,14 @@
       "sha256": "8b58ab87df51aef97e418576c6a20e9e8e937e4ea2bceee888d7830f60384235"
     },
     "nextflow.config": {
-      "bytes": 3548,
+      "bytes": 3684,
       "mode": "0644",
-      "sha256": "09aa03afdbe5f9168953871edad26cb37dfedfe440c08acd6b9bbdfecbf6ae80"
+      "sha256": "799e422b986223fddc7ab85e23a0293daa866977c41ac3bff1d83f397b4d4a3f"
     },
     "source_manifest.json": {
       "bytes": 1286,
       "mode": "0644",
-      "sha256": "8e257f307c083a8a948d230f68917cb51d2f288cd18b0411e4bc2cb6684a7047"
+      "sha256": "dc96c393af3052a13fe44383d83f8a8ad5cc96f7015c0e5cd9820bfff2524896"
     },
     "tests/test_custom_science.py": {
       "bytes": 7252,
@@ -261,9 +261,9 @@
       "sha256": "31353ac4935ef03004129044c1d05f7d4fa4289c678568db93c00818056d18fc"
     },
     "tests/test_gcp_alignment.py": {
-      "bytes": 3043,
+      "bytes": 3054,
       "mode": "0644",
-      "sha256": "4053ce12985bcc8bc81aeb359636800d3ab1da2038e684e821592f04969714a4"
+      "sha256": "9409945a4c9f47c55dc3c84066c226e84245f11ba1db162a96baf89b4cbaea7d"
     },
     "tests/test_intake_drops.py": {
       "bytes": 7712,

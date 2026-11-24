@@ -13,7 +13,7 @@
       "awsbatch",
       "google-batch"
     ],
-    "image_status": "STALE_REBUILD_NOT_AUTHORIZED",
+    "image_status": "STABLE_5.3.0_sha256:4398934e14aded2b5ec2c891f39a2d0f559522cf276799997a49f4a45c24a383",
     "science_changes": "Only research version/docstring metadata differ from frozen5.2; all science modules shared unchanged.",
     "version": "5.3.0-research-multicloud.2"
   },
