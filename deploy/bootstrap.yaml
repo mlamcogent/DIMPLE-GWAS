@@ -68,14 +68,14 @@ Resources:
     Type: AWS::EC2::Subnet
     Properties:
       VpcId: !Ref Vpc
-      CidrBlock: !Select [1, !Cidr [!Ref VpcCidr, 4, 4]]
+      CidrBlock: !Select [1, !Cidr [!Ref VpcCidr, 4, 12]]
       AvailabilityZone: !Select [0, !GetAZs '']
       MapPublicIpOnLaunch: false
   PrivateSubnetB:
     Type: AWS::EC2::Subnet
     Properties:
       VpcId: !Ref Vpc
-      CidrBlock: !Select [2, !Cidr [!Ref VpcCidr, 4, 4]]
+      CidrBlock: !Select [2, !Cidr [!Ref VpcCidr, 4, 12]]
       AvailabilityZone: !Select [1, !GetAZs '']
       MapPublicIpOnLaunch: false
   PublicRouteTable:

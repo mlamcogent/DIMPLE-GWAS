@@ -131,9 +131,9 @@
       "sha256": "948567c38d760cd7c34a72afd1548ecd3a71714b358e7d6bec22c489d3e03263"
     },
     "deploy/bootstrap.yaml": {
-      "bytes": 13204,
+      "bytes": 13206,
       "mode": "0644",
-      "sha256": "e67d62a00095200b4eaf7f948916c86bec0d4fd6b3090fd9e4794342c68fdda1"
+      "sha256": "2dfa891b6cb0fcb78174e94d7fbfa0b340debe4abd76cd78b083206c96535f2a"
     },
     "deploy/gcp-prerequisites.sh": {
       "bytes": 2768,
