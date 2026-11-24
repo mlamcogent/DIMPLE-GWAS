@@ -76,9 +76,9 @@
       "sha256": "dcfb15eba0596bb2233d07b9d33e23c613586c07cefcbfe23e1a9aa29def300a"
     },
     "bin/pack_release.py": {
-      "bytes": 5276,
+      "bytes": 5301,
       "mode": "0644",
-      "sha256": "5f211894ffe81c1bdcd811725fb4a8d69d7edd703aa1ff0af99b6d57ac1052ab"
+      "sha256": "5392323c689ff56bac8f165f8607e81620500d5fad610518a1cd0f024cc41d1e"
     },
     "bin/plan_batch.py": {
       "bytes": 8708,
@@ -130,6 +130,11 @@
       "mode": "0644",
       "sha256": "948567c38d760cd7c34a72afd1548ecd3a71714b358e7d6bec22c489d3e03263"
     },
+    "deploy/bootstrap.yaml": {
+      "bytes": 13204,
+      "mode": "0644",
+      "sha256": "e67d62a00095200b4eaf7f948916c86bec0d4fd6b3090fd9e4794342c68fdda1"
+    },
     "deploy/gcp-prerequisites.sh": {
       "bytes": 2768,
       "mode": "0644",
@@ -146,9 +151,9 @@
       "sha256": "0f8bb0a36be45ab8bbb67ec74de25fde05d224a76c532363932e3d6ca93b9a55"
     },
     "docs/DEPLOY.md": {
-      "bytes": 7912,
+      "bytes": 12023,
       "mode": "0644",
-      "sha256": "4db9f025667b77e301507183b9bcc594c9b999fd353c0f28ece6da87df3a9950"
+      "sha256": "6caa546cfb7dfb588ed84ee5126d075dfa43cbf3ec4ce006d13668bedbb87537"
     },
     "docs/DEPLOY_FIXES.md": {
       "bytes": 8333,
